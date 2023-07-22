@@ -8,6 +8,7 @@ using System.Text.Json.Nodes;
 using System.Threading.Tasks;
 using Content.Server.Administration.Systems;
 using Content.Server.Administration.Managers;
+using Content.Server.Afk; // LOP edit
 using Content.Server.GameTicking;
 using Content.Server.GameTicking.Presets;
 using Content.Server.GameTicking.Rules.Components;
@@ -48,6 +49,7 @@ public sealed partial class ServerApi : IPostInjectInit
     ];
 
     [Dependency] private readonly IStatusHost _statusHost = default!;
+    [Dependency] private readonly IAfkManager _afkManager = default!; // LOP edit
     [Dependency] private readonly IConfigurationManager _config = default!;
     [Dependency] private readonly ISharedPlayerManager _playerManager = default!;
     [Dependency] private readonly IAdminManager _adminManager = default!; // Frontier: ISharedAdminManager<IAdminManager>
@@ -520,7 +522,11 @@ public sealed partial class ServerApi : IPostInjectInit
                     UserId = player.UserId.UserId,
                     Name = player.Name,
                     IsAdmin = adminData != null,
-                    IsDeadminned = !adminData?.Active ?? false
+                    IsDeadminned = !adminData?.Active ?? false,
+                    // LOP edit start
+                    IsStealth = adminData?.Stealth ?? false,
+                    IsAFK = _afkManager.IsAfk(player)
+                    // LOP edit end
                 });
             }
 
@@ -730,6 +736,9 @@ public sealed partial class ServerApi : IPostInjectInit
             public required string Name { get; init; }
             public required bool IsAdmin { get; init; }
             public required bool IsDeadminned { get; init; }
+            // LOP edit start
+            public required bool IsStealth { get; init; }
+            public required bool IsAFK { get; init; }
         }
 
         public sealed class MapInfo
