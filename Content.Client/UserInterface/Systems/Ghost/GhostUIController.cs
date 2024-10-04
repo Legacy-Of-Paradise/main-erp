@@ -125,10 +125,11 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.RequestWarpsPressed += RequestWarps;
         Gui.ReturnToBodyPressed += ReturnToBody;
         Gui.GhostRolesPressed += GhostRolesPressed;
-        Gui.GhostBarPressed += GhostBarPressed; // Goobstation - Ghost Bar
-        Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // Goobstation - Ghost Bar
+        Gui.GhostBarPressed += GhostBarPressed; // Goob edit - Ghost Bar
+        Gui.GhostBarWindow.SpawnButtonPressed += GhostBarSpawnPressed; // Goob edit - Ghost Bar
         Gui.TargetWindow.WarpClicked += OnWarpClicked;
         Gui.TargetWindow.OnGhostnadoClicked += OnGhostnadoClicked;
+        Gui.ReturnToRoundPressed += ReturnToRound; // WD edit
 
         UpdateGui();
     }
@@ -141,9 +142,10 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         Gui.RequestWarpsPressed -= RequestWarps;
         Gui.ReturnToBodyPressed -= ReturnToBody;
         Gui.GhostRolesPressed -= GhostRolesPressed;
-        Gui.GhostBarPressed -= GhostBarPressed; // Goobstation - Ghost Bar
-        Gui.GhostBarWindow.SpawnButtonPressed -= GhostBarSpawnPressed; // Goobstation - Ghost Bar
+        Gui.GhostBarPressed -= GhostBarPressed; // Goob edit - Ghost Bar
+        Gui.GhostBarWindow.SpawnButtonPressed -= GhostBarSpawnPressed; // Goob edit - Ghost Bar
         Gui.TargetWindow.WarpClicked -= OnWarpClicked;
+        Gui.ReturnToRoundPressed -= ReturnToRound;
 
         Gui.Hide();
     }
@@ -152,6 +154,13 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
     {
         _system?.ReturnToBody();
     }
+
+    // WD EDIT start
+    private void ReturnToRound()
+    {
+        _system?.ReturnToRound();
+    }
+    // WD EDIT end
 
     private void RequestWarps()
     {
@@ -165,13 +174,17 @@ public sealed class GhostUIController : UIController, IOnSystemChanged<GhostSyst
         _system?.OpenGhostRoles();
     }
 
-    private void GhostBarPressed() // Goobstation - Ghost Bar
+    // Goob edit start - Ghost Bar
+    private void GhostBarPressed()
     {
         Gui?.GhostBarWindow.OpenCentered();
     }
+    // Goob edit end - Ghost Bar
 
-    private void GhostBarSpawnPressed() // Goobstation - Ghost Bar
+    // Goob edit start - Ghost Bar
+    private void GhostBarSpawnPressed()
     {
         _system?.GhostBarSpawn();
     }
+    // Goob edit end - Ghost Bar
 }

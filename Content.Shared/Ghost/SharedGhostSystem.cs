@@ -211,4 +211,9 @@ namespace Content.Shared.Ghost
             AvailableGhostRoles = availableGhostRoleCount;
         }
     }
+
+    // WD EDIT start
+    [Serializable, NetSerializable]
+    public sealed class GhostReturnToRoundRequest : EntityEventArgs;
+    // WD EDIT end
 }

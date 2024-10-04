@@ -208,5 +208,13 @@ namespace Content.Client.Ghost
         {
             GhostVisibility = visibility ?? !GhostVisibility;
         }
+
+        // WD EDIT start
+        public void ReturnToRound()
+        {
+            var msg = new GhostReturnToRoundRequest();
+            RaiseNetworkEvent(msg);
+        }
+        // WD EDIT end
     }
 }

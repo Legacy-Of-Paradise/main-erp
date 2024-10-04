@@ -204,4 +204,14 @@ public sealed partial class EECCVars : CVars
         CVarDef.Create("vote.preset_autovote_enabled", true, CVar.SERVERONLY);
 
     #endregion
+
+    #region GhostRespawn
+
+    public static readonly CVarDef<double> GhostRespawnTime =
+        CVarDef.Create("ghost.respawn_time", 15d, CVar.SERVERONLY);
+
+    public static readonly CVarDef<int> GhostRespawnMaxPlayers =
+        CVarDef.Create("ghost.respawn_max_players", 40, CVar.SERVERONLY);
+
+    #endregion
 }
