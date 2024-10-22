@@ -598,6 +598,7 @@
     - CorgiWearable
   - type: StaticPrice
     price: 5000
+  - type: DNALocker # ADT-Tweak
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -617,6 +618,7 @@
     - Hardsuit
     - WhitelistChameleon
     - HidesTail # LOP edit
+  - type: DNALocker # ADT-Tweak
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -658,6 +660,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieElite
+  - type: DNALocker # ADT-Tweak
   - type: Tag
     tags:
     - CorgiWearable
@@ -698,6 +701,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitSyndieCommander
+  - type: DNALocker # ADT-Tweak
   - type: Tag
     tags:
     - CorgiWearable
@@ -737,6 +741,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitCybersun
+  - type: DNALocker # ADT-Tweak
   - type: Tag
     tags:
     - MonkeyWearable
@@ -896,6 +901,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertleader.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTLeader
+  - type: DNALocker # ADT-Tweak
 
 #ERT Chaplain Hardsuit
 - type: entity
@@ -910,6 +916,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertchaplain.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTChaplain
+  - type: DNALocker # ADT-Tweak
 
 #ERT Engineer Hardsuit
 - type: entity
@@ -926,6 +933,7 @@
     clothingPrototype: ClothingHeadHelmetHardsuitERTEngineer
   - type: FireProtection
     reduction: 0.8
+  - type: DNALocker # ADT-Tweak
 
 #ERT Medic Hardsuit
 - type: entity
@@ -940,6 +948,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertmedical.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTMedical
+  - type: DNALocker # ADT-Tweak
 
 #ERT Security Hardsuit
 - type: entity
@@ -959,6 +968,7 @@
     - Hardsuit
     - WhitelistChameleon
     - HidesTail # LOP edit
+  - type: DNALocker # ADT-Tweak
 
 #ERT Janitor Hardsuit
 - type: entity
@@ -973,6 +983,7 @@
     sprite: Clothing/OuterClothing/Hardsuits/ERTSuits/ertjanitor.rsi
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitERTJanitor
+  - type: DNALocker # ADT-Tweak
 
 #Deathsquad
 - type: entity
@@ -1012,6 +1023,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitDeathsquad
+  - type: DNALocker # ADT-Tweak
 
 #CBURN Hardsuit
 - type: entity
