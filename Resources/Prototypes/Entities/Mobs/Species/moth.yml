@@ -176,6 +176,7 @@
           32:
             sprite: Mobs/Species/Moth/displacement.rsi
             state: shoes
+  - type: FootprintVisualizer # Corvax-Next-Footprints
 
 - type: entity
   parent: BaseSpeciesDummy
