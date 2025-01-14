@@ -122,9 +122,6 @@
   - type: Inventory
     templateId: arachnid
     speciesId: arachnid
-  - type: FootprintVisualizer # Corvax-Next-Footprints
-    leftBarePrint: "footprint-left-bare-spider"
-    rightBarePrint: "footprint-right-bare-spider"
 
 - type: entity
   parent: BaseSpeciesDummy
