@@ -111,6 +111,16 @@ namespace Content.Shared.Ghost
     {
     }
 
+    // Goob edit start - ghost bar
+    /// <summary>
+    /// Goobstation - A server to client request for them to spawn at the ghost bar
+    /// </summary>
+    [Serializable, NetSerializable]
+    public sealed class GhostBarSpawnEvent : EntityEventArgs
+    {
+    }
+    // Goob edit end - ghost bar
+
     /// <summary>
     /// An individual place a ghost can warp to.
     /// This is used as part of <see cref="GhostWarpsResponseEvent"/>
