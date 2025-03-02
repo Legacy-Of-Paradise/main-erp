@@ -15,8 +15,7 @@
   - Maintenance
   - Bar
   - Kitchen
-  extendedAccess:
-  - Hydroponics
+  - Hydroponics # LOP edit
 
 - type: startingGear
   id: ServiceWorkerGear

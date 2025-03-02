@@ -20,10 +20,12 @@ using Content.Shared.Inventory.Events;
 using Content.Shared.Inventory.VirtualItem;
 using Content.Shared.Item;
 using Content.Shared.Movement.Events;
+using Content.Shared.Movement.Pulling.Components;
 using Content.Shared.Movement.Pulling.Events;
 using Content.Shared.Popups;
 using Content.Shared.Pulling.Events;
 using Content.Shared.Rejuvenate;
+using Content.Shared.Movement.Pulling.Systems;
 using Content.Shared.Stunnable;
 using Content.Shared.Timing;
 using Content.Shared.Verbs;
@@ -820,9 +822,6 @@ namespace Content.Shared.Cuffs
     [Serializable, NetSerializable]
     public sealed partial class UnCuffDoAfterEvent : SimpleDoAfterEvent;
 
-    [Serializable, NetSerializable]
-    public sealed partial class AddCuffDoAfterEvent : SimpleDoAfterEvent;
-
     /// <summary>
     /// Raised on the target when they get handcuffed.
     /// Relayed to their held items.
@@ -835,4 +834,9 @@ namespace Content.Shared.Cuffs
         /// </summary>
         public SlotFlags TargetSlots { get; set; }
     }
+}
+
+[Serializable, NetSerializable]
+public sealed partial class AddCuffDoAfterEvent : SimpleDoAfterEvent // Goob Edit moved out of class made public
+{
 }
