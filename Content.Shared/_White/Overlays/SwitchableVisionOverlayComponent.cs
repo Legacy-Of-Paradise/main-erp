@@ -28,7 +28,7 @@ public abstract partial class SwitchableVisionOverlayComponent : BaseVisionOverl
     public float PulseAccumulator;
 
     [DataField]
-    public float FlashDurationMultiplier = 1f;
+    public float FlashDurationMultiplier = 1f; // ! goober
 
     [DataField]
     public SoundSpecifier? ActivateSound = new SoundPathSpecifier("/Audio/_White/Items/Goggles/activate.ogg");

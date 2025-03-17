@@ -430,3 +430,8 @@ public abstract partial class SharedStaminaSystem : EntitySystem
         _stunSystem.UpdateStunModifiers(ent, ent.Comp.StunModifierThresholds[closest]);
     }
 }
+/// <summary>
+///     Raised before stamina damage is dealt to allow other systems to cancel it.
+/// </summary>
+[ByRefEvent]
+public record struct BeforeStaminaDamageEvent(float Value, bool Cancelled = false);

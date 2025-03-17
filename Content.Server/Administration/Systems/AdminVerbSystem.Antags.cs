@@ -37,6 +37,9 @@ public sealed partial class AdminVerbSystem
     [ValidatePrototypeId<EntityPrototype>]
     private const string DefaultThiefRule = "Thief";
 
+    [ValidatePrototypeId<EntityPrototype>]
+    private const string DefaultChangelingRule = "Changeling";
+
     [ValidatePrototypeId<StartingGearPrototype>]
     private const string PirateGearId = "PirateGear";
 
@@ -163,6 +166,20 @@ public sealed partial class AdminVerbSystem
             Message = string.Join(": ", thiefName, Loc.GetString("admin-verb-make-thief")),
         };
         args.Verbs.Add(thief);
+
+        Verb ling = new()
+        {
+            Text = Loc.GetString("admin-verb-text-make-changeling"),
+            Category = VerbCategory.Antag,
+            Icon = new SpriteSpecifier.Rsi(new ResPath("/Textures/_Goobstation/Changeling/changeling_abilities.rsi"), "transform"),
+            Act = () =>
+            {
+                _antag.ForceMakeAntag<ChangelingRuleComponent>(targetPlayer, DefaultChangelingRule);
+            },
+            Impact = LogImpact.High,
+            Message = Loc.GetString("admin-verb-make-changeling"),
+        };
+        args.Verbs.Add(ling);
 
         var paradoxCloneName = Loc.GetString("admin-verb-text-make-paradox-clone");
         Verb paradox = new()
