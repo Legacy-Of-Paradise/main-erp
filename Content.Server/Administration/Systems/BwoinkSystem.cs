@@ -703,14 +703,12 @@ namespace Content.Server.Administration.Systems
                 bwoinkText = $"{senderName}";
             }
 
-            if (fromWebhook)
-                bwoinkText = $"(DC) {bwoinkText}";
+            bwoinkText = $"{(message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")}{(fromWebhook ? Loc.GetString("bwoink-message-discord") : "")} {bwoinkText}: {escapedText}";
 
-            bwoinkText = $"{(message.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : !message.PlaySound ? Loc.GetString("bwoink-message-silent") : "")} {bwoinkText}: {escapedText}";
-
-            // If it's not an admin / admin chooses to keep the sound then play it.
-            var playSound = senderAdmin == null || message.PlaySound;
-            var msg = new BwoinkTextMessage(message.UserId, senderId, bwoinkText, playSound: playSound);
+            var senderAHelpAdmin = senderAdmin?.HasFlag(AdminFlags.Adminhelp) ?? false;
+            // If it's not an admin / admin chooses to keep the sound and message is not an admin only message, then play it.
+            var playSound = (!senderAHelpAdmin || message.PlaySound) && !message.AdminOnly;
+            var msg = new BwoinkTextMessage(message.UserId, senderId, bwoinkText, playSound: playSound, adminOnly: message.AdminOnly);
 
             LogBwoink(msg);
 
@@ -795,8 +793,8 @@ namespace Content.Server.Administration.Systems
                     _gameTicker.RoundDuration().ToString("hh\\:mm\\:ss"),
                     _gameTicker.RunLevel,
                     playedSound: playSound,
-                    adminOnly: message.AdminOnly,
                     isDiscord: fromWebhook,
+                    adminOnly: message.AdminOnly,
                     noReceivers: nonAfkAdmins.Count == 0
                 );
                 _messageQueues[msg.UserId].Enqueue(GenerateAHelpMessage(messageParams));
@@ -813,7 +811,7 @@ namespace Content.Server.Administration.Systems
                 RaiseNetworkEvent(starMuteMsg, senderChannel);
             }
         }
-        // End Frontier:
+        // End Frontier: webhook text messages
 
         private IList<INetChannel> GetNonAfkAdmins()
         {
@@ -849,10 +847,8 @@ namespace Content.Server.Administration.Systems
                 stringbuilder.Append($" **{parameters.RoundTime}**");
             if (!parameters.PlayedSound)
                 stringbuilder.Append($" **{(parameters.AdminOnly ? Loc.GetString("bwoink-message-admin-only") : Loc.GetString("bwoink-message-silent"))}**");
-
             if (parameters.IsDiscord) // Frontier - Discord Indicator
-                stringbuilder.Append(" **(DC)**");
-
+                stringbuilder.Append($" **{Loc.GetString("bwoink-message-discord")}**"); // Frontier - Discord Indicator
             if (parameters.Icon == null)
                 stringbuilder.Append($" **{parameters.Username}:** ");
             else
