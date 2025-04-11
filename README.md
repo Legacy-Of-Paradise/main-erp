@@ -6,7 +6,7 @@ Space Station 14 это ремейк SS13, который работает на 
 
 ## Ссылки
 
-[Наш Discord](https://discord.station14.ru) | [Наша Вики](https://wiki.station14.ru) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/) | [Клиент без Steam](https://spacestation14.io/about/nightlies/) | [Основной репозиторий](https://github.com/space-wizards/space-station-14)
+[Discord](https://wiki.legacyofparadise.space/discord/) | [Steam](https://store.steampowered.com/app/1255460/Space_Station_14/)
 
 ## Документация
 
@@ -17,13 +17,26 @@ Space Station 14 это ремейк SS13, который работает на 
 Мы рады принять вклад от любого человека. Заходите в Discord, если хотите помочь. У нас есть [список проблем](https://github.com/space-syndicate/space-station-14-content/issues), которые нужно решить, и любой может за них взяться. Не бойтесь просить о помощи!
 Только убедитесь, что ваши изменения и PRы соответствуют [руководству по контрибьюту](https://docs.spacestation14.com/en/general-development/codebase-info/pull-request-guidelines.html).
 
-## Сборка
+## Сборка проекта.
 
-1. Склонируйте этот репозиторий локально
-2. Запустите `RUN_THIS.py` для инициализации подмодулей и скачивания движка.
-3. Скомпилируйте проект.
+### Зависимости
 
-[Более подробная инструкция по запуску проекта.](https://docs.spacestation14.com/en/general-development/setup.html)
+> - Git
+> - .NET SDK 9.0.x
+
+### Windows
+
+> 1. Клонируйте репо
+> 3. Запустите `Scripts/bat/buildAllDebug.bat` после каждого измения в C#.
+> 4. Запустите `Scripts/bat/runQuickAll.bat` для запуска клиента и сервера.
+> 5. Подключитесь к "localhost" в клиенте.
+
+### Linux
+
+> 1. Клонируйте репо
+> 3. Запустите `Scripts/sh/buildAllDebug.sh` после каждого изменения в C#.
+> 4. Запустите `Scripts/sh/runQuickAll.sh` для запуска клиента и сервера.
+> 5. Подключитесь к "localhost" в клиенте.
 
 ## Лицензия
 
