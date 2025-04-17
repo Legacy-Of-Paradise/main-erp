@@ -12,10 +12,9 @@
 
 # Secret
 Secrets
-Resources/Prototypes/CorvaxSecrets
-Resources/Prototypes/CorvaxSecretsServer
-Resources/Textures/CorvaxSecrets
-Resources/Locale/ru-RU/corvax-secrets
+_Private*
+Resources/Prototypes/_Private
+Resources/Textures/PERSONAL
 
 # Build results
 [Dd]ebug/
@@ -313,3 +312,6 @@ Resources/MapImages
 
 # Direnv stuff
 .direnv/
+
+# locale fix
+!Resources/Locale/**

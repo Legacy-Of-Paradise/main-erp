@@ -19,7 +19,7 @@ jobs:
         submodules: 'recursive'
 #    - name: Download parts
 #      run: |
-#        git clone ${{ secrets.SecretsFrontier }}
+#        git clone ${{ secrets.SecretsMain }}
 #        mv Secrets/_PrivateResources/_Private Resources/Prototypes/
 #        mv Secrets/_PrivateResources/PERSONAL Resources/Textures/
 #        mv Secrets/_PrivateShared Content.Shared/_PrivateShared
