@@ -13,9 +13,8 @@
     shoes: ClothingShoesBootsJack
     id: PassengerPDA
     ears: ClothingHeadsetGrey
-  storage:
-    back:
-    - BoxSurvival
+    pocket1: NFVehicleSkeletonMotorcycle # Frontier: add NF prefix
+    pocket2: VehicleKeySkeletonMotorcycle
 
 # Syndicate Operative Outfit - Civilian
 - type: startingGear
