@@ -1,31 +1,55 @@
-﻿"Changes: Sprites":
-- changed-files:
-  - any-glob-to-any-file: '**/*.rsi/*.png'
+﻿#"Map":
+# - changed-files:
+#   - any-glob-to-any-file: "Resources/Maps/**/*.yml" # All .yml files in the Resources/Maps directory, recursive.
 
-"Changes: Map":
+"Карты":
 - changed-files:
   - any-glob-to-any-file:
-    - 'Resources/Maps/**/*.yml'
-    - 'Resources/Prototypes/Maps/**/*.yml'
-    - 'Resources/Prototypes/Corvax/Maps/**/*.yml'
+    - "Resources/Maps/**/*.yml" # Grid Files
+    - "Resources/Prototypes/Maps/**/*.yml" # Prototypes Files
+    - "Resources/Prototypes/**/Maps/**/*.yml" # Prototypes Files
 
-"Changes: UI":
+"Текстуры":
 - changed-files:
-  - any-glob-to-any-file: '**/*.xaml*'
+  - any-glob-to-any-file:
+    - "**/*.rsi/*.png"
+    - "**/*.rsi/*.json"
 
-"Changes: Shaders":
+"UI":
+- changed-files:
+  - any-glob-to-any-file: "**/*.xaml*"
+
+"C#":
+- changed-files:
+  - any-glob-to-any-file: "**/*.cs"
+
+"Шейдеры":
 - changed-files:
   - any-glob-to-any-file: '**/*.swsl'
 
-"Changes: Audio":
+"Звук":
 - changed-files:
   - any-glob-to-any-file: '**/*.ogg'
 
-"Changes: Localization":
+"Документация":
 - changed-files:
-  - any-glob-to-any-file: '**/*.ftl'
+  - any-glob-to-any-file:
+    - "**/*.xml"
+    - "**/*.md"
 
-"Changes: No C#":
+"Переводы":
 - changed-files:
-  # Equiv to any-glob-to-all as long as this has one matcher. If ALL changed files are not C# files, then apply label.
-  - all-globs-to-all-files: "!**/*.cs"
+  - any-glob-to-any-file: "Resources/Locale/**/*.ftl"
+
+"YML":
+- all:
+  - changed-files:
+    - any-glob-to-any-file: "**/*.yml"
+    - all-globs-to-any-file:
+      - "!Resources/Maps/**/*.yml"
+      - "!Resources/Prototypes/Maps/**/*.yml"
+      - "!Resources/Prototypes/**/Maps/**/*.yml"
+
+"База Данных":
+- changed-files:
+  - any-glob-to-any-file: "Content.Server.Database/Migrations/**/*.cs"
