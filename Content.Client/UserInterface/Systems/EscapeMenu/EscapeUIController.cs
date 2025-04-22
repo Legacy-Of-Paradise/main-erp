@@ -3,6 +3,10 @@ using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Client.UserInterface.Systems.Info;
 using Content.Shared.CCVar;
+// LOP edit start
+using Content.Client._NewParadise.Roadmap;
+using Content.Client.Gameplay;
+// LOP edit end
 using JetBrains.Annotations;
 using Robust.Client.Console;
 using Robust.Client.UserInterface;
@@ -63,6 +67,14 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         _escapeWindow.OnClose += DeactivateButton;
         _escapeWindow.OnOpen += ActivateButton;
 
+        // LOP edit start
+        _escapeWindow.RoadmapButton.OnPressed += _ =>
+        {
+            CloseEscapeWindow();
+            UIManager.GetUIController<RoadmapUI>().ToggleRoadmap();
+        };
+        // LOP edit end
+
         _escapeWindow.ChangelogButton.OnPressed += _ =>
         {
             CloseEscapeWindow();
@@ -101,6 +113,16 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
         _escapeWindow.GuidebookButton.OnPressed += _ =>
         {
             _guidebook.ToggleGuidebook();
+        };
+
+        _escapeWindow.OpenDiscordButton.OnPressed += _ =>
+        {
+            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksDiscord));
+        };
+
+        _escapeWindow.OpenBoostyButton.OnPressed += _ =>
+        {
+            _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWebsite));
         };
 
         // Hide wiki button if we don't have a link for it.
