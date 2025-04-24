@@ -17,6 +17,7 @@ Legacy of Paradise — это форк [Space Station 14](https://github.com/spa
 ## Внесение вклада
 
 Мы рады принять вклад от любого участника. Присоединяйтесь к нашему Discord, если хотите помочь. У нас есть [список идей](https://wiki.legacyofparadise.space/discord/), которые можно реализовать, и любой желающий может их взять. Не бойтесь спрашивать, если вам нужна помощь!
+
 ## Сборка проекта.
 
 ### Зависимости
@@ -44,9 +45,12 @@ Legacy of Paradise — это форк [Space Station 14](https://github.com/spa
 
 ## Лицензия
 
-Весь код репозитория лицензирован под [MIT](https://github.com/space-syndicate/space-station-14/blob/master/LICENSE.TXT).
+Контент, внесенный в этот репозиторий после комита 2f460e742010f6ec0fbfd187353614bfa674ed54 лицензируется под GNU Affero General Public License version 3.0, если не указано иное. См. `LICENSE-AGPLv3.txt`.
+Контент, внесенный в этот репозиторий до комита 2f460e742010f6ec0fbfd187353614bfa674ed54 лицензируется под MIT, если не указано иное. См. `LICENSE-MIT.txt`.
 
-Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/space-syndicate/space-station-14/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
+[2f460e742010f6ec0fbfd187353614bfa674ed54](https://github.com/Legacy-Of-Paradise/main-erp/commit/2f460e742010f6ec0fbfd187353614bfa674ed54) опубликован Sep 21, 2024, 12:30 AM GMT+3
+
+Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/Legacy-Of-Paradise/main-erp/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
 Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
 
