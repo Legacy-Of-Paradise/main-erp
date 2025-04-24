@@ -16,13 +16,13 @@ public sealed class NewParadiseCvars
     /// URL of the TTS server API.
     /// </summary>
     public static readonly CVarDef<string> TtsApiUrl =
-        CVarDef.Create("tts.api_url", "https://ntts.fdev.team/api/v1/tts", CVar.SERVERONLY);
+        CVarDef.Create("tts.api_url", string.Empty, CVar.SERVERONLY);
 
     /// <summary>
     /// Tts api key
     /// </summary>
     public static readonly CVarDef<string> TtsApiKey =
-        CVarDef.Create("tts.api_key", "3de6137e10d7e2f38f75332b07566114a4bcce1c", CVar.SERVERONLY);
+        CVarDef.Create("tts.api_key", string.Empty, CVar.SERVERONLY);
 
     /// <summary>
     /// TTS Volume
