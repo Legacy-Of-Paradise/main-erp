@@ -42,7 +42,6 @@ ui-options-display-label = Дисплей
 ui-options-quality-label = Качество
 ui-options-misc-label = Разное
 ui-options-interface-label = Интерфейс
-ui-options-tts-volume = Громкость TTS
 
 ## Graphics menu
 
