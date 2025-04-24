@@ -58,7 +58,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                     Color.Azure,
                     Color.Beige,
                     new ())
-            }.WithTtsVoice("Nord");
+            }.WithTtsVoice("nord");
         }
 
         private static ServerDbSqlite GetDb(RobustIntegrationTest.ServerIntegrationInstance server)

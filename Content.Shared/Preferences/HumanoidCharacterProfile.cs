@@ -80,7 +80,7 @@ namespace Content.Shared.Preferences
         public ProtoId<SpeciesPrototype> Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
 
         [DataField]
-        public ProtoId<TTSVoicePrototype> VoiceId { get; set; } = "Nord"; // LOP EDIT
+        public ProtoId<TTSVoicePrototype> VoiceId { get; set; } = "nord"; // LOP EDIT
 
         [DataField]
         public int Age { get; set; } = 18;
