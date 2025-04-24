@@ -73,7 +73,7 @@
   - type: BorgSwitchableType
     selectedBorgType: medical
   - type: TTS
-    voicePrototypeId: Glados
+    voicePrototypeId: turret_floor
 
 - type: entity
   id: BorgChassisService

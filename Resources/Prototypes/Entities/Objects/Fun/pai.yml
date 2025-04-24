@@ -54,7 +54,7 @@
   - type: TypingIndicator
     proto: robot
   - type: TTS
-    voicePrototypeId: Glados
+    voicePrototypeId: skippy
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai

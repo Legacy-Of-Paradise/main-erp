@@ -25,7 +25,7 @@
     damageModifierSet: ManifestedSpirit
   - type: NoSlip
   - type: TTS
-    voicePrototypeId: Glados
+    voicePrototypeId: shadow_fiend_dota_2
   - type: Eye
     drawFov: false
     visMask:
