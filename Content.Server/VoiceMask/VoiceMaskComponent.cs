@@ -39,4 +39,6 @@ public sealed partial class VoiceMaskComponent : Component
     /// </summary>
     [DataField]
     public EntityUid? ActionEntity;
+
+    [ViewVariables(VVAccess.ReadWrite)] public string VoiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0]; //TTS
 }

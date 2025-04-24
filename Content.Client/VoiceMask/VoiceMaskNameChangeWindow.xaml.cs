@@ -14,8 +14,10 @@ namespace Content.Client.VoiceMask;
 public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
 {
     public Action<string>? OnNameChange;
+    public Action<string>? OnVoiceChange;
     public Action<string?>? OnVerbChange;
 
+    private List<TTSVoicePrototype> _voices = new(); // TTS
     private List<(string, string)> _verbs = new();
 
     private string? _verb;
@@ -34,6 +36,29 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             OnVerbChange?.Invoke((string?) args.Button.GetItemMetadata(args.Id));
             SpeechVerbSelector.SelectId(args.Id);
         };
+
+        ReloadVoices(IoCManager.Resolve<IPrototypeManager>());
+    }
+
+    private void ReloadVoices(IPrototypeManager proto)
+    {
+        VoiceSelector.OnItemSelected += args =>
+        {
+            VoiceSelector.SelectId(args.Id);
+            if (VoiceSelector.SelectedMetadata != null)
+                OnVoiceChange!((string)VoiceSelector.SelectedMetadata);
+        };
+        _voices = proto
+            .EnumeratePrototypes<TTSVoicePrototype>()
+            .Where(o => o.RoundStart)
+            .OrderBy(o => Loc.GetString(o.Name))
+            .ToList();
+        for (var i = 0; i < _voices.Count; i++)
+        {
+            var name = Loc.GetString(_voices[i].Name);
+            VoiceSelector.AddItem(name);
+            VoiceSelector.SetItemMetadata(i, _voices[i].ID);
+        }
     }
 
     public void ReloadVerbs(IPrototypeManager proto)
@@ -67,7 +92,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             SpeechVerbSelector.SelectId(id);
     }
 
-    public void UpdateState(string name, string? verb)
+    public void UpdateState(string name, string voice, string? verb)
     {
         NameSelector.Text = name;
         _verb = verb;
@@ -80,5 +105,9 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
                 break;
             }
         }
+
+        var voiceIdx = _voices.FindIndex(v => v.ID == voice);
+        if (voiceIdx != -1)
+            VoiceSelector.Select(voiceIdx);
     }
 }

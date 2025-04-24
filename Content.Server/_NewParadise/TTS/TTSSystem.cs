@@ -8,6 +8,7 @@ using Content.Server.Station.Systems;
 using Content.Shared._NewParadise;
 using Content.Shared._NewParadise.TTS;
 using Content.Shared.GameTicking;
+using Content.Shared.Inventory;
 using Robust.Server.Player;
 using Robust.Shared.Configuration;
 using Robust.Shared.Network;
