@@ -5,6 +5,7 @@ using Content.Server.Chat.Systems;
 using Content.Server.Light.Components;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
+using Content.Server.VoiceMask;
 using Content.Shared._NewParadise;
 using Content.Shared._NewParadise.TTS;
 using Content.Shared.GameTicking;
@@ -32,6 +33,7 @@ public sealed partial class TTSSystem : EntitySystem
     [Dependency] private readonly TTSPitchRateSystem _ttsPitchRateSystem = default!;
     [Dependency] private readonly StationSystem _stationSystem = default!;
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
 
     private const int MaxMessageChars = 100 * 2; // same as SingleBubbleCharLimit * 2
     private bool _isEnabled;
@@ -156,6 +158,7 @@ public sealed partial class TTSSystem : EntitySystem
         }
 
         var voiceId = component.VoicePrototypeId;
+
         var voiceEv = new TransformSpeakerVoiceEvent(uid, voiceId);
         RaiseLocalEvent(uid, voiceEv);
         voiceId = voiceEv.VoiceId;

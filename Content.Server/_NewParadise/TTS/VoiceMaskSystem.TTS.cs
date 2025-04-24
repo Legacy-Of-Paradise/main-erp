@@ -7,6 +7,8 @@ namespace Content.Server.VoiceMask;
 
 public partial class VoiceMaskSystem
 {
+    [Dependency] private readonly InventorySystem _inventorySystem = default!;
+
     private void InitializeTTS()
     {
         SubscribeLocalEvent<SharedTTSComponent, TransformSpeakerVoiceEvent>(OnSpeakerVoiceTransform);
@@ -15,7 +17,13 @@ public partial class VoiceMaskSystem
 
     private void OnSpeakerVoiceTransform(EntityUid uid, SharedTTSComponent tts, TransformSpeakerVoiceEvent evt)
     {
-        evt.VoiceId = "Nord";
+        if (_inventorySystem.TryGetSlotEntity(uid, "mask", out var mask))
+        {
+            if (TryComp<VoiceMaskComponent>(mask, out var voiceMaskComponent))
+            {
+                evt.VoiceId = voiceMaskComponent.VoiceId;
+            }
+        }
     }
 
     private void OnChangeVoice(Entity<VoiceMaskComponent> entity, ref VoiceMaskChangeVoiceMessage message)
