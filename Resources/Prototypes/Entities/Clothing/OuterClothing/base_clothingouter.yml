@@ -135,6 +135,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+    - HidesTail # LOP edit
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
   - type: DamageOnInteractProtection

@@ -129,6 +129,7 @@
     - Hardsuit
     - WhitelistChameleon
     - HardsuitSpatio
+    - HidesTail # LOP edit
 
 #Salvage Hardsuit
 - type: entity
@@ -444,6 +445,7 @@
     tags:
     - WhitelistChameleon
     - HighRiskItem
+    - HidesTail # LOP edit
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadHelmetHardsuitRd
   - type: StaticPrice
@@ -553,6 +555,7 @@
     - MonkeyWearable
     - Hardsuit
     - WhitelistChameleon
+    - HidesTail # LOP edit
 
 # Syndicate Medic Hardsuit
 - type: entity
@@ -571,6 +574,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+    - HidesTail # LOP edit
 
 #Syndicate Elite Hardsuit
 - type: entity
@@ -876,6 +880,7 @@
     tags:
     - Hardsuit
     - WhitelistChameleon
+    - HidesTail # LOP edit
 
 #ERT Janitor Hardsuit
 - type: entity

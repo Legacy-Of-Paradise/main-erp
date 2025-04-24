@@ -99,6 +99,8 @@
     back:
     - CigarGold
 
+# LOP edit
+
 # Towels
 - type: loadout
   id: TowelColorWhite

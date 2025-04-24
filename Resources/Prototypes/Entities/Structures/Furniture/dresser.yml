@@ -53,6 +53,7 @@
   components:
   - type: StorageFill
     contents:
+      # LOP edit
         # Corvax-Pins-Start
       - id: ClothingNeckAtharaPin
         prob: 0.06

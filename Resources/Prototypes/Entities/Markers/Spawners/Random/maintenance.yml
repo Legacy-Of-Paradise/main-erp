@@ -133,6 +133,7 @@
       # Pins
       - !type:GroupSelector
         children:
+        # LOP edit
         # Corvax-Pins-Start
         - id: ClothingNeckUSSPPin
         - id: ClothingNeckDonkPin

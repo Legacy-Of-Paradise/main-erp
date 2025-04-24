@@ -1,9 +1,11 @@
 - type: vendingMachineInventory
   id: PrideDrobeInventory
   startingInventory:
+    # LOP edit
     PlushieSharkBlue: 2
     PlushieSharkPink: 2
     PlushieSharkGrey: 2
+    # LOP edit
     ClothingHeadHatXmasCrown: 2
     BedsheetRainbow: 2
     ClothingNeckHeadphones: 2

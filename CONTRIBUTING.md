@@ -101,11 +101,7 @@ if (TryComp<StampComponent>(uid, out var stamp))
 
 # Картостроение
 
-Для отправки кораблей ознакомьтесь с [Руководством по отправке кораблей](https://frontierstation.wiki.gg/wiki/Ship_Submission_Guidelines) на вики Frontier.
-
 В общем:
-
-Frontier использует специфические прототипы для точек интереса и карт кораблей (например, для хранения информации о спавне, данных о спавне станций или цен и категорий кораблей). Для кораблей они хранятся в VesselPrototype (Resources/Prototypes/_NewParadise/Shipyard) или PointOfInterestPrototype (Resources/Prototypes/_NewParadise/PointsOfInterest). При создании нового корабля или POI обратитесь к существующим прототипам.
 
 Если вы вносите изменения в карту, свяжитесь с мейнтейнером карты (или, если его нет, с автором) и избегайте наличия нескольких открытых PR с изменениями одной и той же карты.
 
