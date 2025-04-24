@@ -45,10 +45,10 @@ Legacy of Paradise — это форк [Space Station 14](https://github.com/spa
 
 ## Лицензия
 
-Контент, внесенный в этот репозиторий после комита 2f460e742010f6ec0fbfd187353614bfa674ed54 лицензируется под GNU Affero General Public License version 3.0, если не указано иное. См. `LICENSE-AGPLv3.txt`.
-Контент, внесенный в этот репозиторий до комита 2f460e742010f6ec0fbfd187353614bfa674ed54 лицензируется под MIT, если не указано иное. См. `LICENSE-MIT.txt`.
+Контент, внесенный в этот репозиторий после комита 3d7886556b9504c679044d253b6fa24b54f6b3e0 лицензируется под GNU Affero General Public License version 3.0, если не указано иное. См. `LICENSE-AGPLv3.txt`.
+Контент, внесенный в этот репозиторий до комита 3d7886556b9504c679044d253b6fa24b54f6b3e0 лицензируется под MIT, если не указано иное. См. `LICENSE-MIT.txt`.
 
-[2f460e742010f6ec0fbfd187353614bfa674ed54](https://github.com/Legacy-Of-Paradise/main-erp/commit/2f460e742010f6ec0fbfd187353614bfa674ed54) опубликован Sep 21, 2024, 12:30 AM GMT+3
+[3d7886556b9504c679044d253b6fa24b54f6b3e0](https://github.com/Legacy-Of-Paradise/main-erp/commit/3d7886556b9504c679044d253b6fa24b54f6b3e0) опубликован Sep 21, 2024, 12:30 AM GMT+3
 
 Большинство ассетов лицензированы под [CC-BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0/), если не указано иное. Ассеты имеют свою лицензию и авторские права в файле метаданных. [Пример](https://github.com/Legacy-Of-Paradise/main-erp/blob/master/Resources/Textures/Objects/Tools/crowbar.rsi/meta.json).
 
