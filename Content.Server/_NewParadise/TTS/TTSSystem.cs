@@ -191,10 +191,19 @@ public sealed partial class TTSSystem : EntitySystem
             "сфч",
             "тст"
         };
+
+        var whisperSoundData = await GenerateTTS(uid, message, protoVoice.Speaker, effect: "pitch_shift");
+        if (whisperSoundData is null)
+            return;
+
+        var whisperEvent = new PlayTTSEvent(GetNetEntity(uid), whisperSoundData, false);
+
         var chosenWhisperText = _random.Pick(wList);
         var obfSoundData = await GenerateTTS(uid, chosenWhisperText, protoVoice.Speaker);
+
         if (obfSoundData is null)
             return;
+
         var obfTtsEvent = new PlayTTSEvent(GetNetEntity(uid), obfSoundData, false);
         var xformQuery = GetEntityQuery<TransformComponent>();
         var sourcePos = _xforms.GetWorldPosition(xformQuery.GetComponent(uid), xformQuery);
@@ -211,7 +220,7 @@ public sealed partial class TTSSystem : EntitySystem
 
             EntityEventArgs actualEvent = distance > ChatSystem.WhisperClearRange
                 ? obfTtsEvent
-                : ttsEvent;
+                : whisperEvent;
 
             RaiseNetworkEvent(actualEvent, Filter.SinglePlayer(session), false);
         }

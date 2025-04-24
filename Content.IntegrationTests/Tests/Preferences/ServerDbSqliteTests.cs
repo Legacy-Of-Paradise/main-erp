@@ -44,7 +44,7 @@ namespace Content.IntegrationTests.Tests.Preferences
 
         private static HumanoidCharacterProfile CharlieCharlieson()
         {
-            return new()
+            return new HumanoidCharacterProfile()
             {
                 Name = "Charlie Charlieson",
                 FlavorText = "The biggest boy around.",

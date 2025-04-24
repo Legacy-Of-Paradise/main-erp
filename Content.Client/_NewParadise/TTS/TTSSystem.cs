@@ -24,7 +24,7 @@ public sealed class TTSSystem : EntitySystem
     private readonly Dictionary<EntityUid, Queue<AudioStreamWithParams>> _enquedStreams = new();
 
     // Same as Server.ChatSystem.VoiceRange
-    private const float VoiceRange = 8;
+    private const float VoiceRange = 7;
 
     private Entity<AudioComponent>? _currentlyPreviewing;
 
