@@ -49,7 +49,6 @@ namespace Content.IntegrationTests.Tests.Preferences
                 Name = "Charlie Charlieson",
                 FlavorText = "The biggest boy around.",
                 Species = "Human",
-                Voice = "Eugene", // Corvax-TTS
                 Age = 21,
                 Appearance = new(
                     "Afro",
@@ -59,7 +58,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                     Color.Azure,
                     Color.Beige,
                     new ())
-            };
+            }.WithTtsVoice("Nord");
         }
 
         private static ServerDbSqlite GetDb(RobustIntegrationTest.ServerIntegrationInstance server)

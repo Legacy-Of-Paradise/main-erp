@@ -61,11 +61,10 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
 
-    // Corvax-TTS-Start: Moved from Server to Shared
-    // public const int VoiceRange = 10; // how far voice goes in world units
-    // public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units
-    // public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
-    // Corvax-TTS-End
+    // LOP EDIT START
+    public const int VoiceRange = 10; // how far voice goes in world units
+    public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
+    // LOP EDIT END
     public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
@@ -961,7 +960,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     {
         Source = source;
         Message = message;
-        OriginalMessage = originalMessage; // Corvax-TTS: Spec symbol sanitize
+        OriginalMessage = originalMessage;
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
     }

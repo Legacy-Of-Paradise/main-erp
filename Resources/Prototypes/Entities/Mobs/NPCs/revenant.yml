@@ -24,8 +24,8 @@
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
   - type: NoSlip
-  - type: TTS # Corvax-TTS
-    voice: Kelthuzad
+  - type: TTS
+    voicePrototypeId: Glados
   - type: Eye
     drawFov: false
     visMask:

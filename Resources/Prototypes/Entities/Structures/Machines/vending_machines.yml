@@ -75,8 +75,8 @@
   - type: Anchorable
   - type: TypingIndicator
     proto: robot
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+  - type: TTS
+    voicePrototypeId: Glados
   - type: Speech
     speechVerb: Robotic
     speechSounds: Vending

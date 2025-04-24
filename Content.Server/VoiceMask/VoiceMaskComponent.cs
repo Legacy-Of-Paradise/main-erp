@@ -1,3 +1,4 @@
+using Content.Shared._NewParadise.TTS;
 using Content.Shared.Speech;
 using Robust.Shared.Prototypes;
 using Content.Shared.Humanoid;
@@ -32,12 +33,6 @@ public sealed partial class VoiceMaskComponent : Component
     /// </summary>
     [DataField]
     public EntProtoId Action = "ActionChangeVoiceMask";
-
-    // Corvax-TTS-Start
-    [DataField]
-    [ViewVariables(VVAccess.ReadWrite)]
-    public string VoiceId = SharedHumanoidAppearanceSystem.DefaultVoice;
-    // Corvax-TTS-End
 
     /// <summary>
     ///     Reference to the action.

@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Shared.Corvax.TTS;
+using Content.Shared._NewParadise.TTS;
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Speech;
@@ -15,10 +15,8 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
 {
     public Action<string>? OnNameChange;
     public Action<string?>? OnVerbChange;
-    public Action<string>? OnVoiceChange; // Corvax-TTS
 
     private List<(string, string)> _verbs = new();
-    private List<TTSVoicePrototype> _voices = new(); // Corvax-TTS
 
     private string? _verb;
 
@@ -36,14 +34,6 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             OnVerbChange?.Invoke((string?) args.Button.GetItemMetadata(args.Id));
             SpeechVerbSelector.SelectId(args.Id);
         };
-
-        // Corvax-TTS-Start
-        if (IoCManager.Resolve<IConfigurationManager>().GetCVar(CCCVars.TTSEnabled))
-        {
-            TTSContainer.Visible = true;
-            ReloadVoices(IoCManager.Resolve<IPrototypeManager>());
-        }
-        // Corvax-TTS-End
     }
 
     public void ReloadVerbs(IPrototypeManager proto)
@@ -77,30 +67,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             SpeechVerbSelector.SelectId(id);
     }
 
-    // Corvax-TTS-Start
-    private void ReloadVoices(IPrototypeManager proto)
-    {
-        VoiceSelector.OnItemSelected += args =>
-        {
-            VoiceSelector.SelectId(args.Id);
-            if (VoiceSelector.SelectedMetadata != null)
-                OnVoiceChange!((string)VoiceSelector.SelectedMetadata);
-        };
-        _voices = proto
-            .EnumeratePrototypes<TTSVoicePrototype>()
-            .Where(o => o.RoundStart)
-            .OrderBy(o => Loc.GetString(o.Name))
-            .ToList();
-        for (var i = 0; i < _voices.Count; i++)
-        {
-            var name = Loc.GetString(_voices[i].Name);
-            VoiceSelector.AddItem(name);
-            VoiceSelector.SetItemMetadata(i, _voices[i].ID);
-        }
-    }
-    // Corvax-TTS-End
-
-    public void UpdateState(string name, string voice, string? verb) // Corvax-TTS
+    public void UpdateState(string name, string? verb)
     {
         NameSelector.Text = name;
         _verb = verb;
@@ -113,11 +80,5 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
                 break;
             }
         }
-
-        // Corvax-TTS-Start
-        var voiceIdx = _voices.FindIndex(v => v.ID == voice);
-        if (voiceIdx != -1)
-            VoiceSelector.Select(voiceIdx);
-        // Corvax-TTS-End
     }
 }
