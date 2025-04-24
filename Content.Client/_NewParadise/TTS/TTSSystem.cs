@@ -23,8 +23,8 @@ public sealed class TTSSystem : EntitySystem
     private readonly Dictionary<EntityUid, AudioComponent> _currentlyPlaying = new();
     private readonly Dictionary<EntityUid, Queue<AudioStreamWithParams>> _enquedStreams = new();
 
-    // Same as Server.ChatSystem.VoiceRange
     private const float VoiceRange = 7;
+    private const float WhisperVolume = 5F;
 
     private Entity<AudioComponent>? _currentlyPreviewing;
 
@@ -92,10 +92,10 @@ public sealed class TTSSystem : EntitySystem
 
     private void OnPlayTTS(PlayTTSEvent ev)
     {
-        PlayTTS(GetEntity(ev.Uid), ev.Data, ev.BoostVolume ? _volume + 5 : _volume);
+        PlayTTS(GetEntity(ev.Uid), ev.Data, ev.BoostVolume ? _volume + 5 : _volume, ev.IsWhisper);
     }
 
-    public void PlayTTS(EntityUid uid, byte[] data, float volume)
+    public void PlayTTS(EntityUid uid, byte[] data, float volume, bool? isWhisper)
     {
         if (_volume <= 0)
         {
@@ -103,6 +103,9 @@ public sealed class TTSSystem : EntitySystem
         }
 
         var stream = CreateAudioStream(data);
+
+        if (isWhisper is true)
+            volume = GetWhisperVolume(volume);
 
         var audioParams = new AudioParams
         {
@@ -112,6 +115,13 @@ public sealed class TTSSystem : EntitySystem
 
         var audioStream = new AudioStreamWithParams(stream, audioParams);
         EnqueueAudio(uid, audioStream);
+    }
+
+    private float GetWhisperVolume(float volumeToWhisper)
+    {
+        var volume = volumeToWhisper - AudioSystem.GainToVolume(WhisperVolume);
+
+        return volume;
     }
 
     public void StopCurrentTTS(EntityUid uid)

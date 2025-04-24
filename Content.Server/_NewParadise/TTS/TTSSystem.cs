@@ -196,7 +196,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (whisperSoundData is null)
             return;
 
-        var whisperEvent = new PlayTTSEvent(GetNetEntity(uid), whisperSoundData, false);
+        var whisperEvent = new PlayTTSEvent(GetNetEntity(uid), whisperSoundData, false, isWhisper: true);
 
         var chosenWhisperText = _random.Pick(wList);
         var obfSoundData = await GenerateTTS(uid, chosenWhisperText, protoVoice.Speaker);
