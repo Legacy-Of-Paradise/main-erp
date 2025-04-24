@@ -10,19 +10,20 @@ namespace Content.Server.Database.Migrations.Sqlite
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
-                name: "voice",
+            migrationBuilder.AddColumn<string>(
+                name: "voice_id",
                 table: "profile",
-                newName: "voice_id");
+                type: "TEXT",
+                nullable: false,
+                defaultValue: "");
         }
 
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
-            migrationBuilder.RenameColumn(
+            migrationBuilder.DropColumn(
                 name: "voice_id",
-                table: "profile",
-                newName: "voice");
+                table: "profile");
         }
     }
 }
