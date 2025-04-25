@@ -228,13 +228,13 @@ namespace Content.Server.Database
             }
 
             NetUserId? uid = null;
-            if (ban.PlayerUserId is {} guid)
+            if (ban.PlayerUserId is { } guid)
             {
                 uid = new NetUserId(guid);
             }
 
             NetUserId? aUid = null;
-            if (ban.BanningAdmin is {} aGuid)
+            if (ban.BanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -265,7 +265,7 @@ namespace Content.Server.Database
             }
 
             NetUserId? aUid = null;
-            if (unban.UnbanningAdmin is {} aGuid)
+            if (unban.UnbanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -276,11 +276,11 @@ namespace Content.Server.Database
                 unban.UnbanTime);
         }
 
-        public override async Task AddServerBanAsync(ServerBanDef serverBan)
+        public override async Task<ServerBanDef> AddServerBanAsync(ServerBanDef serverBan)
         {
             await using var db = await GetDbImpl();
 
-            db.PgDbContext.Ban.Add(new ServerBan
+            var ban = new ServerBan //LOPedit
             {
                 Address = serverBan.Address.ToNpgsqlInet(),
                 HWId = serverBan.HWId,
@@ -293,9 +293,12 @@ namespace Content.Server.Database
                 PlaytimeAtNote = serverBan.PlaytimeAtNote,
                 PlayerUserId = serverBan.UserId?.UserId,
                 ExemptFlags = serverBan.ExemptFlags
-            });
+            };
+            db.PgDbContext.Ban.Add(ban);    //LOP edit
 
             await db.PgDbContext.SaveChangesAsync();
+
+            return ConvertBan(ban) ?? default!; //LOP edit
         }
 
         public override async Task AddServerUnbanAsync(ServerUnbanDef serverUnban)
@@ -407,13 +410,13 @@ namespace Content.Server.Database
             }
 
             NetUserId? uid = null;
-            if (ban.PlayerUserId is {} guid)
+            if (ban.PlayerUserId is { } guid)
             {
                 uid = new NetUserId(guid);
             }
 
             NetUserId? aUid = null;
-            if (ban.BanningAdmin is {} aGuid)
+            if (ban.BanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -444,7 +447,7 @@ namespace Content.Server.Database
             }
 
             NetUserId? aUid = null;
-            if (unban.UnbanningAdmin is {} aGuid)
+            if (unban.UnbanningAdmin is { } aGuid)
             {
                 aUid = new NetUserId(aGuid);
             }
@@ -536,8 +539,8 @@ namespace Content.Server.Database
             // Join with the player table to find their last seen username, if they have one.
             var admins = await db.PgDbContext.Admin
                 .Include(a => a.Flags)
-                .GroupJoin(db.PgDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new {a, grouping})
-                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new {t.a, p!.LastSeenUserName})
+                .GroupJoin(db.PgDbContext.Player, a => a.UserId, p => p.UserId, (a, grouping) => new { a, grouping })
+                .SelectMany(t => t.grouping.DefaultIfEmpty(), (t, p) => new { t.a, p!.LastSeenUserName })
                 .ToArrayAsync(cancel);
 
             var adminRanks = await db.DbContext.AdminRank.Include(a => a.Flags).ToArrayAsync(cancel);

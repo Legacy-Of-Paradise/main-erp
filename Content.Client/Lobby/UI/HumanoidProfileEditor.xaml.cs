@@ -9,10 +9,8 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
-using Content.Shared._NewParadise.TTS;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
-using Content.Shared.Corvax.CCCVars;
 using Content.Shared.GameTicking;
 using Content.Shared.Guidebook;
 using Content.Shared.Humanoid;
@@ -36,6 +34,12 @@ using Robust.Shared.Enums;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
+//LOP edit start
+using Content.Shared._NewParadise.TTS;
+#if LOP_Sponsors
+using Content.Client._NewParadise.Sponsors;
+#endif
+//LOP edit end
 
 namespace Content.Client.Lobby.UI
 {
@@ -1591,7 +1595,16 @@ namespace Content.Client.Lobby.UI
 
             try
             {
-                var profile = _entManager.System<HumanoidAppearanceSystem>().FromStream(file, _playerManager.LocalSession!);
+#if LOP_Sponsors
+                int sponsorTier = 0;
+                if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorInfo))
+                    sponsorTier = sponsorInfo.Tier;
+#endif
+                var profile = _entManager.System<HumanoidAppearanceSystem>().FromStream(file, _playerManager.LocalSession!
+#if LOP_Sponsors
+                , sponsorTier
+#endif
+                );
                 var oldProfile = Profile;
                 SetProfile(profile, CharacterSlot);
 

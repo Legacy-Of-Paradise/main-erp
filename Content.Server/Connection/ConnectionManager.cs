@@ -21,6 +21,10 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
+#if LOP_Sponsors
+using Content.Server._NewParadise.Sponsors;
+using Content.Shared._NewParadise;
+ #endif
 
 /*
  * TODO: Remove baby jail code once a more mature gateway process is established. This code is only being issued as a stopgap to help with potential tiding in the immediate future.
@@ -32,7 +36,7 @@ namespace Content.Server.Connection
     {
         void Initialize();
         void PostInit();
-        Task<bool> HavePrivilegedJoin(NetUserId userId); // Corvax-Queue
+        Task<bool> HasPrivilegedJoin(NetUserId userId); //LOP edit
 
         /// <summary>
         /// Temporarily allow a user to bypass regular connection requirements.
@@ -66,7 +70,9 @@ namespace Content.Server.Connection
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
-        private ISharedSponsorsManager? _sponsorsMgr; // Corvax-Sponsors
+#if LOP_Sponsors
+        [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
+#endif
         private IServerVPNGuardManager? _vpnGuardMgr; // Corvax-VPNGuard
 
         private ISawmill _sawmill = default!;
@@ -84,7 +90,6 @@ namespace Content.Server.Connection
 
             _ipintel = new IPIntel.IPIntel(new IPIntelApi(_http, _cfg), _db, _cfg, _logManager, _chatManager, _gameTiming);
 
-            IoCManager.Instance!.TryResolveType(out _sponsorsMgr); // Corvax-Sponsors
             _netMgr.Connecting += NetMgrOnConnecting;
             _netMgr.AssignUserIdCallback = AssignUserIdCallback;
             _plyMgr.PlayerStatusChanged += PlayerStatusChanged;
@@ -248,10 +253,12 @@ namespace Content.Server.Connection
 
             var adminData = await _db.GetAdminDataForAsync(e.UserId);
 
-            // Corvax-Start: Allow privileged players bypass bunker
-            var isPrivileged = await HavePrivilegedJoin(e.UserId);
+#if LPP_Sponsors
+            var isPrivileged = await HasPrivilegedJoin(e.UserId);
             if (_cfg.GetCVar(CCVars.PanicBunkerEnabled) && adminData == null && !isPrivileged)
-            // Corvax-End
+#else
+            if (_cfg.GetCVar(CCVars.PanicBunkerEnabled) && adminData == null)
+#endif
             {
                 var showReason = _cfg.GetCVar(CCVars.PanicBunkerShowReason);
                 var customReason = _cfg.GetCVar(CCVars.PanicBunkerCustomReason);
@@ -376,6 +383,26 @@ namespace Content.Server.Connection
             return null;
         }
 
+        //LOP edit start
+        public async Task<bool> HasPrivilegedJoin(NetUserId userId)
+        {
+            var isAdmin = await _db.GetAdminDataForAsync(userId) != null;
+            var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
+                ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
+                status == PlayerGameStatus.JoinedGame;
+
+#if LPP_Sponsors
+            var havePriorityJoin = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin;
+#endif
+
+            return isAdmin ||
+#if LPP_Sponsors
+                     havePriorityJoin ||
+#endif
+                   wasInGame;
+        }
+        //LOP edit end
+
         private bool HasTemporaryBypass(NetUserId user)
         {
             return _temporaryBypasses.TryGetValue(user, out var time) && time > _gameTiming.RealTime;
@@ -398,19 +425,5 @@ namespace Content.Server.Connection
             await _db.AssignUserIdAsync(name, assigned);
             return assigned;
         }
-
-        // Corvax-Queue-Start: Make these conditions in one place, for checks in the connection and in the queue
-        public async Task<bool> HavePrivilegedJoin(NetUserId userId)
-        {
-            var adminBypass = _cfg.GetCVar(CCVars.AdminBypassMaxPlayers) && await _db.GetAdminDataForAsync(userId) != null;
-            var havePriorityJoin = _sponsorsMgr != null && _sponsorsMgr.HaveServerPriorityJoin(userId); // Corvax-Sponsors
-            var wasInGame = EntitySystem.TryGet<GameTicker>(out var ticker) &&
-                            ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
-                            status == PlayerGameStatus.JoinedGame;
-            return adminBypass ||
-                   havePriorityJoin || // Corvax-Sponsors
-                   wasInGame;
-        }
-        // Corvax-Queue-End
     }
 }

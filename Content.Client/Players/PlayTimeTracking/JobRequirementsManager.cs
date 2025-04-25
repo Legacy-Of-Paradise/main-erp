@@ -1,5 +1,4 @@
 using System.Diagnostics.CodeAnalysis;
-using Content.Client.Lobby;
 using Content.Shared.CCVar;
 using Content.Shared.Players;
 using Content.Shared.Players.JobWhitelist;
@@ -13,6 +12,9 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
+#if LOP_Sponsors
+using  Content.Client._NewParadise.Sponsors;
+#endif
 
 namespace Content.Client.Players.PlayTimeTracking;
 
@@ -107,6 +109,14 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         if (player == null)
             return true;
 
+#if LOP_Sponsors
+        if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorinfo) && sponsorinfo.Tier < job.SponsorTier)
+        {
+            reason = FormattedMessage.FromMarkupPermissive($"Недостаточный уровень подписки. Требуется {job.SponsorTier}-й уровень");
+            return false;
+        }
+#endif
+
         return CheckRoleRequirements(job, profile, out reason);
     }
 
@@ -123,11 +133,22 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         if (requirements == null || !_cfg.GetCVar(CCVars.GameRoleTimers))
             return true;
 
+        //LOP edit start
+#if LOP_Sponsors
+        int sponsorTier = 0;
+        if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorinfo))
+            sponsorTier = sponsorinfo.Tier;
+#endif
+        //LOP edit end
+
         var reasons = new List<string>();
         foreach (var requirement in requirements)
         {
-            if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason))
-                continue;
+            if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason
+#if LOP_Sponsors
+            , sponsorTier
+#endif
+            ))
 
             reasons.Add(jobReason.ToMarkup());
         }

@@ -46,6 +46,7 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
+        public DbSet<Sponsor> Sponsors { get; set; } = null!;  //LOP edit
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -90,6 +91,10 @@ namespace Content.Server.Database
                 .HasIndex(j => j.ProfileId, "IX_job_one_high_priority")
                 .IsUnique()
                 .HasFilter("priority = 3");
+
+            modelBuilder.Entity<Sponsor>()
+                .HasIndex(p => p.UserId)
+                .IsUnique();
 
             modelBuilder.Entity<Job>()
                 .HasIndex(j => new { j.ProfileId, j.JobName })
@@ -1331,4 +1336,19 @@ namespace Content.Server.Database
         /// </summary>
         public float Score { get; set; }
     }
+
+    // LOP edit start: sponsor system
+    [Table("sponsors")]
+    public sealed class Sponsor
+    {
+        [Required, Key] public Guid UserId { get; set; }
+        public int Tier { get; set; }
+        public string OOCColor { get; set; } = "#00FF00";
+        public bool HavePriorityJoin { get; set; }
+        public string AllowedMarkings { get; set; } = null!;
+        public int ExtraSlots { get; set; }
+        //public DateTime ExpireDate {get;set;}
+        public bool AllowJob { get; set; } = false;
+    }
+    // LOP edit end: sponsor system
 }

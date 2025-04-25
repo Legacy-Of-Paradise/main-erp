@@ -95,7 +95,7 @@ namespace Content.Server.Database
             ImmutableArray<ImmutableArray<byte>>? modernHWIds,
             bool includeUnbanned=true);
 
-        Task AddServerBanAsync(ServerBanDef serverBan);
+        Task<ServerBanDef> AddServerBanAsync(ServerBanDef serverBan);
         Task AddServerUnbanAsync(ServerUnbanDef serverBan);
 
         public Task EditServerBan(
@@ -360,6 +360,13 @@ namespace Content.Server.Database
         Task SendNotification(DatabaseNotification notification);
 
         #endregion
+
+#if LOP_Sponsors
+        #region Sponsors
+        Task<Sponsor?> GetSponsorInfo(NetUserId userId, CancellationToken cancel = default);
+        Task<Sponsor[]?> GetSponsorList(CancellationToken cancel = default);
+        #endregion
+#endif
     }
 
     /// <summary>
@@ -532,7 +539,7 @@ namespace Content.Server.Database
             return RunDbCommand(() => _db.GetServerBansAsync(address, userId, hwId, modernHWIds, includeUnbanned));
         }
 
-        public Task AddServerBanAsync(ServerBanDef serverBan)
+        public Task<ServerBanDef> AddServerBanAsync(ServerBanDef serverBan)
         {
             DbWriteOpsMetric.Inc();
             return RunDbCommand(() => _db.AddServerBanAsync(serverBan));
@@ -1116,6 +1123,20 @@ namespace Content.Server.Database
 
             return task;
         }
+
+#if LOP_Sponsors
+        public async Task<Sponsor?> GetSponsorInfo(NetUserId userId, CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return await _db.GetSponsorInfo(userId);
+        }
+
+        public async Task<Sponsor[]?> GetSponsorList(CancellationToken cancel = default)
+        {
+            DbWriteOpsMetric.Inc();
+            return await _db.GetSponsorList();
+        }
+#endif
 
         private IAsyncEnumerable<T> RunDbCommand<T>(Func<IAsyncEnumerable<T>> command)
         {

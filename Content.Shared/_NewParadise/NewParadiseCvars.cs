@@ -37,4 +37,7 @@ public sealed class NewParadiseCvars
         CVarDef.Create("tts.max_cash_size", 200, CVar.SERVERONLY | CVar.ARCHIVE);
 
     #endregion
+
+    public static readonly CVarDef<string> DiscordBanWebhook =
+        CVarDef.Create("discord.ban_webhook", "", CVar.SERVERONLY);
 }
