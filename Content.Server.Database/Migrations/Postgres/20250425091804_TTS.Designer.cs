@@ -15,7 +15,7 @@ using NpgsqlTypes;
 namespace Content.Server.Database.Migrations.Postgres
 {
     [DbContext(typeof(PostgresServerDbContext))]
-    [Migration("20250424213226_TTS")]
+    [Migration("20250425091804_TTS")]
     partial class TTS
     {
         /// <inheritdoc />

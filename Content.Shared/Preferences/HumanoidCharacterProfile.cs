@@ -258,6 +258,14 @@ namespace Content.Shared.Preferences
                     gender = Gender.Female;
                     voiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
                     break;
+                case Sex.Unsexed:
+                    gender = Gender.Neuter;
+                    voiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0];
+                    break;
+                default:
+                    gender = Gender.Male;
+                    voiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0];
+                    break;
             }
 
             var name = GetName(species, gender);

@@ -11,7 +11,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Content.Server.Database.Migrations.Sqlite
 {
     [DbContext(typeof(SqliteServerDbContext))]
-    [Migration("20250424213216_TTS")]
+    [Migration("20250425091800_TTS")]
     partial class TTS
     {
         /// <inheritdoc />
