@@ -54,4 +54,4 @@ Legacy of Paradise — это форк [Space Station 14](https://github.com/spa
 
 Обратите внимание, что некоторые ассеты лицензированы на некоммерческой основе [CC-BY-NC-SA 3.0](https://creativecommons.org/licenses/by-nc-sa/3.0/) или аналогичной некоммерческой лицензией, и их необходимо удалить, если вы хотите использовать этот проект в коммерческих целях.
 
-![Alt](https://repobeats.axiom.co/api/embed/51894b7102af659f0a2876d3930680c91cd302ca.svg "Repobeats analytics image")
+![Alt](https://repobeats.axiom.co/api/embed/876476c07c7db7c460d6aca587b736f11b4cfbbc.svg "Repobeats analytics image")
