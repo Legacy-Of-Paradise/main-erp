@@ -14,19 +14,20 @@ jobs:
     - name: Install dependencies
       run: sudo apt-get install -y python3-paramiko python3-lxml
 
-    - uses: actions/checkout@v3.6.0
+    - uses: actions/checkout@v4.2.2
       with:
         submodules: 'recursive'
-#    - name: Download parts
-#      run: |
-#        git clone ${{ secrets.SecretsMain }}
-#        mv Secrets/_PrivateResources/_Private Resources/Prototypes/
-#        mv Secrets/_PrivateResources/PERSONAL Resources/Textures/
-#        mv Secrets/_PrivateShared Content.Shared/_PrivateShared
-#        mv Secrets/_PrivateServer Content.Server/_PrivateServer
-#        mv Secrets/_PrivateClient Content.Client/_PrivateClient
+    - name: Download parts
+      if: ${{ vars.SECRETSLINK != '' }}
+      run: |
+        git clone ${{ secrets.SECRETSMAIN }}
+        mv SecretsMain/_PrivateResources/_SPrototypes Resources/Prototypes/
+        mv SecretsMain/_PrivateResources/_STextures Resources/Textures/
+        mv SecretsMain/_PrivateShared Content.Shared/_PrivateShared
+        mv SecretsMain/_PrivateServer Content.Server/_PrivateServer
+        mv SecretsMain/_PrivateClient Content.Client/_PrivateClient
     - name: Setup .NET Core
-      uses: actions/setup-dotnet@v3.2.0
+      uses: actions/setup-dotnet@v4.1.0
       with:
         dotnet-version: 9.0.x
 
@@ -53,9 +54,9 @@ jobs:
         PUBLISH_TOKEN: ${{ secrets.PUBLISH_TOKEN }}
         GITHUB_REPOSITORY: ${{ vars.GITHUB_REPOSITORY }}
 
-    - name: Publish changelog
-      run: Tools/actions_changelogs_since_last_run.py
-      env:
-        CHANGELOG_DIR: ${{ vars.CHANGELOG_DIR }}
-        CHANGELOG_WEBHOOK: ${{ secrets.CHANGELOG_WEBHOOK }}
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#    - name: Publish changelog
+#      run: Tools/actions_changelogs_since_last_run.py
+#      env:
+#        CHANGELOG_DIR: ${{ vars.CHANGELOG_DIR }}
+#        CHANGELOG_WEBHOOK: ${{ secrets.CHANGELOG_WEBHOOK }}
+#        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
