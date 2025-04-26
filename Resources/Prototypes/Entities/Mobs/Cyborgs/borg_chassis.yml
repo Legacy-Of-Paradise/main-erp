@@ -72,8 +72,8 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: medical
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+  - type: TTS
+    voicePrototypeId: turret_floor
 
 - type: entity
   id: BorgChassisService

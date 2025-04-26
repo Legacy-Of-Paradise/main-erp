@@ -9,6 +9,7 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
+using Content.Shared._NewParadise.TTS;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.Corvax.CCCVars;
@@ -214,17 +215,11 @@ namespace Content.Client.Lobby.UI
 
             #endregion Gender
 
-            // Corvax-TTS-Start
+            // LOP EDIT START
             #region Voice
-
-            if (configurationManager.GetCVar(CCCVars.TTSEnabled))
-            {
-                TTSContainer.Visible = true;
-                InitializeVoice();
-            }
-
+            InitializeVoice();
             #endregion
-            // Corvax-TTS-End
+            // LOP EDIT END
 
             RefreshSpecies();
 
@@ -769,7 +764,7 @@ namespace Content.Client.Lobby.UI
             UpdateEyePickers();
             UpdateSaveButton();
             UpdateMarkings();
-            UpdateTTSVoicesControls(); // Corvax-TTS
+            UpdateTTSVoicesControls();
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
@@ -1202,7 +1197,7 @@ namespace Content.Client.Lobby.UI
             }
 
             UpdateGenderControls();
-            UpdateTTSVoicesControls(); // Corvax-TTS
+            UpdateTTSVoicesControls(); // LOP EDIT
             Markings.SetSex(newSex);
             ReloadPreview();
         }
@@ -1212,14 +1207,6 @@ namespace Content.Client.Lobby.UI
             Profile = Profile?.WithGender(newGender);
             ReloadPreview();
         }
-
-        // Corvax-TTS-Start
-        private void SetVoice(string newVoice)
-        {
-            Profile = Profile?.WithVoice(newVoice);
-            IsDirty = true;
-        }
-        // Corvax-TTS-End
 
         private void SetSpecies(string newSpecies)
         {
@@ -1650,6 +1637,20 @@ namespace Content.Client.Lobby.UI
                 await file.Value.fileStream.DisposeAsync();
             }
         }
+
+        // LOP EDIT START
+        private void SetVoice(ProtoId<TTSVoicePrototype> newVoice)
+        {
+            if (Profile == null)
+            {
+                return;
+            }
+
+            Profile = Profile.WithTtsVoice(newVoice);
+
+            SetDirty();
+        }
+        // LOP EDIT END
 
         private void StartExport()
         {

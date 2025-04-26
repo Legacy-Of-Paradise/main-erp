@@ -247,8 +247,8 @@
     damageProtection:
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
-  - type: TTS # Corvax-TTS
-    voice: TrainingRobot
+  - type: TTS
+    voicePrototypeId: turret_floor
 
 - type: entity
   abstract: true

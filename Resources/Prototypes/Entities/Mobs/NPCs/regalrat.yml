@@ -125,8 +125,8 @@
     attributes:
       gender: male
   - type: Sharp
-  - type: TTS # Corvax-TTS
-    voice: Rat
+  - type: TTS
+    voicePrototypeId: nyx_assassin_dota_2
 
 - type: entity
   id: MobRatKingBuff

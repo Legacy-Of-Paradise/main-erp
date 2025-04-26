@@ -1,13 +1,13 @@
 using System.IO;
 using System.Linq;
 using Content.Corvax.Interfaces.Shared;
+using Content.Shared._NewParadise.TTS;
 using System.Numerics;
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
 using Content.Shared.Examine;
 using Content.Shared.Humanoid.Markings;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Shared.Corvax.TTS;
 using Content.Shared.IdentityManagement;
 using Content.Shared.Inventory;
 using Content.Shared.Preferences;
@@ -44,15 +44,14 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
-    // Corvax-TTS-Start
-    public const string DefaultVoice = "Garithos";
-    public static readonly Dictionary<Sex, string> DefaultSexVoice = new()
+    // LOP EDIT START
+    public static readonly Dictionary<Sex, ProtoId<TTSVoicePrototype>> DefaultSexVoice = new()
     {
-        {Sex.Male, "Garithos"},
-        {Sex.Female, "Maiev"},
-        {Sex.Unsexed, "Myron"},
+        {Sex.Male, "nord"},
+        {Sex.Female, "amina"},
+        {Sex.Unsexed, "alyx"},
     };
-    // Corvax-TTS-End
+    // LOP EDIT END
 
     public override void Initialize()
     {
@@ -172,6 +171,12 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.Gender = sourceHumanoid.Gender;
         if (TryComp<GrammarComponent>(target, out var grammar))
             grammar.Gender = sourceHumanoid.Gender;
+
+        if (TryComp<SharedTTSComponent>(source, out var ttsComponent))
+        {
+            EnsureComp<SharedTTSComponent>(target);
+            SetTTSVoice(target, ttsComponent.VoicePrototypeId);
+        }
 
         Dirty(target, targetHumanoid);
     }
@@ -391,6 +396,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SetSpecies(uid, profile.Species, false, humanoid);
         SetSex(uid, profile.Sex, false, humanoid);
+        SetTTSVoice(uid, profile.VoiceId); // LOP EDIT
         humanoid.EyeColor = profile.Appearance.EyeColor;
 
         SetSkinColor(uid, profile.Appearance.SkinColor, false);
@@ -448,7 +454,6 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         EnsureDefaultMarkings(uid, humanoid);
-        SetTTSVoice(uid, profile.Voice, humanoid); // Corvax-TTS
 
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))
@@ -528,17 +533,30 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             Dirty(uid, humanoid);
     }
 
-    // Corvax-TTS-Start
+    // LOP EDIT START
     // ReSharper disable once InconsistentNaming
-    public void SetTTSVoice(EntityUid uid, string voiceId, HumanoidAppearanceComponent humanoid)
+    public void SetTTSVoice(
+        EntityUid uid,
+        ProtoId<TTSVoicePrototype> voiceId,
+        bool sync = true,
+        HumanoidAppearanceComponent? humanoid = null)
     {
-        if (!TryComp<TTSComponent>(uid, out var comp))
+        if (!TryComp<SharedTTSComponent>(uid, out var comp))
             return;
 
-        humanoid.Voice = voiceId;
+        if (!Resolve(uid, ref humanoid))
+        {
+            return;
+        }
+
         comp.VoicePrototypeId = voiceId;
+
+        if (sync)
+        {
+            Dirty(uid, humanoid);
+        }
     }
-    // Corvax-TTS-End
+    // LOP EDIT END
 
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.

@@ -9,6 +9,7 @@
   id: BaseMobSpecies
   abstract: true
   components:
+  - type: TTS
   - type: Sprite
     layers:
     - map: [ "enum.HumanoidVisualLayers.Chest" ]

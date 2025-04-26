@@ -798,8 +798,8 @@
     attributes:
       proper: true
       gender: female
-  - type: TTS # Corvax-TTS
-    voice: Dryad
+  - type: TTS
+    voicePrototypeId: squidward
 
 - type: entity
   name: Pun Pun

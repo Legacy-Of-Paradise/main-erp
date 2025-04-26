@@ -1,5 +1,6 @@
 using Content.Client.Administration.Managers;
 using Content.Client.Audio;
+using Content.Shared._NewParadise;
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.CCCVars;
 using Robust.Client.Audio;
@@ -29,12 +30,10 @@ public sealed partial class AudioTab : Control
             scale: ContentAudioSystem.MasterVolumeMultiplier);
         masterVolume.ImmediateValueChanged += OnMasterVolumeSliderChanged;
 
-        // Corvax-TTS-Start
         Control.AddOptionPercentSlider(
-            CCCVars.TTSVolume,
+            NewParadiseCvars.TtsVolume,
             SliderVolumeTts,
-            scale: ContentAudioSystem.TtsMultiplier);
-        // Corvax-TTS-End
+            scale: 3f);
 
         Control.AddOptionPercentSlider(
             CVars.MidiVolume,
