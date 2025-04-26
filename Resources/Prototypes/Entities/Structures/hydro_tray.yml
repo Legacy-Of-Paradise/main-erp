@@ -87,8 +87,10 @@
         acts: ["Destruction"]
   - type: Machine
     board: HydroponicsTrayMachineCircuitboard
+    # LOP edit start
   - type: TTS
     voicePrototypeId: glados
+    # LOP edit end
   - type: WiresPanel
   - type: AmbientSound
     volume: -9

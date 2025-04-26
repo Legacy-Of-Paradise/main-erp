@@ -240,7 +240,7 @@ namespace Content.Server.Database
                 loadouts[role.RoleName] = loadout;
             }
 
-            // LOP EDIT START
+            // LOP edit start
 
             var voiceId = profile.VoiceId;
 
@@ -249,7 +249,7 @@ namespace Content.Server.Database
                 voiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[sex];
             }
 
-            // LOP EDIT END
+            // LOP edit end
 
             return new HumanoidCharacterProfile(
                 profile.CharacterName,
@@ -273,7 +273,7 @@ namespace Content.Server.Database
                 antags.ToHashSet(),
                 traits.ToHashSet(),
                 loadouts,
-                voiceId
+                voiceId // LOP edit
             );
         }
 
@@ -304,7 +304,7 @@ namespace Content.Server.Database
             profile.Markings = markings;
             profile.Slot = slot;
             profile.PreferenceUnavailable = (DbPreferenceUnavailableMode) humanoid.PreferenceUnavailable;
-            profile.VoiceId = humanoid.VoiceId;
+            profile.VoiceId = humanoid.VoiceId; // LOP edit
 
             profile.Jobs.Clear();
             profile.Jobs.AddRange(

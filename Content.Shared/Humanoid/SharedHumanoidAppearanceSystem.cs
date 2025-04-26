@@ -1,7 +1,7 @@
 using System.IO;
 using System.Linq;
 using Content.Corvax.Interfaces.Shared;
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using System.Numerics;
 using Content.Shared.CCVar;
 using Content.Shared.Decals;
@@ -44,14 +44,14 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     [ValidatePrototypeId<SpeciesPrototype>]
     public const string DefaultSpecies = "Human";
-    // LOP EDIT START
+    // LOP edit start
     public static readonly Dictionary<Sex, ProtoId<TTSVoicePrototype>> DefaultSexVoice = new()
     {
         {Sex.Male, "nord"},
         {Sex.Female, "amina"},
         {Sex.Unsexed, "alyx"},
     };
-    // LOP EDIT END
+    // LOP edit end
 
     public override void Initialize()
     {
@@ -172,11 +172,13 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         if (TryComp<GrammarComponent>(target, out var grammar))
             grammar.Gender = sourceHumanoid.Gender;
 
+        // LOP edit start
         if (TryComp<SharedTTSComponent>(source, out var ttsComponent))
         {
             EnsureComp<SharedTTSComponent>(target);
             SetTTSVoice(target, ttsComponent.VoicePrototypeId);
         }
+        // LOP edit end
 
         Dirty(target, targetHumanoid);
     }
@@ -396,7 +398,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         SetSpecies(uid, profile.Species, false, humanoid);
         SetSex(uid, profile.Sex, false, humanoid);
-        SetTTSVoice(uid, profile.VoiceId); // LOP EDIT
+        SetTTSVoice(uid, profile.VoiceId); // LOP edit
         humanoid.EyeColor = profile.Appearance.EyeColor;
 
         SetSkinColor(uid, profile.Appearance.SkinColor, false);
@@ -533,7 +535,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             Dirty(uid, humanoid);
     }
 
-    // LOP EDIT START
+    // LOP edit start
     // ReSharper disable once InconsistentNaming
     public void SetTTSVoice(
         EntityUid uid,
@@ -556,7 +558,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
             Dirty(uid, humanoid);
         }
     }
-    // LOP EDIT END
+    // LOP edit end
 
     /// <summary>
     /// Takes ID of the species prototype, returns UI-friendly name of the species.

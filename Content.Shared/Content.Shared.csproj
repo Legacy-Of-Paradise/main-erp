@@ -24,14 +24,6 @@
     </ProjectReference>
     <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Shared\Content.Corvax.Interfaces.Shared.csproj" />
   </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Corvax\TTS\SharedVoiceMaskSystem.cs" />
-    <Compile Remove="Corvax\TTS\HumanoidSystem.TTS.cs" />
-    <Compile Remove="Corvax\TTS\TTSVoicePrototype.cs" />
-    <Compile Remove="Corvax\TTS\TTSComponent.cs" />
-    <Compile Remove="Corvax\TTS\RequestPreviewTTSEvent.cs" />
-    <Compile Remove="Corvax\TTS\PlayTTSEvent.cs" />
-  </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
   <Import Project="..\RobustToolbox\MSBuild\Robust.CompNetworkGenerator.targets" />
 </Project>

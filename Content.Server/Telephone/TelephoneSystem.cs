@@ -6,7 +6,7 @@ using Content.Server.Power.EntitySystems;
 using Content.Server.Speech;
 using Content.Server.Speech.Components;
 using Content.Shared.Chat;
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.Database;
 using Content.Shared.Labels.Components;
 using Content.Shared.Mind.Components;

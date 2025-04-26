@@ -9,7 +9,7 @@ using Content.Client.Players.PlayTimeTracking;
 using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.Corvax.CCCVars;
@@ -215,11 +215,11 @@ namespace Content.Client.Lobby.UI
 
             #endregion Gender
 
-            // LOP EDIT START
+            // LOP edit start
             #region Voice
             InitializeVoice();
             #endregion
-            // LOP EDIT END
+            // LOP edit end
 
             RefreshSpecies();
 
@@ -764,7 +764,7 @@ namespace Content.Client.Lobby.UI
             UpdateEyePickers();
             UpdateSaveButton();
             UpdateMarkings();
-            UpdateTTSVoicesControls();
+            UpdateTTSVoicesControls(); // LOP edit
             UpdateHairPickers();
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
@@ -1197,7 +1197,7 @@ namespace Content.Client.Lobby.UI
             }
 
             UpdateGenderControls();
-            UpdateTTSVoicesControls(); // LOP EDIT
+            UpdateTTSVoicesControls(); // LOP edit
             Markings.SetSex(newSex);
             ReloadPreview();
         }
@@ -1638,7 +1638,7 @@ namespace Content.Client.Lobby.UI
             }
         }
 
-        // LOP EDIT START
+        // LOP edit start
         private void SetVoice(ProtoId<TTSVoicePrototype> newVoice)
         {
             if (Profile == null)
@@ -1650,7 +1650,7 @@ namespace Content.Client.Lobby.UI
 
             SetDirty();
         }
-        // LOP EDIT END
+        // LOP edit end
 
         private void StartExport()
         {

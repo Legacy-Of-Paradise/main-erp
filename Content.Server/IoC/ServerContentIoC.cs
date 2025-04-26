@@ -1,4 +1,4 @@
-using Content.Server._NewParadise.TTS;
+using Content.Server._NewParadise.TTS; // LOP edit
 using Content.Server.Administration;
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
@@ -63,7 +63,7 @@ namespace Content.Server.IoC
             IoCManager.Register<IAdminLogManager, AdminLogManager>();
             IoCManager.Register<PlayTimeTrackingManager>();
             IoCManager.Register<UserDbDataManager>();
-            IoCManager.Register<TTSManager>(); // LOP EDIT
+            IoCManager.Register<TTSManager>(); // LOP edit
             IoCManager.Register<ServerInfoManager>();
             IoCManager.Register<PoissonDiskSampler>();
             IoCManager.Register<DiscordWebhook>();

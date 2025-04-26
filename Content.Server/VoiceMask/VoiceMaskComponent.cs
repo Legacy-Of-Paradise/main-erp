@@ -1,4 +1,4 @@
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.Speech;
 using Robust.Shared.Prototypes;
 using Content.Shared.Humanoid;
@@ -40,5 +40,5 @@ public sealed partial class VoiceMaskComponent : Component
     [DataField]
     public EntityUid? ActionEntity;
 
-    [ViewVariables(VVAccess.ReadWrite)] public string VoiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0]; //TTS
+    [ViewVariables(VVAccess.ReadWrite)] public string VoiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0]; // LOP edit
 }

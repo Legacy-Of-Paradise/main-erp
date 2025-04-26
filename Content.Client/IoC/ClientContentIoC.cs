@@ -1,4 +1,4 @@
-﻿using Content.Client._NewParadise.TTS;
+﻿using Content.Client._NewParadise.TTS; // LOP edit
 using Content.Client.Administration.Managers;
 using Content.Client.Changelog;
 using Content.Client.Chat.Managers;
@@ -60,9 +60,9 @@ namespace Content.Client.IoC
             collection.Register<PlayerRateLimitManager>();
             collection.Register<SharedPlayerRateLimitManager, PlayerRateLimitManager>();
             collection.Register<TitleWindowManager>();
-            // LOP EDIT START
+            // LOP edit start
             collection.Register<TTSManager>();
-            // LOP EDIT END
+            // LOP edit end
         }
     }
 }

@@ -1,6 +1,6 @@
 using Content.Client.Administration.Managers;
 using Content.Client.Audio;
-using Content.Shared._NewParadise;
+using Content.Shared._NewParadise; // LOP edit
 using Content.Shared.CCVar;
 using Content.Shared.Corvax.CCCVars;
 using Robust.Client.Audio;
@@ -30,10 +30,12 @@ public sealed partial class AudioTab : Control
             scale: ContentAudioSystem.MasterVolumeMultiplier);
         masterVolume.ImmediateValueChanged += OnMasterVolumeSliderChanged;
 
+        // LOP edit start
         Control.AddOptionPercentSlider(
             NewParadiseCvars.TtsVolume,
             SliderVolumeTts,
             scale: 3f);
+        // LOP edit end
 
         Control.AddOptionPercentSlider(
             CVars.MidiVolume,

@@ -53,8 +53,10 @@
   - type: Actions
   - type: TypingIndicator
     proto: robot
+    # LOP edit start
   - type: TTS
     voicePrototypeId: skippy
+    # LOP edit end
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai

@@ -424,7 +424,7 @@ namespace Content.Server.Database
         public int PreferenceId { get; set; }
         public Preference Preference { get; set; } = null!;
 
-        public string VoiceId { get; set; } = null!; // LOP EDIT
+        public string VoiceId { get; set; } = null!; // LOP edit
     }
 
     public class Job
