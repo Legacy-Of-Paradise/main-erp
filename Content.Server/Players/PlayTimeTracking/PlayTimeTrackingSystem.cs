@@ -230,7 +230,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             playTimes = new Dictionary<string, TimeSpan>();
         }
 
-        //LOP edit start: sponsor system
+        //LOP edit start
         int tier = 0;
 #if LOP_Sponsors
         var sponsors = IoCManager.Resolve<SponsorsManager>();
@@ -246,6 +246,7 @@ public sealed class PlayTimeTrackingSystem : EntitySystem
             , tier
 #endif
             ))
+                roles.Add(job.ID);
         }
 
         return roles;

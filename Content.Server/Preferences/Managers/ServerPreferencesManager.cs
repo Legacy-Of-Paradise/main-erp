@@ -131,10 +131,23 @@ namespace Content.Server.Preferences.Managers
             //LOP edit start
             var allowedMarkings = new List<string>();
 #if LOP_Sponsors
+            int sponsorTier = 0;
             if (_sponsors.TryGetInfo(userId, out var sponsor))
-                allowedMarkings = sponsor.AllowedMarkings.ToList();
+            {
+                sponsorTier = sponsor.Tier;
+                if (sponsorTier > 3)
+                {
+                    var marks = Loc.GetString($"sponsor-markings-tier").Split(";", StringSplitOptions.RemoveEmptyEntries);
+                    allowedMarkings = marks.Concat(sponsor.AllowedMarkings).ToList();
+                }
+            }
 #endif
-            profile.EnsureValid(session, _dependencies, allowedMarkings);
+
+            profile.EnsureValid(session, _dependencies, allowedMarkings
+#if LOP_Sponsors
+            , sponsorTier
+#endif
+            );
             //LOP edit end
 
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
@@ -216,7 +229,7 @@ namespace Content.Server.Preferences.Managers
                 {
                     PrefsLoaded = true,
                     Prefs = new PlayerPreferences(
-                        new[] {new KeyValuePair<int, ICharacterProfile>(0, HumanoidCharacterProfile.Random())},
+                        new[] { new KeyValuePair<int, ICharacterProfile>(0, HumanoidCharacterProfile.Random()) },
                         0, Color.Transparent)
                 };
 
@@ -338,8 +351,12 @@ namespace Content.Server.Preferences.Managers
                 int sponsorTier = 0;
                 if (_sponsors.TryGetInfo(session.UserId, out var sponsor))
                 {
-                    allowedMarkings = sponsor.AllowedMarkings.ToList();
                     sponsorTier = sponsor.Tier;
+                    if (sponsorTier > 3)
+                    {
+                        var marks = Loc.GetString($"sponsor-markings-tier").Split(";", StringSplitOptions.RemoveEmptyEntries);
+                        allowedMarkings = marks.Concat(sponsor.AllowedMarkings).ToList();
+                    }
                 }
 #endif
                 //LOP edit end

@@ -124,7 +124,7 @@ public sealed class StationSpawningSystem : SharedStationSpawningSystem
                     tier = sponsorinfo.Tier;
 #endif
                 loadout = new RoleLoadout(jobLoadout);
-                loadout.SetDefault(profile, _actors.GetSession(entity), _prototypeManager);
+                //loadout.SetDefault(profile, _actors.GetSession(entity), _prototypeManager);
                 loadout.EnsureValid(profile!, session, _dependencyCollection
 #if LOP_Sponsors
                 , tier
