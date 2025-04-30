@@ -2,8 +2,6 @@ using System.Collections.Immutable;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Runtime.InteropServices;
-using Content.Corvax.Interfaces.Server;
-using Content.Corvax.Interfaces.Shared;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
 using Content.Server.Connection.IPIntel;
@@ -11,7 +9,6 @@ using Content.Server.Database;
 using Content.Server.GameTicking;
 using Content.Server.Preferences.Managers;
 using Content.Shared.CCVar;
-using Content.Shared.Corvax.CCCVars;
 using Content.Shared.GameTicking;
 using Content.Shared.Players.PlayTimeTracking;
 using Robust.Server.Player;
@@ -73,7 +70,6 @@ namespace Content.Server.Connection
 #if LOP_Sponsors
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 #endif
-        private IServerVPNGuardManager? _vpnGuardMgr; // Corvax-VPNGuard
 
         private ISawmill _sawmill = default!;
         private readonly Dictionary<NetUserId, TimeSpan> _temporaryBypasses = [];
@@ -299,24 +295,7 @@ namespace Content.Server.Connection
                             ("reason", Loc.GetString("panic-bunker-account-reason-overall", ("minutes", minOverallMinutes)))), null);
                 }
 
-                // Corvax-VPNGuard-Start
-                if (_vpnGuardMgr == null) // "lazyload" because of problems with dependency resolve order
-                    IoCManager.Instance!.TryResolveType(out _vpnGuardMgr);
-
-                var denyVpn = false;
-                if (_cfg.GetCVar(CCCVars.PanicBunkerDenyVPN) && _vpnGuardMgr != null)
-                {
-                    denyVpn = await _vpnGuardMgr.IsConnectionVpn(e.IP.Address);
-                    if (denyVpn)
-                    {
-                        return (ConnectionDenyReason.Panic,
-                            Loc.GetString("panic-bunker-account-denied-reason",
-                                ("reason", Loc.GetString("panic-bunker-account-reason-vpn"))), null);
-                    }
-                }
-                // Corvax-VPNGuard-End
-
-                if ((!validAccountAge || !haveMinOverallTime || denyVpn) && !bypassAllowed) // Corvax-VPNGuard
+                if ((!validAccountAge || !haveMinOverallTime) && !bypassAllowed) // LOP edit: убрал vpnguard
                 {
                     return (ConnectionDenyReason.Panic, Loc.GetString("panic-bunker-account-denied"), null);
                 }

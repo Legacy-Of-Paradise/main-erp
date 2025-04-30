@@ -1,4 +1,3 @@
-using Content.Corvax.Interfaces.Server;
 using Content.Shared.Administration;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;

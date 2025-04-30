@@ -26,15 +26,6 @@
     <ProjectReference Include="..\RobustToolbox\Robust.Shared\Robust.Shared.csproj" />
     <ProjectReference Include="..\RobustToolbox\Robust.Server\Robust.Server.csproj" />
     <ProjectReference Include="..\Content.Shared\Content.Shared.csproj" />
-    <ProjectReference Include="..\Corvax\Content.Corvax.Interfaces.Server\Content.Corvax.Interfaces.Server.csproj" />
-  </ItemGroup>
-  <ItemGroup>
-    <Compile Remove="Corvax\TTS\VoiceMaskSystem.TTS.cs" />
-    <Compile Remove="Corvax\TTS\TTSManager.cs" />
-    <Compile Remove="Corvax\TTS\TTSSystem.SSML.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Corvax\TTS\" />
   </ItemGroup>
   <Import Project="..\RobustToolbox\MSBuild\Robust.Properties.targets" />
 </Project>

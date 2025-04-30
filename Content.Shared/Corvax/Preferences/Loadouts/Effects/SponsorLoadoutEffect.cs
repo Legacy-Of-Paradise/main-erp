@@ -1,5 +1,4 @@
 ﻿using System.Diagnostics.CodeAnalysis;
-using Content.Corvax.Interfaces.Shared;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
@@ -35,6 +34,7 @@ public sealed partial class SponsorLoadoutEffect : LoadoutEffect
 
     public List<string> GetPrototypes(ICommonSession session, IDependencyCollection collection)
     {
+        /* //LOP edit
         if (!collection.TryResolveType<ISharedSponsorsManager>(out var sponsorsManager))
             return new List<string>();
 
@@ -45,5 +45,7 @@ public sealed partial class SponsorLoadoutEffect : LoadoutEffect
 
         sponsorsManager.TryGetServerPrototypes(session.UserId, out var props);
         return props ?? [];
+        */
+        return new();
     }
 }

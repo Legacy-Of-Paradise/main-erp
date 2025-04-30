@@ -1,7 +1,6 @@
 using System.Diagnostics.CodeAnalysis;
 using System.Linq;
 using Content.Shared.Humanoid.Prototypes;
-using Content.Corvax.Interfaces.Shared;
 using Content.Shared.Random;
 using Robust.Shared.Collections;
 using Robust.Shared.Network;
@@ -65,7 +64,6 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
     {
         var groupRemove = new ValueList<string>();
         var protoManager = collection.Resolve<IPrototypeManager>();
-        var netManager = collection.Resolve<INetManager>(); // Corvax-Loadouts
 
         if (!protoManager.TryIndex(Role, out var roleProto))
         {

@@ -32,12 +32,12 @@ public sealed partial class RoleLoadoutPrototype : IPrototype
     /// <summary>
     /// Groups that comprise this role loadout.
     /// </summary>
-    [DataField]
+    //[DataField]
     public List<ProtoId<LoadoutGroupPrototype>> Groups => ValidatePrototypes(); //LOP edit
 
     //LOP edit start
     [DataField("groups")]
-    private List<string> _groups = new List<string>();          //эта дичь нужна для того, чтобы избегать ошибок из-за отсутствия группы спонсорских лодаутов
+    private readonly List<string> _groups = new List<string>();          //эта дичь нужна для того, чтобы избегать ошибок из-за отсутствия группы спонсорских лодаутов
     private List<ProtoId<LoadoutGroupPrototype>> _sortedGroups = new(); //чтобы не выполнять преобразование каждый раз, лучше будет записать и ссылаться на него
 
     private List<ProtoId<LoadoutGroupPrototype>> ValidatePrototypes()   //суть в том, что по ТЗ мы должны игнорировать специально убранные прототипы, но делать возможным видеть ошибки при использовании реально несуществующих прототипов
