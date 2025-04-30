@@ -52,7 +52,7 @@ public sealed partial class MarkingSet
     public Dictionary<MarkingCategories, MarkingPoints> Points = new();
 
     public MarkingSet()
-    {}
+    { }
 
     /// <summary>
     ///     Construct a MarkingSet using a list of markings, and a points
@@ -199,14 +199,8 @@ public sealed partial class MarkingSet
         }
     }
 
-    // Corvax-Sponsors-Start
-    /// <summary>
-    ///     Filters sponsor markings unavailable for not sponsors check that from their prototype and allowed param
-    /// </summary>
-    /// <param name="sponsorMarkings">Sponsor markings that allowed to have.</param>
-    /// <param name="markingManager">Markings manager.</param>
-    /// <param name="prototypeManager">Prototype manager.</param>
-    public void FilterSponsor(string[] sponsorMarkings, MarkingManager? markingManager = null, IPrototypeManager? prototypeManager = null)
+#if LOP_Sponsors
+    public void FilterSponsor(List<string> sponsorMarkings, MarkingManager? markingManager = null, IPrototypeManager? prototypeManager = null)
     {
         IoCManager.Resolve(ref markingManager);
         IoCManager.Resolve(ref prototypeManager);
@@ -218,11 +212,10 @@ public sealed partial class MarkingSet
             {
                 if (prototypeManager.TryIndex<MarkingPrototype>(marking.MarkingId, out var proto) && !proto.SponsorOnly)
                 {
-                    return;
+                    continue;
                 }
-                
-                var allowedToHave = sponsorMarkings.Contains(marking.MarkingId);
-                if (!allowedToHave)
+
+                if (!sponsorMarkings.Contains(marking.MarkingId))
                 {
                     toRemove.Add((category, marking.MarkingId));
                 }
@@ -234,7 +227,7 @@ public sealed partial class MarkingSet
             Remove(marking.category, marking.id);
         }
     }
-    // Corvax-Sponsors-End
+#endif
 
     /// <summary>
     ///     Filters markings based on sex and it's restrictions in the marking's prototype from this marking set.
@@ -861,7 +854,7 @@ public sealed class MarkingsEnumerator : IEnumerator<Marking>
     }
 
     public void Dispose()
-    {}
+    { }
 
     object IEnumerator.Current
     {

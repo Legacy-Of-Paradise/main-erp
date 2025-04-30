@@ -74,7 +74,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         return dataNode;
     }
 
-    public HumanoidCharacterProfile FromStream(Stream stream, ICommonSession session)
+    public HumanoidCharacterProfile FromStream(Stream stream, ICommonSession session
+#if LOP_Sponsors
+        , int sponsorTier = 0
+#endif
+    )
     {
         using var reader = new StreamReader(stream, EncodingHelpers.UTF8);
         var yamlStream = new YamlStream();
@@ -89,8 +93,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         var profile = export.Profile;
         var collection = IoCManager.Instance;
-        var sponsorPrototypes = _sponsors != null && _sponsors.TryGetServerPrototypes(session.UserId, out var prototypes) ? prototypes.ToArray() : []; // Corvax-Sponsors
-        profile.EnsureValid(session, collection!, sponsorPrototypes);
+        profile.EnsureValid(session, collection!, new List<string>()
+#if LOP_Sponsors
+            , sponsorTier
+#endif
+        );
         return profile;
     }
 

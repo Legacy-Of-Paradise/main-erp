@@ -36,6 +36,7 @@ using Robust.Shared.Utility;
 #if LOP_Sponsors
 using Content.Server._NewParadise.Sponsors;
 using Content.Server._NC.Discord;
+using Content.Server._NC.JoinQueue;
 #endif
 
 namespace Content.Server.Entry
@@ -119,6 +120,7 @@ namespace Content.Server.Entry
 #if LOP_Sponsors
                 IoCManager.Resolve<SponsorsManager>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
+                IoCManager.Resolve<JoinQueueManager>().Initialize();
 #endif
                 //LOP edit end
 

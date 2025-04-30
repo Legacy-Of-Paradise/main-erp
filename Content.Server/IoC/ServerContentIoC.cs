@@ -33,6 +33,7 @@ using Content.Shared.Players.RateLimiting;
 #if LOP_Sponsors
 using Content.Server._NewParadise.Sponsors;
 using Content.Server._NC.Discord;
+using Content.Server._NC.JoinQueue;
 #endif
 
 namespace Content.Server.IoC
@@ -88,6 +89,7 @@ namespace Content.Server.IoC
 #if LOP_Sponsors
             IoCManager.Register<SponsorsManager>();
             IoCManager.Register<DiscordAuthManager>();
+            IoCManager.Register<JoinQueueManager>();
 #endif
             // LOP edit end
         }

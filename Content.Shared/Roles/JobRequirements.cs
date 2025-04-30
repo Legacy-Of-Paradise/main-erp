@@ -14,8 +14,20 @@ public static class JobRequirements
         [NotNullWhen(false)] out FormattedMessage? reason,
         IEntityManager entManager,
         IPrototypeManager protoManager,
-        HumanoidCharacterProfile? profile)
+        HumanoidCharacterProfile? profile
+#if LOP_Sponsors
+        , int tier = 0
+#endif
+        )
     {
+#if LOP_Sponsors
+        if (tier < job.SponsorTier)
+        {
+            reason = FormattedMessage.FromMarkupPermissive($"Недостаточный уровень подписки. Требуется {job.SponsorTier}-й уровень");
+            return false;
+        }
+#endif
+
         var sys = entManager.System<SharedRoleSystem>();
         var requirements = sys.GetJobRequirement(job);
         reason = null;
@@ -24,7 +36,11 @@ public static class JobRequirements
 
         foreach (var requirement in requirements)
         {
-            if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason))
+            if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason
+#if LOP_Sponsors
+                , tier
+#endif
+                ))
                 return false;
         }
 
@@ -47,5 +63,9 @@ public abstract partial class JobRequirement
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile,
         IReadOnlyDictionary<string, TimeSpan> playTimes,
-        [NotNullWhen(false)] out FormattedMessage? reason);
+        [NotNullWhen(false)] out FormattedMessage? reason
+#if LOP_Sponsors
+        , int tier = 0
+#endif
+        );
 }

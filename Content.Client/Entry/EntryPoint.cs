@@ -41,6 +41,7 @@ using Content.Client._NewParadise.TTS;
 #if LOP_Sponsors
 using Content.Client._NewParadise.Sponsors;
 using Content.Client._NC.DiscordAuth;
+using Content.Client._PrivateClient._NC.JoinQueue;
 #endif
 //LOP edit end
 
@@ -85,6 +86,7 @@ namespace Content.Client.Entry
 #if LOP_Sponsors
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
+        [Dependency] private readonly JoinQueueManager _joinQueue = default!;
 #endif
         // LOP edit end
 
@@ -153,6 +155,7 @@ namespace Content.Client.Entry
 #if LOP_Sponsors
             _sponsorsManager.Initialize();
             _discordAuthManager.Initialize();
+            _joinQueue.Initialize();
 #endif
             // LOP EDIT END
 
