@@ -149,6 +149,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
             , sponsorTier
 #endif
             ))
+                continue;
 
             reasons.Add(jobReason.ToMarkup());
         }
