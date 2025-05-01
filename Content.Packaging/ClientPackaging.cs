@@ -35,24 +35,6 @@ public static class ClientPackaging
                     "/m"
                 }
             });
-            if (UseSecrets)
-            {
-                await ProcessHelpers.RunCheck(new ProcessStartInfo
-                {
-                    FileName = "dotnet",
-                    ArgumentList =
-                    {
-                        "build",
-                        Path.Combine("Secrets","Content.Corvax.Client", "Content.Corvax.Client.csproj"),
-                        "-c", "Release",
-                        "--nologo",
-                        "/v:m",
-                        "/t:Rebuild",
-                        "/p:FullRelease=true",
-                        "/m"
-                    }
-                });
-            }
         }
 
         logger.Info("Packaging client...");
@@ -91,7 +73,7 @@ public static class ClientPackaging
         var inputPass = graph.Input;
 
         // Corvax-Secrets-Start: Add Corvax interfaces to Magic ACZ
-        var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database", "Content.Corvax.Interfaces.Client", "Content.Corvax.Interfaces.Shared" };
+        var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database" };
         if (UseSecrets)
             assemblies.AddRange(new[] { "Content.Corvax.Shared", "Content.Corvax.Client" });
         // Corvax-Secrets-End
