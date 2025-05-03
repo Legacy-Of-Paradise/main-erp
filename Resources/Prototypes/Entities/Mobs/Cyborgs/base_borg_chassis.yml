@@ -247,8 +247,10 @@
     damageProtection:
       flatReductions:
         Heat: 10 # capable of touching light bulbs and stoves without feeling pain!
+    # LOP edit start
   - type: TTS
     voicePrototypeId: turret_floor
+    # LOP edit end
 
 - type: entity
   abstract: true

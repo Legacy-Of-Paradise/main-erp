@@ -1,6 +1,6 @@
 using System.Linq;
 using System.Text.RegularExpressions;
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
 using Content.Shared.Humanoid;
@@ -90,7 +90,7 @@ namespace Content.Shared.Preferences
         public ProtoId<SpeciesPrototype> Species { get; set; } = SharedHumanoidAppearanceSystem.DefaultSpecies;
 
         [DataField]
-        public ProtoId<TTSVoicePrototype> VoiceId { get; set; } = "nord"; // LOP EDIT
+        public ProtoId<TTSVoicePrototype> VoiceId { get; set; } = "nord"; // LOP edit
 
         [DataField]
         public int Age { get; set; } = 18;
@@ -154,7 +154,7 @@ namespace Content.Shared.Preferences
             HashSet<ProtoId<AntagPrototype>> antagPreferences,
             HashSet<ProtoId<TraitPrototype>> traitPreferences,
             Dictionary<string, RoleLoadout> loadouts,
-            ProtoId<TTSVoicePrototype> voiceId)
+            ProtoId<TTSVoicePrototype> voiceId) // LOP edit
         {
             Name = name;
             FlavorText = flavortext;
@@ -169,7 +169,7 @@ namespace Content.Shared.Preferences
             _antagPreferences = antagPreferences;
             _traitPreferences = traitPreferences;
             _loadouts = loadouts;
-            VoiceId = voiceId; // LOP EDIT
+            VoiceId = voiceId; // LOP edit
 
             var hasHighPrority = false;
             foreach (var (key, value) in _jobPriorities)
@@ -201,7 +201,7 @@ namespace Content.Shared.Preferences
                 new HashSet<ProtoId<AntagPrototype>>(other.AntagPreferences),
                 new HashSet<ProtoId<TraitPrototype>>(other.TraitPreferences),
                 new Dictionary<string, RoleLoadout>(other.Loadouts),
-                other.VoiceId)
+                other.VoiceId) // LOP edit
         {
         }
 
@@ -257,6 +257,7 @@ namespace Content.Shared.Preferences
 
             var gender = Gender.Epicene;
 
+            // LOP edit start
             ProtoId<TTSVoicePrototype> voiceId = default;
             switch (sex)
             {
@@ -277,6 +278,7 @@ namespace Content.Shared.Preferences
                     voiceId = SharedHumanoidAppearanceSystem.DefaultSexVoice[0];
                     break;
             }
+            // LOP edit end
 
             var name = GetName(species, gender);
 
@@ -288,6 +290,7 @@ namespace Content.Shared.Preferences
                 Gender = gender,
                 Species = species,
                 Appearance = HumanoidCharacterAppearance.Random(species, sex),
+                // LOP edit start
                 VoiceId = voiceId,
             };
         }
@@ -299,6 +302,7 @@ namespace Content.Shared.Preferences
                 VoiceId = ttsVoice
             };
         }
+        // LOP edit end
 
         public HumanoidCharacterProfile WithName(string name)
         {
@@ -506,7 +510,7 @@ namespace Content.Shared.Preferences
             if (!_traitPreferences.SequenceEqual(other._traitPreferences)) return false;
             if (!Loadouts.SequenceEqual(other.Loadouts)) return false;
             if (FlavorText != other.FlavorText) return false;
-            if (VoiceId != other.VoiceId) return false;
+            if (VoiceId != other.VoiceId) return false; // LOP edit
             return Appearance.MemberwiseEquals(other.Appearance);
         }
 
@@ -818,11 +822,11 @@ namespace Content.Shared.Preferences
             return new HumanoidCharacterProfile(this);
         }
 
-        //LOP EDIT END
+        // LOP edit start
         public static bool CanHaveVoice(TTSVoicePrototype voice, Sex sex)
         {
             return voice.RoundStart && sex == Sex.Unsexed || voice.Sex == sex || voice.Sex == Sex.Unsexed;
         }
-        //LOP EDIT END
+        // LOP edit end
     }
 }

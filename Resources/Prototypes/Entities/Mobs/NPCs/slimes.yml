@@ -142,8 +142,10 @@
   - type: HTN
     rootTask:
       task: SimpleHostileCompound
+    # LOP edit start
   - type: TTS
     voicePrototypeId: squidward
+    # LOP edit end
 
 - type: entity
   name: blue slime

@@ -72,8 +72,10 @@
   components:
   - type: BorgSwitchableType
     selectedBorgType: medical
+    # LOP edit start
   - type: TTS
     voicePrototypeId: turret_floor
+    # LOP edit end
 
 - type: entity
   id: BorgChassisService

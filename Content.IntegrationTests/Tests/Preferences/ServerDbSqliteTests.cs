@@ -44,7 +44,7 @@ namespace Content.IntegrationTests.Tests.Preferences
 
         private static HumanoidCharacterProfile CharlieCharlieson()
         {
-            return new HumanoidCharacterProfile()
+            return new HumanoidCharacterProfile() // LOP edit
             {
                 Name = "Charlie Charlieson",
                 FlavorText = "The biggest boy around.",
@@ -58,7 +58,7 @@ namespace Content.IntegrationTests.Tests.Preferences
                     Color.Azure,
                     Color.Beige,
                     new ())
-            }.WithTtsVoice("nord");
+            }.WithTtsVoice("nord"); // LOP edit
         }
 
         private static ServerDbSqlite GetDb(RobustIntegrationTest.ServerIntegrationInstance server)

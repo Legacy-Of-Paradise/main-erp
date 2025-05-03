@@ -72,6 +72,16 @@
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
       jumpsuit:
         sizeMaps:
           32:
@@ -84,6 +94,16 @@
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
     displacements:
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
       jumpsuit:
         sizeMaps:
           32:
@@ -112,6 +132,16 @@
   - type: Inventory
     speciesId: reptilian
     femaleDisplacements:
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
       jumpsuit:
         sizeMaps:
           32:
@@ -124,6 +154,16 @@
             sprite: Corvax/Mobs/Species/displacement.rsi
             state: shoes
     displacements:
+      socks:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: shoes
+      underwear:
+        sizeMaps:
+          32:
+            sprite: Corvax/Mobs/Species/displacement.rsi
+            state: jumpsuit
       jumpsuit:
         sizeMaps:
           32:

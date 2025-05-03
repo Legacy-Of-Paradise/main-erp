@@ -150,14 +150,14 @@ namespace Content.Client.Entry
             _extendedDisconnectInformation.Initialize();
             _jobRequirements.Initialize();
             _playbackMan.Initialize();
-            // LOP EDIT START
+            // LOP edit start
             _ttsManager.Initialize();
 #if LOP_Sponsors
             _sponsorsManager.Initialize();
             _discordAuthManager.Initialize();
             _joinQueue.Initialize();
 #endif
-            // LOP EDIT END
+            // LOP edit end
 
             //AUTOSCALING default Setup!
             _configManager.SetCVar("interface.resolutionAutoScaleUpperCutoffX", 1080);

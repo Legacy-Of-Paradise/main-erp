@@ -24,8 +24,10 @@
     damageContainer: ManifestedSpirit
     damageModifierSet: ManifestedSpirit
   - type: NoSlip
+    # LOP edit start
   - type: TTS
     voicePrototypeId: shadow_fiend_dota_2
+    # LOP edit end
   - type: Eye
     drawFov: false
     visMask:

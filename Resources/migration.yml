@@ -587,6 +587,9 @@ MuteToxinChemistryBottle: ChemistryBottleMuteToxin
 LeadChemistryBottle: ChemistryBottleLead
 ToxinChemistryBottle: ChemistryBottleToxin
 
+# 2025-04-11 Corvax
+CentcomComputerComms: CentcommComputerComms
+
 # 2025-04-18 Russian Laws
 ClothingNeckLGBTPin: null
 ClothingNeckAromanticPin: null

@@ -798,8 +798,10 @@
     attributes:
       proper: true
       gender: female
+    # LOP edit start
   - type: TTS
     voicePrototypeId: squidward
+    # LOP edit end
 
 - type: entity
   name: Pun Pun

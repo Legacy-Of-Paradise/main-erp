@@ -1,5 +1,5 @@
 using System.Linq;
-using Content.Shared._NewParadise.TTS;
+using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Client.UserInterface.Controls;
 using Content.Shared.Corvax.CCCVars;
 using Content.Shared.Speech;
@@ -14,10 +14,10 @@ namespace Content.Client.VoiceMask;
 public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
 {
     public Action<string>? OnNameChange;
-    public Action<string>? OnVoiceChange;
+    public Action<string>? OnVoiceChange; // LOP edit
     public Action<string?>? OnVerbChange;
 
-    private List<TTSVoicePrototype> _voices = new(); // TTS
+    private List<TTSVoicePrototype> _voices = new(); // LOP edit
     private List<(string, string)> _verbs = new();
 
     private string? _verb;
@@ -40,6 +40,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
         ReloadVoices(IoCManager.Resolve<IPrototypeManager>());
     }
 
+    // LOP edit start
     private void ReloadVoices(IPrototypeManager proto)
     {
         VoiceSelector.OnItemSelected += args =>
@@ -60,6 +61,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             VoiceSelector.SetItemMetadata(i, _voices[i].ID);
         }
     }
+    // LOP edit end
 
     public void ReloadVerbs(IPrototypeManager proto)
     {
@@ -92,7 +94,7 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             SpeechVerbSelector.SelectId(id);
     }
 
-    public void UpdateState(string name, string voice, string? verb)
+    public void UpdateState(string name, string voice, string? verb) // LOP edit
     {
         NameSelector.Text = name;
         _verb = verb;
@@ -106,8 +108,10 @@ public sealed partial class VoiceMaskNameChangeWindow : FancyWindow
             }
         }
 
+        // LOP edit start
         var voiceIdx = _voices.FindIndex(v => v.ID == voice);
         if (voiceIdx != -1)
             VoiceSelector.Select(voiceIdx);
+        // LOP edit end
     }
 }

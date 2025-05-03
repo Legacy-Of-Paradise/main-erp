@@ -18,8 +18,10 @@
   - type: Muted
   - type: TypingIndicator
     proto: robot
+    # LOP edit start
   - type: TTS
     voicePrototypeId: ernielark
+    # LOP edit end
   - type: Actions
   - type: MobState
     allowedStates:
@@ -42,5 +44,7 @@
     sprite: Objects/Fun/mrdips.rsi
     layers:
     - state: icon
+    # LOP edit start
   - type: TTS
     voicePrototypeId: ernielark
+    # LOP edit end

@@ -124,6 +124,23 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 continue;
             }
 
+            // Corvax-Loadouts-Start
+            if (collection.TryResolveType<ISharedLoadoutsManager>(out var loadoutsManager) && group.Id == "Inventory")
+            {
+                var prototypes = new List<string>();
+                if (netManager.IsClient)
+                {
+                    prototypes = loadoutsManager.GetClientPrototypes();
+                }
+                else if (loadoutsManager.TryGetServerPrototypes(session.UserId, out var protos))
+                {
+                    prototypes = protos;
+                }
+
+                groupProto.Loadouts.AddRange(prototypes.Select(id => (ProtoId<LoadoutPrototype>)id));
+            }
+            // Corvax-Loadouts-End
+
             //LOP edit start
             if (groupProto.ID.ToString().Contains("Sponsor")
 #if LOP_Sponsors

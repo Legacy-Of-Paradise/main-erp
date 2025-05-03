@@ -125,8 +125,10 @@
     attributes:
       gender: male
   - type: Sharp
+    # LOP edit start
   - type: TTS
     voicePrototypeId: nyx_assassin_dota_2
+    # LOP edit end
 
 - type: entity
   id: MobRatKingBuff

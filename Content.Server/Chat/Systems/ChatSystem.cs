@@ -61,10 +61,10 @@ public sealed partial class ChatSystem : SharedChatSystem
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
     [Dependency] private readonly ExamineSystemShared _examineSystem = default!;
 
-    // LOP EDIT START
+    // LOP edit start
     public const int VoiceRange = 10; // how far voice goes in world units
     public const int WhisperMuffledRange = 5; // how far whisper goes at all, in world units
-    // LOP EDIT END
+    // LOP edit end
     public const string DefaultAnnouncementSound = "/Audio/Corvax/Announcements/announce.ogg"; // Corvax-Announcements
     public const string CentComAnnouncementSound = "/Audio/Corvax/Announcements/centcomm.ogg"; // Corvax-Announcements
 
@@ -960,7 +960,7 @@ public sealed class EntitySpokeEvent : EntityEventArgs
     {
         Source = source;
         Message = message;
-        OriginalMessage = originalMessage;
+        OriginalMessage = originalMessage; // LOP edit
         Channel = channel;
         ObfuscatedMessage = obfuscatedMessage;
     }
