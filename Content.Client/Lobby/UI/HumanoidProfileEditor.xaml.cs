@@ -36,7 +36,7 @@ using Robust.Shared.Utility;
 using Direction = Robust.Shared.Maths.Direction;
 //LOP edit start
 using Content.Shared._NewParadise.TTS;
-#if LOP_Sponsors
+#if LOP
 using Content.Client._NewParadise.Sponsors;
 #endif
 //LOP edit end
@@ -1597,7 +1597,7 @@ namespace Content.Client.Lobby.UI
             {
                 //LOP edit start
                 List<string> marks = new();
-#if LOP_Sponsors
+#if LOP
                 int sponsorTier = 0;
                 if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorInfo))
                 {
@@ -1610,7 +1610,7 @@ namespace Content.Client.Lobby.UI
                 }
 #endif
                 var profile = _entManager.System<HumanoidAppearanceSystem>().FromStream(file, _playerManager.LocalSession!, marks
-#if LOP_Sponsors
+#if LOP
                 , sponsorTier
 #endif
                 );

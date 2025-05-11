@@ -18,7 +18,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Player;
 using Robust.Shared.Timing;
-#if LOP_Sponsors
+#if LOP
 using Content.Server._NewParadise.Sponsors;
 using Content.Shared._NewParadise;
  #endif
@@ -67,7 +67,7 @@ namespace Content.Server.Connection
         [Dependency] private readonly IChatManager _chatManager = default!;
         [Dependency] private readonly IHttpClientHolder _http = default!;
         [Dependency] private readonly IAdminManager _adminManager = default!;
-#if LOP_Sponsors
+#if LOP
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 #endif
 
@@ -249,7 +249,7 @@ namespace Content.Server.Connection
 
             var adminData = await _db.GetAdminDataForAsync(e.UserId);
 
-#if LOP_Sponsors
+#if LOP
             var isPrivileged = await HasPrivilegedJoin(e.UserId);
             if (_cfg.GetCVar(CCVars.PanicBunkerEnabled) && adminData == null && !isPrivileged)
 #else
@@ -367,12 +367,12 @@ namespace Content.Server.Connection
                 ticker.PlayerGameStatuses.TryGetValue(userId, out var status) &&
                 status == PlayerGameStatus.JoinedGame;
 
-#if LOP_Sponsors
+#if LOP
             var havePriorityJoin = _sponsorsManager.TryGetInfo(userId, out var sponsor) && sponsor.HavePriorityJoin;
 #endif
 
             return isAdmin ||
-#if LOP_Sponsors
+#if LOP
                      havePriorityJoin ||
 #endif
                    wasInGame;

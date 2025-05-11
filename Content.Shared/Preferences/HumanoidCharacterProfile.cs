@@ -515,7 +515,7 @@ namespace Content.Shared.Preferences
         }
 
         public void EnsureValid(ICommonSession session, IDependencyCollection collection, List<string> sponsorPrototypes// LOP edit start: sponsor system
-#if LOP_Sponsors
+#if LOP
         , int sponsorTier
 #endif
         //LOP edit end
@@ -587,7 +587,7 @@ namespace Content.Shared.Preferences
 
             //LOP edit start
             var descLength = DescriptionLength(0);
-#if LOP_Sponsors
+#if LOP
             descLength = DescriptionLength(sponsorTier);
 #endif
             //LOP edit end
@@ -683,7 +683,7 @@ namespace Content.Shared.Preferences
                 }
 
                 loadouts.EnsureValid(this, session, collection
-#if LOP_Sponsors
+#if LOP
                 , sponsorTier
 #endif
                 );
@@ -735,14 +735,14 @@ namespace Content.Shared.Preferences
         }
 
         public ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection, List<string> sponsorPrototypes// LOP edit: sponsor system
-#if LOP_Sponsors
+#if LOP
         , int sponsorTier = 0
 #endif
         )
         {
             var profile = new HumanoidCharacterProfile(this);
             profile.EnsureValid(session, collection, sponsorPrototypes  //LOP edit
-#if LOP_Sponsors
+#if LOP
             , sponsorTier
 #endif
             );

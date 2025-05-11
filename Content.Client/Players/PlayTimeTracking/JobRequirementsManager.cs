@@ -12,7 +12,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
-#if LOP_Sponsors
+#if LOP
 using  Content.Client._NewParadise.Sponsors;
 #endif
 
@@ -109,7 +109,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         if (player == null)
             return true;
 
-#if LOP_Sponsors
+#if LOP
         if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorinfo) && sponsorinfo.Tier < job.SponsorTier)
         {
             reason = FormattedMessage.FromMarkupPermissive($"Недостаточный уровень подписки. Требуется {job.SponsorTier}-й уровень");
@@ -134,7 +134,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
             return true;
 
         //LOP edit start
-#if LOP_Sponsors
+#if LOP
         int sponsorTier = 0;
         if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(out var sponsorinfo))
             sponsorTier = sponsorinfo.Tier;
@@ -145,7 +145,7 @@ public sealed class JobRequirementsManager : ISharedPlaytimeManager
         foreach (var requirement in requirements)
         {
             if (requirement.Check(_entManager, _prototypes, profile, _roles, out var jobReason
-#if LOP_Sponsors
+#if LOP
             , sponsorTier
 #endif
             ))

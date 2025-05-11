@@ -15,12 +15,12 @@ public static class JobRequirements
         IEntityManager entManager,
         IPrototypeManager protoManager,
         HumanoidCharacterProfile? profile
-#if LOP_Sponsors
+#if LOP
         , int tier = 0
 #endif
         )
     {
-#if LOP_Sponsors
+#if LOP
         if (tier < job.SponsorTier)
         {
             reason = FormattedMessage.FromMarkupPermissive($"Недостаточный уровень подписки. Требуется {job.SponsorTier}-й уровень");
@@ -37,7 +37,7 @@ public static class JobRequirements
         foreach (var requirement in requirements)
         {
             if (!requirement.Check(entManager, protoManager, profile, playTimes, out reason
-#if LOP_Sponsors
+#if LOP
                 , tier
 #endif
                 ))
@@ -64,7 +64,7 @@ public abstract partial class JobRequirement
         HumanoidCharacterProfile? profile,
         IReadOnlyDictionary<string, TimeSpan> playTimes,
         [NotNullWhen(false)] out FormattedMessage? reason
-#if LOP_Sponsors
+#if LOP
         , int tier = 0
 #endif
         );

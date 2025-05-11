@@ -38,7 +38,7 @@ using Robust.Shared.Replays;
 using Robust.Shared.Timing;
 // LOP edit start
 using Content.Client._NewParadise.TTS;
-#if LOP_Sponsors
+#if LOP
 using Content.Client._NewParadise.Sponsors;
 using Content.Client._NC.DiscordAuth;
 using Content.Client._PrivateClient._NC.JoinQueue;
@@ -83,7 +83,7 @@ namespace Content.Client.Entry
 
         //LOP edit start
         [Dependency] private readonly TTSManager _ttsManager = default!;
-#if LOP_Sponsors
+#if LOP
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
         [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!;
         [Dependency] private readonly JoinQueueManager _joinQueue = default!;
@@ -152,7 +152,7 @@ namespace Content.Client.Entry
             _playbackMan.Initialize();
             // LOP edit start
             _ttsManager.Initialize();
-#if LOP_Sponsors
+#if LOP
             _sponsorsManager.Initialize();
             _discordAuthManager.Initialize();
             _joinQueue.Initialize();

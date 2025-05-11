@@ -4,7 +4,7 @@ using Robust.Client;
 using Robust.Client.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
-#if LOP_Sponsors
+#if LOP
 using Content.Client._NewParadise.Sponsors;
 #endif
 
@@ -21,7 +21,7 @@ namespace Content.Client.Lobby
         [Dependency] private readonly IBaseClient _baseClient = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
 
-#if LOP_Sponsors
+#if LOP
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
 #endif
 
@@ -70,7 +70,7 @@ namespace Content.Client.Lobby
 
             //LOP edit start
             var allowedMarkings = new List<string>();
-#if LOP_Sponsors
+#if LOP
             int sponsorTier = 0;
             if (_sponsorsManager.TryGetInfo(out var sponsor))
             {
@@ -83,7 +83,7 @@ namespace Content.Client.Lobby
             }
 #endif
             profile.EnsureValid(_playerManager.LocalSession!, collection, allowedMarkings
-#if LOP_Sponsors
+#if LOP
             , sponsorTier
 #endif
             );

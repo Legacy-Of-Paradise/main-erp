@@ -10,7 +10,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
-#if LOP_Sponsors
+#if LOP
 using Content.Server._NewParadise.Sponsors;
 #endif
 
@@ -30,7 +30,7 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly ILogManager _log = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
 
-#if LOP_Sponsors
+#if LOP
         [Dependency] private readonly SponsorsManager _sponsors = default!;
 #endif
 
@@ -51,7 +51,7 @@ namespace Content.Server.Preferences.Managers
             _sawmill = _log.GetSawmill("prefs");
         }
 
-#if LOP_Sponsors
+#if LOP
         private int GetMaxUserCharacterSlots(NetUserId userId)
         {
             var extraSlots = _sponsors.TryGetInfo(userId, out var sponsor) ? sponsor.ExtraSlots : 0;
@@ -71,7 +71,7 @@ namespace Content.Server.Preferences.Managers
             }
 
             if (index < 0 || index >=
-#if LOP_Sponsors
+#if LOP
             GetMaxUserCharacterSlots(userId)
 #else
             MaxCharacterSlots
@@ -117,7 +117,7 @@ namespace Content.Server.Preferences.Managers
             }
 
             if (slot < 0 || slot >=
-#if LOP_Sponsors
+#if LOP
             GetMaxUserCharacterSlots(userId)
 #else
             MaxCharacterSlots
@@ -130,7 +130,7 @@ namespace Content.Server.Preferences.Managers
 
             //LOP edit start
             var allowedMarkings = new List<string>();
-#if LOP_Sponsors
+#if LOP
             int sponsorTier = 0;
             if (_sponsors.TryGetInfo(userId, out var sponsor))
             {
@@ -144,7 +144,7 @@ namespace Content.Server.Preferences.Managers
 #endif
 
             profile.EnsureValid(session, _dependencies, allowedMarkings
-#if LOP_Sponsors
+#if LOP
             , sponsorTier
 #endif
             );
@@ -173,7 +173,7 @@ namespace Content.Server.Preferences.Managers
             }
 
             if (slot < 0 || slot >=
-#if LOP_Sponsors
+#if LOP
             GetMaxUserCharacterSlots(userId)
 #else
             MaxCharacterSlots
@@ -347,7 +347,7 @@ namespace Content.Server.Preferences.Managers
             {
                 //LOP edit start
                 var allowedMarkings = new List<string>();
-#if LOP_Sponsors
+#if LOP
                 int sponsorTier = 0;
                 if (_sponsors.TryGetInfo(session.UserId, out var sponsor))
                 {
@@ -361,7 +361,7 @@ namespace Content.Server.Preferences.Managers
 #endif
                 //LOP edit end
                 return new KeyValuePair<int, ICharacterProfile>(p.Key, p.Value.Validated(session, collection, allowedMarkings
-#if LOP_Sponsors
+#if LOP
                 , sponsorTier
 #endif
                 ));
