@@ -26,6 +26,11 @@ public enum SlotFlags
     LEGS = 1 << 13,
     FEET = 1 << 14,
     SUITSTORAGE = 1 << 15,
+    // LOP edit start
+    SOCKS = 1 << 16,
+    UNDERWEAR = 1 << 17,
+    BREAST = 1 << 18,
+    // LOP edit end
     All = ~NONE,
 
     WITHOUT_POCKET = All & ~POCKET

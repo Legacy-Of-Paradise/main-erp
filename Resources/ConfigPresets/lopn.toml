@@ -14,9 +14,6 @@ panic_bunker.min_account_age = 1440
 [server]
 rules_file = "LPPRulesetNon"
 
-[salvage]
-expedition_duration = 1200
-
 [rules]
 time = 60.0
 
@@ -24,7 +21,7 @@ time = 60.0
 discord = "https://wiki.legacyofparadise.space/discord"
 github = "https://github.com/Legacy-Of-Paradise/main-nonerp"
 wiki = "http://wiki.legacyofparadise.space/"
-patreon = "https://boosty.to/legacy-of-paradise"
+website = "https://boosty.to/legacy-of-paradise"
 
 [vote]
 restart_required_ratio = 0.85

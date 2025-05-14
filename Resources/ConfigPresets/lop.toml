@@ -14,9 +14,6 @@ panic_bunker.min_account_age = 1440
 [server]
 rules_file = "LPPRuleset"
 
-[salvage]
-expedition_duration = 1200
-
 [rules]
 time = 60.0
 
@@ -24,7 +21,10 @@ time = 60.0
 discord = "https://wiki.legacyofparadise.space/discord"
 github = "https://github.com/Legacy-Of-Paradise/main-erp"
 wiki = "http://wiki.legacyofparadise.space/"
-patreon = "https://boosty.to/legacy-of-paradise"
+website = "https://boosty.to/legacy-of-paradise"
+
+[votekick]
+enabled = false
 
 [vote]
 restart_required_ratio = 0.85
@@ -33,6 +33,9 @@ timerrestart = 30
 map_enabled = true
 preset_enabled = true
 restart_enabled = true
+
+[interaction]
+rate_limit_announce_admins_delay = -1
 
 [hub]
 advertise = true
@@ -49,4 +52,9 @@ see_own_notes = true
 
 [ahelp]
 admin_prefix = true
+rate_limit_count = 2
+rate_limit_period = 10
 admin_prefix_webhook = true
+
+# [discord]
+# rich_main_icon_id = "legacyparadise"

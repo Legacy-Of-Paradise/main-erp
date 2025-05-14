@@ -80,12 +80,11 @@
                                     <OptionButton Name="PronounsButton" HorizontalAlignment="Right" />
                                 </BoxContainer>
                                 <!-- LOP edit start: Voice -->
-                                <BoxContainer>
-                                    <BoxContainer Orientation="Horizontal">
-                                        <Label Text="{Loc 'humanoid-profile-editor-voice-label'}" />
-                                        <OptionButton Name="VoiceButton" />
-                                        <Button Name="VoicePlayButton" Text="{Loc 'humanoid-profile-editor-voice-play'}" MaxWidth="80" />
-                                    </BoxContainer>
+                                <BoxContainer HorizontalExpand="True" Visible="False" Name="TTSContainer">
+                                    <Label Text="{Loc 'humanoid-profile-editor-voice-label'}" />
+                                    <Control HorizontalExpand="True"/>
+                                    <OptionButton Name="VoiceButton" HorizontalAlignment="Right" />
+                                    <Button Name="VoicePlayButton" Text="{Loc 'humanoid-profile-editor-voice-play'}" MaxWidth="80" />
                                 </BoxContainer>
                                 <!-- LOP edit end: Voice -->
                                 <!-- Show clothing -->

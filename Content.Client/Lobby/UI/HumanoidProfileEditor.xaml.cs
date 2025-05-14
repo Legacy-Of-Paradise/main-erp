@@ -1,6 +1,7 @@
 using System.IO;
 using System.Linq;
 using System.Numerics;
+using Content.Shared._NewParadise; // LOP edit
 using Content.Client.Humanoid;
 using Content.Client.Lobby.UI.Loadouts;
 using Content.Client.Lobby.UI.Roles;
@@ -221,7 +222,14 @@ namespace Content.Client.Lobby.UI
 
             // LOP edit start
             #region Voice
+
             InitializeVoice();
+
+            if (configurationManager.GetCVar(NewParadiseCvars.TtsEnabled))
+            {
+                TTSContainer.Visible = true;
+            }
+
             #endregion
             // LOP edit end
 
