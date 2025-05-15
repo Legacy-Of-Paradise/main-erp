@@ -135,6 +135,11 @@ public sealed partial class SpeciesPrototype : IPrototype
     /// </summary>
     [DataField]
     public int MaxAge = 120;
+
+    // LOP edit start
+    [DataField("sponsorTier")]
+    public int SponsorTier = 0;
+    // LOP edit end
 }
 
 public enum SpeciesNaming : byte
