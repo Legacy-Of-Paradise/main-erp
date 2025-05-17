@@ -1,5 +1,11 @@
+ent-LPPClothingBackpackBlueshieldFilled = { ent-LPPClothingBackpackBlueshield }
+    .desc = { ent-LPPClothingBackpackBlueshield.desc }
 ent-LPPClothingBackpackHop = рюкзак Главы Персонала
     .desc = Сотканный из дорогих тканей рюкзак.
+ent-LPPClothingBackpackSecurityEngineer = рюкзак инженера СБ
+    .desc = В два раза больше наручников!
+ent-LPPClothingBackpackBlueshield = рюкзак офицера "Синий щит"
+    .desc = Говорят, он пуленепробиваемый.
 ent-LPPClothingBackpackExpeditor = рюкзак исследователя
     .desc = Соткан на лучшей фабрике NanoTrasen, из лучших материалов! Чтобы быть съеденным космическим карпом...
 ent-LPPClothingBackpackBackPackNPZ = рюкзак НПЗ

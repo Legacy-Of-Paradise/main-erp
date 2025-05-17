@@ -1,5 +1,7 @@
 ent-LPPClothingHeadHelmetHardsuitKiravaHoodsec = капюшон Кирава
     .desc = прекрасный капюшон Кирава
+ent-LPPClothingHeadHatHoodPGShemag = капюшон из Шемага
+    .desc = Капюшон из Шемага
 ent-LPPHelmetHardsuitHoodAtmos = капюшон Атмоса
     .desc = { ent-ClothingHeadBase.desc }
 ent-LPPHelmetHardsuitHoodCaptain = капюшон Капитана

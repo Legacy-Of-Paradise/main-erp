@@ -1,5 +1,11 @@
 ent-LPPClothingBackpackDuffelHop = вещмешок Главы Персонала
     .desc = Сотканный из дорогих тканей вещмешок.
+ent-LPPClothingBackpackDuffelBlueshieldFilled = { ent-LPPClothingBackpackDuffelBlueshield }
+    .desc = { ent-LPPClothingBackpackDuffelBlueshield.desc }
+ent-LPPClothingBackpackDuffelSecurityEngineer = вещмешок инженера СБ
+    .desc = В два раза больше наручников!
+ent-LPPClothingBackpackDuffelBlueshield = вещмешок офицера "Синий щит"
+    .desc = В два раза больше наручников!
 ent-LPPClothingBackpackDuffelExpeditor = вещмешок исследователя
     .desc = Вместительная сумка для всевозможных вещей. Предпочтительней, добыча с экспедиций.
 ent-LPPClothingBackpackDuffelContractor = вещмешок контрактника

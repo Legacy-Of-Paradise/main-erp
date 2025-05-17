@@ -353,7 +353,7 @@
 - type: entity
   parent: ClothingUniformBase
   id: LPPClothingUniformJumpsuitSecEngineer
-  name: security engineer jumpskirt
+  name: security engineer jumpsuit
   description: A jumpsuit made of strong material, providing robust protection.
   components:
   - type: Sprite

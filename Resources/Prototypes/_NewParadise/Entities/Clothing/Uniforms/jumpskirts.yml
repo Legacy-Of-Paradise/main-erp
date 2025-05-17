@@ -144,8 +144,8 @@
 - type: entity
   parent: ClothingUniformBase
   id: LPPClothingUniformJumpSkirtSecEngineer
-  name: security engineer jumpsuit
-  description: A jumpsuit made of strong material, providing robust protection.
+  name: security engineer jumpskirt
+  description: A jumpskirt made of strong material, providing robust protection.
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Uniforms/Sec/Engineer/securityEngineerJumpSkirt.rsi

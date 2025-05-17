@@ -1,3 +1,5 @@
+ent-LPPClothingUniformJumpsuitAdjutant = комбинезон адъютанта
+    .desc = Довольно мягкий и строгий. Идеально подходит для того, чтобы исчезнуть с лица земли.
 ent-LPPCargotechjean = джинсовка грузчика
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPGorkaCargo = горка грузчика
@@ -61,6 +63,8 @@ ent-LPPOrangeFlannelJumpsuit = оранжевая фланенвая рубаш�
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPClothingUniformJumpsuitFluppi = комбинезон Фрупи
     .desc = Нежно-пушистый комбинезон маскота базированной корпораций Fluppy&Co Ltd!
+ent-LPPClothingUniformJumpsuitSecEngineer = комбинезон инженера СБ
+    .desc = Комбинезон изготовлен из прочного материала, обеспечивающего надежную защиту.
 ent-LPPMedictechjean = джинсовка Медика
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPGorkaMedic = горка Медика
