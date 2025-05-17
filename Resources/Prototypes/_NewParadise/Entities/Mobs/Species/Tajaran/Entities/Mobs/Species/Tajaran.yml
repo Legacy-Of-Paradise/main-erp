@@ -1,0 +1,80 @@
+﻿- type: entity
+  save: false
+  name: Tajaran McHands
+  parent: BaseMobSpeciesOrganic
+  id: LPPBaseMobTajaran
+  abstract: true
+  components:
+    - type: HumanoidAppearance
+      species: TajaranSpecies
+    - type: Body
+      prototype: Tajaran
+      requiredLegs: 2
+    - type: Vocal
+      sounds:
+        Male: MaleFelinid
+        Female: FemaleFelinid
+        Unsexed: FemaleFelinid
+    - type: Carriable
+    - type: Hunger
+    - type: Thirst
+    - type: Icon
+      sprite: Corvax/Mobs/Species/Tajaran/parts.rsi
+      state: tajaran_m
+    - type: Damageable
+      damageContainer: Biological
+      damageModifierSet: Scale
+    - type: MeleeWeapon
+      hidden: true
+      soundHit:
+        path: /Audio/Weapons/pierce.ogg
+      angle: 30
+      animation: WeaponArcPunch
+      damage:
+        types:
+          Piercing: 5
+    - type: Temperature
+      heatDamageThreshold: 400
+      coldDamageThreshold: 200
+      currentTemperature: 310.15
+      specificHeat: 42
+      coldDamage:
+        types:
+          Cold : 0.1
+      heatDamage:
+        types:
+          Heat : 0.1
+    - type: MovementSpeedModifier
+      baseWalkSpeed : 3.0
+      baseSprintSpeed : 4.9
+    - type: Perishable
+    - type: Speech
+      speechVerb: Tajaran
+      speechSounds: Alto
+      allowedEmotes:
+      - Hiss
+      - Meow
+      - Mew
+      - Growl
+      - Purr
+    - type: Inventory
+      speciesId: tajaran
+    - type: Wagging
+    - type: Respirator
+      damage:
+        types:
+          Asphyxiation: 2.0
+      damageRecovery:
+        types:
+          Asphyxiation: -2.0
+
+- type: entity
+  save: false
+  name: Tajaran McHands
+  parent: MobHumanDummy
+  id: LPPMobTajaranDummy
+  categories: [ HideSpawnMenu ]
+  description: A dummy tajaran meant to be used in character setup.
+  components:
+    - type: HumanoidAppearance
+      species: TajaranSpecies

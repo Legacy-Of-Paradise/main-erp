@@ -1,0 +1,15 @@
+ent-LPPKeycardArmory = ключ карта ружейной
+    .suffix = Синдикат
+    .desc = { ent-IDCardStandard.desc }
+ent-LPPKeycardMedblock = ключ карта медблока
+    .suffix = Синдикат
+    .desc = { ent-IDCardStandard.desc }
+ent-LPPKeycardChemistry = ключ карта хим лаборатории
+    .suffix = Синдикат
+    .desc = { ent-IDCardStandard.desc }
+ent-LPPKeycardMechroom = ключ карта робото-инженерного отдела
+    .suffix = Синдикат
+    .desc = { ent-IDCardStandard.desc }
+ent-LPPKeycardPolygon = ключ карта полигона
+    .suffix = Синдикат
+    .desc = { ent-IDCardStandard.desc }

@@ -1,0 +1,71 @@
+- type: entity
+  parent: LPPClothingBackpackBlueshield
+  id: LPPClothingBackpackBlueshieldFilled
+  components:
+  - type: StorageFill
+    contents:
+    - id: Flash
+    - id: LPPClothingOuterHardsuitBlueshield
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackHop
+  name: hop backpack
+  description: They say it's bulletproof.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/hop.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackSecurityEngineer
+  name: security engineer duffel bag
+  description: Twice as many handcuffs!
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/securityEngineer.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackBlueshield
+  name: blueshield backpack
+  description: They say it's bulletproof.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/blueshield.rsi
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackExpeditor
+  name: expeditor backpack
+  description: They say it's bulletproof.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/expeditor.rsi
+
+- type: entity
+  parent: ClothingBackpackERTLeader
+  id: LPPClothingBackpackBackPackNPZ
+  name: NPZ backpack
+  description: It will contain everything you need.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/upgbacpacks.rsi
+  - type: StaticPrice
+    price: 150
+    vendPrice: 11500
+
+- type: entity
+  parent: ClothingBackpack
+  id: LPPClothingBackpackHunter
+  name: Hunter backpack
+  description: A durable backpack with additional pockets, which significantly increases the capacity and at the same time does not restrict the movement of the wearer in any way.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Back/Backpacks/backhunter.rsi
+  - type: Storage
+    grid:
+    - 0,0,7,3
+  - type: StaticPrice
+    price: 150
+    vendPrice: 1500

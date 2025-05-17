@@ -1,0 +1,26 @@
+- type: entity
+  parent: ClothingNeckPinBase
+  id: LPPClothingNeckFluppiPin
+  name: fluppi pin
+  description: be happy do crime
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Uniforms/Jumpsuit/Fluppipin.rsi
+    layers:
+    - state: floppy
+  - type: Clothing
+    sprite: _NewParadise/Clothing/Uniforms/Jumpsuit/Fluppipin.rsi
+    clothingVisuals:
+      neck:
+      - state: floppy-equipped
+
+- type: entity
+  parent: ClothingNeckBase
+  id: LPPClothingNeckChain
+  name: army chain
+  description: A chain, giving an understanding, what the person, who wearing this - the veteran
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/Neck/chain.rsi
+  - type: Clothing
+    sprite: _NewParadise/Clothing/Neck/chain.rsi
