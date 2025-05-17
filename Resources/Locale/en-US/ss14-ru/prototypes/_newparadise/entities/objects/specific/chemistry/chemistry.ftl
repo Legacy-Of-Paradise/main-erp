@@ -1,4 +1,4 @@
-ent-LPPChemistryBottleStimulant = бутылочка стимулятора
+ent-LPPChemistryBottleStimulant = Bottle of stimulants
     .desc = { ent-BaseChemistryBottleFilled.desc }
-ent-LPPSyringeAmbuzolPlus = шприц амбузола плюс
+ent-LPPSyringeAmbuzolPlus = Syringe with ambuzol plus
     .desc = { ent-PrefilledSyringe.desc }

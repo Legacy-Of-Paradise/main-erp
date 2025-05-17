@@ -1,2 +1,2 @@
-ent-LPPCalendar = календарь
-    .desc = Отсчитывает сколько дней осталось работать.
+ent-LPPCalendar = calendar
+    .desc = Counting down the days to your vacation.

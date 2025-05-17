@@ -1,2 +1,2 @@
-ent-LPPWeaponRifleM1A = М1A
-    .desc = Модифицированная версия старой винтовки, показатель смешения старого оружия и новых материалов, использует .30
+ent-LPPWeaponRifleM1A = M1A
+    .desc = A modified version of the old rifle, an indicator of the mixing of old weapons and new materials, uses .30

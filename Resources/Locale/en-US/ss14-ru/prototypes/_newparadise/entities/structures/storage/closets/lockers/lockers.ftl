@@ -1,2 +1,2 @@
-ent-LPPLockerBlueShield = шкафчик офицера "Синий Щит"
+ent-LPPLockerBlueShield = blue shield locker
     .desc = { ent-LockerBaseSecure.desc }

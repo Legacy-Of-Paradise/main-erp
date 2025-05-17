@@ -1,2 +1,2 @@
 ent-LPPWeaponLauncherG301 = G-301 "Zyklus"
-    .desc = БЛУП, это же громадный револьвер, круто!
+    .desc = PLOOP, it works like a revolver, cool!

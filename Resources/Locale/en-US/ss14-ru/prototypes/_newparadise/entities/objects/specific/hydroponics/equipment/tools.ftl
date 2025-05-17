@@ -1,2 +1,2 @@
-ent-LPPBluespacePlantBag = блюспейс сумка для растений
-    .desc = Сумка для хранения растений. вмещает себя больший объём, в сравнении с обычной сумкой.
+ent-LPPBluespacePlantBag = bluespace plant  bag
+    .desc = A bag for botanists to easily move their huge harvests.

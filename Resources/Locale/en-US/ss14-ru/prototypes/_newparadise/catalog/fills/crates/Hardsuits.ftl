@@ -1,4 +1,4 @@
-ent-LPPCrateLogisticsRodosHardsuit = Ящик со скафандром HpI-20a+ "Rodos"
-    .desc = Содержит один скафандр HpI-20a+ "Rodos".
-ent-LPPCrateLogisticsKerateiaHardsuit = Ящик со скафандром HpI-20a+ "Kerateia"
-    .desc = Содержит один скафандр HpI-20a+ "Kerateia".
+ent-LPPCrateLogisticsRodosHardsuit = Rodos hardsuit crate
+    .desc = Contains a single HpI-20a+ "Rodos" hardsuit.
+ent-LPPCrateLogisticsKerateiaHardsuit = Kerateia hardsuit crate
+    .desc = Contains a single HpI-20a+ "Kerateia" hardsuit.

@@ -1,2 +1,2 @@
-ent-LPPWeaponRifleM14 = М14
-    .desc = Старая винтовка с далёких войн, от неё слегка пахнет джунглями. Использует .30 винтовочный
+ent-LPPWeaponRifleM14 = M14
+    .desc = An old rifle from distant wars, it smells slightly of the jungle. Uses .30 rifle

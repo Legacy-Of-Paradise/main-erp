@@ -1,2 +1,2 @@
-ent-LPPCandy = конфета
-    .desc = Обычная конфета состоящия из сахара и других вещей
+ent-LPPCandy = candy
+    .desc = This is my kingdom come, this is my kingdom come...

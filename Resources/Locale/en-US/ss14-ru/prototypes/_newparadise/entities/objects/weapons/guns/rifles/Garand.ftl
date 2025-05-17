@@ -1,2 +1,2 @@
-ent-LPPWeaponM1Garand = винтовка М1 Гаранд
-    .desc = Реплика классической винтовки Второй Мировой Войны от компании XenoHuntingArmoury, использующая патроны .30 охотничие. Пинг!
+ent-LPPWeaponM1Garand = Rifle M1 Garand
+    .desc = A replica of the classic World War II rifle from XenoHuntingArmoury, using cartridges .30 hunting. Ping!

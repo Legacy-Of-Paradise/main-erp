@@ -1,4 +1,4 @@
-ent-LPPClothingHeadHatBandage = повязка на лицо
-    .desc = Защищает голову от жары и набегаторов.
-ent-LPPClothingEyesEyepatchBandage = бинты на глаза
-    .desc = Проблемы с глазами.
+ent-LPPClothingHeadHatBandage = face bandage
+    .desc = Protects the head.
+ent-LPPClothingEyesEyepatchBandage = bandage eyepatch
+    .desc = Its hurts.

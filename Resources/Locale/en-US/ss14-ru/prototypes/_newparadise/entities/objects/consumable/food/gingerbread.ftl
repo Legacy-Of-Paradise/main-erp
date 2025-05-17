@@ -1,4 +1,4 @@
-ent-LPPFoodGingerBread = мятный пряник
-    .desc = Вкусный мятный пряник, обладающий лечебными свойствами, любимое угощение одной сладкой дамочки, а так же древних русов. Самое то в прикуску с квасом.
-ent-LPPFoodGingevBvead = пвяник
-    .desc = Прототип самого UwUшного пвяника во всей галактике. За разработкой стоит неизвестная любительница пвяников и мастодонт по производству пряниковых изделий в галактике, та, чьё имя нельзя произносить в слух (иначе забанят). В составе содержится личезин, лекарство, что лечит от брейнротинга и воздействий от радиации.
+ent-LPPFoodGingerBread = Peppermint Gingerbread
+    .desc = Delicious peppermint gingerbread, which has medical properties, is a favorite treat of one sweet lady, as well as ancient Russes. The best thing about a snack with kvass.
+ent-LPPFoodGingevBvead = Gingewbwead
+    .desc = The prototype of the most OwOpular gingerbread in the entire galaxy. Behind the development is an unknown lover of gingerbread and a mastodon for the production of gingerbread products in the galaxy, one whose name cannot be pronounced aloud (otherwise they will be banned). The composition contains lichyesin, a medicine that treats brainroting and radiation effects.

@@ -1,2 +1,2 @@
-ent-LPPLaserKomissar = лазерный Комиссар
-    .desc = Ананасы ешь, рябчиков жуй, последний твой день приходит, буржуй!
+ent-LPPLaserKomissar = Laser Comissar
+    .desc = Eat pineapples, chew grouse, your last day is coming, bourgeois!

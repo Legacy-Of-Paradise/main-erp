@@ -1,3 +1,3 @@
 ent-LPPLockerBlueShieldFilled = { ent-LPPLockerBlueShield }
-    .suffix = Заполненный
+    .suffix = Filled
     .desc = { ent-LPPLockerBlueShield.desc }

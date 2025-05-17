@@ -1,4 +1,4 @@
-ent-LPPHedgeBase = изгородь
-    .desc = Выглядит как ухоженный куст.
-ent-LPPHedge = { ent-LPPHedgeBase }
-    .desc = { ent-LPPHedgeBase.desc }
+ent-LPPHedgeBase = hedge
+    .desc = A square piece of metal standing on four metal legs.
+ent-LPPHedge = hedge
+    .desc = A square piece of glass plasma, standing on four metal legs. Extra robust.

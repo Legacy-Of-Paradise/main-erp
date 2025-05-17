@@ -1,2 +1,2 @@
-ent-LPPBookUnderwearGuide = пособие для юного библиотекаря: как приобрести нижнее белье?
-    .desc = Спасения нет.
+ent-LPPBookUnderwearGuide = Guide's for young librarian: how to get underwear?
+    .desc = There is no escape.

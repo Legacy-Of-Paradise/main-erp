@@ -1,2 +1,2 @@
-ent-LPPRubberBaton = резиновая дубинка
-    .desc = Резиновая дубинка для выведения из строя людей. Не так больно, как электро-дубинка, но все равно неприятно.
+ent-LPPRubberBaton = Rubber baton
+    .desc = A rubber baton for incapacitating people with. Not as painful as stunbaton, but still unpleasant.

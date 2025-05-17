@@ -1,6 +1,6 @@
-ent-LPPWeaponHoSlaserPistol = лазерный пистолет главы службы безопасности
-    .desc = Современный энергетический пистолет, предпочитаемый ГСБ в качестве личного оружия.
-ent-LPPWeaponEnergyGunSoleil = гибридный модуль S.O.L.E.I.L.
-    .desc = Прототип гибридного лазерного "пистолета", представляющего из себя устройство, что цепляется на локоть, имеет летальный и не летальный режимы стрельбы.
-ent-LPPWeaponEM1Gauss = гаусс пушка EM-1
-    .desc = Гаусс пушка, что стреляет крайне маленькими металлическими шариками, уничтожающие цели на молекулярном уровне, может пройти сквозь стекло.
+ent-LPPWeaponHoSlaserPistol = X-0 pulse energy pistol
+    .desc = A state of the art energy pistol.
+ent-LPPWeaponEnergyGunSoleil = Hybryd module S.O.L.E.I.L.
+    .desc = The prototype of a hybrid laser "pistol", which is a device that clings to the elbow, has lethal and non-lethal firing modes.
+ent-LPPWeaponEM1Gauss = EM-1 Gauss
+    .desc = Gauss gun that fires very small projectile in a very high speed.

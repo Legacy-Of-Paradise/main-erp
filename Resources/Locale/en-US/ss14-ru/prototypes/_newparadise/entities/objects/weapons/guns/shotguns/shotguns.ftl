@@ -1,8 +1,8 @@
-ent-LPPWeaponShotgunLemington = лемингтон
-    .desc = See you soon.. Space cowboy... Использует .50 ружейные.
+ent-LPPWeaponShotgunLemington = Lemington
+    .desc = A lever-action rifle capable of tearing a man in half.
 ent-LPPWeaponShotgunTBS2S = TBS-2s "Boomstick"
-    .desc = Помповый дробовик, что имеет две трубки для хранения боеприпасов. Использует .50 ружейные.
+    .desc = A pump action shotgun that uses two tubes for ammo storaging, uses .50 ammo.
 ent-LPPWeaponShotgunRemington320b = Remington-320B
-    .desc = B значит БЮДЖЕТНОСТЬ, самое лучшее, что можно найти на рынке дробовиков по соотношению цена-качество. Использует .50 ружейные
-ent-LPPWeaponShotgunPredsedatel = Председатель
-    .desc = Полуавтоматический магазинный охотничий дробовик прямиком из СССП. Использует .50 ружейные.
+    .desc = B stands for "BUDGET". The most cheapest pump action shotgun you can find on the market. Quantity over quality. Uses .50 ammo.
+ent-LPPWeaponShotgunPredsedatel = Predsedatel
+    .desc = An USSP semi-auto hunting shotgun that uses mags.

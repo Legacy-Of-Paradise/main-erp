@@ -1,2 +1,2 @@
-ent-LPPAdjuWhiteSuit = белый- костюм адъютанта
-    .desc = Белый вариант костюма адъютанта что-то между школьником и офисным планктоном.
+ent-LPPAdjuWhiteSuit = White Adjutant's suit
+    .desc = The white version of the adjutant's costume is something between a schoolboy and an office plankton.

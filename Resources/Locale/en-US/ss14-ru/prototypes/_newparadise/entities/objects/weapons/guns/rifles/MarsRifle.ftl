@@ -1,2 +1,2 @@
-ent-LPPWeaponMarsRifle = винтовка XHA "Марс"
-    .desc = Охотничья винтовка компании XenoHuntingArmoury, использующая патроны .30 охотничье. Крайне популярная модель среди планетных и космических охотников на фауну.
+ent-LPPWeaponMarsRifle = Rifle XHA "Mars"
+    .desc = XenoHuntingArmoury hunting rifle using cartridges .30 hunting. An extremely popular model among planetary and space fauna hunters.

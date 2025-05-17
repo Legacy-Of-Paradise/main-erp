@@ -1,2 +1,2 @@
-ent-LPPClothingNeckRussianPin = значок России
-    .desc = Если патриот.
+ent-LPPClothingNeckRussianPin = Pin Russia
+    .desc = esli patriot

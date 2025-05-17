@@ -1,10 +1,10 @@
-ent-LPPBaseMagazineRifleM41A = магазин для M41-A (.30 винтовочные)
+ent-LPPBaseMagazineRifleM41A = magazine M41-A (.30 rifle)
     .desc = { ent-BaseItem.desc }
-ent-LPPBaseMagazineRifleM41AFull = магазин для M41-A (.30 винтовочные Боевые)
+ent-LPPBaseMagazineRifleM41AFull = magazine M41-A (.30 rifle)
     .desc = { ent-LPPBaseMagazineRifleM41A.desc }
-ent-LPPBaseMagazineRifleM41APractice = магазин для M41-A (.30 винтовочные Учебные)
+ent-LPPBaseMagazineRifleM41APractice = magazine M41-A (.30 rifle practice)
     .desc = { ent-LPPBaseMagazineRifleM41A.desc }
-ent-LPPBaseMagazineRifleM41ARubber = магазин для M41-A (.30 винтовочные Резиновые)
+ent-LPPBaseMagazineRifleM41ARubber = magazine M41-A (.30 rifle rubber)
     .desc = { ent-LPPBaseMagazineRifleM41A.desc }
-ent-LPPBaseMagazineRifleM41AUranium = магазин для M41-A (.30 винтовочные Урановые)
+ent-LPPBaseMagazineRifleM41AUranium = magazine (.30 rifle uranium)
     .desc = { ent-LPPBaseMagazineRifleM41A.desc }

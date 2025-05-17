@@ -1,2 +1,4 @@
-ent-LPPCombatHypospray = боевой гипоспрей
-    .desc = Слегка урезанная версия стерильного инъектора для быстрого введения лекарств пациентам. Достаточно быстрая версия ввиду своего предназначения. НЕ ДАВАТЬ В РУКИ ОФИЦЕРАМ. Имеет этикетку "BL CORP technology"
+ent-LPPCombatDefibrillator = Combat defibrillator
+    .desc = Quickly. Reliable. Effectively. It has a label "BL CORP technology"
+ent-LPPCombatHypospray = Combat hypospray
+    .desc = A slightly stripped-down version of a sterile injector for the rapid administration of drugs to patients. The version is fast enough because of its purpose. DO NOT GIVE IT INTO THE HANDS OF OFFICERS. It has a label "BL CORP technology"

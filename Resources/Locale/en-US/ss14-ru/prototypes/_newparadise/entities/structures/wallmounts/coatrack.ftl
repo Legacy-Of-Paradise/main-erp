@@ -1,2 +1,2 @@
-ent-LPPcoatrack = вешалка
-    .desc = Деревянная вешалка, что бы ваши вещи не валялись где не попадя.
+ent-LPPcoatrack = coat rack
+    .desc = A wooden rack to keep your things from lying around.

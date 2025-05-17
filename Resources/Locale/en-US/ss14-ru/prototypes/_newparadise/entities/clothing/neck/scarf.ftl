@@ -1,2 +1,2 @@
-ent-LPPClothingNeckScarfPG = шарф-шемаг
-    .desc = Полосатый шарф, которым можно защитить лицо от песка
+ent-LPPClothingNeckScarfPG = pg scarf
+    .desc = pg scarf

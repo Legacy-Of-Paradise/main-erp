@@ -1,2 +1,2 @@
-ent-LPPAdjuWhiteSkirt = белый- костюм адъютанта
-    .desc = Белый вариант костюма адъютанта что-то между школьником и офисным планктоном.
+ent-LPPAdjuWhiteSkirt = White Adjutant's skirt
+    .desc = The white version of the adjutant's skirt is something between a schoolboy and an office plankton.

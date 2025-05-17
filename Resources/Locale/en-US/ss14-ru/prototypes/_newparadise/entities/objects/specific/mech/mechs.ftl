@@ -1,4 +1,4 @@
-ent-LPPMechOdysseus = одиссеус ПМ
-    .desc = Высокоскоростный медицинский аппарат, предназначенный для перевозки тел и оказания первой медицинской помощи. ПМ в названии переводится как Полевой Медицинский.
-ent-LPPMechmauler = маулер ВТ
-    .desc = Узконаправленное военное вооружение, направленное на ведение долго боя с противником. ВТ в названии переводится как Военно Технический.
+ent-LPPMechOdysseus = Odysseus mech
+    .desc = Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.
+ent-LPPMechmauler = mauler mech
+    .desc = Versatile and lightly armored, the Ripley is useful for almost any heavy work scenario. The "APLU" stands for Autonomous Power Loading Unit.

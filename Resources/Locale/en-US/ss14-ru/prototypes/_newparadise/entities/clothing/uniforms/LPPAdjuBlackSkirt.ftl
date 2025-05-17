@@ -1,2 +1,2 @@
-ent-LPPAdjuBlackSkirt = чёрный костюм адъютанта
-    .desc = Чёрный вариант костюма адъютанта что-то между школьником и агентов внутренних дел.
+ent-LPPAdjuBlackSkirt = Black Adjutant's skirt
+    .desc = The black version of the adjutant's skirt is something between a schoolboy and internal affairs agents.

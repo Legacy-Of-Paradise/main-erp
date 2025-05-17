@@ -1,2 +1,2 @@
-ent-LPPTiberium = тиберий
-    .desc = Свет его прекрасен...
+ent-LPPTiberium = tiberium
+    .desc = Fields of green.

@@ -1,2 +1,2 @@
-ent-LPPWeaponRifleM41 = М41-А
-    .desc = Старая винтовка, использовавшаяся во времена колониальной экспансии. Использует винтовочные патроны 30-го калибра.
+ent-LPPWeaponRifleM41 = M41-A
+    .desc = An old rifle used during the colonial expansion. Uses .30 rifle ammo.

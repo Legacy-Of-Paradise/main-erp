@@ -1,4 +1,4 @@
-ent-LPPCratecivdef = набор гражданской обороны
-    .desc = Ооооо моя оборона... Содержит оружие не самого высокого качества, но зато в большом количестве для вооружения гражданских лиц в случае ЧС. Ящик какой-то хлипкий... Требует доступ службы безопасности для открытия.
-ent-LPPCratehunter = набор охотника
-    .desc = Содержит набор оружия, а так же скафандр, самое то для охоты на космическу фауну.
+ent-LPPCratecivdef = Civil defense kit
+    .desc = Ooooh my defense... It contains weapons of not the highest quality, but in large quantities for arming civilians in case of an emergency. The box is kind of flimsy... Requires security access to open.
+ent-LPPCratehunter = Hunter kit
+    .desc = It contains a set of weapons, as well as a space suit, the most suitable for hunting space fauna.

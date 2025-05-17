@@ -1,7 +1,7 @@
-ent-LPPBaseMagazineShotgunPredsedatel = магазин для Председателя (.50)
+ent-LPPBaseMagazineShotgunPredsedatel = ammo mag (.50 shells)
     .desc = { ent-BaseItem.desc }
-ent-LPPMagazineShotgunPredsedatelEmpty = магазин для Председателя (.50 любые)
-    .desc = { ent-BaseItem.desc }
-    .suffix = Пустой
-ent-LPPMagazineShotgunPredsedatel = магазин для Председателя (.50 дробь)
-    .desc = { ent-BaseItem.desc }
+ent-LPPMagazineShotgunPredsedatelEmpty = ammo mag (.50 shells any)
+    .suffix = empty
+    .desc = { ent-LPPBaseMagazineShotgunPredsedatel.desc }
+ent-LPPMagazineShotgunPredsedatel = ammo mag (.50 pellet)
+    .desc = { ent-LPPBaseMagazineShotgunPredsedatel.desc }

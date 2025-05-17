@@ -1,8 +1,8 @@
-ent-LPPClothingHeadHelmetAcientSyndieEVA = шлем CSA-21BM
-    .desc = Шлем от странного скафандра Синдиката, он в EVA режиме.
-ent-LPPClothingHeadHelmetHunter = шлем GRT-42w
-    .desc = Крайне комфорнтый шлем, что позволяет вам защититься от морозной погоды.
-ent-LPPClothingHeadHelmetRND = шлем RHS-14s
-    .desc = Шлем от скафандра НИС, довольно полезен и имеет встроенный функционал, по типу определения жидкостей и защиту от сварки, из-за чего довольно громозок.
-ent-LPPClothingHeadHelmetScienceNPZ = шлем NPZ-34r
-    .desc = Шлем от скафандра, довольно полезен и имеет встроенную защиту глаз от сварки.
+ent-LPPClothingHeadHelmetAcientSyndieEVA = CSA-21BM Helmet
+    .desc = The helmet is from a strange Syndicate spacesuit, it's in EVA mode.
+ent-LPPClothingHeadHelmetHunter = GRT-42w Helmet
+    .desc = An extremely comfortable helmet that allows you to protect yourself from the frosty weather.
+ent-LPPClothingHeadHelmetRND = RHS-14s Helmet
+    .desc = The helmet from the NIS spacesuit is quite useful and has built-in functionality, such as chemical detection and welding protection, which is why it is quite bulky.
+ent-LPPClothingHeadHelmetScienceNPZ = NPZ-34r
+    .desc = The helmet from the spacesuit is quite useful and has built-in eye protection from welding.

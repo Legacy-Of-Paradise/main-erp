@@ -1,2 +1,2 @@
-ent-LPPC4Low = С4Low
-    .desc = Взрывпакет предназначенный для быстрого выламывания шлюзов или стен, но его взрыв довольно слабый в плане радиуса. Виднеется этикетка (ставьте прямо на объект)
+ent-LPPC4Low = C4Low
+    .desc = The explosive package is designed to quickly break out airlocks or walls, but its explosion is quite weak in terms of radius. You can see label (put it directly on the object)

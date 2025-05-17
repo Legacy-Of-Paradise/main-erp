@@ -1,8 +1,8 @@
 ent-LPPStunBatonSelfCharging = { ent-Stunbaton }
-    .suffix = Перезаряжаемое, Не маппить
+    .suffix = Recharging, Do Not Map
     .desc = { ent-Stunbaton.desc }
 ent-LPPFlashRecharging = { ent-Flash }
-    .suffix = Перезаряжаемое, Не маппить
+    .suffix = Recharging, Do Not Map
     .desc = { ent-Flash.desc }
-ent-LPPPoliceBatonNonLethal = механическая дубинка
-    .desc = Быстро, и без вреда для живых существ! Используйте её для разгона толпы.
+ent-LPPPoliceBatonNonLethal = non-lethal baton
+    .desc = First, do no harm.

@@ -1,8 +1,8 @@
-ent-LPPWeaponSubMachineGunSaiber = сайбер
-    .desc = Пла-кет-кет-кет-кет! Но с глушителем! Использует автоматные патроны 35-го калибра.
+ent-LPPWeaponSubMachineGunSaiber = saiber
+    .desc = Pla-ket-ket-ket-ket! But silenced! Uses .35 auto ammo.
 ent-LPPWeaponSubMachineGunM90 = m90
-    .desc = Знаменитый пистолет-пулемёт, используемый наёмниками. В качестве патрона использует 35-тый калибр.
+    .desc = famous submachine gun used by mercenries. Uses .35 auto ammo.
 ent-LPPWeaponSubMachineGunIL20 = IL-20
-    .desc = Популярный пистолет-пулемёт, применяемый наёмниками. Использует патроны калибра .35
+    .desc = famous submachine gun used by mercenries. Uses .35 auto ammo.
 ent-LPPWeaponSubMachineGunMAC21 = MAC-21
-    .desc = Пра-пра-правнук самого популярного гангстерского пистолета-пулемёта, подходит для нео-гангстеров. Использует патроны .10 калибра.
+    .desc = famous submachine gun used by gangsters. Uses .35 auto ammo.

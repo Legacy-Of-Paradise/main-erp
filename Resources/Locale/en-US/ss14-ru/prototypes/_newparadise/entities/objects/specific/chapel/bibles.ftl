@@ -1,4 +1,4 @@
-ent-LPPBlueBible = синяя библия
-    .desc = Новая межзвёздная версия 2340. Теперь в синем виде.
-ent-LPPRedBible = красная библия
-    .desc = Новая межзвёздная версия 2340. Теперь в красном виде.
+ent-LPPBlueBible = blue bible
+    .desc = New Interstellar Version 2340. Now with blue color.
+ent-LPPRedBible = red bible
+    .desc = New Interstellar Version 2340. Now with red color.

@@ -1,2 +1,2 @@
-ent-LPPNTBriefcaseBrown = коричневый чемодан НТ
-    .desc = Ручной чемодан
+ent-LPPNTBriefcaseBrown = NT brown briefcase
+    .desc = A handy briefcase.

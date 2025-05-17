@@ -1,3 +1,3 @@
-ent-LPPXenoLamarSafe = лицехват
-    .desc = Это маленькое нечто забавно пританцовывает на своих ножках, желая запрыгнуть вам на лицо.
-    .suffix = Безопасный
+ent-LPPXenoLamarSafe = Facehugger
+    .desc = This little something is dancing amusingly on its legs, wanting to jump on your face.
+    .suffix = Safe

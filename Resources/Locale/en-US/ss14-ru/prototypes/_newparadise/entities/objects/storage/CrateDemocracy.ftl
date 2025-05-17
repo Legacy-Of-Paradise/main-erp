@@ -1,2 +1,2 @@
-ent-LPPCrateDEMOCRACY = набор списанной экипировки
-    .desc = Содержит набор списанной экипировки, ящик явно усилен парочкой пластов пластали. Требует доступ службы безопасности для открытия.
+ent-LPPCrateDEMOCRACY = A set of decommissioned equipment
+    .desc = It contains a set of decommissioned equipment, the box is clearly reinforced with a couple of layers of plasteel. Requires security access to open.

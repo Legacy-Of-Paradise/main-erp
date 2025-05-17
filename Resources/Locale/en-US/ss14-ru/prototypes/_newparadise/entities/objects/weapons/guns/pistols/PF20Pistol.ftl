@@ -1,2 +1,2 @@
 ent-LPPWeaponPistolPF20 = PF20
-    .desc = Пистолет Фишера под патрон .20, предаствляющий компактность пистолета и мощь винтовочного патрона. Используется спец подразделениями по всей галактике.
+    .desc = Fischer 's pistol. Chambered .20, providing the compactness of the pistol and the power of a rifle cartridge. It is used by special forces throughout the galaxy.

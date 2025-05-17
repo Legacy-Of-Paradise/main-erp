@@ -1,2 +1,2 @@
-ent-LPPPole = столб
-    .desc = Столб... Для чего? Для стриптиза!
+ent-LPPPole = LPPPole
+    .desc = LPPPole

@@ -1,4 +1,69 @@
 - type: entity
+  parent: [ClothingOuterHardsuitBase, BaseC3Contraband]
+  id: LPPClothingOuterHardsuitEliteNPZ
+  name: Hardsuit NPZ-75e - "Liquidator"
+  description: A prototype of a new line of NPZ spacesuits. Mobility, bullet deflection, protection from extremely high pressure and all this is in YOUR hands. Xenophobia is included.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Clothing/OuterClothing/Hardsuits/upgradednfsd/upgrlead.rsi
+  - type: Clothing
+    sprite: _NewParadise/Clothing/OuterClothing/Hardsuits/upgradednfsd/upgrlead.rsi
+  - type: Item
+    size: Huge
+  - type: PressureProtection
+    highPressureMultiplier: 0.02
+    lowPressureMultiplier: 1000
+  - type: ExplosionResistance
+    damageCoefficient: 0.2
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.35
+        Slash: 0.35
+        Piercing: 0.3
+        Caustic: 0.2
+        Heat: 0.5
+        Radiation: 0.2
+  - type: Reflect
+    reflectProb: 0.2
+    spread: 100
+  - type: ClothingSpeedModifier
+    walkModifier: 0.85
+    sprintModifier: 0.85
+  - type: HeldSpeedModifier
+  - type: ToggleableClothing
+    clothingPrototype: LPPClothingOuterHardsuitHelmetEliteNPZ
+  - type: StaticPrice
+    price: 500
+    vendPrice: 315000
+
+- type: entity
+  parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
+  id: LPPClothingOuterHardsuitHelmetEliteNPZ
+  name: Helmet NPZ-75e
+  description: Flutter like a butterfly, it's a pity that you're already dead, you pathetic xenos!
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: BreathMask
+  - type: Sprite
+    sprite: _NewParadise/Clothing/OuterClothing/Hardsuits/upgradednfsd/upgrleadhelmet.rsi
+  - type: Clothing
+    sprite: _NewParadise/Clothing/OuterClothing/Hardsuits/upgradednfsd/upgrleadhelmet.rsi
+  - type: PointLight
+    color: white
+  - type: PressureProtection
+    highPressureMultiplier: 0.05
+    lowPressureMultiplier: 1000
+  - type: Armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.9
+        Heat: 0.9
+        Radiation: 0.8
+
+- type: entity
   parent: ClothingOuterArmorBasic
   id: LPPClothingOuterArmoradvancedNPZ
   name: NPZ protection kit

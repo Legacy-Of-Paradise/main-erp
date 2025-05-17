@@ -1,2 +1,2 @@
-ent-LPPCrateVintageDEMOCRACY = набор с винтажной экипировкой
-    .desc = Набор оружия и брони, будто бы капсула времени из далёкого прошлого, пахнет джунглями. Требует доступ службы безопасности для открытия.
+ent-LPPCrateVintageDEMOCRACY = Set with vintage gear
+    .desc = A set of weapons and armor, like a time capsule from the distant past, smells like a jungle. Requires security access to open.

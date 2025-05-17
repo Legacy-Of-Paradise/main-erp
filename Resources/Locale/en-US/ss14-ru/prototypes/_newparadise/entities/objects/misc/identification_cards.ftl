@@ -1,2 +1,2 @@
-ent-LPPBlueShieldOfficerIDCard = ID карта Офицера "Синий Щит"
+ent-LPPBlueShieldOfficerIDCard = Blue Shield Officer ID card
     .desc = { ent-IDCardStandard.desc }

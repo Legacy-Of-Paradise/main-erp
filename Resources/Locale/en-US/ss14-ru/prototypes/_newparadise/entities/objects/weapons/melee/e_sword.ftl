@@ -1,6 +1,6 @@
-ent-LPPEnergyAxe = энергетический топор
-    .desc = Атмосферные техники синдиката подумали, что только энергетические мечи недостаточно круто.
-ent-LPPEnergyscythe = энергетическая коса
-    .desc = Фермеры синдиката подумали, что только энергетические мечи недостаточно круто.
-ent-LPPEnergyBroadsword = энергетический палаш
-    .desc = Очень громкий и ещё более опасный меч с лучом из чистой, концентрированной плазмы. Прорезает небронированные цели как масло.
+ent-LPPEnergyAxe = energy axe
+    .desc = Syndicate engineer's intern thought that having only energy swords was not cool enough.
+ent-LPPEnergyscythe = energy scythe
+    .desc = Syndicate farmer's intern thought that having only energy swords was not cool enough.
+ent-LPPEnergyBroadsword = energy broadsword
+    .desc = A very loud & even more dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.

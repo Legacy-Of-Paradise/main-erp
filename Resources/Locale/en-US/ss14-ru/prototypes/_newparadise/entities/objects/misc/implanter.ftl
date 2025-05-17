@@ -1,6 +1,6 @@
-ent-LPPLoaltyImplant = имплант лояльности
-    .desc = Сделает врага - другом.
-ent-LPPLoaltyImplanter = имплантер лояльности
-    .desc = Сделает врага - другом.
+ent-LPPLoaltyImplant = loalty implant
+    .desc = Do your enemies your friends!
+ent-LPPLoaltyImplanter = loalty implanter
+    .desc = Do your enemies your friends!
 ent-LPPCrateLoaltyImplants = { ent-CrateGenericSteel }
     .desc = { ent-CrateGenericSteel.desc }

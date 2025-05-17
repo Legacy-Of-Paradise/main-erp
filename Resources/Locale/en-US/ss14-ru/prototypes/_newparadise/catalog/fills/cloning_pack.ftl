@@ -1,2 +1,2 @@
-ent-LPPCrateMedicalCloneMachine = Набор клонирующей машины
+ent-LPPCrateMedicalCloneMachine = Cloning Machine Kit
     .desc = { ent-CrateMedical.desc }

@@ -1,4 +1,4 @@
-ent-LPPClothingNeckMantlePG = мантия ПГ
-    .desc = Мантия, которую носят лишь лучшие из лучших.
-ent-LPPClothingNeckMantleAV = наплечная мантия Веалиса
-    .desc = Чёрная мантия. Абсолютно не мантия ГСБ. Прекратите их путать.
+ent-LPPClothingNeckMantlePG = pg mantle
+    .desc = mantle for best mercenaries.
+ent-LPPClothingNeckMantleAV = artemon's mantle
+    .desc = Black mantle. Absolutelly not HoS's mantle. Stop mixing them up.
