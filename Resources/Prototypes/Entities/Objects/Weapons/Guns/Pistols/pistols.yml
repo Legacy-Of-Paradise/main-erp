@@ -67,6 +67,10 @@
   - type: Appearance
   - type: StaticPrice
     price: 500
+  # LOP edit start
+  - type: AltFireMelee
+    attackType: Light
+  # LOP edit end
 
 - type: entity
   name: viper
@@ -100,6 +104,10 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+  # LOP edit start
+  - type: AltFireMelee
+    attackType: Light
+  # LOP edit end
 
 - type: entity
   name: echis
@@ -184,6 +192,10 @@
     containers:
       gun_magazine: !type:ContainerSlot
       gun_chamber: !type:ContainerSlot
+  # LOP edit start
+  - type: AltFireMelee
+    attackType: Light
+  # LOP edit end
 
 - type: entity
   name: mk 58

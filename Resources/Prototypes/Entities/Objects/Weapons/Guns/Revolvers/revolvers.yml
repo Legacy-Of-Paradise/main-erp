@@ -49,6 +49,10 @@
       path: /Audio/Weapons/Guns/MagIn/revolver_magin.ogg
   - type: StaticPrice
     price: 500
+  # LOP edit start
+  - type: AltFireMelee
+    attackType: Light
+  # LOP edit end
 
 - type: entity
   name: Deckard
