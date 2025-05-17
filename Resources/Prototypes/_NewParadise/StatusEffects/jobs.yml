@@ -1,0 +1,20 @@
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconAdjutant
+  icon:
+    sprite: /Textures/_NewParadise/Interface/Misc/lpp_job_icons.rsi
+    state: Adjutant
+
+- type: statusIcon
+  parent: JobIcon
+  id: JobIconBlueshield
+  icon:
+    sprite: /Textures/_NewParadise/Interface/Misc/lpp_job_icons.rsi
+    state: Blueshield
+
+- type: statusIcon
+  parent: JobIcon
+  id: LPPJobIconSecurityEnginer
+  icon:
+    sprite: /Textures/_NewParadise/Interface/Misc/lpp_job_icons.rsi
+    state: LPPSecurityEngineer

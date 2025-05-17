@@ -1,0 +1,16 @@
+ent-LPPJudjeDreddHelmet = judje dredd helmet
+    .desc = Yes.
+ent-LPPClothingHeadTSFHelmet = TSF helmet
+    .desc = Helmet for TSF needs
+ent-LPPClothingHeadHelmetNPZ = NPZ Helmet
+    .desc = A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+ent-LPPClothingHeadHelmetNPZAssault = NPZ assault helmet
+    .desc = Robust helmet with additional armor on neck, pretty good for asaults.
+ent-LPPClothingHeadHelmetSwatAlternative = Lightened SWAT armor helmet
+    .desc = A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+ent-LPPClothingHeadHelmetSwatEpistemic = Epistemic SWAT armor helmet
+    .desc = A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.
+ent-LPPClothingHeadHelmetSalvager = Salvager helmet
+    .desc = Sturdy metal helmet, what else do you need?
+ent-LPPClothingHeadHelmetSwat = SWAT armor helmet
+    .desc = A sturdy helmet made of kevlar and plasteel, will protect against small-caliber bullets, as well as shrapnel.

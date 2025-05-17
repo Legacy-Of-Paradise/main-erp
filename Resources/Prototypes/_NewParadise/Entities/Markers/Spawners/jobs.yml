@@ -1,0 +1,23 @@
+- type: entity
+  id: LPPAdjutantSpawn
+  parent: SpawnPointJobBase
+  name: adjutant spawn
+  components:
+  - type: SpawnPoint
+    job_id: LPPAdjutant
+  - type: Sprite
+    layers:
+    - state: green
+    - state: hop
+
+- type: entity
+  id: LPPSpawnBlueShieldOfficer
+  parent: SpawnPointJobBase
+  name: BlueShieldOfficer
+  components:
+  - type: SpawnPoint
+    job_id: LPPBlueShieldOfficer
+  - type: Sprite
+    layers:
+    - state: green
+    - state: ertleader

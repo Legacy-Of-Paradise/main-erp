@@ -1,0 +1,46 @@
+ - type: job
+   id: LPPBlueShieldOfficer
+   name: job-name-blueshieldofficer
+   description: job-description-blueshieldofficer
+   playTimeTracker: JobBlueShieldOfficer
+   requirements:
+     - !type:CharacterDepartmentTimeRequirement
+       department: Command
+       time: 108000
+     - !type:CharacterDepartmentTimeRequirement
+       department: Security
+       time: 108000
+     - !type:CharacterDepartmentTimeRequirement
+       department: Medical
+       time: 72000
+   startingGear: LPPBlueShieldOfficerGear
+   icon: "JobIconBlueshield"
+   supervisors: job-supervisors-centcom
+   canBeAntag: false
+   accessGroups:
+   - AllAccess
+   special:
+   - !type:AddImplantSpecial
+     implants: [ TrackingImplant, MindShieldImplant ]
+
+ - type: startingGear
+   id: LPPBlueShieldOfficerGear
+   equipment:
+     jumpsuit: LPPClothingUniformJumpsuitBlueshield
+     head: LPPClothingHeadHatBeretBlueshield
+     back: LPPClothingBackpackBlueshield
+     shoes: ClothingShoesBootsCombatFilled
+     eyes: LPPBlueHudGlasses
+     gloves: ClothingHandsGlovesCombat
+     outerClothing: LPPClothingOuterArmorBlueshield
+     neck: LPPClothingNeckCloakBlueshield
+     id: LPPBlueShieldOfficerPDA
+     ears: ClothingHeadsetAltCommand
+     pocket1: LPPBlueshieldlaser
+     pocket2: HandheldCrewMonitor
+     belt: ClothingBeltSecurityFilled
+   satchel: LPPClothingBackpackSatchelBlueshield
+   duffelbag: LPPClothingBackpackDuffelBlueshield
+   storage:
+     back:
+     - Flash

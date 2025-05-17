@@ -1,0 +1,10 @@
+ent-LPPClothingHeadHatCapRed = красная кепка
+    .desc = Отлично сочетается с спортивным костюмом!
+ent-LPPClothingHeadHatCapGreen = зелёная кепка
+    .desc = Отлично сочетается с спортивным костюмом!
+ent-LPPClothingHeadHatCapBlue = синяя кепка
+    .desc = Отлично сочетается с спортивным костюмом!
+ent-LPPADJUCap = кепка адъютанта
+    .desc = Эту кепку носят те, кто совсем устал от рутинной работы с бюрократией
+ent-LPPClothingHeadHatCapBlack = чёрная кепка
+    .desc = Отлично сочетается с спортивным костюмом!

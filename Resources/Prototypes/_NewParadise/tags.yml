@@ -1,0 +1,31 @@
+- type: Tag
+  id: breast
+
+- type: Tag
+  id: underwear
+
+- type: Tag
+  id: socks
+
+# [Обоема для M41-A]
+
+- type: Tag
+  id: MagazineRifleM41A
+
+# [Тэги Конструкции крафта]
+
+- type: Tag
+  id: CoatRack # Вешалка
+
+- type: Tag
+  id: LPPCandy #Halloween
+
+# [Тэги экипировки]
+
+- type: Tag
+  id: LPPArmband  # Нарукавная повязка
+
+# [Тэги магазинов]
+
+- type: Tag
+  id: MagazineRiflePredsedatel

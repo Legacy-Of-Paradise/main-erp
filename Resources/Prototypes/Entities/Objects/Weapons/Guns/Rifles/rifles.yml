@@ -50,6 +50,11 @@
       gun_chamber: !type:ContainerSlot
   - type: StaticPrice
     price: 500
+  # LOP edit start
+  - type: MeleeRequiresWield
+  - type: AltFireMelee
+    attackType: Light
+  # LOP edit endBaseWeaponRevolver
 
 - type: entity
   name: AKMS

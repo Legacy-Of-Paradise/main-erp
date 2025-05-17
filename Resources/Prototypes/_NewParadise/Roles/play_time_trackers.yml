@@ -1,0 +1,8 @@
+- type: playTimeTracker
+  id: JobLPPBlueShieldOfficer
+
+- type: playTimeTracker
+  id: JobLPPАdjutant
+
+- type: playTimeTracker
+  id: LPPJobSecurityEnginer

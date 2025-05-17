@@ -1,0 +1,29 @@
+- type: entity
+  name: Rubber baton
+  parent: BaseItem
+  id: LPPRubberBaton
+  description: A rubber baton for incapacitating people with. Not as painful as stunbaton, but still unpleasant.
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Objects/Weapons/Melee/rubber_buton.rsi
+    state: icon
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    damage:
+      types:
+        Blunt: 3
+    bluntStaminaDamageFactor: 2.0
+    angle: 60
+    animation: WeaponArcSlash
+  - type: StaminaDamageOnHit
+    damage: 37
+  - type: StaminaDamageOnCollide
+    damage: 20
+  - type: Item
+    heldPrefix: off
+    size: Normal
+  - type: DisarmMalus
+    malus: 0.125
+  - type: Appearance
+  - type: StaticPrice
+    price: 100

@@ -17,8 +17,8 @@
   sprites:
     Head: MobReptilianHead
     Snout: MobHumanoidAnyMarking
-    UndergarmentTop: MobHumanoidAnyMarking
-    UndergarmentBottom: MobHumanoidAnyMarking
+    Hair: MobHumanoidAnyMarking # LOP edit
+    FacialHair: MobHumanoidAnyMarking # LOP edit
     Chest: MobReptilianTorso
     HeadTop: MobHumanoidAnyMarking
     HeadSide: MobHumanoidAnyMarking
@@ -38,10 +38,10 @@
   onlyWhitelisted: true
   points:
     Hair:
-      points: 0
+      points: 1 # LOP edit
       required: false
     FacialHair:
-      points: 0
+      points: 1 # LOP edit
       required: false
     Tail:
       points: 1
@@ -55,12 +55,6 @@
       points: 2
       required: false
     HeadSide:
-      points: 1
-      required: false
-    UndergarmentTop:
-      points: 1
-      required: false
-    UndergarmentBottom:
       points: 1
       required: false
     Chest:

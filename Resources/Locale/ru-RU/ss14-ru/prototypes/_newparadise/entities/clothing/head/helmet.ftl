@@ -1,0 +1,16 @@
+ent-LPPJudjeDreddHelmet = шлем Судьи
+    .desc = Ты здесь закон!
+ent-LPPClothingHeadTSFHelmet = шлем ТСФ
+    .desc = Шлем для нужд ТСФ
+ent-LPPClothingHeadHelmetNPZ = шлем НПЗ
+    .desc = Крепкий шлем из кевлара и пластали, защитит от мелкокалиберной пули, а так же шрапнели.
+ent-LPPClothingHeadHelmetNPZAssault = штурмовой шлем НПЗ
+    .desc = Прочный шлем с дополнительной броней на шее, неплохо защищает от ударов по вашему куполу.
+ent-LPPClothingHeadHelmetSwat = шлем брони SWAT
+    .desc = Шлем из кевлара и пластали. Имеет дополнительный визор.
+ent-LPPClothingHeadHelmetSwatAlternative = облегчённый шлем брони SWAT
+    .desc = Лёгкий шлем из уплотнёного полиэтилена. Практически не чувствуется на голове, но и не даёт серьёзной защиты.
+ent-LPPClothingHeadHelmetSwatEpistemic = эпистемический шлем SWAT
+    .desc = Многослоный шлем, что защищает носителя от воздействий псионики.
+ent-LPPClothingHeadHelmetSalvager = шлем утилизатора
+    .desc = Шлем из куска стали. Что вам ещё нужно?
