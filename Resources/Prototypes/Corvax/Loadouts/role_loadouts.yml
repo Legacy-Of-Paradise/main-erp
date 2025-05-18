@@ -8,6 +8,12 @@
   - Survival
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobPilot
@@ -21,6 +27,12 @@
   - SurvivalSecurity
   - Trinkets
   - GroupSpeciesBreathTool
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
 
 - type: roleLoadout
   id: JobBrigmedic
@@ -35,3 +47,9 @@
   - BrigmedicShoes
   - SurvivalMedical
   - Trinkets
+  # LOP edit start
+  - LOPunderwearloadout
+  - LOPsocksloadout
+  - LOPbraloadout
+  - SponsorsClothing
+  # LOP edit end
