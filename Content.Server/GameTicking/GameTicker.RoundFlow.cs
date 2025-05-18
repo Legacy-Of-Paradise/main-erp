@@ -24,6 +24,9 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Random;
 using Robust.Shared.Utility;
+#if LOP
+using Content.Server._NewParadise.Sponsors;
+#endif
 
 namespace Content.Server.GameTicking
 {
@@ -394,7 +397,15 @@ namespace Content.Server.GameTicking
                 }
                 else
                 {
-                    profile = HumanoidCharacterProfile.Random();
+                    // LOP edit start
+                    int sponsorTier = 0;
+#if LOP
+                    var sponsorman = IoCManager.Resolve<SponsorsManager>();
+                    if (sponsorman.TryGetInfo(session.UserId, out var sponsorInfo))
+                        sponsorTier = sponsorInfo.Tier;
+#endif
+                    // LOP edit end
+                    profile = HumanoidCharacterProfile.Random(sponsorTier: sponsorTier);    //LOP edit
                 }
                 readyPlayerProfiles.Add(userId, profile);
             }
