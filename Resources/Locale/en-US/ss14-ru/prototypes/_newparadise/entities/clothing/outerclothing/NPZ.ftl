@@ -1,7 +1,3 @@
-ent-LPPClothingOuterHardsuitEliteNPZ = Hardsuit NPZ-75e - "Liquidator"
-    .desc = A prototype of a new line of NPZ spacesuits. Mobility, bullet deflection, protection from extremely high pressure and all this is in YOUR hands. Xenophobia is included.
-ent-LPPClothingOuterHardsuitHelmetEliteNPZ = Helmet NPZ-75e
-    .desc = Flutter like a butterfly, it's a pity that you're already dead, you pathetic xenos!
 ent-LPPClothingOuterArmoradvancedNPZ = NPZ protection kit
     .desc = A set of armor elements that protect vital organs, as well as the limbs of the wearer.
 ent-LPPClothingOuterHardsuitNPZ = Hardsuit NPZ-72s - "Soldat"

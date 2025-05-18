@@ -1,5 +1,9 @@
 ent-LPPClothingUniformJumpskirtAdjutant = комбинезон адъютанта
     .desc = { ent-LPPClothingUniformJumpsuitAdjutant.desc }
+ent-LPPAdjuBlackSkirt = черный костюм с юбкой адъютанта
+    .desc = Черная версия костюма с юбкой адъютанта - это нечто среднее между школьницей и агентом внутренних дел.
+ent-LPPAdjuWhiteSkirt = белый костюм с юбкой адъютанта
+    .desc = Белый вариант костюма с юбкой адъютанта - это нечто среднее между школьником и офисным планктоном.
 ent-LPPCargoBlackSkirt = стильная юбка грузчика
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSkirtleneckCargo = водолазка с юбкой грузчика

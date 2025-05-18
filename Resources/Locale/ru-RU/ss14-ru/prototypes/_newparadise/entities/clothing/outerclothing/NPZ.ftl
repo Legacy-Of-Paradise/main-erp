@@ -1,7 +1,3 @@
-ent-LPPClothingOuterHardsuitEliteNPZ = скафандр NPZ-75e - "Ликвидатор"
-    .desc = Прототип новой линейки скафандров NPZ. Мобильность, отражение пуль, защита от экстремально высокого давления и все это в ВАШИХ руках. Ксенофобия в комплекте.
-ent-LPPClothingOuterHardsuitHelmetEliteNPZ = шлем NPZ-75e
-    .desc = Порхай как бабочка, жаль, что ты уже мёртв, жалкий ксенос!
 ent-LPPClothingOuterArmoradvancedNPZ = комплект защиты НПЗ
     .desc = Комплект из бронеэлементов, защищающие жизненно важные органы, а так же конечности носителя.
 ent-LPPClothingOuterHardsuitNPZ = скафандр NPZ-72s - "Soldat"

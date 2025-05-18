@@ -1,5 +1,9 @@
 ent-LPPClothingUniformJumpskirtAdjutant = adjutant's jumpskirt
     .desc = Rather bland and inoffensive. Perfect for vanishing off the face of the universe.
+ent-LPPAdjuBlackSkirt = Black Adjutant's skirt
+    .desc = The black version of the adjutant's skirt is something between a schoolboy and internal affairs agents.
+ent-LPPAdjuWhiteSkirt = White Adjutant's skirt
+    .desc = The white version of the adjutant's skirt is something between a schoolboy and an office plankton.
 ent-LPPCargoBlackSkirt = BlackSkirt
     .desc = { ent-ClothingUniformBase.desc }
 ent-LPPSkirtleneckCargo = Skirtleneck
