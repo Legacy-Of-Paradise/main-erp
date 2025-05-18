@@ -1,18 +1,18 @@
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconAdjutant
   icon:
     sprite: /Textures/_NewParadise/Interface/Misc/lpp_job_icons.rsi
     state: Adjutant
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: JobIconBlueshield
   icon:
     sprite: /Textures/_NewParadise/Interface/Misc/lpp_job_icons.rsi
     state: Blueshield
 
-- type: statusIcon
+- type: jobIcon
   parent: JobIcon
   id: LPPJobIconSecurityEnginer
   icon:
