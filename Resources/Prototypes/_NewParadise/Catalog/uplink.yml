@@ -7,7 +7,7 @@
   cost:
     Telecrystal: 2
   categories:
-  - UplinkArmor
+  - UplinkWearables
 
 - type: listing
   id: LPPUplinkEcbow
@@ -18,7 +18,7 @@
   cost:
     Telecrystal: 10
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
 
 - type: listing
   id: LPPUplinkhelmetswat
@@ -29,7 +29,7 @@
   cost:
     Telecrystal: 2
   categories:
-  - UplinkArmor
+  - UplinkWearables
 
 - type: listing
   id: LPPUplinkGlaive
@@ -40,18 +40,18 @@
   cost:
     Telecrystal: 8
   categories:
-  - UplinkWeapons
+  - UplinkWeaponry
 
 - type: listing
   id: LPPUplinkAcientHardsuitSyndie
   name: uplink-catalog-armor-syndiehard-name
   description: uplink-catalog-armor-syndiehard-desc
   icon: { sprite: /Textures/_NewParadise/Clothing/OuterClothing/Hardsuits/acientsyndiehardsuit.rsi, state: icon }
-  productEntity: LPPClothingBackpackDuffelAcientSyndicateHardsuitBundle
+  productEntity: LPPClothingOuterHardsuitAcientSyndie
   cost:
     Telecrystal: 12
   categories:
-  - UplinkArmor
+  - UplinkWearables
 
 - type: listing
   id: LPPUplinkBimagpistolboxSyndie
@@ -73,4 +73,4 @@
   cost:
     Telecrystal: 3
   categories:
-  - UplinkArmor
+  - UplinkWearables

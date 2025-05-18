@@ -1,6 +1,6 @@
 - type: entity
   id: LPPWeaponMarsRifle
-  parent: [BaseWeaponRifle, BaseC1Contraband]
+  parent: [BaseWeaponRifle]
   name: Rifle XHA "Mars"
   description: XenoHuntingArmoury hunting rifle using cartridges .30 hunting. An extremely popular model among planetary and space fauna hunters.
   components:

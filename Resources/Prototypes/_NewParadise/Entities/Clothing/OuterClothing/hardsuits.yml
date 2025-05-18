@@ -1,5 +1,5 @@
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitSWAT
   name: Tactical hardsuit FPA-56 - "Rhino"
   description: A special protective kit that protects against the dangerous effects of a low-pressure environment. It has an innovative additional layer of armor used by security personnel.
@@ -55,7 +55,7 @@
     clothingPrototype: LPPHardsuitHelmetAssaultParamedic
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitPilotSecurity
   name: pilot security hardsuit
   components:
@@ -83,7 +83,6 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitSecurityPilot
   - type: StaticPrice
     price: 100
-    vendPrice: 67500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -115,7 +114,7 @@
     clothingPrototype: LPPHardsuitHelmetSuppressor
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitMiksuit
   name: Discolored hardsuit GRT-21 "Támadó"
   description: The restored space suit of the syndicate agents, slightly modified to suit the wishes of the current owner.
@@ -148,10 +147,9 @@
     clothingPrototype: LPPClothingHeadHelmetMikhelm
   - type: StaticPrice
     price: 100
-    vendPrice: 125000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitBlueshield
   name: blueshield's hardsuit
   components:
@@ -180,10 +178,9 @@
     sprintModifier: 0.9
   - type: StaticPrice
     price: 250
-    vendPrice: 140000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitIICCommand
   name: Commander Hardsuit IIC 'Delta'
   description: Protective suit "Delta", used by stormtroopers and officers of the Interstellar Intellegence Center of Nanotrasen.
@@ -215,7 +212,6 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitIICCommand
   - type: StaticPrice
     price: 450
-    vendPrice: 197500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -253,7 +249,7 @@
     clothingPrototype: LPPClothingHeadHelmetRND
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitScienceNPZ
   name: Hardsuit NPZ-34r - "Gelehrt"
   description: A research spacesuit designed for the work of NPZ scientists, as well as technicians in outer space and harsh planetary conditions.
@@ -288,10 +284,9 @@
     clothingPrototype: LPPClothingHeadHelmetScienceNPZ
   - type: StaticPrice
     price: 150
-    vendPrice: 7500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitInteq
   name: Hardsuit INT-05Q - "Lochern"
   description: A sturdy spacesuit for close quarters combat, it's generally pretty versatile. Painted in a glossy brown color.
@@ -329,7 +324,6 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitInteq
   - type: StaticPrice
     price: 250
-    vendPrice: 292500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -367,7 +361,6 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitUpgradedMining
   - type: StaticPrice
     price: 125
-    vendPrice: 77500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -405,7 +398,6 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitMiningPlus
   - type: StaticPrice
     price: 75
-    vendPrice: 87500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -443,10 +435,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitMiningJuggernaut
   - type: StaticPrice
     price: 125
-    vendPrice: 80000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitDonkTrooper
   name: Hardsuit DNK-02a - "Alpha"
   description: A sturdy spacesuit for close quarters combat, it's smells like donk pockets...
@@ -484,10 +475,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkTrooper
   - type: StaticPrice
     price: 250
-    vendPrice: 200500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitDonkElite
   name: Hardsuit DNK-06g - "Gamma"
   description: A sturdy spacesuit for close quarters combat, it's smells like donk pockets...
@@ -524,10 +514,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkElite
   - type: StaticPrice
     price: 500
-    vendPrice: 200250
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitDonkMedic
   name: Hardsuit DNK-03m - "Bravo"
   description: A sturdy spacesuit for close quarters combat, it's smells like donk pockets...
@@ -564,10 +553,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkMedic
   - type: StaticPrice
     price: 300
-    vendPrice: 197500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitDonkCommander
   name: Hardsuit DNK-11 - "Omega"
   description: A sturdy spacesuit for close quarters combat, it's smells like donk pockets...
@@ -606,7 +594,7 @@
     price: 500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitCybersunJugger
   name: Hardsuit CBS-212 - "Kuijia"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -641,14 +629,12 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunJugger
-  - type: EmitsSoundOnMove
-    soundCollection:
+  - type: FootstepModifier
+    footstepSoundCollection:
       collection: LPPHeavyHardsuitMovement
-      params:
-        playOffsetSeconds: 2
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitCybersunBasic
   name: Hardsuit CBS-212 - "Puango"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -685,10 +671,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunBasic
   - type: StaticPrice
     price: 250
-    vendPrice: 200000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitCybersunElite
   name: Hardsuit CBS-218p - "Fǎnshè"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -727,7 +712,7 @@
     reflectProb: 0.45
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitCybersunCommander
   name: Hardsuit CBS-222 - "Zhǐhuī guān"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -765,7 +750,7 @@
     reflectProb: 0.05
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitGorlexCommander
   name: Hardsuit GRX-114p - "Predator"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -804,7 +789,7 @@
     reflectProb: 0.1
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitGorlexElite
   name: Hardsuit GRX-111 - "Ratkin"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -842,7 +827,7 @@
 
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitGorlexMedic
   name: Hardsuit GRX-113 - "HyperMed"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -879,10 +864,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexMedic
   - type: StaticPrice
     price: 250
-    vendPrice: 195000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitGorlexSoldier
   name: Hardsuit GRX-101 - "Cyclops"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -919,10 +903,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexSoldier
   - type: StaticPrice
     price: 2500
-    vendPrice: 206500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitAcientHos
   name: Hardsuit NT-014 - "Granite"
   description: A sturdy and very heavy hardsuit for total anigilation, it gives almost perfect protection.
@@ -960,7 +943,6 @@
       collection: LPPHeavyHardsuitMovement
   - type: StaticPrice
     price: 150
-    vendPrice: 112500
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -998,10 +980,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitSpatioUpgraded
   - type: StaticPrice
     price: 120
-    vendPrice: 87500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitCombatAlternative
   name: Tactical hardsuit GRT|FPA-88 - "keshik MK.I"
   description: A purpose-built combat suit designed to protect its user against all manner of enemy combatants in low pressure environments.
@@ -1031,10 +1012,9 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitCombatAlternative
   - type: StaticPrice
     price: 150
-    vendPrice: 197500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterDetectiveHardsuit
   name: Pressure protection suit FDA-87d - "Watson"
   description: A lightweight suit that helps NanoTrasen detectives investigate even in space!
@@ -1119,7 +1099,7 @@
   - type: FlashImmunity
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2ContrabandUnredeemable]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitReflectivepatrolsec
   name: Deflecting hardsuit NFD-101p "Deflect"
   description: A spacesuit, but laser-reflecting materials were used as part of his armor.
@@ -1152,7 +1132,7 @@
       - Energy
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitMiksuitJugger
   name: Discolored spacesuit GRT-43h - "Teknő"
   description: A restored spacesuit of old models of Cybersun juggernauts, modified to suit the wishes of the current owner.
@@ -1184,7 +1164,6 @@
     clothingPrototype: LPPClothingHeadHelmetMikhelmJugger
   - type: StaticPrice
     price: 125
-    vendPrice: 60000
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -1212,7 +1191,7 @@
         Heat: 0.95
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitHunter
   name: Hardsuit GRT-42w - "Vadász"
   description: The spacesuit of the GreyTide co. company, which recently appeared on the market of spacesuits for the needs of civilians as well as the military. Gray tones - the style!
@@ -1245,10 +1224,9 @@
     slot: head
   - type: StaticPrice
     price: 100
-    vendPrice: 59500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3SyndicateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitAcientSyndie
   name: Tactical hardsuit CSA-21BM - "Tobinezumi"
   description: A very strange model of the suit of Nuclear Operatives, obviously of a non-standard configuration and as if not from our universe, there is a cut-out text on the foot - "Mika's spacesuit, DS1, Death guards - hands off!".
@@ -1283,10 +1261,9 @@
     slot: head
   - type: StaticPrice
     price: 125
-    vendPrice: 125500
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, BaseC3PirateContraband]
+  parent: [ClothingOuterHardsuitBase]
   id: LPPClothingOuterHardsuitAcientSapper
   name: acient sapper hardsuit
   description: Acient USSP sapper hardsuit desined to withstain harsh enviroment and prdovide as much protection to the user as possible by sacreficing movement and comfort.

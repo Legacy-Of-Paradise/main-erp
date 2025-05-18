@@ -1,6 +1,6 @@
 - type: entity
   id: LPPWeaponM1Garand
-  parent: [BaseWeaponRifle, BaseC1Contraband]
+  parent: [BaseWeaponRifle]
   name: Rifle M1 Garand
   description: A replica of the classic World War II rifle from XenoHuntingArmoury, using cartridges .30 hunting. Ping!
   components:
@@ -42,5 +42,4 @@
   - type: ChamberMagazineAmmoProvider
     autoEject: true
   - type: StaticPrice
-    vendPrice: 12500
     price: 1500

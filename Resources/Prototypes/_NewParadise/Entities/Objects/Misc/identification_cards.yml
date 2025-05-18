@@ -3,10 +3,31 @@
   id: LPPBlueShieldOfficerIDCard
   name: Blue Shield Officer ID card
   components:
-    - type: Sprite
-      state: ert_security
-    - type: PresetIdCard
-      job: LPPBlueShieldOfficer
-    - type: Access
-      groups:
-      - AllAccess
+  - type: Sprite
+    state: ert_security
+  - type: PresetIdCard
+    job: LPPBlueShieldOfficer
+
+- type: entity
+  parent: IDCardStandard
+  id: LPPSecurityEngineerIDCard
+  name: security engineer ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: default
+    - state: idseniorengineer
+  - type: PresetIdCard
+    job: LPPSecurityEngineer
+
+- type: entity
+  parent: IDCardStandard
+  id: LPPAdjutantIDCard
+  name: adjutant ID card
+  components:
+  - type: Sprite
+    layers:
+    - state: silver
+    - state: idheadofpersonnel
+  - type: PresetIdCard
+    job: LPPAdjutant

@@ -1,6 +1,6 @@
 - type: entity
   name: Laser Comissar
-  parent: [BaseWeaponBattery, BaseGunWieldable, BaseC3Contraband]
+  parent: [BaseWeaponBattery, BaseGunWieldable]
   id: LPPLaserKomissar
   description: Eat pineapples, chew grouse, your last day is coming, bourgeois!
   components:

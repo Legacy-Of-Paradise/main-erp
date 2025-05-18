@@ -1,7 +1,7 @@
 - type: entity
   id: LPPBaseMagazineMinigun
   name: magazine (.10)
-  parent: [BaseItem, RecyclableItemSteelTiny]
+  parent: [BaseItem]
   abstract: true
   components:
   - type: Tag

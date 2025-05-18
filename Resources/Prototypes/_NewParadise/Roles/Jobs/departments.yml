@@ -1,5 +1,6 @@
 - type: department
-  id: CentralCommand
+  id: LPPCentralCommand
+  name: department-CentralCommand
   description: department-CentralCommand-description
   color: "#49C423"
   roles:

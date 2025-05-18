@@ -1,7 +1,7 @@
 
 - type: entity
   name: Colt Peacemaker
-  parent: [BaseWeaponRevolver, BaseC2Contraband]
+  parent: [BaseWeaponRevolver]
   id: LPPWeaponRevolverColtpeacemaker
   description: Legendary revolver from wild west. Uses .45 magnum bullets
   components:
@@ -59,7 +59,7 @@
 
 - type: entity
   name: peacemaker
-  parent: [LPPAVBase, BaseC2Contraband]
+  parent: [LPPAVBase]
   id: LPPWeaponRevolverPeacemaker
   description: The weapon carried by Detective Artemon Vealis uses a .357 magnum caliber and is engraved with his initials A.V.
   components:
@@ -73,11 +73,10 @@
     ammoSlots: [ null, null, null, null, null, null, null, null ]
   - type: StaticPrice
     price: 1500
-    vendPrice: 31500
 
 - type: entity
   name: Colt Special
-  parent: [BaseWeaponRevolver, BaseC2Contraband]
+  parent: [BaseWeaponRevolver]
   id: LPPWeaponRevolverColtspecial
   description: Uses .45 magnum bullets
   components:
@@ -107,7 +106,7 @@
 
 - type: entity
   name: Judge
-  parent: [BaseWeaponRevolver, BaseC2Contraband]
+  parent: [BaseWeaponRevolver]
   id: LPPWeaponRevolverJudgeLethal
   suffix: Lethal
   description: There is only one sentence with this revolver - death, the recoil of this weapon is so lethal that a person can hardly stand on his feet. Uses .60 anti-materiel rounds.
@@ -143,7 +142,7 @@
 
 - type: entity
   name: Judge
-  parent: [LPPWeaponRevolverJudgeLethal, BaseC2Contraband]
+  parent: [LPPWeaponRevolverJudgeLethal]
   id: LPPWeaponRevolverJudge
   suffix: NonLethal
   description: There is only one sentence with this revolver - death, the recoil of this weapon is so lethal that a person can hardly stand on his feet. Uses .60 anti-materiel rounds.
@@ -160,7 +159,7 @@
 
 - type: entity
   name: LPPPantherBase
-  parent: [BaseItem, BaseC2Contraband]
+  parent: [BaseItem]
   id: LPPPantherBase
   description: A fast revolver for quick decision making. Uses .45 magnum cartridges.
   abstract: true
@@ -219,7 +218,7 @@
 
 - type: entity
   name: Revolver OC-38
-  parent: [BaseWeaponRevolver, BaseC3SyndicateContraband]
+  parent: [BaseWeaponRevolver]
   id: LPPWeaponRevolverOC-38
   description: Uses .45 magnum bullets
   components:
@@ -246,11 +245,10 @@
         volume: -14
   - type: StaticPrice
     price: 1500
-    vendPrice: 20000
 
 - type: entity
   name: RT-46
-  parent: [BaseWeaponRevolver, BaseC3Contraband]
+  parent: [BaseWeaponRevolver]
   id: LPPWeaponRevolverRT46
   description: Revolver Tulskii 46 is a handheld cannon chambered in .60 caliber. Popular among USSP comissars and pirates.
   components:

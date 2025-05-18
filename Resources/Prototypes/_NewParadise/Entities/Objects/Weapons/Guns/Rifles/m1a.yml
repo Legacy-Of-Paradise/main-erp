@@ -1,6 +1,6 @@
 - type: entity
   name: M1A
-  parent: [BaseWeaponRifle, BaseC2Contraband]
+  parent: [BaseWeaponRifle]
   id: LPPWeaponRifleM1A
   description: A modified version of the old rifle, an indicator of the mixing of old weapons and new materials, uses .30
   components:

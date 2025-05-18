@@ -2,15 +2,15 @@
    id: LPPBlueShieldOfficer
    name: job-name-blueshieldofficer
    description: job-description-blueshieldofficer
-   playTimeTracker: JobBlueShieldOfficer
+   playTimeTracker: JobLPPBlueShieldOfficer
    requirements:
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Command
        time: 108000
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Security
        time: 108000
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Medical
        time: 72000
    startingGear: LPPBlueShieldOfficerGear
@@ -28,7 +28,6 @@
    equipment:
      jumpsuit: LPPClothingUniformJumpsuitBlueshield
      head: LPPClothingHeadHatBeretBlueshield
-     back: LPPClothingBackpackBlueshield
      shoes: ClothingShoesBootsCombatFilled
      eyes: LPPBlueHudGlasses
      gloves: ClothingHandsGlovesCombat
@@ -39,8 +38,6 @@
      pocket1: LPPBlueshieldlaser
      pocket2: HandheldCrewMonitor
      belt: ClothingBeltSecurityFilled
-   satchel: LPPClothingBackpackSatchelBlueshield
-   duffelbag: LPPClothingBackpackDuffelBlueshield
    storage:
      back:
      - Flash

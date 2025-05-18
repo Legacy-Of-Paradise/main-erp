@@ -49,14 +49,6 @@
     proto: LPPBulletM4A1
 
 - type: entity
-  id: LPPCartridgeRubberM4A1
-  name: Bullet (calibre 5,56x45 rubber)
-  parent: LPPBaseCartridgeRifle
-  components:
-  - type: CartridgeAmmo
-    proto: LPPBulletRubberM4A1
-
-- type: entity
   id: LPPCartridgePracticeM4A1
   name: Bullet (calibre 5,56x45 practice)
   parent: LPPBaseCartridgeRifle
@@ -109,23 +101,6 @@
     proto: LPPBulletLightRifleHunting
 
 - type: entity
-  id: LPPCartridgeMinigunrubber
-  name: bullet (.10 rifle rubber)
-  parent: LPPBaseCartridgeMinigun
-  components:
-  - type: CartridgeAmmo
-    proto: LPPBulletMinigunRubber
-    deleteOnSpawn: true
-  - type: Sprite
-    sprite: Objects/Weapons/Guns/Ammunition/Casings/ammo_casing.rsi
-    layers:
-    - state: base
-      map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#026dbf"
-
-- type: entity
   id: LPPCartridgeMinigunPractice
   name: bullet (.10 rifle practice)
   parent: LPPBaseCartridgeMinigun
@@ -138,9 +113,6 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#026dbf"
 
 - type: entity
   id: LPPCartridgeMinigunAP
@@ -155,9 +127,6 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: black
 
 - type: entity
   id: LPPCartridgeMinigunUranium
@@ -172,9 +141,6 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#61eb34"
 
 - type: entity
   parent: CartridgeAntiMateriel
@@ -192,9 +158,6 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
-      color: "#32a2a8"
   - type: Appearance
   - type: SpentAmmoVisuals
   - type: StaticPrice
@@ -216,8 +179,6 @@
     layers:
     - state: base
       map: ["enum.AmmoVisualLayers.Base"]
-    - state: tip
-      map: [ "enum.AmmoVisualLayers.Tip" ]
       color: "#870e0e"
   - type: Appearance
   - type: SpentAmmoVisuals

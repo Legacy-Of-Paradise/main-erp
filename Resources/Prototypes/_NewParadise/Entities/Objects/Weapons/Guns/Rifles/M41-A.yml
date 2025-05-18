@@ -1,6 +1,6 @@
 - type: entity
   name: M41-A
-  parent: [BaseWeaponRifle, BaseC3Contraband]
+  parent: [BaseWeaponRifle]
   id: LPPWeaponRifleM41
   description: An old rifle used during the colonial expansion. Uses .30 rifle ammo.
   components:

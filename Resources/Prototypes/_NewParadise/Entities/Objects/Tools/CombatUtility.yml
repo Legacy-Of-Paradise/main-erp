@@ -37,10 +37,6 @@
           enum.ToggleVisuals.Layer:
             True: { visible: true }
             False: { visible: false }
-        enum.DefibrillatorVisuals.Ready:
-          enum.PowerDeviceVisualLayers.Powered:
-            True: { visible: true }
-            False: { visible: false }
     - type: Speech
       speechVerb: Robotic
     - type: StaticPrice

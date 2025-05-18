@@ -1,7 +1,7 @@
 - type: entity
   id: LPPBaseMagazineShotgunPredsedatel
   name: ammo mag (.50 shells)
-  parent: [ BaseItem, BaseSecurityContraband, RecyclableItemSteelTiny ]
+  parent: [BaseItem]
   abstract: true
   components:
   - type: Tag

@@ -70,7 +70,6 @@
     fireStacks: 0.5
   - type: StaticPrice
     price: 150
-    vendPrice: 80000
   - type: MeleeRequiresWield
 
 - type: entity
@@ -143,7 +142,7 @@
 
 - type: entity
   name: energy broadsword
-  parent: [EnergySword, BaseC3SyndicateContraband]
+  parent: [EnergySword]
   id: LPPEnergyBroadsword
   description: A very loud & even more dangerous sword with a beam made of pure, concentrated plasma. Cuts through unarmored targets like butter.
   components:

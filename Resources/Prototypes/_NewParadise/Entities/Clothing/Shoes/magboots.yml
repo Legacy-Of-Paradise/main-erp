@@ -84,7 +84,6 @@
     - WhitelistChameleon
   - type: StaticPrice
     price: 450
-    vendPrice: 19500
 
 - type: entity
   parent: ClothingShoesBootsMag

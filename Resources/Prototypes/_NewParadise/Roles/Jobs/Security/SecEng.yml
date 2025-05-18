@@ -4,10 +4,10 @@
    description: job-description-security-enginer
    playTimeTracker: LPPJobSecurityEnginer
    requirements:
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Security
        time: 36000
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Engineering
        time: 72000
    startingGear: LPPSecurityEngineerGear
@@ -27,8 +27,6 @@
  - type: startingGear
    id: LPPSecurityEngineerGear
    equipment:
-     jumpsuit: LPPClothingUniformJumpsuitSecEngineer
-     back: LPPClothingBackpackSecurityEngineer
      shoes: LPPClothingShoesBootsJackSecEnginer
      eyes: LPPClothingEyesHudSecEng
      gloves: ClothingHandsGlovesColorYellow
@@ -37,7 +35,6 @@
      outerClothing: ClothingOuterVestHazard
      ears: LPPClothingHeadsetSecurityEngineer
      belt: LPPClothingMilitaryWebbingSecEng
-   innerClothingSkirt: LPPClothingUniformJumpSkirtSecEngineer
    storage:
      back:
      - SheetSteel10

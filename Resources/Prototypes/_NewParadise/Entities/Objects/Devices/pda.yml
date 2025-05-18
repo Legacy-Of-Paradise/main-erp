@@ -6,7 +6,6 @@
   components:
     - type: Pda
       id: LPPBlueShieldOfficerIDCard
-      state: pda-ert
     - type: PdaBorderColor
       borderColor: "#2b92ad"
       accentVColor: "#447987"
@@ -14,3 +13,27 @@
       state: pda-ert
     - type: HealthAnalyzer
       scanDelay: 1.2
+
+- type: entity
+  parent: BasePDA
+  id: LPPAdjutantPDA
+  name: adjutant PDA
+  description: Adjutant PDA.
+  components:
+  - type: Pda
+    id: LPPAdjutantIDCard
+  - type: Icon
+    state: pda-clear
+
+- type: entity
+  parent: EngineerPDA
+  id: LPPSecurityEngineerPDA
+  name: security PDA
+  description: Red to hide the stains of passenger blood.
+  components:
+  - type: Pda
+    id: LPPSecurityEngineerIDCard
+  - type: PdaBorderColor
+    borderColor: "#9b2b2a"
+  - type: Icon
+    state: pda-seniorengineer

@@ -1,6 +1,6 @@
 - type: entity
   name: PF20
-  parent: [BaseItem,  BaseC2Contraband]
+  parent: [BaseItem]
   id: LPPWeaponPistolPF20
   description: Fischer 's pistol. Chambered .20, providing the compactness of the pistol and the power of a rifle cartridge. It is used by special forces throughout the galaxy.
   components:

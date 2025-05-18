@@ -23,34 +23,34 @@
     sprite: _NewParadise/Objects/Weapons/Guns/Battery/dominator.rsi
   - type: Gun
     soundGunshot:
-      path: /Audio/DeltaV/Weapons/Guns/Gunshots/laser.ogg
+      path: /Audio/Weapons/Guns/Gunshots/laser.ogg
     soundEmpty:
-      path: /Audio/DeltaV/Weapons/Guns/Empty/dry_fire.ogg
+      path: /Audio/Weapons/Guns/Empty/empty.ogg
   - type: Battery
     maxCharge: 2600
     startingCharge: 2600
   - type: ProjectileBatteryAmmoProvider
     proto: BulletDisabler
     fireCost: 100
-  - type: EnergyGun
-    fireModes:
-    - proto: BulletDisabler
-      fireCost: 100
-      name: дизейблер
-      state: disabler
-    - proto: BulletEnergyGunLaser
-      fireCost: 200
-      name: летальный
-      state: lethal
+#  - type: EnergyGun
+#    fireModes:
+#    - proto: BulletDisabler
+#      fireCost: 100
+#      name: дизейблер
+#      state: disabler
+#    - proto: BulletEnergyGunLaser
+#      fireCost: 200
+#      name: летальный
+#      state: lethal
   - type: MagazineVisuals
     magState: mag
     steps: 5
     zeroVisible: true
   - type: Appearance
-  - type: GenericVisualizer
-    visuals:
-      enum.EnergyGunFireModeVisuals.State:
-        Firemode:
-          Disabler: { state: mode-disabler }
-          Lethal: { state: mode-lethal }
-          Special: { state: mode-stun }
+#  - type: GenericVisualizer
+#    visuals:
+#      enum.EnergyGunFireModeVisuals.State:
+#        Firemode:
+#          Disabler: { state: mode-disabler }
+#          Lethal: { state: mode-lethal }
+#          Special: { state: mode-stun }

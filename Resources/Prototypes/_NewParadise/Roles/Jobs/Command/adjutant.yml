@@ -4,13 +4,13 @@
    description: job-description-adjutant
    playTimeTracker: JobLPPАdjutant
    requirements:
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Engineering
        time: 36000
-     - !type:CharacterDepartmentTimeRequirement
+     - !type:DepartmentTimeRequirement
        department: Medical
        time: 36000
-     - !type:CharacterOverallTimeRequirement
+     - !type:OverallPlaytimeRequirement
        time: 72000
    startingGear: LPPAdjutantGear
    icon: "JobIconAdjutant"
@@ -46,15 +46,6 @@
  - type: startingGear
    id: LPPAdjutantGear
    equipment:
-     jumpsuit: LPPClothingUniformJumpsuitAdjutant
-     back: ClothingBackpackHOPFilled
      shoes: ClothingShoesColorBlack
      id: LPPAdjutantPDA
      ears: ClothingHeadsetCommand
-     socks: LPPClothingUnderSocksNormBlue
-     underwear: LPPBoxerBlue
-   underwear: LPPBriefsBlue
-   breast: LPPBraAltBlue
-   innerClothingSkirt: LPPClothingUniformJumpskirtAdjutant
-   satchel: ClothingBackpackSatchelHOPFilled
-   duffelbag: ClothingBackpackDuffelHOPFilled

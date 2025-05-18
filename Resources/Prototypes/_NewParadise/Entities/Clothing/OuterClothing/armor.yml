@@ -57,10 +57,9 @@
       - Energy
   - type: StaticPrice
     price: 100
-    vendPrice: 17000
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing]
   id: LPPlothingOuterArmorSwatAlternative
   name: Lightened swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.
@@ -86,13 +85,12 @@
     sprintModifier: 1
   - type: StaticPrice
     price: 50
-    vendPrice: 45000
   - type: TemperatureProtection
     heatingCoefficient: 0.95
     coolingCoefficient: 0.7
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing]
   id: LPPlothingOuterArmorSwatEpistemic
   name: Epistemic swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.
@@ -118,13 +116,12 @@
     sprintModifier: 1
   - type: StaticPrice
     price: 35
-    vendPrice: 42000
   - type: TemperatureProtection
     heatingCoefficient: 0.95
     coolingCoefficient: 0.7
 
 - type: entity
-  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing, BaseC2Contraband]
+  parent: [ClothingOuterHardsuitBase, AllowSuitStorageClothing]
   id: LPPClothingOuterArmorSwat
   name: swat suit
   description: Composed of semi-flexible polycarbonate, reinforced materials, and integrated ballistic plating, it offers exceptional protection against melee, bullet, and environmental threats, ensuring officers remain combat-ready in the harshest conditions.
@@ -152,7 +149,6 @@
     clothingPrototype: LPPClothingHeadHelmetSwat
   - type: StaticPrice
     price: 65
-    vendPrice: 40000
   - type: TemperatureProtection
     heatingCoefficient: 0.95
     coolingCoefficient: 0.7

@@ -1,6 +1,6 @@
 - type: entity
   name: M14
-  parent: [BaseWeaponRifle, BaseC2Contraband]
+  parent: [BaseWeaponRifle]
   id: LPPWeaponRifleM14
   description: An old rifle from distant wars, it smells slightly of the jungle. Uses .30 rifle
   components:

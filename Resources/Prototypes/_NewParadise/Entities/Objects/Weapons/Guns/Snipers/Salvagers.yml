@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseItem, BaseC1Contraband]
+  parent: [BaseItem]
   id: LPPweaponPibodi
   name: Pibodi self-loading rifle
   description: A hellish mix of just kinetic accelerator and classic firearms. Converts and accumulates carbon from the atmosphere into projectiles, converting part of it into a kind of gunpowder for firing, which takes quite a long time, but in the meantime you can poke your opponent with an integrated bayonet.
@@ -57,7 +57,7 @@
     attackType: Light
 
 - type: entity
-  parent: [BaseItem, BaseC1Contraband]
+  parent: [BaseItem]
   id: LPPweaponShasspo
   name: Shasspo self-loading needle rifle
   description: A rifle that shoots needles of carbon, taking it from the atmosphere. The operating principle is similar to PSLR. Has built-in optics.
@@ -117,7 +117,7 @@
   - type: CursorOffsetRequiresWield
 
 - type: entity
-  parent: [BaseItem, BaseC1Contraband]
+  parent: [BaseItem]
   id: LPPweaponLebel
   name: Lebel self-loading tube rifle
   description: Tube fed rifle that uses Pibodi technologies to produse ammunition and store it like old-fation 19 century rifle.
@@ -176,7 +176,7 @@
   - type: CursorOffsetRequiresWield
 
 - type: entity
-  parent: [BaseItem, BaseC1Contraband]
+  parent: [BaseItem]
   id: LPPweaponManlicher
   name: Manlicher self-loading shotgun
   description: Double barrel self loading shotgun, works like a PCA, but shots lots of projectiles into your enemy
@@ -232,7 +232,7 @@
     attackType: Light
 
 - type: entity
-  parent: [BaseItem, BaseC1Contraband]
+  parent: [BaseItem]
   id: LPPweaponSchwarzlose
   name: Schwarzlose self-loading pistol
   description: Protocinetic pistol, that often uses with dagger. It can marker targets for

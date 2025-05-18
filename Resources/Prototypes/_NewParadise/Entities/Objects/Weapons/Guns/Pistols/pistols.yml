@@ -1,6 +1,6 @@
 - type: entity
   name: desert eagle
-  parent: [WeaponPistolN1984, BaseC1Contraband]
+  parent: [WeaponPistolN1984]
   id: LPPWeaponPistolDesertEagle
   description: A favorite of gangsters and big gun enthusiasts, uses .35 caliber cartridges.
   components:
@@ -22,7 +22,7 @@
 
 - type: entity
   name: camo desert eagle
-  parent: [WeaponPistolN1984, BaseC1Contraband]
+  parent: [WeaponPistolN1984]
   id: LPPWeaponPistolDesertEagleCamo
   description: A special gold piece with a lemited brindle pattern, highly coveted by collectors and crime bosses, chambered in .35 caliber.
   components:
@@ -44,7 +44,7 @@
 
 - type: entity
   name: gold desert eagle
-  parent: [WeaponPistolN1984, BaseC1Contraband]
+  parent: [WeaponPistolN1984]
   id: LPPWeaponPistolDesertEagleGold
   description: A symbol of high status in the criminal world and beyond, uses .35 caliber cartridges.
   components:
@@ -66,7 +66,7 @@
 
 - type: entity
   name: gold mk 58
-  parent: [BaseWeaponPistol, BaseC1Contraband]
+  parent: [BaseWeaponPistol]
   id: LPPWeaponPistolGoldMk58
   description: Now it will not come out that it began to spread, was produced by a subsidiary of NanoTrasen in limited quantities in honor of the anniversary. Uses .35 auto ammo.
   components:
@@ -88,7 +88,7 @@
 
 - type: entity
   name: m1911
-  parent: [BaseWeaponPistol, BaseC1Contraband]
+  parent: [BaseWeaponPistol]
   id: LPPWeaponPistolM1911
   description: Pistol, which is older than your grandpa. Uses .35 auto ammo.
   components:
@@ -110,7 +110,7 @@
 
 - type: entity
   name: maria
-  parent: [BaseWeaponPistol, BaseC1Contraband]
+  parent: [BaseWeaponPistol]
   id: LPPWeaponPistolMaria
   description: A very iconic, to some extent acceptable weapon, looking at it, you were exposed to someone else's presence. Uses .35 auto ammo.
   components:
@@ -132,7 +132,7 @@
 
 - type: entity
   name: HM34
-  parent: [BaseWeaponPistol, BaseC1Contraband]
+  parent: [BaseWeaponPistol]
   id: LPPWeaponPistolninemile
   description: An acceptable-medium quality pistol manufactured by a subsidiary of NanoTrasen. Uses .35 auto ammo.
   components:
@@ -153,7 +153,7 @@
       path: /Audio/Weapons/Guns/Gunshots/mk58.ogg
 
 - type: entity
-  parent: [BaseItem, BaseC3SyndicateContraband]
+  parent: [BaseItem]
   id: LPPWeaponNailGun
   name: Self Charge P-12 "Nail Gun"
   description: Self recharing weapon that fires nail-like projectiles. Pretty deadly.
@@ -203,11 +203,10 @@
     delay: 1
   - type: StaticPrice
     price: 150
-    vendPrice: 25500
 
 - type: entity
   name: auto pistol "MARS"
-  parent: [BaseItem, BaseC3SyndicateContraband]
+  parent: [BaseItem]
   id: LPPWeaponMarsautopistol
   description: Pretty acient self-loading pistol with fixed mag that was used for hunting, now used to kill some NT goons. Uses .45 magnum ammo.
   components:
@@ -246,4 +245,3 @@
         ents: []
   - type: StaticPrice
     price: 500
-    vendPrice: 20500

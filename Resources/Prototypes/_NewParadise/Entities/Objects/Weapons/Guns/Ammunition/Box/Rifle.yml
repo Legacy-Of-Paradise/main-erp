@@ -16,7 +16,7 @@
     containers:
       ballistic-ammo: !type:Container
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/rifle.rsi
   - type: MagazineVisuals
     magState: mag
     steps: 4
@@ -34,12 +34,12 @@
     proto: LPPCartridgeM4A1Lethal
   - type: Sprite
     layers:
-    - state: base-b
+    - state: base-big
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1
+    - state: mag-big-1
       map: ["enum.GunVisualLayers.Mag"]
   - type: MagazineVisuals
-    magState: magb
+    magState: mag-big
     steps: 4
     zeroVisible: false
   - type: Appearance
@@ -54,13 +54,13 @@
     proto: LPPCartridgePracticeM4A1
   - type: Sprite
     layers:
-    - state: base-b
+    - state: base-big
       map: ["enum.GunVisualLayers.Base"]
-    - state: magb-1
+    - state: mag-big-1
       map: ["enum.GunVisualLayers.Mag"]
-    - state: practice-b
+    - state: practice
   - type: MagazineVisuals
-    magState: magb
+    magState: mag-big
     steps: 4
     zeroVisible: false
   - type: Appearance
@@ -93,21 +93,6 @@
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
     - state: practice
-
-- type: entity
-  parent: LPPBaseMagazineBoxRifle
-  id: LPPMagazineBoxM4A1Rubber
-  name: Ammunition box (caliber 5,56x45 rubber)
-  components:
-  - type: BallisticAmmoProvider
-    proto: LPPCartridgeRubberM4A1
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: rubber
 
 - type: entity
   id: LPPMagazineBoxM4A1Incendiary
@@ -150,7 +135,7 @@
       tags:
         - CartridgeHunting
   - type: Sprite
-    sprite: _NF/Objects/Weapons/Guns/Ammunition/Boxes/light_rifle.rsi
+    sprite: Objects/Weapons/Guns/Ammunition/Boxes/light_rifle.rsi
     layers:
     - state: base
       map: ["enum.GunVisualLayers.Base"]
@@ -170,21 +155,6 @@
       map: ["enum.GunVisualLayers.Base"]
     - state: mag-1
       map: ["enum.GunVisualLayers.Mag"]
-
-- type: entity
-  parent: BaseMagazineBoxRifle
-  id: LPPMagazineBoxRifleMinigunRubber
-  name: ammunition box (.10 rifle rubber)
-  components:
-  - type: BallisticAmmoProvider
-    proto: LPPCartridgeMinigunrubber
-  - type: Sprite
-    layers:
-    - state: base
-      map: ["enum.GunVisualLayers.Base"]
-    - state: mag-1
-      map: ["enum.GunVisualLayers.Mag"]
-    - state: rubber
 
 - type: entity
   parent: BaseMagazineBoxRifle

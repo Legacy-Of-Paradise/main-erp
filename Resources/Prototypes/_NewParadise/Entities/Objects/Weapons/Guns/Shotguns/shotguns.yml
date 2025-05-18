@@ -1,6 +1,6 @@
 - type: entity
   name: Lemington
-  parent: [BaseWeaponShotgun, BaseC2Contraband]
+  parent: [BaseWeaponShotgun]
   id: LPPWeaponShotgunLemington
   description: A lever-action rifle capable of tearing a man in half.
   components:
@@ -15,11 +15,10 @@
       path: /Audio/Corvax/Weapons/Guns/Gunshots/shotgun_alt.ogg
   - type: StaticPrice
     price: 150
-    vendPrice: 61500
 
 - type: entity
   name: TBS-2s "Boomstick"
-  parent: [BaseWeaponShotgun, BaseC3SyndicateContraband]
+  parent: [BaseWeaponShotgun]
   id: LPPWeaponShotgunTBS2S
   description: A pump action shotgun that uses two tubes for ammo storaging, uses .50 ammo.
   components:
@@ -37,11 +36,10 @@
   - type: GunRequiresWield
   - type: StaticPrice
     price: 1500
-    vendPrice: 70500
 
 - type: entity
   name: Remington-320B
-  parent: [BaseWeaponShotgun, BaseC3SyndicateContraband]
+  parent: [BaseWeaponShotgun]
   id: LPPWeaponShotgunRemington320b
   description: B stands for "BUDGET". The most cheapest pump action shotgun you can find on the market. Quantity over quality. Uses .50 ammo.
   components:
@@ -57,11 +55,10 @@
     fireRate: 1
   - type: StaticPrice
     price: 1500
-    vendPrice: 63500
 
 - type: entity
   name: Predsedatel
-  parent: [BaseItem, BaseGunWieldable, BaseC1Contraband]
+  parent: [BaseItem, BaseGunWieldable]
   id: LPPWeaponShotgunPredsedatel
   description: An USSP semi-auto hunting shotgun that uses mags.
   components:
