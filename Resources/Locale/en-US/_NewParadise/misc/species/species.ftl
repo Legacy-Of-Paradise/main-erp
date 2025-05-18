@@ -1,4 +1,3 @@
-species-name-tajaran = Таяран
 TajaranSpecies = Таяран
 species-tajaran-body-parts = "Таяран части тела"
 species-tajaran-torso = "Таяран тело"
