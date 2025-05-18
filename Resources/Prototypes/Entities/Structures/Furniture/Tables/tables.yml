@@ -788,6 +788,7 @@
 
 - type: entity
   id: TableDebug
+  categories: [ HideSpawnMenu ]
   parent: TableBase
   name: table
   description: PUT ON THEM CODERSOCKS!!

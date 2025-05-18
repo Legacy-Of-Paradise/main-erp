@@ -1,2 +1,2 @@
-ent-BoxMiniSyringe = MiniSyringe box
-    .desc = A box full of minisyringe.
+ent-BoxMiniSyringe = Коробка с маленькими шприцами
+    .desc = Коробка полная маленьких шприцов

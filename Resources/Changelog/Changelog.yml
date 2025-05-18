@@ -1,5 +1,5 @@
 Order: 2 # LOP edit
-﻿Entries:
+Entries:
 - author: deltanedas
   changes:
   - message: Fixed expeditions on cave planets not having any ore.
