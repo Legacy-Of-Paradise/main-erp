@@ -1,7 +1,6 @@
 - type: roleLoadout
   id: JobIAA
   groups:
-  - Inventory # Corvax-Loadouts
   - LawyerNeck
   - LawyerJumpsuit
   - CommonBackpack
@@ -18,7 +17,6 @@
 - type: roleLoadout
   id: JobPilot
   groups:
-  - Inventory # Corvax-Loadouts
   - SecurityJumpsuit
   - SecurityBackpack
   - SecurityOuterClothing
@@ -37,7 +35,6 @@
 - type: roleLoadout
   id: JobBrigmedic
   groups:
-  - Inventory # Corvax-Loadouts
   - BrigmedicHead
   - BrigmedicMask
   - BrigmedicJumpsuit
