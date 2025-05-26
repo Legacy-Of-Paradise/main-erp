@@ -19,8 +19,8 @@ uplink-fire-axe-flaming-name = Пылающий топор
 uplink-fire-axe-flaming-desc = Классическое оружие, оснащённое передовой атмос-технологией, позволяющей ему поджигать цели. Теперь с прочной прорезиненной рукояткой!
 uplink-gloves-north-star-name = Перчатки Полярной звезды
 uplink-gloves-north-star-desc = Пара перчаток, которые значительно сокращают время между ударами, позволяя избивать людей до смерти шквалом ударов.
-uplink-gloves-knuckleduster-name = Syndicate Knuckle Dusters
-uplink-gloves-knuckleduster-desc = A pair of plastitanium knuckle dusters that let you punch hard enough to break the captains jaw into pieces.
+uplink-gloves-knuckleduster-name = Кастет Синдиката
+uplink-gloves-knuckleduster-desc = Пара пластитановых кастетов, которые позволят вам бить достаточно сильно, чтобы разнести челюсть капитана на куски.
 # Explosives
 uplink-explosive-grenade-name = Разрывная граната
 uplink-explosive-grenade-desc = Простая граната с 3,5-секундным запалом, ориентированная на поражение личного состава. Наносит минимальные повреждения стенам и полу.

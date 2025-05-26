@@ -1,2 +1,2 @@
-ent-MaterialBag = material bag
-    .desc = A robust bag for xenoborgs to carry large amounts of materials.
+ent-MaterialBag = сумка для материалов
+    .desc = Прочная сумка для ксеноборгов, позволяющая переносить большое количество материалов.
