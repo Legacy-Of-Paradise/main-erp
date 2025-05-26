@@ -1,17 +1,25 @@
 ﻿<Document>
-  # Ban Durations
+ # Сроки Банов
 
-  Bans can be appealed at forum.ss14.io in the ban appeals section.
+ Апелляции на баны можно подать на форуме forum.ss14.io в разделе обжалования банов.
 
-  ## Temporary
-  Temporary bans will be lifted automatically after a certain amount of time. If they are a game ban, they will tell you how much time is remaining when you try to connect.
+ ---
 
-  ## Indefinite
-  These bans will only be removed on a successful appeal on the forums. Any ban which doesn't tell you when it expires and doesn't specify otherwise can be presumed to be an indefinite ban.
+ ## Временные
+ **Временные баны** будут сняты автоматически по истечении определённого времени. Если это бан в игре, при попытке подключения вам будет сообщено, сколько времени осталось.
 
-  ## Voucher
-  This is an indefinite ban which may only be appealed both with a successful appeal and which require a voucher of good behavior from the administrative team of a well-known or at least decently active SS13/SS14 server in order for the appeal to be considered. Voucher bans typically cannot be appealed for at least six months after being issued. Without a voucher, a player can only attempt to appeal a voucher ban once, and only if the ban was inappropriately placed. Voucher bans are typically only placed as a result of an unsuccessful appeal of an indefinite game ban by players with a history of bans and of causing issues.
+ ---
 
-  ## Permanent
-  This is a ban that is only appealable if the ban was inappropriately placed, including if the ban should not have been permanent. If the result of the appeal is that the ban was appropriately placed, the ban may not be appealed again and will not be lifted. These bans are extremely rare, but are applied to players who continually cause problems even after a voucher ban or users who have completely unacceptable behavior may be permanently removed.
+ ## Бессрочные
+ Эти баны будут сняты только после успешной апелляции на форумах. Любой бан, который не указывает срок истечения и не оговаривает иное, может считаться **бессрочным**.
+
+ ---
+
+ ## Ваучерные
+ Это **бессрочный бан**, который может быть обжалован только при успешной апелляции и который требует **ваучера** о хорошем поведении от административной команды известного или хотя бы достаточно активного сервера SS13/SS14 для рассмотрения апелляции. **Ваучерные баны**, как правило, не могут быть обжалованы в течение как минимум шести месяцев после их выдачи. Без **ваучера** игрок может попытаться обжаловать **ваучерный бан** только один раз, и только если бан был наложен неправомерно. **Ваучерные баны** обычно налагаются в результате неуспешной апелляции на **бессрочный бан** в игре игроками, имеющими историю банов и вызывающими проблемы.
+
+ ---
+
+ ## Постоянные
+ Это бан, который может быть обжалован только в том случае, если бан был наложен неправомерно, в том числе если бан не должен был быть **постоянным**. Если по результатам апелляции будет установлено, что бан был наложен правомерно, бан не может быть обжалован снова и не будет снят. Эти баны крайне редки, но применяются к игрокам, которые постоянно создают проблемы даже после **ваучерного бана**, или к пользователям, чьё поведение совершенно неприемлемо, и они могут быть удалены навсегда.
 </Document>

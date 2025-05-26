@@ -1,22 +1,34 @@
 ﻿<Document>
-  # Role Types
+ # Типы Ролей
 
-  ## Crew Aligned/Non-antagonist
-  In most rounds, a majority of players will be non-antagonists, meaning that they are crew aligned. This is the "default" role, if the game doesn't tell you that you are one of the other roles defined here, then you are a non-antagonist. Overall, non-antagonists are intended to work towards a net positive effect on the round.
+ ---
 
-  ## Solo Antagonist
-  Certain roles are intended to cause problems for the round or for non-antagonists. You are only a solo antagonist if the game clearly and explicitly tells you that you are a solo antagonist. Antagonists are exempt from many but not all roleplay rules.
+ ## Члены Экипажа/Не-антагонисты
+ В большинстве раундов большинство игроков будут не-антагонистами, что означает, что они являются членами экипажа. Это «роль по умолчанию»: если игра не сообщает вам, что вы являетесь одной из других ролей, определённых здесь, то вы не-антагонист. В целом, не-антагонисты призваны работать на достижение чистого положительного эффекта в раунде.
 
-  ## Team Antagonist
-  Team antagonists are like solo antagonists but they have other antagonists who they are expected to not hinder, and who they may be expected to help. You are only a team antagonist if the game clearly and explicitly tells you that you are a team antagonist.
+ ---
 
-  ## Free Agent
-  Certain roles are free to choose if they want to behave as an antagonist or as a non-antagonist, and may change their mind whenever they'd like. You are only free agent if the game clearly and explicitly tells you that you are a free agent.
+ ## Одиночный Антагонист
+ Некоторые роли предназначены для создания проблем в раунде или для не-антагонистов. Вы являетесь **одиночным антагонистом** только в том случае, если игра чётко и явно сообщает вам об этом. Антагонисты освобождены от многих, но не от всех правил отыгрыша.
 
-  ## Familiar
-  Familiars are considered non-antagonists, but have instructions to obey someone. They must obey this person even if it causes them to violate roleplay rules or die. You are only a familiar if the game clearly and explicitly tells you that you are a familiar. You are only the familiar of the person the game tells you.
+ ---
 
-  ## Silicon / Altered Silicon
-  Silicons have a set of laws that they must follow above all else except the core rules. You are only silicon if the game clearly and explicitly tells you that you are a silicon.
-  Altered Silicons are functionally identical, this role is used to highlight law-sets that have been hacked, corrupted or are otherwise considered non-standard or dangerous.
+ ## Командный Антагонист
+ **Командные антагонисты** похожи на одиночных антагонистов, но у них есть другие антагонисты, которым они не должны мешать и которым они, возможно, должны помогать. Вы являетесь **командным антагонистом** только в том случае, если игра чётко и явно сообщает вам об этом.
+
+ ---
+
+ ## Свободный Агент
+ Некоторые роли свободны в выборе, хотят ли они вести себя как антагонист или как не-антагонист, и могут передумать в любое время. Вы являетесь **свободным агентом** только в том случае, если игра чётко и явно сообщает вам об этом.
+
+ ---
+
+ ## Фамильяр
+ **Фамильяры** считаются не-антагонистами, но имеют инструкции подчиняться кому-либо. Они должны подчиняться этому человеку, даже если это заставляет их нарушать правила отыгрыша или умирать. Вы являетесь **фамильяром** только в том случае, если игра чётко и явно сообщает вам об этом. Вы являетесь **фамильяром** только того человека, о котором вам сообщила игра.
+
+ ---
+
+ ## Кремний / Изменённый Кремний
+ **Кремниевые** существа имеют набор законов, которым они должны следовать прежде всего, за исключением основных правил. Вы являетесь **кремниевым** существом только в том случае, если игра чётко и явно сообщает вам об этом.
+ **Изменённые Кремниевые** существа функционально идентичны, эта роль используется для обозначения наборов законов, которые были взломаны, повреждены или иным образом считаются нестандартными или опасными.
 </Document>
