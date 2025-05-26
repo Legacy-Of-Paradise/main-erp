@@ -26,5 +26,5 @@ ent-CyborgEnergySwordDouble = { ent-EnergySwordDouble }
     .desc = Интерны Командования Синдиката решили, что одного лезвия на энергетическом мече недостаточно. Специальная разработка для киборгов Синдиката.
     .suffix = Одноручное, Для боргов
 ent-EnergyDaggerLoudBlue = { ent-EnergyDaggerLoud }
-    .suffix = blue
+    .suffix = Синий
     .desc = { ent-EnergyDaggerLoud.desc }
