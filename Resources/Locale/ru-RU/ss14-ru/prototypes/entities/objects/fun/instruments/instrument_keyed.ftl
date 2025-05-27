@@ -8,4 +8,3 @@ ent-AccordionInstrument = аккордеон
     .desc = { ent-BaseKeyedInstrument.desc }
 ent-KalimbaInstrument = калимба
     .desc = Сила пианино прямо у вас под большими пальцами.
-    

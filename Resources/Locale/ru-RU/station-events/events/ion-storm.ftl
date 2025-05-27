@@ -29,22 +29,22 @@ ion-storm-law-not-having-harmful = ОТСУТСТВИЕ { $adjective } { $thing 
 ion-storm-law-requires =
     { $who } { $plural ->
         [true] ТРЕБУЮТ
-        *[false] ТРЕБУЕТ
+       *[false] ТРЕБУЕТ
     } { $thing }
 ion-storm-law-requires-subjects =
     { $who } { $plural ->
         [true] ТРЕБУЮТ
-        *[false] ТРЕБУЕТ
+       *[false] ТРЕБУЕТ
     } { $joined } { $subjects }
 ion-storm-law-allergic =
     У { $who } { $plural ->
         [true] { "" }
-        *[false] { "" }
+       *[false] { "" }
     } { $severity } АЛЛЕРГИЯ НА { $allergy }
 ion-storm-law-allergic-subjects =
     У { $who } { $plural ->
         [true] { "" }
-        *[false] { "" }
+       *[false] { "" }
     } { $severity } АЛЛЕРГИЯ НА { $adjective } { $subjects }
 ion-storm-law-feeling = { $who } { $feeling } { $concept }
 ion-storm-law-feeling-subjects = { $who } { $feeling } { $joined } { $subjects }
@@ -62,7 +62,7 @@ ion-storm-law-crew-must-go = { $who } ДОЛЖНЫ ОТПРАВИТЬСЯ В { $
 ion-storm-part =
     { $part ->
         [true] ЯВЛЯЮТСЯ
-        *[false] НЕ ЯВЛЯЮТСЯ
+       *[false] НЕ ЯВЛЯЮТСЯ
     }
 # due to phrasing, this would mean a law such as
 # ONLY HUMANS ARE NOT PART OF THE CREW

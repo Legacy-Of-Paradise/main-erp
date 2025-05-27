@@ -7,4 +7,3 @@ ent-MobDebugRandomCounter = DEBUG случайный счётчик
 ent-MobDebugRandomLess = DEBUG уменьшатель
     .desc = Он умеет уменьшать
     .suffix = ИИ, DEBUG
-    

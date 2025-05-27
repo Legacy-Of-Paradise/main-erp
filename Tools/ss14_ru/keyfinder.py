@@ -63,7 +63,8 @@ class FilesFinder:
                 is_engine_files = "robust-toolbox" in (relative_file.file.full_path)
                 is_corvax_files = "corvax" in (relative_file.file.full_path)
                 if not is_engine_files and not is_corvax_files:
-                    self.delete_ru_file_without_en_analog(relative_file)
+                    # Pass the full path to delete_ru_file_without_en_analog
+                    self.delete_ru_file_without_en_analog(relative_file.file.full_path)
             else:
                 raise Exception(f'Файл {relative_file.file.full_path} имеет неизвестную локаль "{relative_file.locale}"')
 
@@ -90,17 +91,21 @@ class FilesFinder:
 
         return ru_file
 
-    def delete_ru_file_without_en_analog(self, ru_relative_file: RelativeFile):
-        file: FluentFile = ru_relative_file.file
-        en_file_path = file.full_path.replace('ru-RU', 'en-US')
+    def delete_ru_file_without_en_analog(self, ru_file_full_path: str): # Modified to accept full path directly
+        # Normalize paths to lowercase for robust comparison, especially on Windows
+        normalized_ru_file_path = ru_file_full_path.lower()
+        normalized_en_file_path = normalized_ru_file_path.replace('ru-ru', 'en-us') # Ensure consistent replacement
 
-        try:
-            os.remove(file.full_path)
-            logging.warning(f'Файл {file.full_path} был удален, так как не имеет английского аналога по пути {en_file_path}')
-            self.deleted_files.append(file)
-        except OSError as e:
-            logging.error(f'Ошибка при удалении файла {file.full_path}: {e}')
-
+        # Check if the English analog exists (case-insensitively)
+        if not os.path.exists(normalized_en_file_path):
+            try:
+                os.remove(ru_file_full_path) # Remove the file using its original path
+                logging.warning(f'Файл {ru_file_full_path} был удален, так как не имеет английского аналога по пути {normalized_en_file_path}')
+                # You might need to adjust how you add to self.deleted_files if it expects a FluentFile object
+                # For now, let's assume it can take the full path for logging/tracking.
+                self.deleted_files.append(FluentFile(ru_file_full_path)) # Re-create FluentFile for tracking
+            except OSError as e:
+                logging.error(f'Ошибка при удалении файла {ru_file_full_path}: {e}')
 
 class KeyFinder:
     def __init__(self, files_dict):

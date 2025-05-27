@@ -53,4 +53,3 @@ ent-PowerCageMediumEmpty = { ent-PowerCageMedium }
 ent-PowerCageHighEmpty = { ent-PowerCageHigh }
     .suffix = Пустой
     .desc = { ent-PowerCageHigh.desc }
-    

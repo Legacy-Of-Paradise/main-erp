@@ -15,4 +15,3 @@ ent-LandMineExplosiveUnarmed = взрывная мина
 ent-LandMineExplosive = взрывная мина
     .desc = { ent-BaseLandMine.desc }
     .suffix = взведённая
-    

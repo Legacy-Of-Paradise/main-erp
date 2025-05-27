@@ -9,7 +9,7 @@ general-station-record-console-record-gender =
     Гендер: { $gender ->
         [Male] Мужчина
         [Female] Женщина
-        *[Epicene] Эпицен
+       *[Epicene] Эпицен
         [Neuter] Нейтральный
     }
 general-station-record-console-record-fingerprint = Отпечатки пальцев: { $fingerprint }

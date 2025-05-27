@@ -14,4 +14,3 @@ ent-ChlorineChemistryVial = { ent-BaseChemistryEmptyVial }
 ent-PlasmaChemistryVial = { ent-BaseChemistryEmptyVial }
     .suffix = Плазма
     .desc = { ent-BaseChemistryEmptyVial.desc }
-    

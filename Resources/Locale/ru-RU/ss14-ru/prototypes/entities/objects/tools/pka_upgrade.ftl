@@ -6,4 +6,3 @@ ent-PKAUpgradeRange = Модкит ПКА (дальность)
     .desc = { ent-BasePKAUpgrade.desc }
 ent-PKAUpgradeFireRate = Модкит ПКА (скорострельность)
     .desc = { ent-BasePKAUpgrade.desc }
-    
