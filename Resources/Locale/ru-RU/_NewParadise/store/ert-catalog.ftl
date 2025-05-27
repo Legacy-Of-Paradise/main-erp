@@ -1,4 +1,4 @@
-ert-catalog-weapon-mk58-name = Mk58
+ert-catalog-weapon-mk58-name = MK58
 ert-catalog-weapon-mk58-desc = Стандартный пистолет используемый на вооружении NanoTrasen. Использует калибр .35 авто.
 ert-catalog-weapon-wt550-name = WT550
 ert-catalog-weapon-wt550-desc = Эргономичный пистолет-пулемёт, имеющий надствольный магазин. Использует калибр .35 авто.

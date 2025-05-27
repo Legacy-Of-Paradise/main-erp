@@ -1,9 +1,10 @@
-parcel-wrap-verb-wrap = Wrap
-parcel-wrap-verb-unwrap = Unwrap
-parcel-wrap-popup-parcel-destroyed = The wrapping containing { $contents } is destroyed!
+parcel-wrap-verb-wrap = Завернуть
+parcel-wrap-verb-unwrap = Развернуть
+parcel-wrap-popup-parcel-destroyed = Упаковка, содержащая { $contents }, уничтожена!
 # Shown when parcel wrap is examined in details range
 parcel-wrap-examine-detail-uses =
     { $uses ->
-        [one] There is [color={ $markupUsesColor }]{ $uses }[/color] use left
-       *[other] There are [color={ $markupUsesColor }]{ $uses }[/color] uses left
+        [one] Осталось [color={ $markupUsesColor }]{ $uses }[/color] использование
+        *[other] Осталось [color={ $markupUsesColor }]{ $uses }[/color] использований
     }.
+    

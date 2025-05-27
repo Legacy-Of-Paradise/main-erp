@@ -305,9 +305,9 @@ cmd-delete-help = delete <entity UID>
 cmd-showtime-desc = Показывает время сервера.
 cmd-showtime-help = showtime
 cmd-restart-desc = Корректно перезапускает сервер (не только раунд).
-cmd-restart-help = restart
+cmd-restart-help = рестарт
 cmd-shutdown-desc = Корректно выключает сервер.
-cmd-shutdown-help = shutdown
+cmd-shutdown-help = выключение сервера
 cmd-netaudit-desc = Выводит информацию о безопасности NetMsg.
 cmd-netaudit-help = netaudit
 # Player commands

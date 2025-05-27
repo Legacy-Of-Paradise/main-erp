@@ -1,6 +1,6 @@
 delivery-recipient-examine = Это для { $recipient }, { $job }.
 delivery-already-opened-examine = Уже открыта.
-delivery-earnings-examine = Delivering this will earn the station [color=yellow]{ $spesos }[/color] spesos.
+delivery-earnings-examine = Доставка этого принесёт станции [color=yellow]{ $spesos }[/color] спесо.
 delivery-recipient-no-name = Без имени
 delivery-recipient-no-job = Неизвестно
 delivery-unlocked-self = Вы разблокировали { $delivery } с помощью отпечатка пальца.
@@ -13,13 +13,13 @@ delivery-slice-verb = Вскрыть
 delivery-teleporter-amount-examine =
     { $amount ->
         [one] Содержит [color=yellow]{ $amount }[/color] доставку.
-       *[other] Содержит [color=yellow]{ $amount }[/color] доставок.
+        *[other] Содержит [color=yellow]{ $amount }[/color] доставок.
     }
 delivery-teleporter-empty = { $entity } пуст.
 delivery-teleporter-empty-verb = Забрать почту
 # modifiers
-delivery-priority-examine = This is a [color=orange]priority { $type }[/color]. You have [color=orange]{ $time }[/color] left to deliver it to get a bonus.
-delivery-priority-delivered-examine = This is a [color=orange]priority { $type }[/color]. It got delivered on time.
-delivery-priority-expired-examine = This is a [color=orange]priority { $type }[/color]. It ran out of time.
-delivery-fragile-examine = This is a [color=red]fragile { $type }[/color]. Deliver it intact for a bonus.
-delivery-fragile-broken-examine = This is a [color=red]fragile { $type }[/color]. It looks badly damaged.
+delivery-priority-examine = Это [color=orange]срочная { $type }[/color]. У вас осталось [color=orange]{ $time }[/color], чтобы доставить её и получить бонус.
+delivery-priority-delivered-examine = Это [color=orange]срочная { $type }[/color]. Она была доставлена вовремя.
+delivery-priority-expired-examine = Это [color=orange]срочная { $type }[/color]. Время вышло.
+delivery-fragile-examine = Это [color=red]хрупкая { $type }[/color]. Доставьте её целой для получения бонуса.
+delivery-fragile-broken-examine = Это [color=red]хрупкая { $type }[/color]. Она выглядит сильно повреждённой.

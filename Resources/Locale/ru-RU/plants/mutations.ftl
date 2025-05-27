@@ -1,7 +1,7 @@
-mutation-plant-bioluminescent = It glows with a gentle light.
-mutation-plant-kudzu = It is growing unusually fast and thin.
-mutation-plant-ligneous = It is woody and will need a sharp tool to harvest.
-mutation-plant-scream = This plant seems nervous somehow.
-mutation-plant-sentient = It seems to be examining its surroundings.
-mutation-plant-slippery = It is slick to the touch.
-mutation-plant-unviable = It is wilting and sickly.
+mutation-plant-bioluminescent = Оно светится мягким светом.
+mutation-plant-kudzu = Оно растёт необычно быстро и тонко.
+mutation-plant-ligneous = Оно древесное, и для сбора урожая потребуется острый инструмент.
+mutation-plant-scream = Это растение кажется почему-то нервным.
+mutation-plant-sentient = Кажется, оно осматривает окрестности.
+mutation-plant-slippery = Оно скользкое на ощупь.
+mutation-plant-unviable = Оно увядает и выглядит болезненным.

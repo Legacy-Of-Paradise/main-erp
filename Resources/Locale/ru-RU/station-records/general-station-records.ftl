@@ -9,15 +9,15 @@ general-station-record-console-record-gender =
     Гендер: { $gender ->
         [Male] Мужчина
         [Female] Женщина
-       *[Epicene] Эпицен
+        *[Epicene] Эпицен
         [Neuter] Нейтральный
     }
 general-station-record-console-record-fingerprint = Отпечатки пальцев: { $fingerprint }
 general-station-record-console-record-dna = ДНК: { $dna }
 general-station-record-for-filter-line-placeholder = Введите текст...
 general-station-record-name-filter = Имя сотрудника
-general-station-record-job-filter = Job
-general-station-record-species-filter = Species
+general-station-record-job-filter = Должность
+general-station-record-species-filter = Раса
 general-station-record-prints-filter = Отпечатки пальцев
 general-station-record-dna-filter = ДНК
 general-station-record-console-search-records = Поиск

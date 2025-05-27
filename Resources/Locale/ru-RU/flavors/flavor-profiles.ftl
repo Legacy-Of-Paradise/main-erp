@@ -52,7 +52,7 @@ flavor-base-horrible = ужасно
 flavor-base-terrible = ужасающе
 flavor-base-mindful = разумно
 flavor-base-chewy = жевательно
-flavor-base-trashy = trashy
+flavor-base-trashy = дрянной
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -326,7 +326,7 @@ flavor-complex-martini = как шпионский фильм
 flavor-complex-mojito = как уход в тень после пребывания на жарком солнце
 flavor-complex-neurotoxin = как подземный испытательный комплекс
 flavor-complex-patron = как будто мариачи поют серенады
-flavor-complex-radler = like spiked lemonade
+flavor-complex-radler = как лимонад с шипучкой
 flavor-complex-red-mead = как битва викингов
 flavor-complex-sbiten = как огонь
 flavor-complex-snowwhite = как кислый и горький хмель

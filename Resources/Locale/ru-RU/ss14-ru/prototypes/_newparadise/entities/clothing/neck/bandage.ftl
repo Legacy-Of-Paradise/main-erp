@@ -1,5 +1,5 @@
 ent-LPPClothingHeadHatGreenBandana = зелёная повязка на лицо
-    .desc = Kept you waiting, huh?
+    .desc = Заставил тебя ждать, да?
 ent-LPPClothingHeadHatRedBandana = красная повязка на лицо
     .desc = Начиная войну, не забудьте одну вещь…
 ent-LPPClothingHeadHatRedMedBandana = медицинская повязка на лицо
