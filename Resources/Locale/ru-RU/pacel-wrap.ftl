@@ -7,4 +7,3 @@ parcel-wrap-examine-detail-uses =
         [one] Осталось [color={ $markupUsesColor }]{ $uses }[/color] использование
         *[other] Осталось [color={ $markupUsesColor }]{ $uses }[/color] использований
     }.
-    
