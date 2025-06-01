@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore.Migrations;
+﻿#if LOP_ERP
+using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
@@ -27,3 +28,4 @@ namespace Content.Server.Database.Migrations.Sqlite
         }
     }
 }
+#endif
