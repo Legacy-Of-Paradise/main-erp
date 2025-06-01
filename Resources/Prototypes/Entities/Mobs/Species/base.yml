@@ -219,6 +219,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: ERPBounder # ERP-MODULE
 
 - type: entity
   save: false

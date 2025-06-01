@@ -210,6 +210,13 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.CustomBaseLayers = customBaseLayers;
         humanoid.Sex = profile.Sex;
         humanoid.Gender = profile.Gender;
+
+#if LOP_ERP
+        // ERP-MODULE
+        humanoid.ErpStatus = profile.ErpStatus;
+        // ERP-MODULE
+#endif
+
         humanoid.Age = profile.Age;
         humanoid.Species = profile.Species;
         humanoid.SkinColor = profile.Appearance.SkinColor;
