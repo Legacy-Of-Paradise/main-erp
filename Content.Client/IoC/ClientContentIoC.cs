@@ -31,7 +31,7 @@ using Content.Client._NC.DiscordAuth;
 using Content.Client._PrivateClient._NC.JoinQueue;
 #endif
 
-#if LOP_ERP
+#if LOP
 using Content.Client._ERPModule.Services;
 #endif
 
@@ -77,7 +77,7 @@ namespace Content.Client.IoC
             collection.Register<JoinQueueManager>();
 #endif
 
-#if LOP_ERP
+#if LOP
             collection.Register<CustomInteractionService, CustomInteractionService>(true);
 #endif
 

@@ -23,7 +23,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Utility;
 
 
-#if LOP_ERP
+#if LOP
 using Content.Shared._ERPModule.Data; // ERP-MODULE
 #endif
 
@@ -205,7 +205,7 @@ namespace Content.Server.Database
             if (Enum.TryParse<Gender>(profile.Gender, true, out var genderVal))
                 gender = genderVal;
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             var erpStatus = ErpStatus.Ask;
             if (Enum.TryParse<ErpStatus>(profile.ErpStatus, true, out var erpStatusVal))
@@ -272,7 +272,7 @@ namespace Content.Server.Database
                 sex,
                 gender,
 
-#if LOP_ERP
+#if LOP
                 // ERP-MODULE
                 erpStatus,
                 // ERP-MODULE
@@ -314,7 +314,7 @@ namespace Content.Server.Database
             profile.Sex = humanoid.Sex.ToString();
 
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             profile.ErpStatus = humanoid.ErpStatus.ToString();
             // ERP-MODULE

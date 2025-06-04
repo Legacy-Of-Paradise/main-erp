@@ -409,7 +409,7 @@ namespace Content.Server.Database
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
 
-#if LOP_ERP
+#if LOP
         // ERP-MODULE
         public string ErpStatus { get; set; } = null!;
         // ERP-MODULE

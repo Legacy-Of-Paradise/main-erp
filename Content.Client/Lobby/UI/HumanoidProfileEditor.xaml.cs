@@ -41,7 +41,7 @@ using Content.Shared._NewParadise.TTS;
 using Content.Client._NewParadise.Sponsors;
 #endif
 
-#if LOP_ERP
+#if LOP
 using Content.Shared._ERPModule.Data;
 #endif
 
@@ -198,7 +198,7 @@ namespace Content.Client.Lobby.UI
 
             #endregion Sex
 
-#if LOP_ERP
+#if LOP
             #region ERP-MODULE
 
             ErpStatusButton.OnItemSelected += args =>
@@ -483,7 +483,7 @@ namespace Content.Client.Lobby.UI
             IsDirty = false;
 
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             _cfgManager.OnValueChanged(ErpCVars.EroticPanelEnabled,
                 UpdateErpControlsVisibility,
@@ -492,7 +492,7 @@ namespace Content.Client.Lobby.UI
 #endif
         }
 
-#if LOP_ERP
+#if LOP
         #region ERP-MODULE
 
         private void UpdateErpControlsVisibility(bool obj)
@@ -827,7 +827,7 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsHair();
             UpdateCMarkingsFacialHair();
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             UpdateErpStatusControls();
             // ERP-MODULE
@@ -847,7 +847,7 @@ namespace Content.Client.Lobby.UI
             }
         }
 
-#if LOP_ERP
+#if LOP
         #region ERP-MODULE
 
         private void SetErpStatus(ErpStatus newErp)
@@ -1294,7 +1294,7 @@ namespace Content.Client.Lobby.UI
             // In case there's species restrictions for loadouts
             RefreshLoadouts();
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             UpdateErpStatusControls();
             // ERP-MODULE
@@ -1322,7 +1322,7 @@ namespace Content.Client.Lobby.UI
             SetDirty();
         }
 
-#if LOP_ERP
+#if LOP
         #region ERP-MODULE
 
         private void UpdateErpStatusControls()

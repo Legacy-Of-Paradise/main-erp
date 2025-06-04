@@ -1,7 +1,7 @@
 using System.Linq;
 using System.Text.RegularExpressions;
 
-#if LOP_ERP
+#if LOP
 using Content.Shared._ERPModule.Data; // LOP edit
 #endif
 
@@ -100,7 +100,7 @@ namespace Content.Shared.Preferences
         [DataField]
         public int Age { get; set; } = 18;
 
-#if LOP_ERP
+#if LOP
         // ERP-MODULE
 
         [DataField]
@@ -167,7 +167,7 @@ namespace Content.Shared.Preferences
             Sex sex,
             Gender gender,
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             ErpStatus erpStatus,
             // ERP-MODULE
@@ -189,7 +189,7 @@ namespace Content.Shared.Preferences
             Sex = sex;
             Gender = gender;
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             ErpStatus = erpStatus;
             // ERP-MODULE
@@ -228,7 +228,7 @@ namespace Content.Shared.Preferences
                 other.Sex,
                 other.Gender,
 
-#if LOP_ERP
+#if LOP
                 // ERP-MODULE
                 other.ErpStatus,
                 // ERP-MODULE
@@ -544,7 +544,7 @@ namespace Content.Shared.Preferences
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             if (ErpStatus != other.ErpStatus) return false;
             // ERP-MODULE
@@ -585,7 +585,7 @@ namespace Content.Shared.Preferences
                 _ => Sex.Male // Invalid enum values.
             };
 
-#if LOP_ERP
+#if LOP
 
             // ERP-MODULE
             var erpStatus = ErpStatus switch
@@ -715,7 +715,7 @@ namespace Content.Shared.Preferences
             Sex = sex;
             Gender = gender;
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             ErpStatus = erpStatus;
             // ERP-MODULE
@@ -844,7 +844,7 @@ namespace Content.Shared.Preferences
             hashCode.Add((int)Sex);
             hashCode.Add((int)Gender);
 
-#if LOP_ERP
+#if LOP
             // ERP-MODULE
             hashCode.Add((int)ErpStatus);
             // ERP-MODULE

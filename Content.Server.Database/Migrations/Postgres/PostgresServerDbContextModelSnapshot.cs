@@ -830,7 +830,7 @@ namespace Content.Server.Database.Migrations.Postgres
                         .HasColumnType("text")
                         .HasColumnName("char_name");
 
-#if LOP_ERP
+#if LOP
                     b.Property<string>("ErpStatus")
                         .IsRequired()
                         .HasColumnType("text")

@@ -8,7 +8,7 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
-#if LOP_ERP
+#if LOP
 using Content.Shared._ERPModule.Data; // ERP-MODULE
 #endif
 
@@ -33,7 +33,7 @@ public sealed partial class HumanoidAppearanceComponent : Component
     [DataField, AutoNetworkedField]
     public Gender Gender;
 
-#if LOP_ERP
+#if LOP
 
     // ERP-MODULE
     [DataField, AutoNetworkedField]

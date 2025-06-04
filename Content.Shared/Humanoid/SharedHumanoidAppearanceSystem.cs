@@ -177,7 +177,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         targetHumanoid.Gender = sourceHumanoid.Gender;
 
 
-#if LOP_ERP
+#if LOP
         // ERP-MODULE
         targetHumanoid.ErpStatus = sourceHumanoid.ErpStatus;
         // ERP-MODULE
@@ -473,7 +473,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         EnsureDefaultMarkings(uid, humanoid);
 
 
-#if LOP_ERP
+#if LOP
         // ERP-MODULE
         humanoid.ErpStatus = profile.ErpStatus;
         // ERP-MODULE

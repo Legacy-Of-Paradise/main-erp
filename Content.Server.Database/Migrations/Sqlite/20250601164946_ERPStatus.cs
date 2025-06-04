@@ -1,4 +1,4 @@
-﻿#if LOP_ERP
+﻿#if LOP
 using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
