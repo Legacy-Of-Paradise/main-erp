@@ -21,7 +21,7 @@ using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using Robust.Shared.Timing;
-//LOP edit start
+// LOP edit start
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Text.Json;
@@ -32,7 +32,7 @@ using JetBrains.Annotations;
 using Robust.Shared;
 using Robust.Shared.IoC;
 using Content.Shared._NewParadise;
-//LOP edit end
+// LOP edit end
 
 namespace Content.Server.Administration.Managers;
 
@@ -87,7 +87,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         // LOP edit start
         _webhookUrl = _cfg.GetCVar(NewParadiseCvars.DiscordBanWebhook);
         _serverName = _cfg.GetCVar(CCVars.ServerLobbyName);
-        //LOP edit end
+        // LOP edit end
     }
 
     private async Task CachePlayerData(ICommonSession player, CancellationToken cancel)
@@ -117,7 +117,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         _cachedBanExemptions.Remove(player);
     }
 
-    private async Task<int> AddRoleBan(ServerRoleBanDef banDef) //LOP edit
+    private async Task<int> AddRoleBan(ServerRoleBanDef banDef) // LOP edit
     {
         banDef = await _db.AddServerRoleBanAsync(banDef);
 
@@ -128,7 +128,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
             cachedBans.Add(banDef);
         }
 
-        return banDef.Id ?? 0;  //LOP edit
+        return banDef.Id ?? 0;  // LOP edit
     }
 
     public HashSet<string>? GetRoleBans(NetUserId playerUserId)

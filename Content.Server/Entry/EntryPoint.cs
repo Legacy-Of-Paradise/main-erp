@@ -115,14 +115,14 @@ namespace Content.Server.Entry
                 IoCManager.Resolve<GhostKickManager>().Initialize();
                 IoCManager.Resolve<ServerInfoManager>().Initialize();
                 IoCManager.Resolve<ServerApi>().Initialize();
-                //LOP edit start
+                // LOP edit start
                 IoCManager.Resolve<TTSManager>().Initialize();
 #if LOP
                 IoCManager.Resolve<SponsorsManager>().Initialize();
                 IoCManager.Resolve<DiscordAuthManager>().Initialize();
                 IoCManager.Resolve<JoinQueueManager>().Initialize();
 #endif
-                //LOP edit end
+                // LOP edit end
 
                 _voteManager.Initialize();
                 _updateManager.Initialize();

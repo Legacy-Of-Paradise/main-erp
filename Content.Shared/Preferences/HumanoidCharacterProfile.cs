@@ -31,9 +31,9 @@ namespace Content.Shared.Preferences
 
         public const int MaxNameLength = 32;
         public const int MaxLoadoutNameLength = 32;
-        //public const int MaxDescLength = 512; //LOP edit
+        //public const int MaxDescLength = 512; // LOP edit
 
-        //LOP edit start
+        // LOP edit start
         public static int DescriptionLength(int tier)
         {
             if (tier >= 4)
@@ -41,7 +41,7 @@ namespace Content.Shared.Preferences
 
             return 1024;
         }
-        //LOP edit end
+        // LOP edit end
 
         /// <summary>
         /// Job preferences for initial spawn.
@@ -228,14 +228,14 @@ namespace Content.Shared.Preferences
         }
 
         // TODO: This should eventually not be a visual change only.
-        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null, int sponsorTier = 0)  //LOP edit
+        public static HumanoidCharacterProfile Random(HashSet<string>? ignoredSpecies = null, int sponsorTier = 0)  // LOP edit
         {
             var prototypeManager = IoCManager.Resolve<IPrototypeManager>();
             var random = IoCManager.Resolve<IRobustRandom>();
 
             var species = random.Pick(prototypeManager
                 .EnumeratePrototypes<SpeciesPrototype>()
-                .Where(a => a.SponsorTier <= sponsorTier)   //LOP edit
+                .Where(a => a.SponsorTier <= sponsorTier)   // LOP edit
                 .Where(x => ignoredSpecies == null ? x.RoundStart : x.RoundStart && !ignoredSpecies.Contains(x.ID))
                 .ToArray()
             ).ID;
@@ -519,7 +519,7 @@ namespace Content.Shared.Preferences
 #if LOP
         , int sponsorTier
 #endif
-        //LOP edit end
+        // LOP edit end
         )
         {
             var configManager = collection.Resolve<IConfigurationManager>();
@@ -586,17 +586,17 @@ namespace Content.Shared.Preferences
                 name = GetName(Species, gender);
             }
 
-            //LOP edit start
+            // LOP edit start
             var descLength = DescriptionLength(0);
 #if LOP
             descLength = DescriptionLength(sponsorTier);
 #endif
-            //LOP edit end
+            // LOP edit end
 
             string flavortext;
-            if (FlavorText.Length > descLength) //LOP edit
+            if (FlavorText.Length > descLength) // LOP edit
             {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..descLength];    //LOP edit
+                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..descLength];    // LOP edit
             }
             else
             {
@@ -742,7 +742,7 @@ namespace Content.Shared.Preferences
         )
         {
             var profile = new HumanoidCharacterProfile(this);
-            profile.EnsureValid(session, collection, sponsorPrototypes  //LOP edit
+            profile.EnsureValid(session, collection, sponsorPrototypes  // LOP edit
 #if LOP
             , sponsorTier
 #endif

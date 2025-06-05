@@ -269,7 +269,7 @@ namespace Content.Server.GameTicking
 
             _playTimeTrackings.PlayerRolesChanged(player);
 
-            var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character, session: player);   //LOP edit
+            var mobMaybe = _stationSpawning.SpawnPlayerCharacterOnStation(station, jobId, character, session: player);   // LOP edit
             DebugTools.AssertNotNull(mobMaybe);
             var mob = mobMaybe!.Value;
 

@@ -371,7 +371,7 @@ public sealed class ArrivalsSystem : EntitySystem
             ev.Job,
             ev.HumanoidCharacterProfile,
             ev.Station,
-            session: ev.Session);   //LOP edit
+            session: ev.Session);   // LOP edit
 
         EnsureComp<PendingClockInComponent>(ev.SpawnResult.Value);
         EnsureComp<AutoOrientComponent>(ev.SpawnResult.Value);

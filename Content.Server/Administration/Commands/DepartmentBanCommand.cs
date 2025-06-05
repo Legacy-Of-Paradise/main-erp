@@ -97,7 +97,7 @@ public sealed class DepartmentBanCommand : IConsoleCommand
         // Without it the note list will get needlessly cluttered.
         var now = DateTimeOffset.UtcNow;
 
-        //LOP edit start
+        // LOP edit start
         Dictionary<string, int> banids = new();
         foreach (var job in departmentProto.Roles)
         {
@@ -105,7 +105,7 @@ public sealed class DepartmentBanCommand : IConsoleCommand
              banids.Add(job.ToString(), bid);
          }
          _banManager.WebhookUpdateRoleBans(targetUid, located.Username, shell.Player?.UserId, null, targetHWid, minutes, severity, reason, now, banids);
-         //LOP edit end
+         // LOP edit end
     }
 
     public CompletionResult GetCompletion(IConsoleShell shell, string[] args)
