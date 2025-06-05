@@ -484,11 +484,9 @@ namespace Content.Client.Lobby.UI
 
 
 #if LOP
-            // ERP-MODULE
             _cfgManager.OnValueChanged(ErpCVars.EroticPanelEnabled,
                 UpdateErpControlsVisibility,
                 true);
-            // ERP-MODULE
 #endif
         }
 
@@ -828,9 +826,7 @@ namespace Content.Client.Lobby.UI
             UpdateCMarkingsFacialHair();
 
 #if LOP
-            // ERP-MODULE
             UpdateErpStatusControls();
-            // ERP-MODULE
 #endif
 
             RefreshAntags();
@@ -1295,9 +1291,7 @@ namespace Content.Client.Lobby.UI
             RefreshLoadouts();
 
 #if LOP
-            // ERP-MODULE
             UpdateErpStatusControls();
-            // ERP-MODULE
 #endif
 
             UpdateSexControls(); // update sex for new species

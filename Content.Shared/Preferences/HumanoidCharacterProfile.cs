@@ -101,7 +101,6 @@ namespace Content.Shared.Preferences
         public int Age { get; set; } = 18;
 
 #if LOP
-        // ERP-MODULE
 
         [DataField]
         public ErpStatus ErpStatus { get; set; } = ErpStatus.Ask;
@@ -111,7 +110,6 @@ namespace Content.Shared.Preferences
             return new(this) { ErpStatus = erpStatus };
         }
 
-        // ERP-MODULE
 #endif
 
         [DataField]
@@ -168,9 +166,7 @@ namespace Content.Shared.Preferences
             Gender gender,
 
 #if LOP
-            // ERP-MODULE
             ErpStatus erpStatus,
-            // ERP-MODULE
 #endif
 
             HumanoidCharacterAppearance appearance,
@@ -190,9 +186,7 @@ namespace Content.Shared.Preferences
             Gender = gender;
 
 #if LOP
-            // ERP-MODULE
             ErpStatus = erpStatus;
-            // ERP-MODULE
 #endif
 
             Appearance = appearance;
@@ -229,9 +223,7 @@ namespace Content.Shared.Preferences
                 other.Gender,
 
 #if LOP
-                // ERP-MODULE
                 other.ErpStatus,
-                // ERP-MODULE
 #endif
                 other.Appearance.Clone(),
                 other.SpawnPriority,
@@ -545,9 +537,7 @@ namespace Content.Shared.Preferences
             if (Species != other.Species) return false;
 
 #if LOP
-            // ERP-MODULE
             if (ErpStatus != other.ErpStatus) return false;
-            // ERP-MODULE
 #endif
 
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
@@ -587,7 +577,6 @@ namespace Content.Shared.Preferences
 
 #if LOP
 
-            // ERP-MODULE
             var erpStatus = ErpStatus switch
             {
                 ErpStatus.Yes => ErpStatus.Yes,
@@ -595,7 +584,6 @@ namespace Content.Shared.Preferences
                 ErpStatus.No => ErpStatus.No,
                 _ => ErpStatus.Ask
             };
-            // ERP-MODULE
 
 #endif
 
@@ -716,9 +704,7 @@ namespace Content.Shared.Preferences
             Gender = gender;
 
 #if LOP
-            // ERP-MODULE
             ErpStatus = erpStatus;
-            // ERP-MODULE
 #endif
 
             Appearance = appearance;
@@ -845,9 +831,7 @@ namespace Content.Shared.Preferences
             hashCode.Add((int)Gender);
 
 #if LOP
-            // ERP-MODULE
             hashCode.Add((int)ErpStatus);
-            // ERP-MODULE
 #endif
 
             hashCode.Add(Appearance);

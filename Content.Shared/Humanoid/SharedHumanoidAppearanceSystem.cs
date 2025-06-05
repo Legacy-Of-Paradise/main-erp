@@ -178,9 +178,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
 
 #if LOP
-        // ERP-MODULE
         targetHumanoid.ErpStatus = sourceHumanoid.ErpStatus;
-        // ERP-MODULE
 #endif
 
         if (TryComp<GrammarComponent>(target, out var grammar))
@@ -474,9 +472,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
 
 #if LOP
-        // ERP-MODULE
         humanoid.ErpStatus = profile.ErpStatus;
-        // ERP-MODULE
 #endif
 
         humanoid.Gender = profile.Gender;

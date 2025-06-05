@@ -212,9 +212,7 @@ public sealed class HumanoidAppearanceSystem : SharedHumanoidAppearanceSystem
         humanoid.Gender = profile.Gender;
 
 #if LOP
-        // ERP-MODULE
         humanoid.ErpStatus = profile.ErpStatus;
-        // ERP-MODULE
 #endif
 
         humanoid.Age = profile.Age;

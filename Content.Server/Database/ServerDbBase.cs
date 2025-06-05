@@ -24,7 +24,7 @@ using Robust.Shared.Utility;
 
 
 #if LOP
-using Content.Shared._ERPModule.Data; // ERP-MODULE
+using Content.Shared._ERPModule.Data;
 #endif
 
 namespace Content.Server.Database
@@ -206,11 +206,9 @@ namespace Content.Server.Database
                 gender = genderVal;
 
 #if LOP
-            // ERP-MODULE
             var erpStatus = ErpStatus.Ask;
             if (Enum.TryParse<ErpStatus>(profile.ErpStatus, true, out var erpStatusVal))
                 erpStatus = erpStatusVal;
-            // ERP-MODULE
 #endif
 
             // ReSharper disable once ConditionalAccessQualifierIsNonNullableAccordingToAPIContract
@@ -273,9 +271,7 @@ namespace Content.Server.Database
                 gender,
 
 #if LOP
-                // ERP-MODULE
                 erpStatus,
-                // ERP-MODULE
 #endif
                 new HumanoidCharacterAppearance(
                     profile.HairName,
@@ -315,9 +311,7 @@ namespace Content.Server.Database
 
 
 #if LOP
-            // ERP-MODULE
             profile.ErpStatus = humanoid.ErpStatus.ToString();
-            // ERP-MODULE
 #endif
 
             profile.Gender = humanoid.Gender.ToString();

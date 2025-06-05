@@ -9,7 +9,7 @@ using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
 
 #if LOP
-using Content.Shared._ERPModule.Data; // ERP-MODULE
+using Content.Shared._ERPModule.Data;
 #endif
 
 namespace Content.Shared.Humanoid;
@@ -35,10 +35,8 @@ public sealed partial class HumanoidAppearanceComponent : Component
 
 #if LOP
 
-    // ERP-MODULE
     [DataField, AutoNetworkedField]
     public ErpStatus ErpStatus;
-    // ERP-MODULE
 
 #endif
 
