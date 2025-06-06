@@ -46,7 +46,7 @@ namespace Content.Server.Database
         public DbSet<RoleWhitelist> RoleWhitelists { get; set; } = null!;
         public DbSet<BanTemplate> BanTemplate { get; set; } = null!;
         public DbSet<IPIntelCache> IPIntelCache { get; set; } = null!;
-        public DbSet<Sponsor> Sponsors { get; set; } = null!;  //LOP edit
+        public DbSet<Sponsor> Sponsors { get; set; } = null!;  // LOP edit
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -408,6 +408,11 @@ namespace Content.Server.Database
         public string FlavorText { get; set; } = null!;
         public int Age { get; set; }
         public string Sex { get; set; } = null!;
+
+#if LOP
+        public string ErpStatus { get; set; } = null!;
+#endif
+
         public string Gender { get; set; } = null!;
         public string Species { get; set; } = null!;
         [Column(TypeName = "jsonb")] public JsonDocument? Markings { get; set; } = null!;

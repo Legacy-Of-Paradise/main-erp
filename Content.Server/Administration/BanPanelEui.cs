@@ -49,7 +49,7 @@ public sealed class BanPanelEui : BaseEui
         switch (msg)
         {
             case BanPanelEuiStateMsg.CreateBanRequest r:
-                BanPlayer(r.Player, r.IpAddress, r.UseLastIp, r.Hwid, r.UseLastHwid, r.Minutes, r.Severity, r.Reason, r.Roles); //LOP edit
+                BanPlayer(r.Player, r.IpAddress, r.UseLastIp, r.Hwid, r.UseLastHwid, r.Minutes, r.Severity, r.Reason, r.Roles); // LOP edit
                 break;
             case BanPanelEuiStateMsg.GetPlayerInfoRequest r:
                 ChangePlayer(r.PlayerUsername);
@@ -58,7 +58,7 @@ public sealed class BanPanelEui : BaseEui
     }
 
     private async void BanPlayer(string? target, string? ipAddressString, bool useLastIp, ImmutableTypedHwid? hwid,
-         bool useLastHwid, uint minutes, NoteSeverity severity, string reason, IReadOnlyCollection<string>? roles) //LOP edit
+         bool useLastHwid, uint minutes, NoteSeverity severity, string reason, IReadOnlyCollection<string>? roles) // LOP edit
     {
         if (!_admins.HasAdminFlag(Player, AdminFlags.Ban))
         {
@@ -120,7 +120,7 @@ public sealed class BanPanelEui : BaseEui
         if (roles?.Count > 0)
         {
             var now = DateTimeOffset.UtcNow;
-            //LOP edit start
+            // LOP edit start
             Dictionary<string, int> banids = new();
              foreach (var job in roles)
             {
@@ -128,7 +128,7 @@ public sealed class BanPanelEui : BaseEui
                 banids.Add(job.ToString(), bid);
             }
             _banManager.WebhookUpdateRoleBans(targetUid, target, Player.UserId, null, targetHWid, minutes, severity, reason, now, banids);
-            //LOP edit end
+            // LOP edit end
 
             Close();
             return;

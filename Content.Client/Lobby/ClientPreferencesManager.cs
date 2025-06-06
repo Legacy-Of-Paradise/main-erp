@@ -4,7 +4,7 @@ using Robust.Client;
 using Robust.Client.Player;
 using Robust.Shared.Network;
 using Robust.Shared.Utility;
-using Content.Shared.Humanoid.Markings; //LOP edit
+using Content.Shared.Humanoid.Markings; // LOP edit
 using YamlDotNet.Core.Tokens;
 #if LOP
 using Content.Client._NewParadise.Sponsors;
@@ -22,7 +22,7 @@ namespace Content.Client.Lobby
         [Dependency] private readonly IClientNetManager _netManager = default!;
         [Dependency] private readonly IBaseClient _baseClient = default!;
         [Dependency] private readonly IPlayerManager _playerManager = default!;
-        [Dependency] private readonly MarkingManager _markingManager = default!;    //LOP edit
+        [Dependency] private readonly MarkingManager _markingManager = default!;    // LOP edit
 
 #if LOP
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
@@ -71,7 +71,7 @@ namespace Content.Client.Lobby
         {
             var collection = IoCManager.Instance!;
 
-            //LOP edit start
+            // LOP edit start
             var sponsorPrototypes  = new List<string>();
 #if LOP
             int sponsorTier = 0;
@@ -91,7 +91,7 @@ namespace Content.Client.Lobby
             , sponsorTier
 #endif
             );
-            //LOP edit end
+            // LOP edit end
 
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) { [slot] = profile };
             Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor);

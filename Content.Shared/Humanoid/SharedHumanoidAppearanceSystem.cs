@@ -176,6 +176,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
         targetHumanoid.Gender = sourceHumanoid.Gender;
 
+
+#if LOP
+        targetHumanoid.ErpStatus = sourceHumanoid.ErpStatus;
+#endif
+
         if (TryComp<GrammarComponent>(target, out var grammar))
             _grammarSystem.SetGender((target, grammar), sourceHumanoid.Gender);
 
@@ -464,6 +469,11 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
         }
 
         EnsureDefaultMarkings(uid, humanoid);
+
+
+#if LOP
+        humanoid.ErpStatus = profile.ErpStatus;
+#endif
 
         humanoid.Gender = profile.Gender;
         if (TryComp<GrammarComponent>(uid, out var grammar))

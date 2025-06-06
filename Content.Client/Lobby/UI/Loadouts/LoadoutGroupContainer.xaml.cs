@@ -68,7 +68,7 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
         var selected = loadout.SelectedLoadouts[_groupProto.ID];
 
 
-        foreach (var loadoutProto in _groupProto.Loadouts) //LOP edit: возврат
+        foreach (var loadoutProto in _groupProto.Loadouts) // LOP edit: возврат
         {
             if (!protoMan.TryIndex(loadoutProto, out var loadProto))
                 continue;

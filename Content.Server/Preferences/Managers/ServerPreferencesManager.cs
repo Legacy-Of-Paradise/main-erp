@@ -10,7 +10,7 @@ using Robust.Shared.Configuration;
 using Robust.Shared.Network;
 using Robust.Shared.Player;
 using Robust.Shared.Utility;
-using Content.Shared.Humanoid.Markings; //LOP edit
+using Content.Shared.Humanoid.Markings; // LOP edit
 using YamlDotNet.Core.Tokens;
 #if LOP
 using Content.Server._NewParadise.Sponsors;
@@ -31,7 +31,7 @@ namespace Content.Server.Preferences.Managers
         [Dependency] private readonly IDependencyCollection _dependencies = default!;
         [Dependency] private readonly ILogManager _log = default!;
         [Dependency] private readonly UserDbDataManager _userDb = default!;
-        [Dependency] private readonly MarkingManager _markingManager = default!;    //LOP edit
+        [Dependency] private readonly MarkingManager _markingManager = default!;    // LOP edit
 #if LOP
         [Dependency] private readonly SponsorsManager _sponsors = default!;
 #endif
@@ -130,7 +130,7 @@ namespace Content.Server.Preferences.Managers
             var curPrefs = prefsData.Prefs!;
             var session = _playerManager.GetSessionById(userId);
 
-            //LOP edit start
+            // LOP edit start
             var allowedMarkings = new List<string>();
 #if LOP
             int sponsorTier = 0;
@@ -151,7 +151,7 @@ namespace Content.Server.Preferences.Managers
             , sponsorTier
 #endif
             );
-            //LOP edit end
+            // LOP edit end
 
             var profiles = new Dictionary<int, ICharacterProfile>(curPrefs.Characters)
             {
@@ -239,7 +239,7 @@ namespace Content.Server.Preferences.Managers
                 {
                     PrefsLoaded = true,
                     Prefs = new PlayerPreferences(
-                        new[] { new KeyValuePair<int, ICharacterProfile>(0, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier)) },   //LOP edit
+                        new[] { new KeyValuePair<int, ICharacterProfile>(0, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier)) },   // LOP edit
                         0, Color.Transparent)
                 };
 
@@ -350,7 +350,7 @@ namespace Content.Server.Preferences.Managers
             var prefs = await _db.GetPlayerPreferencesAsync(userId, cancel);
             if (prefs is null)
             {
-                return await _db.InitPrefsAsync(userId, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier), cancel); //LOP
+                return await _db.InitPrefsAsync(userId, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier), cancel); // LOP
             }
 
             return prefs;
@@ -363,7 +363,7 @@ namespace Content.Server.Preferences.Managers
 
             return new PlayerPreferences(prefs.Characters.Select(p =>
             {
-                //LOP edit start
+                // LOP edit start
                 var allowedMarkings = new List<string>();
 #if LOP
                 int sponsorTier = 0;
@@ -377,7 +377,7 @@ namespace Content.Server.Preferences.Managers
                     }
                 }
 #endif
-                //LOP edit end
+                // LOP edit end
                 return new KeyValuePair<int, ICharacterProfile>(p.Key, p.Value.Validated(session, collection, allowedMarkings
 #if LOP
                 , sponsorTier

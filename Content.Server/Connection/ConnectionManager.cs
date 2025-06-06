@@ -33,7 +33,7 @@ namespace Content.Server.Connection
     {
         void Initialize();
         void PostInit();
-        Task<bool> HasPrivilegedJoin(NetUserId userId); //LOP edit
+        Task<bool> HasPrivilegedJoin(NetUserId userId); // LOP edit
 
         /// <summary>
         /// Temporarily allow a user to bypass regular connection requirements.
@@ -312,7 +312,7 @@ namespace Content.Server.Connection
                 softPlayerCount -= _adminManager.ActiveAdmins.Count();
             }
 
-            if (softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass && !wasInGame) //LOP edit: вернул как было
+            if (softPlayerCount >= _cfg.GetCVar(CCVars.SoftMaxPlayers) && !adminBypass && !wasInGame) // LOP edit: вернул как было
             {
                 return (ConnectionDenyReason.Full, Loc.GetString("soft-player-cap-full"), null);
             }
@@ -359,7 +359,7 @@ namespace Content.Server.Connection
             return null;
         }
 
-        //LOP edit start
+        // LOP edit start
         public async Task<bool> HasPrivilegedJoin(NetUserId userId)
         {
             var isAdmin = await _db.GetAdminDataForAsync(userId) != null;
@@ -377,7 +377,7 @@ namespace Content.Server.Connection
 #endif
                    wasInGame;
         }
-        //LOP edit end
+        // LOP edit end
 
         private bool HasTemporaryBypass(NetUserId user)
         {

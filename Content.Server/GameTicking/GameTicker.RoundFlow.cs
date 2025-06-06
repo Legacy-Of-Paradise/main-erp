@@ -405,7 +405,7 @@ namespace Content.Server.GameTicking
                         sponsorTier = sponsorInfo.Tier;
 #endif
                     // LOP edit end
-                    profile = HumanoidCharacterProfile.Random(sponsorTier: sponsorTier);    //LOP edit
+                    profile = HumanoidCharacterProfile.Random(sponsorTier: sponsorTier);    // LOP edit
                 }
                 readyPlayerProfiles.Add(userId, profile);
             }

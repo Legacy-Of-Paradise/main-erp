@@ -44,7 +44,7 @@ using Content.Client._NewParadise.Sponsors;
 using Content.Client._NC.DiscordAuth;
 using Content.Client._PrivateClient._NC.JoinQueue;
 #endif
-//LOP edit end
+// LOP edit end
 
 namespace Content.Client.Entry
 {
@@ -83,7 +83,7 @@ namespace Content.Client.Entry
         [Dependency] private readonly TitleWindowManager _titleWindowManager = default!;
         [Dependency] private readonly IEntitySystemManager _entitySystemManager = default!;
 
-        //LOP edit start
+        // LOP edit start
         [Dependency] private readonly TTSManager _ttsManager = default!;
 #if LOP
         [Dependency] private readonly SponsorsManager _sponsorsManager = default!;
