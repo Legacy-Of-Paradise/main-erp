@@ -219,6 +219,7 @@
     - FootstepSound
     - DoorBumpOpener
     - AnomalyHost
+  - type: ERPBounder # LOP edit
 
 - type: entity
   save: false

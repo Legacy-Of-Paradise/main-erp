@@ -1,5 +1,10 @@
 using System.Linq;
 using System.Text.RegularExpressions;
+
+#if LOP
+using Content.Shared._ERPModule.Data; // LOP edit
+#endif
+
 using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -95,6 +100,18 @@ namespace Content.Shared.Preferences
         [DataField]
         public int Age { get; set; } = 18;
 
+#if LOP
+
+        [DataField]
+        public ErpStatus ErpStatus { get; set; } = ErpStatus.Ask;
+
+        public HumanoidCharacterProfile WithErpStatus(ErpStatus erpStatus)
+        {
+            return new(this) { ErpStatus = erpStatus };
+        }
+
+#endif
+
         [DataField]
         public Sex Sex { get; private set; } = Sex.Male;
 
@@ -147,6 +164,11 @@ namespace Content.Shared.Preferences
             int age,
             Sex sex,
             Gender gender,
+
+#if LOP
+            ErpStatus erpStatus,
+#endif
+
             HumanoidCharacterAppearance appearance,
             SpawnPriorityPreference spawnPriority,
             Dictionary<ProtoId<JobPrototype>, JobPriority> jobPriorities,
@@ -162,6 +184,11 @@ namespace Content.Shared.Preferences
             Age = age;
             Sex = sex;
             Gender = gender;
+
+#if LOP
+            ErpStatus = erpStatus;
+#endif
+
             Appearance = appearance;
             SpawnPriority = spawnPriority;
             _jobPriorities = jobPriorities;
@@ -194,6 +221,10 @@ namespace Content.Shared.Preferences
                 other.Age,
                 other.Sex,
                 other.Gender,
+
+#if LOP
+                other.ErpStatus,
+#endif
                 other.Appearance.Clone(),
                 other.SpawnPriority,
                 new Dictionary<ProtoId<JobPrototype>, JobPriority>(other.JobPriorities),
@@ -504,6 +535,11 @@ namespace Content.Shared.Preferences
             if (Sex != other.Sex) return false;
             if (Gender != other.Gender) return false;
             if (Species != other.Species) return false;
+
+#if LOP
+            if (ErpStatus != other.ErpStatus) return false;
+#endif
+
             if (PreferenceUnavailable != other.PreferenceUnavailable) return false;
             if (SpawnPriority != other.SpawnPriority) return false;
             if (!_jobPriorities.SequenceEqual(other._jobPriorities)) return false;
@@ -538,6 +574,18 @@ namespace Content.Shared.Preferences
                 Sex.Unsexed => Sex.Unsexed,
                 _ => Sex.Male // Invalid enum values.
             };
+
+#if LOP
+
+            var erpStatus = ErpStatus switch
+            {
+                ErpStatus.Yes => ErpStatus.Yes,
+                ErpStatus.Ask => ErpStatus.Ask,
+                ErpStatus.No => ErpStatus.No,
+                _ => ErpStatus.Ask
+            };
+
+#endif
 
             // ensure the species can be that sex and their age fits the founds
             if (!speciesPrototype.Sexes.Contains(sex))
@@ -654,6 +702,11 @@ namespace Content.Shared.Preferences
             Age = age;
             Sex = sex;
             Gender = gender;
+
+#if LOP
+            ErpStatus = erpStatus;
+#endif
+
             Appearance = appearance;
             SpawnPriority = spawnPriority;
 
@@ -776,6 +829,11 @@ namespace Content.Shared.Preferences
             hashCode.Add(Age);
             hashCode.Add((int)Sex);
             hashCode.Add((int)Gender);
+
+#if LOP
+            hashCode.Add((int)ErpStatus);
+#endif
+
             hashCode.Add(Appearance);
             hashCode.Add((int)SpawnPriority);
             hashCode.Add((int)PreferenceUnavailable);
