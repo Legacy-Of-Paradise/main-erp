@@ -621,13 +621,6 @@ namespace Content.Shared.Preferences
                 name = GetName(Species, gender);
             }
 
-            // LOP edit start
-            var descLength = DescriptionLength(0);
-#if LOP
-            descLength = DescriptionLength(sponsorTier);
-#endif
-            // LOP edit end
-
             string flavortext;
             var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
             if (FlavorText.Length > maxFlavorTextLength)

@@ -96,7 +96,7 @@ namespace Content.Client.Lobby
             // LOP edit end
 
             var characters = new Dictionary<int, ICharacterProfile>(Preferences.Characters) { [slot] = profile };
-            Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor);
+            Preferences = new PlayerPreferences(characters, Preferences.SelectedCharacterIndex, Preferences.AdminOOCColor, Preferences.ConstructionFavorites);
             var msg = new MsgUpdateCharacter
             {
                 Profile = profile,
