@@ -1,7 +1,7 @@
 - type: gameMap
   id: StandDart
   mapName: 'StandDart Station'
-  mapPath: Maps/_NewParadise/StandDart.yml
+  mapPath: /Maps/_NewParadise/StandDart.yml
   minPlayers: 0
   stations:
     StandDart:
