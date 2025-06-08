@@ -342,9 +342,8 @@
       color: "#87011c"
     - state: icon_law
       color: "#f7d61a"
-  - type: GuideHelp
-    guides:
-    - CorporateLaw # Corvax-MRP
+  - type: HyperlinkBook
+    url: https://wiki.legacyofparadise.space/
 
 - type: entity
   parent: BookBase

@@ -1,10 +1,5 @@
 using System.Linq;
 using System.Text.RegularExpressions;
-
-#if LOP
-using Content.Shared._ERPModule.Data; // LOP edit
-#endif
-
 using Content.Shared._NewParadise.TTS; // LOP edit
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
@@ -21,6 +16,9 @@ using Robust.Shared.Prototypes;
 using Robust.Shared.Random;
 using Robust.Shared.Serialization;
 using Robust.Shared.Utility;
+#if LOP
+using Content.Shared._ERPModule.Data; // LOP edit
+#endif
 
 namespace Content.Shared.Preferences
 {
@@ -33,20 +31,6 @@ namespace Content.Shared.Preferences
     {
         private static readonly Regex RestrictedNameRegex = new("[^А-Яа-яёЁ0-9' -]"); // Corvax-Localization
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
-
-        public const int MaxNameLength = 32;
-        public const int MaxLoadoutNameLength = 32;
-        //public const int MaxDescLength = 512; // LOP edit
-
-        // LOP edit start
-        public static int DescriptionLength(int tier)
-        {
-            if (tier >= 4)
-                return 2048;
-
-            return 1024;
-        }
-        // LOP edit end
 
         /// <summary>
         /// Job preferences for initial spawn.
@@ -603,13 +587,14 @@ namespace Content.Shared.Preferences
             };
 
             string name;
+            var maxNameLength = configManager.GetCVar(CCVars.MaxNameLength);
             if (string.IsNullOrEmpty(Name))
             {
                 name = GetName(Species, gender);
             }
-            else if (Name.Length > MaxNameLength)
+            else if (Name.Length > maxNameLength)
             {
-                name = Name[..MaxNameLength];
+                name = Name[..maxNameLength];
             }
             else
             {
@@ -634,17 +619,11 @@ namespace Content.Shared.Preferences
                 name = GetName(Species, gender);
             }
 
-            // LOP edit start
-            var descLength = DescriptionLength(0);
-#if LOP
-            descLength = DescriptionLength(sponsorTier);
-#endif
-            // LOP edit end
-
             string flavortext;
-            if (FlavorText.Length > descLength) // LOP edit
+            var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
+            if (FlavorText.Length > maxFlavorTextLength)
             {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..descLength];    // LOP edit
+                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength];
             }
             else
             {

@@ -194,8 +194,6 @@
         orGroup: GiftPool
       - id: ViolaInstrument
         orGroup: GiftPool
-      - id: ClothingNeckCloakTrans
-        orGroup: GiftPool
       - id: ClothingNeckCloakAdmin
         orGroup: GiftPool
       - id: ToySkeleton
@@ -321,6 +319,8 @@
       - id: ClothingUniformJumpsuitColorMaroon
         orGroup: GiftPool
       - id: ClothingUniformColorRainbow
+        orGroup: GiftPool
+      - id: ClothingUniformJumpskirtColorRainbow
         orGroup: GiftPool
       - id: ClothingUniformOveralls
         orGroup: GiftPool

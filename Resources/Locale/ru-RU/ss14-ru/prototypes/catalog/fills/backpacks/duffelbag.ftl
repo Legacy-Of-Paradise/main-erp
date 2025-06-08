@@ -65,3 +65,5 @@ ent-ClothingBackpackDuffelSyndicateMedicalBundleFilled = { ent-ClothingBackpackD
 ent-ClothingBackpackDuffelSyndicateDecoyKitFilled = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор обманок
+ent-ClothingBackpackDuffelSyndicateFilledStarterKit = базовый оперативный комплект
+    .desc = Содержит оружие, медицинские принадлежности, инструменты для взлома, запасные патроны и некоторые простые инструменты.

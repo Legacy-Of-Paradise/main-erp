@@ -97,7 +97,6 @@
       # Cloaks
       - !type:GroupSelector
         children:
-        - id: ClothingNeckCloakTrans
         - id: ClothingNeckCloakAdmin
         - id: ClothingNeckCloakMoth
         - id: ClothingNeckCloakVoid

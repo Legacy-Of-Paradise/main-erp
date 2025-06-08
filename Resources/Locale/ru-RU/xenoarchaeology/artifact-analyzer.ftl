@@ -1,5 +1,5 @@
 analysis-console-menu-title = аналитическая консоль
-analysis-console-server-list-button = Список серверов
+analysis-console-server-list-button = Сервер
 analysis-console-no-node = Выберите узел для анализа
 analysis-console-extract-button = Извлечь О.И.
 analysis-console-info-id-value = [font="Monospace" size=11][color=yellow]{ $id }[/color][/font]
@@ -25,8 +25,8 @@ analysis-console-info-no-scanner = Анализатор не подключён!
 analysis-console-info-no-artifact = Артефакт не найден! Поместите артефакт на платформу, затем просканируйте для получения данных.
 analysis-console-info-ready = Все системы запущены. Сканирование готово.
 analysis-console-info-id = ID_УЗЛА: { $id }
-analysis-console-info-effect = РЕАКЦИЯ: { $effect }
-analysis-console-info-trigger = СТИМУЛЯТОР: { $trigger }
+analysis-console-info-effect = [font="Monospace" size=11]Эффект:[/font]
+analysis-console-info-trigger = [font="Monospace" size=11]Стимулятор:[/font]
 analysis-console-info-scanner = Сканирование...
 analysis-console-info-scanner-paused = Приостановлено.
 analysis-console-progress-text =

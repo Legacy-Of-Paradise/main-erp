@@ -59,26 +59,6 @@ namespace Content.IntegrationTests.Tests
 
         private static readonly string[] GameMaps =
         {
-            // Corvax-Start
-            "CorvaxAvrite",
-            "CorvaxDelta",
-            "CorvaxSilly",
-            "CorvaxOutpost",
-            "CorvaxAstra",
-            "CorvaxGelta",
-			"CorvaxMaus",
-			"CorvaxIshimura",
-			"CorvaxPaper",
-            "CorvaxPilgrim",
-            "CorvaxSplit",
-            "CorvaxTerra",
-            "CorvaxFrame",
-            "CorvaxPearl",
-            "CorvaxTushkan",
-            "CorvaxGlacier",
-            "CorvaxAwesome",
-			"CorvaxChloris",
-            // Corvax-End
             "Dev",
             "TestTeg",
             "Fland",
@@ -102,7 +82,8 @@ namespace Content.IntegrationTests.Tests
             "Elkridge",
             "Convex",
             "Relic",
-            "dm01-entryway"
+            "dm01-entryway",
+            "StandDart" // LOP edit
 
         };
 
