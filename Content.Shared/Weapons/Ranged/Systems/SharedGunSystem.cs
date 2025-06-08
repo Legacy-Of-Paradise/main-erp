@@ -160,6 +160,15 @@ public abstract partial class SharedGunSystem : EntitySystem
         StopShooting(gunUid, gun);
     }
 
+    // Goobstation - Crawling turret fixAdd commentMore actions
+    public void AttemptShoot(EntityUid user, EntityUid gunUid, GunComponent gun, EntityCoordinates toCoordinates, EntityUid target)
+    {
+        gun.Target = target;
+        gun.ShootCoordinates = toCoordinates;
+        AttemptShoot(user, gunUid, gun);
+        gun.ShotCounter = 0;
+    }
+
     public bool CanShoot(GunComponent component)
     {
         if (component.NextFire > Timing.CurTime)
