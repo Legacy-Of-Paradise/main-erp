@@ -274,3 +274,9 @@ public sealed class GravityWellSystem : SharedGravityWellSystem
 
     #endregion Getters/Setters
 }
+
+/// <summary>
+/// Raised after each gravity pulse, imp edit
+/// </summary>
+[ByRefEvent]
+public readonly record struct GravPulseEvent();

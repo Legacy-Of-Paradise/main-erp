@@ -1,0 +1,3 @@
+ent-SupermatterNoAnnouncement = суперматерия
+    .desc = Удивительно прозрачный и переливающийся кристалл. В нем отсутствует встроенная в Nanotrasen система оповещения о расслаивании.
+    .suffix = no announcement

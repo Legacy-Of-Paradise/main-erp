@@ -14,7 +14,7 @@ public sealed class OreSiloSystem : SharedOreSiloSystem
     [Dependency] private readonly PvsOverrideSystem _pvsOverride = default!;
     [Dependency] private readonly SharedUserInterfaceSystem _userInterface = default!;
 
-    private const float OreSiloPreloadRangeSquared = 225f; // ~1 screen
+    private const float OreSiloPreloadRangeSquared = 99999f; // ~1 screen, 225<99999 LoP Edit
 
     private readonly HashSet<Entity<OreSiloClientComponent>> _clientLookup = new();
     private readonly HashSet<(NetEntity, string, string)> _clientInformation = new();

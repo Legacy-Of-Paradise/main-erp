@@ -29,11 +29,9 @@ jobs:
         has_missing_eof_newline=0
 
         for file in ${ALL_CHANGED_FILES}; do
-          echo "Checking $file"
-
           # Check for trailing whitespace
           if grep -qP '[ \t]+$' "$file"; then
-            echo "::error file=$file::Trailing whitespace found"
+            echo "::error file=$file::Trailing whitespace found in $file"
             has_trailing_whitespace=1
           fi
 
@@ -41,7 +39,7 @@ jobs:
           if [ -f "$file" ] && [ -s "$file" ]; then
             last_char=$(tail -c 1 "$file")
             if [ "$last_char" != "" ] && [ "$last_char" != $'\n' ]; then
-              echo "::error file=$file::Missing newline at end of file"
+              echo "::error file=$file::Missing newline at end of file in $file"
               has_missing_eof_newline=1
             fi
           fi

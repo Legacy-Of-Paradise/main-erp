@@ -207,6 +207,12 @@
   - type: Clothing
     sprite: Clothing/Eyes/Hud/synd.rsi
   - type: ShowSyndicateIcons
+# LOP edit start
+  - type: NightVision
+    tint1: 0.7
+    tint2: 0.3
+    tint3: 0.3
+# LOP edit end
 
 - type: entity
   parent: [ClothingEyesBase, ShowSecurityIcons, BaseSyndicateContraband]
@@ -220,6 +226,12 @@
     sprite: Clothing/Eyes/Hud/syndagent.rsi
   - type: ShowSyndicateIcons
   - type: ShowHealthBars
+# LOP edit start
+  - type: NightVision
+    tint1: 0.3
+    tint2: 0.3
+    tint3: 0.7
+# LOP edit end
 
 - type: entity
   parent: [ClothingEyesGlassesSunglasses, ShowSecurityIcons]

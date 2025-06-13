@@ -195,6 +195,8 @@
     - ChemistryStatic
     - SurgeryStatic
     dynamicPacks:
+    - LoPNVGPackScience # LoP Edit
+    - LoPNVGPackEngi # LoP Edit (temporarily!!!)
     - AdvancedTools
     - ScienceEquipment
     - ScienceExplosives
@@ -398,6 +400,7 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
+    - LoPNVGPackSec # LoP Edit
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment
@@ -481,6 +484,7 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     dynamicPacks:
+    - LoPNVGPackM # LoP Edit
     - Chemistry
   - type: Machine
     board: MedicalTechFabCircuitboard

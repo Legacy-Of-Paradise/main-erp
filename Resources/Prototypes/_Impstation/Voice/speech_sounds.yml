@@ -1,0 +1,8 @@
+- type: speechSounds
+  id: Suppy
+  saySound:
+    collection: SuppySay
+  askSound:
+    collection: SuppyAsk
+  exclaimSound:
+    collection: SuppyExclaim

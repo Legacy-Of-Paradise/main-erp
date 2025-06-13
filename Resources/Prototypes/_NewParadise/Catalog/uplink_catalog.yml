@@ -1,0 +1,10 @@
+- type: listing
+  id: LoPUplinkClothingEyesNVGSyndi
+  name: lop-uplink-nvg-syndi-name
+  description: lop-uplink-nvg-syndi-desc
+  icon: { sprite: Clothing/Eyes/Glasses/sunglasses.rsi, state: icon }
+  productEntity: LoPClothingEyesNVGSyndi
+  cost:
+    Telecrystal: 2
+  categories:
+  - UplinkWearables

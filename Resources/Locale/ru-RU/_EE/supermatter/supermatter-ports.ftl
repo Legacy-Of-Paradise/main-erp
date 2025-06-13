@@ -1,0 +1,14 @@
+signal-port-name-supermatter-inactive = Неактивный
+signal-port-description-supermatter-inactive = Этот порт вызывается, когда суперматерия неактивна.
+signal-port-name-supermatter-normal = Нормальный
+signal-port-description-supermatter-normal = Этот порт вызывается, когда суперматерия подключена к сети и имеет высокую степень целостности.
+signal-port-name-supermatter-caution = Осторожность
+signal-port-description-supermatter-caution = Этот порт активируется, когда сверхматериал обладает высокой степенью целостности, но достигает опасных температур.
+signal-port-name-supermatter-warning = ВНИМАНИЕ
+signal-port-description-supermatter-warning = Этот порт вызывается, когда сверхматерия немного теряет целостность.
+signal-port-name-supermatter-danger = ОПАСНОСТЬ
+signal-port-description-supermatter-danger = Этот порт вызывается, когда сверхматерия теряет значительную часть целостности.
+signal-port-name-supermatter-emergency = ЧРЕЗВЫЧАЙНАЯ СИТУАЦИЯ
+signal-port-description-supermatter-emergency = Этот порт вызывается, когда сверхматерия в значительной степени теряет целостность.
+signal-port-name-supermatter-delaminating = РАССЛОЕНИЕ
+signal-port-description-supermatter-delaminating = Этот порт вызывается, когда сверхматерия достигает обратного отсчета времени расслаивания.

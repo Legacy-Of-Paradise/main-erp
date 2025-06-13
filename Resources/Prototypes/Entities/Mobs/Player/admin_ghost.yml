@@ -105,6 +105,7 @@
   - type: MovementSpeedModifier
     baseWalkSpeed: 30
   # Corvax-End
+  - type: SupermatterImmune # imp
 
 - type: entity
   id: ActionAGhostShowSolar
