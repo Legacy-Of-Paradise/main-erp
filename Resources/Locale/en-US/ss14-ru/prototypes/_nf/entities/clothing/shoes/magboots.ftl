@@ -4,7 +4,5 @@ ent-ClothingShoesBootsMagMercenary = mercenary magboots
     .desc = Mercenary magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
 ent-ClothingShoesBootsMagGaloshes = magnaloshes
     .desc = Magnetic galoshes, often used during cleaning activity to ensure the user remains safely attached to the floor.
-ent-ClothingShoesBootsMagNfsd = NFSD magboots
-    .desc = { ent-ClothingShoesBootsMagSecurity.desc }
 ent-ClothingShoesBootsMagPirate = pirate magboots
     .desc = Pirate magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.

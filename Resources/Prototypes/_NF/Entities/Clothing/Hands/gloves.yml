@@ -25,32 +25,6 @@
     fiberColor: fibers-brown
 
 - type: entity
-  parent: ClothingHandsGlovesCombat
-  id: ClothingHandsGlovesCombatNfsdBrown
-  name: NFSD combat gloves
-  description: Insulated gloves for a deputy sheriff.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Hands/Gloves/nfsd_brown.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Hands/Gloves/nfsd_brown.rsi
-  - type: Fiber
-    fiberColor: fibers-brown
-
-- type: entity
-  parent: ClothingHandsGlovesCombatNfsdBrown
-  id: ClothingHandsGlovesCombatNfsdCream
-  name: NFSD combat gloves
-  description: Insulated gloves for a deputy sheriff.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Hands/Gloves/nfsd_cream.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Hands/Gloves/nfsd_cream.rsi
-  - type: Fiber
-    fiberColor: fibers-cream
-
-- type: entity
   parent: ClothingHandsGlovesHop
   id: ClothingHandsGlovesSr
   suffix: Insulated

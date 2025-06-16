@@ -43,28 +43,6 @@
     coverage: MOUTH
 
 - type: entity
-  parent: ClothingMaskGasSecurity
-  id: ClothingMaskGasNfsd
-  name: NFSD gas mask
-  description: A standard issue NFSD gas mask.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Mask/nfsd.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Mask/nfsd.rsi
-
-- type: entity
-  parent: ClothingMaskGasSwat
-  id: ClothingMaskGasSheriff
-  name: NFSD sheriff gas mask
-  description: A gas mask worthy of a sheriff.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Mask/nfsd_sheriff.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Mask/nfsd_sheriff.rsi
-
-- type: entity
   parent: ClothingMaskGasExplorer
   id: ClothingMaskCultJanitor
   name: cult janitor mask

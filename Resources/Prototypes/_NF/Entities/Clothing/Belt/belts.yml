@@ -50,28 +50,6 @@
   - type: Clothing
     sprite: _NF/Clothing/Belt/pilot.rsi
 
-- type: entity
-  parent: ClothingBeltAssault
-  id: ClothingBeltNfsd
-  name: NFSD belt
-  description: A tactical assault belt.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Belt/nfsd_belt.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Belt/nfsd_belt.rsi
-
-- type: entity
-  parent: ClothingBeltSecurityWebbing
-  id: ClothingBeltNfsdWebbing
-  name: NFSD webbing
-  description: A tactical assault webbing.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Belt/nfsd_webbing.rsi
-  - type: Clothing
-    sprite: _NF/Clothing/Belt/nfsd_webbing.rsi
-
 # Ported from Nyano
 - type: entity
   parent: NFClothingBeltStorageBase # muh belt parity

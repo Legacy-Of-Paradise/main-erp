@@ -17,15 +17,6 @@
     sprite: _NF/Clothing/Back/Backpacks/pilot.rsi
 
 - type: entity
-  parent: ClothingBackpackERTJanitor
-  id: ClothingBackpackERTMailCarrier
-  name: ERT mail carrier backpack
-  description: A spacious backpack with lots of pockets, worn by Mail Carrier's of an Emergency Response Team.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Back/Backpacks/ertmailcarrier.rsi
-
-- type: entity
   parent: NFClothingBackpack
   id: ClothingBackpackClippy
   name: Clippy's backpack
@@ -36,18 +27,3 @@
   - type: Storage
     storageOpenSound:
       collection: CatMeows
-
-- type: entity
-  parent: ClothingBackpackSecurity
-  id: ClothingBackpackNfsdBrown
-  name: NFSD backpack
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Back/Backpacks/nfsd_brown.rsi
-
-- type: entity
-  parent: ClothingBackpackNfsdBrown
-  id: ClothingBackpackNfsdCream
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Back/Backpacks/nfsd_cream.rsi

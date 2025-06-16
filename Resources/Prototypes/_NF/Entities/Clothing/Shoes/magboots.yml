@@ -36,20 +36,6 @@
   - type: NoSlip
 
 - type: entity
-  parent: ClothingShoesBootsMagSecurity
-  id: ClothingShoesBootsMagNfsd
-  name: NFSD magboots
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Shoes/Boots/magboots-nfsd.rsi
-    state: icon
-  - type: Clothing
-    sprite: _NF/Clothing/Shoes/Boots/magboots-nfsd.rsi
-  - type: ClothingSpeedModifier
-    walkModifier: 0.95
-    sprintModifier: 0.9
-
-- type: entity
   parent: ClothingShoesBootsMagNfsd
   id: ClothingShoesBootsMagPirate
   name: pirate magboots

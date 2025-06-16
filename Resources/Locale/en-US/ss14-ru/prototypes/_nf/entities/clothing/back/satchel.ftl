@@ -4,7 +4,3 @@ ent-ClothingBackpackSatchelArcadia = arcadia satchel
     .desc = A satchel produced by Arcadia Industries.
 ent-ClothingBackpackSatchelPilot = pilot satchel
     .desc = A satchel produced for a True Ace.
-ent-ClothingBackpackSatchelNfsdBrown = NFSD satchel
-    .desc = { ent-ClothingBackpackSatchelSecurity.desc }
-ent-ClothingBackpackSatchelNfsdCream = { ent-ClothingBackpackSatchelNfsdBrown }
-    .desc = { ent-ClothingBackpackSatchelNfsdBrown.desc }
