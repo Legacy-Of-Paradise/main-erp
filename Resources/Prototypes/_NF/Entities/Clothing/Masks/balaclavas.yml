@@ -83,17 +83,17 @@
       right:
       - state: inhand-right
         map: [ "inhandRightBalaclava" ]
-#   - type: RandomSprite
-#     available:
-#     - unfoldedLayer:
-#         icon_mask: Base
-#       foldedLayer:
-#         icon: Base
-#       equippedMaskBalaclava:
-#         equipped-MASK: Base
-#       equippedHelmetBalaclava:
-#         equipped-HELMET: Base
-#       inhandLeftBalaclava:
-#         inhand-left: Base
-#       inhandRightBalaclava:
-#         inhand-right: Base
+  - type: RandomSprite
+    available:
+    - unfoldedLayer:
+        icon_mask: Base
+      foldedLayer:
+        icon: Base
+      equippedMaskBalaclava:
+        equipped-MASK: Base
+      equippedHelmetBalaclava:
+        equipped-HELMET: Base
+      inhandLeftBalaclava:
+        inhand-left: Base
+      inhandRightBalaclava:
+        inhand-right: Base

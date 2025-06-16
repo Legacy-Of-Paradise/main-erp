@@ -1,4 +1,4 @@
-- type: ColorPalette
+- type: palette
   id: Cyberpunk
   name: cyberpunk full
   colors:
@@ -27,7 +27,7 @@
     red2: "#db5a5a"
     red3: "#c85353"
 
-- type: ColorPalette
+- type: palette
   id: CyberpunkDark
   name: cyberpunk dark
   colors:
@@ -41,7 +41,7 @@
     purple3: "#855395"
     bluegreen: "#4593a5"
 
-- type: ColorPalette
+- type: palette
   id: CyberpunkNeon
   name: cyberpunk neon
   colors:

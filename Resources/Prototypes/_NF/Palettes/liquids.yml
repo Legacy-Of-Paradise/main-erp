@@ -1,4 +1,4 @@
-- type: ColorPalette
+- type: palette
   id: LiquidsBiological
   name: biological liquids
   colors:
