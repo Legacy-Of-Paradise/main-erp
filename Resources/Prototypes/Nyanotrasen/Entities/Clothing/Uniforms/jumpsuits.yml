@@ -1,27 +1,5 @@
 - type: entity
   parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitMailCarrier
-  name: mail carrier's jumpsuit
-  description: Enemy of dogs everywhere.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mailman.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/mailman.rsi
-
-- type: entity
-  parent: ClothingUniformSkirtBase
-  id: ClothingUniformJumpskirtMailCarrier
-  name: mail carrier's jumpskirt
-  description: Enemy of dogs everywhere.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpskirt/mailman.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpskirt/mailman.rsi
-
-- type: entity
-  parent: ClothingUniformBase
   id: ClothingUniformJumpsuitTshirtJeans
   name: white t-shirt and jeans
   description: Even in space, this combo is still in style.
@@ -52,14 +30,3 @@
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeanspeach.rsi
   - type: Clothing
     sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/tshirtjeanspeach.rsi
-
-- type: entity
-  parent: ClothingUniformBase
-  id: ClothingUniformJumpsuitPrisonGuard
-  name: prison guard's uniform
-  description: A comfortable, durable, waterproof uniform made to keep prison staff comfortable and safe.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/prisonguard.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Uniforms/Jumpsuit/prisonguard.rsi

@@ -12,5 +12,5 @@ ent-ActionBaseToggleNightVision = Toggle NVG
     .desc = Toggles the NVG on and off.
 ent-ActionToggleNightVision = { ent-ActionBaseToggleNightVision }
     .desc = { ent-ActionBaseToggleNightVision.desc }
-ent-LoPClothingEyesNVGSyndi = { ent-ClothingEyesGlassesSunglasses }
-    .desc = { ent-ClothingEyesGlassesSunglasses.desc }
+ent-LoPClothingEyesNVGSyndi = sun glasses
+    .desc = A pair of black sunglasses.

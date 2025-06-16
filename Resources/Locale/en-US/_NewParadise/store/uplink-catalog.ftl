@@ -78,5 +78,5 @@ uplink-security-magazinem4a1rubber-name = Коробка патронов 5.56х
 uplink-security-magazinem4a1rubber-desc = Коробка с 4 магазинами 5.56 (резиновые)
 lpp-uplink-security-musket-name = мушкет
 lpp-uplink-security-musket-desc = Это должно было оказаться в музее задолго до твоего рождения. Использует патроны калибра .60 крупнокалиберный.
-lop-uplink-nvg-syndi-name = солнцезащитное ПНВ 
+lop-uplink-nvg-syndi-name = солнцезащитное ПНВ
 lop-uplink-nvg-syndi-desc = Солнцезащитные очки со встроенным ПНВ(БЕЗ ЗАЩИТЫ ОТ СВАРОЧНОГО АППАРАТА!).

@@ -83,7 +83,7 @@ cargo-acquisition-slip-body = [head=3]Детали Актива[/head]
     { "[bold]Стоимость за единицу:[/bold]" } ${ $unit }
     { "[bold]Количество:[/bold]" } { $amount }
     { "[bold]Стоимость:[/bold]" } ${ $cost }
-
+    
     { "[head=3]Детали Покупки[/head]" }
     { "[bold]Заказчик:[/bold]" } { $orderer }
     { "[bold]Причина:[/bold]" } { $reason }

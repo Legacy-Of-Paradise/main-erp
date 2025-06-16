@@ -1,16 +1,5 @@
 - type: entity
   parent: ClothingHeadBase
-  id: ClothingHeadMailCarrier
-  name: mail carrier's hat
-  description: Smells like a good pension.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Head/Hats/mailman.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Head/Hats/mailman.rsi
-
-- type: entity
-  parent: ClothingHeadBase
   id: ClothingHeadTinfoil
   name: tinfoil hat
   description: Protects you from all manner of intrusive thoughts.
@@ -34,17 +23,6 @@
     sprite: Nyanotrasen/Clothing/Head/Hats/bellhop.rsi
   - type: Clothing
     sprite: Nyanotrasen/Clothing/Head/Hats/bellhop.rsi
-
-- type: entity
-  parent: ClothingHeadBase
-  id: ClothingHeadPrisonGuard
-  name: prison guard's hat
-  description: Grants full immunity from denying others basic human rights, dignity, or respect.
-  components:
-  - type: Sprite
-    sprite: Nyanotrasen/Clothing/Head/Hats/prisonguard.rsi
-  - type: Clothing
-    sprite: Nyanotrasen/Clothing/Head/Hats/prisonguard.rsi
 
 - type: entity
   parent: ClothingHeadBase
