@@ -57,43 +57,6 @@
     - Hair
 
 - type: entity
-  id: ClothingMaskPunkHalf
-  parent: ClothingMaskGasExplorer
-  name: punk halfmask
-  description: A close-fitting breath mask with gamer lights!
-  suffix: Random visuals
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Mask/punkhalfmask.rsi
-    layers:
-    - state: icon-base-mask
-      map: [ "mask_main" ]
-    - state: icon-decor-mask
-      map: [ "mask_decor" ]
-      shader: unshaded
-  - type: Clothing
-    sprite: _NF/Clothing/Mask/punkhalfmask.rsi
-    clothingVisuals:
-      mask:
-      - state: equipped-MASK
-        map: [ "clothing_mask_main" ]
-      - state: decor-equipped-MASK
-        map: [ "clothing_mask_decor" ]
-        shader: unshaded
-  - type: RandomSprite
-    available:
-    - mask_main:
-        icon-base-mask: Base
-      clothing_mask_main:
-        equipped-MASK: Base
-      mask_decor:
-        icon-decor-mask: Decor
-      clothing_mask_decor:
-        decor-equipped-MASK: Decor
-  - type: IdentityBlocker
-    coverage: MOUTH
-
-- type: entity
   parent: ClothingMaskClown
   id: ClothingMaskClownBald
   name: clown mask

@@ -28,5 +28,3 @@ ent-NFClothingBackpackDuffelColorBrown = brown duffel
     .desc = { ent-NFClothingDuffel.desc }
 ent-NFClothingBackpackDuffelColorWhite = white duffel
     .desc = { ent-NFClothingDuffel.desc }
-ent-NFClothingBackpackDuffelColorRandom = punk duffel
-    .desc = { ent-NFClothingDuffel.desc }

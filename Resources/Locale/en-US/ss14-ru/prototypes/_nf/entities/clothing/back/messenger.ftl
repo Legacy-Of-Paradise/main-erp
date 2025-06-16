@@ -68,5 +68,3 @@ ent-ClothingBackpackMessengerColorBrown = brown messenger bag
     .desc = { ent-ClothingBackpackMessengerContractor.desc }
 ent-ClothingBackpackMessengerColorWhite = white messenger bag
     .desc = { ent-ClothingBackpackMessengerContractor.desc }
-ent-ClothingBackpackMessengerColorRandom = punk messenger bag
-    .desc = { ent-ClothingBackpackMessengerContractor.desc }

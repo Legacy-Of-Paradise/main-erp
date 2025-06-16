@@ -28,5 +28,3 @@ ent-NFClothingBackpackDuffelColorBrown = коричневый вещмешок
     .desc = { ent-NFClothingDuffel.desc }
 ent-NFClothingBackpackDuffelColorWhite = белый вещмешок
     .desc = { ent-NFClothingDuffel.desc }
-ent-NFClothingBackpackDuffelColorRandom = вещмешок панка
-    .desc = { ent-NFClothingDuffel.desc }
