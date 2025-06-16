@@ -4,5 +4,3 @@ ent-ClothingBackpackDuffelNfsdBrown = вещмешок Департамента 
     .desc = { ent-ClothingBackpackDuffelSecurity.desc }
 ent-ClothingBackpackDuffelNfsdCream = { ent-ClothingBackpackDuffelNfsdBrown }
     .desc = { ent-ClothingBackpackDuffelNfsdBrown.desc }
-ent-NFGoblinMadeClothingBackpackDuffelTrashBlue = Хламмешок
-    .desc = Этот плохой мальчик вместит в себя столько мусора!

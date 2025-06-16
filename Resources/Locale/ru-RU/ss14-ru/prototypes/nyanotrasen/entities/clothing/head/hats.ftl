@@ -1,11 +1,7 @@
-ent-ClothingHeadMailCarrier = шляпа почтальона
-    .desc = Пахнет как хорошая пенсия.
 ent-ClothingHeadTinfoil = шляпа из фольги
     .desc = Защищает от навящевых мыслей.
 ent-ClothingHeadHatBellhop = кепка посыльного
     .desc = Все неудобства и унижения фески без всякого стиля!
-ent-ClothingHeadPrisonGuard = шляпа стража тюрьмы
-    .desc = Предоставляет полный иммунитет от отказа другим в основных правах человека, достоинстве или уважении.
 ent-ClothingHeadHelmetKendoMen = М'ен
     .desc = Типичный головной доспех практикующего кендо.
 ent-ClothingHeadHelmetKabuto = кабуто и менпо
