@@ -697,23 +697,3 @@
         Slash: 0.9
         Piercing: 0.95
         Radiation: 0.85
-
-- type: entity
-  parent: [ ClothingHeadHardsuitBase ]
-  id: LPPClothingHeadHelmetHardsuitAcientsapper
-  categories: [ HideSpawnMenu ]
-  name: acient sapper hardsuit helmet
-  description: Good protection in 360 degrees.
-  components:
-  - type: BreathMask
-  - type: Sprite
-    sprite: _NewParadise/Clothing/Head/Hardsuits/juggerpirate.rsi
-  - type: Clothing
-    sprite: _NewParadise/Clothing/Head/Hardsuits/juggerpirate.rsi
-  - type: Armor
-    modifiers:
-      coefficients:
-        Blunt: 0.8
-        Slash: 0.8
-        Piercing: 0.95
-        Radiation: 0.85
