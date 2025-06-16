@@ -70,5 +70,3 @@ ent-LPPClothingOuterHardsuitHunter = Hardsuit GRT-42w - "Vadász"
     .desc = The spacesuit of the GreyTide co. company, which recently appeared on the market of spacesuits for the needs of civilians as well as the military. Gray tones - the style!
 ent-LPPClothingOuterHardsuitAcientSyndie = Tactical hardsuit CSA-21BM - "Tobinezumi"
     .desc = A very strange model of the suit of Nuclear Operatives, obviously of a non-standard configuration and as if not from our universe, there is a cut-out text on the foot - "Mika's spacesuit, DS1, Death guards - hands off!".
-ent-LPPClothingOuterHardsuitAcientSapper = acient sapper hardsuit
-    .desc = Acient USSP sapper hardsuit desined to withstain harsh enviroment and prdovide as much protection to the user as possible by sacreficing movement and comfort.

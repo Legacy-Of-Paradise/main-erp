@@ -50,5 +50,3 @@ ent-LPPClothingHeadHelmetHardsuitSpatioUpgraded = GRT|HpI-004 helmet
     .desc = Good helmet for every needs.
 ent-LPPClothingHeadHelmetHardsuitCombatAlternative = GRT|FPA-88 helmet
     .desc = Good helmet for every needs.
-ent-LPPClothingHeadHelmetHardsuitAcientsapper = acient sapper hardsuit helmet
-    .desc = Good protection in 360 degrees.
