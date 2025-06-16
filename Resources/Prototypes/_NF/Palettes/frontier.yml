@@ -1,4 +1,4 @@
-- type: palette
+- type: ColorPalette
   id: Frontier
   name: Frontier
   colors:
