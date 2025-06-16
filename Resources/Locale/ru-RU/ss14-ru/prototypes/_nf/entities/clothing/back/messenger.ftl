@@ -68,3 +68,5 @@ ent-ClothingBackpackMessengerColorBrown = коричневый мессендж�
     .desc = { ent-ClothingBackpackMessengerContractor.desc }
 ent-ClothingBackpackMessengerColorWhite = белый мессенджер
     .desc = { ent-ClothingBackpackMessengerContractor.desc }
+ent-ClothingBackpackMessengerColorRandom = панк мессенджер
+    .desc = { ent-ClothingBackpackMessengerContractor.desc }

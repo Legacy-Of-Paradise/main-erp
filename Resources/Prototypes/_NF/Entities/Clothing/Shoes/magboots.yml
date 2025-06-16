@@ -34,15 +34,3 @@
   - type: Clothing
     sprite: _NF/Clothing/Shoes/Boots/magboots-galoshes.rsi
   - type: NoSlip
-
-- type: entity
-  parent: ClothingShoesBootsMagNfsd
-  id: ClothingShoesBootsMagPirate
-  name: pirate magboots
-  description: Pirate magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
-  components:
-  - type: Sprite
-    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi
-    state: icon
-  - type: Clothing
-    sprite: _NF/Clothing/Shoes/Boots/magboots-pirate.rsi

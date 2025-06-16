@@ -47,7 +47,7 @@
     sprite: _NF/Clothing/Back/Messenger/messenger.rsi
 
 # DEPARTMENTAL
-## Command
+#Command
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerCaptain
@@ -86,7 +86,7 @@
       - state: clasp-inhand-right
         color: "#f6d56a"
 
-## Engineering
+#Engineering
 - type: entity
   parent: ClothingBackpackMessenger
   id: ClothingBackpackMessengerAtmospherics
@@ -188,7 +188,7 @@
       - state: clasp-inhand-right
         color: "#eeeeee"
 
-## Supply
+#Supply
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerCargo
@@ -273,7 +273,7 @@
       - state: clasp-inhand-right
         color: "#eeeeee"
 
-## Medical
+#Medical
 - type: entity
   parent: ClothingBackpackMessenger
   id: ClothingBackpackMessengerMedical
@@ -310,7 +310,7 @@
   - type: Sprite
     sprite: _NF/Clothing/Back/Messenger/genetics.rsi
 
-## Science
+#Science
 - type: entity
   parent: ClothingBackpackMessenger
   id: ClothingBackpackMessengerScience
@@ -320,7 +320,7 @@
   - type: Sprite
     sprite: _NF/Clothing/Back/Messenger/science.rsi
 
-## Civilian
+#Civilian
 - type: entity
   parent: ClothingBackpackMessenger
   id: ClothingBackpackMessengerClown
@@ -463,7 +463,7 @@
       - state: clasp-inhand-right
         color: "#f6d56a"
 
-## Wild cards
+#Wild cards
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerPilot
@@ -578,7 +578,7 @@
       - state: clasp-inhand-right
         color: "#935c3f"
 
-## Holding
+#Holding
 - type: entity
   parent: ClothingBackpackHolding
   id: ClothingBackpackMessengerHolding
@@ -610,7 +610,7 @@
       - state: inhand-right-unlit
         shader: unshaded
 
-## Antagonists / Contraband
+#Antagonists / Contraband
 - type: entity
   parent:
   - ClothingBackpackMessengerContractor
@@ -741,7 +741,7 @@
       - state: clasp-inhand-right
         color: "#1f1f1f"
 
-## Security
+#Security
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerSecurity
@@ -787,7 +787,7 @@
       - state: clasp-inhand-right
         color: "#cdcdcd"
 
-## Color variants (to match colored jumpsuits)
+#Color variants (to match colored jumpsuits)
 - type: entity
   parent: ClothingBackpackMessengerContractor
   id: ClothingBackpackMessengerColorBlack
@@ -1122,69 +1122,69 @@
         color: "#776756"
 
 # RANDOMAIZED
-# - type: entity
-#   parent: ClothingBackpackMessengerContractor
-#   id: ClothingBackpackMessengerColorRandom
-#   name: punk messenger bag
-#   components:
-#   - type: Sprite
-#     sprite: _NF/Clothing/Back/Messenger/color.rsi
-#     layers:
-#     - state: icon-base
-#       map: [ "iconMessengerBase" ]
-#     - state: icon-sling
-#       map: [ "iconMessengerSling" ]
-#     - state: icon-clasp
-#       map: [ "iconMessengerClasp" ]
-#       shader: unshaded
-#   - type: Clothing
-#     sprite: _NF/Clothing/Back/Messenger/color.rsi
-#     clothingVisuals:
-#       back:
-#       - state: base-equipped-BACKPACK
-#         map: [ "clothingMessengerBase" ]
-#       - state: sling-equipped-BACKPACK
-#         map: [ "clothingMessengerSling" ]
-#       - state: clasp-equipped-BACKPACK
-#         map: [ "clothingMessengerClasp" ]
-#         shader: unshaded
-#   - type: Item
-#     inhandVisuals:
-#       left:
-#       - state: base-inhand-left
-#         map: [ "leftMessengerBase" ]
-#       - state: clasp-inhand-left
-#         map: [ "leftgMessengerBase" ]
-#         shader: unshaded
-#       right:
-#       - state: base-inhand-right
-#         map: [ "rightMessengerBase" ]
-#       - state: clasp-inhand-right
-#         map: [ "rightMessengerBase" ]
-#         shader: unshaded
-#   - type: RandomSprite
-#     available:
-#     # icon
-#     - iconMessengerBase:
-#         icon-base: Base
-#       iconMessengerSling:
-#         icon-sling: Sling
-#       iconMessengerClasp:
-#         icon-clasp: Clasp
-#     # clothing
-#       clothingMessengerBase:
-#         base-equipped-BACKPACK: Base
-#       clothingMessengerSling:
-#         sling-equipped-BACKPACK: Sling
-#       clothingMessengerClasp:
-#         clasp-equipped-BACKPACK: Clasp
-#     # left hand
-#       leftMessengerBase:
-#         base-inhand-left: Base
-#       leftgMessengerBase:
-#         clasp-inhand-left: Clasp
-#     # right hand
-#       rightMessengerBase:
-#         base-inhand-right: Base
-#       rightgMessengerBase:
-#         clasp-inhand-right: Clasp
+- type: entity
+  parent: ClothingBackpackMessengerContractor
+  id: ClothingBackpackMessengerColorRandom
+  name: punk messenger bag
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    layers:
+    - state: icon-base
+      map: [ "iconMessengerBase" ]
+    - state: icon-sling
+      map: [ "iconMessengerSling" ]
+    - state: icon-clasp
+      map: [ "iconMessengerClasp" ]
+      shader: unshaded
+  - type: Clothing
+    sprite: _NF/Clothing/Back/Messenger/color.rsi
+    clothingVisuals:
+      back:
+      - state: base-equipped-BACKPACK
+        map: [ "clothingMessengerBase" ]
+      - state: sling-equipped-BACKPACK
+        map: [ "clothingMessengerSling" ]
+      - state: clasp-equipped-BACKPACK
+        map: [ "clothingMessengerClasp" ]
+        shader: unshaded
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: base-inhand-left
+        map: [ "leftMessengerBase" ]
+      - state: clasp-inhand-left
+        map: [ "leftgMessengerBase" ]
+        shader: unshaded
+      right:
+      - state: base-inhand-right
+        map: [ "rightMessengerBase" ]
+      - state: clasp-inhand-right
+        map: [ "rightMessengerBase" ]
+        shader: unshaded
+  - type: RandomSprite
+    available:
+    # icon
+    - iconMessengerBase:
+        icon-base: Base
+      iconMessengerSling:
+        icon-sling: Sling
+      iconMessengerClasp:
+        icon-clasp: Clasp
+      # clothing
+      clothingMessengerBase:
+        base-equipped-BACKPACK: Base
+      clothingMessengerSling:
+        sling-equipped-BACKPACK: Sling
+      clothingMessengerClasp:
+        clasp-equipped-BACKPACK: Clasp
+    # left hand
+      leftMessengerBase:
+        base-inhand-left: Base
+      leftgMessengerBase:
+        clasp-inhand-left: Clasp
+    # right hand
+      rightMessengerBase:
+        base-inhand-right: Base
+      rightgMessengerBase:
+        clasp-inhand-right: Clasp

@@ -1078,62 +1078,62 @@
   - type: ToggleableClothing
     clothingPrototype: ClothingHeadEVAHelmetBoxerYellow
 
-# - type: entity
-#   parent: NFDepartmentalEVASuit
-#   id: ClothingOuterEVASuitBoxerRandom
-#   name: boxer EVA suit
-#   description: An EVA suit with a built-in helmet commonly issued to boxers in the random corner.
-#   suffix: Randomized colors
-#   components:
-#   - type: Sprite
-#     layers:
-#     - state: equipped-base
-#       color: "#fff4e2"
-#     - state: equipped-reinforced-points
-#       color: "#606275"
-#     - state: equipped-decals-02-boxer
-#       map: [ "eva_decal_boxing" ]
-#     - state: equipped-breathing-gear
-#     - state: equipped-unshaded
-#       shader: unshaded
-#   - type: Clothing
-#     clothingVisuals:
-#       outerClothing:
-#       - state: equipped-base
-#         color: "#fff4e2"
-#       - state: equipped-reinforced-points
-#         color: "#606275"
-#       - state: equipped-decals-02-boxer
-#         map: [ "eva_decal_boxing" ]
-#       - state: equipped-breathing-gear
-#       - state: equipped-unshaded
-#         shader: unshaded
-#   - type: RandomSprite
-#     available:
-#     - eva_decal_boxing:
-#         equipped-decals-02-boxer: Cyberpunk
-#   - type: Item
-#     inhandVisuals:
-#       left:
-#       - state: inhand-left-base
-#         color: "#fff4e2"
-#       - state: inhand-left-decals-01
-#       - state: inhand-left-reinforced-points
-#         color: "#606275"
-#       - state: inhand-left-breathing-gear
-#       - state: inhand-left-unshaded
-#         shader: unshaded
-#       right:
-#       - state: inhand-right-base
-#         color: "#fff4e2"
-#       - state: inhand-right-decals-01
-#       - state: inhand-right-reinforced-points
-#         color: "#606275"
-#       - state: inhand-right-breathing-gear
-#       - state: inhand-right-unshaded
-#         shader: unshaded
-#   - type: ToggleableClothing
-#     clothingPrototype: ClothingHeadEVAHelmetBoxerRandom
+- type: entity
+  parent: NFDepartmentalEVASuit
+  id: ClothingOuterEVASuitBoxerRandom
+  name: boxer EVA suit
+  description: An EVA suit with a built-in helmet commonly issued to boxers in the random corner.
+  suffix: Randomized colors
+  components:
+  - type: Sprite
+    layers:
+    - state: equipped-base
+      color: "#fff4e2"
+    - state: equipped-reinforced-points
+      color: "#606275"
+    - state: equipped-decals-02-boxer
+      map: [ "eva_decal_boxing" ]
+    - state: equipped-breathing-gear
+    - state: equipped-unshaded
+      shader: unshaded
+  - type: Clothing
+    clothingVisuals:
+      outerClothing:
+      - state: equipped-base
+        color: "#fff4e2"
+      - state: equipped-reinforced-points
+        color: "#606275"
+      - state: equipped-decals-02-boxer
+        map: [ "eva_decal_boxing" ]
+      - state: equipped-breathing-gear
+      - state: equipped-unshaded
+        shader: unshaded
+  - type: RandomSprite
+    available:
+    - eva_decal_boxing:
+        equipped-decals-02-boxer: Cyberpunk
+  - type: Item
+    inhandVisuals:
+      left:
+      - state: inhand-left-base
+        color: "#fff4e2"
+      - state: inhand-left-decals-01
+      - state: inhand-left-reinforced-points
+        color: "#606275"
+      - state: inhand-left-breathing-gear
+      - state: inhand-left-unshaded
+        shader: unshaded
+      right:
+      - state: inhand-right-base
+        color: "#fff4e2"
+      - state: inhand-right-decals-01
+      - state: inhand-right-reinforced-points
+        color: "#606275"
+      - state: inhand-right-breathing-gear
+      - state: inhand-right-unshaded
+        shader: unshaded
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadEVAHelmetBoxerRandom
 
 #region Wildcards
 - type: entity
