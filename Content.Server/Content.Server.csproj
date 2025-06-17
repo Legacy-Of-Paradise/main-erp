@@ -15,6 +15,7 @@
   </PropertyGroup>
   <Import Project="..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props" Condition="Exists('..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props')" />
   <ItemGroup>
+    <PackageReference Include="Discord.Net" />
     <PackageReference Include="JetBrains.Annotations" PrivateAssets="All" />
   </ItemGroup>
   <ItemGroup>

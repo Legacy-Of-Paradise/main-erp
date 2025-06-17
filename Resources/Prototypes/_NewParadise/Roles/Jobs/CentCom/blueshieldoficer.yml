@@ -42,3 +42,8 @@
    storage:
      back:
      - Flash
+
+ - type: chameleonOutfit
+   id: LPPBlueShieldOfficerChameleonOutfit
+   job: LPPBlueShieldOfficer
+   hasMindShield: true

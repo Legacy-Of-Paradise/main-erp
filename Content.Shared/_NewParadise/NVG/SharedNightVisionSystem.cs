@@ -59,7 +59,7 @@ public abstract class SharedLoPNightVisionSystem : EntitySystem
             _clothing.SetEquippedPrefix(uid, nightvision.Enabled ? "on" : null);
         }
 
-        _appearance.SetData(uid, ToggleVisuals.Toggled, nightvision.Enabled);
+        _appearance.SetData(uid, ToggleableVisuals.Enabled, nightvision.Enabled);
         OnChanged(uid, nightvision);
         Dirty(uid, nightvision);
     }

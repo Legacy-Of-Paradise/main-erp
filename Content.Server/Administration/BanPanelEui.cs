@@ -7,7 +7,9 @@ using Content.Server.EUI;
 using Content.Shared.Administration;
 using Content.Shared.Database;
 using Content.Shared.Eui;
+using Content.Shared.Roles;
 using Robust.Shared.Network;
+using Robust.Shared.Prototypes;
 
 namespace Content.Server.Administration;
 
@@ -19,6 +21,7 @@ public sealed class BanPanelEui : BaseEui
     [Dependency] private readonly IPlayerLocator _playerLocator = default!;
     [Dependency] private readonly IChatManager _chat = default!;
     [Dependency] private readonly IAdminManager _admins = default!;
+    [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
 
     private readonly ISawmill _sawmill;
 
@@ -124,8 +127,15 @@ public sealed class BanPanelEui : BaseEui
             Dictionary<string, int> banids = new();
              foreach (var job in roles)
             {
-                var bid = await _banManager.CreateRoleBan(targetUid, target, Player.UserId, null, targetHWid, job, minutes, severity, reason, now);
-                banids.Add(job.ToString(), bid);
+                if (_prototypeManager.HasIndex<JobPrototype>(job))
+                {
+                    var bid = await _banManager.CreateRoleBan(targetUid, target, Player.UserId, null, targetHWid, job, minutes, severity, reason, now);
+                    banids.Add(job.ToString(), bid);
+                }
+                else
+                {
+                    _sawmill.Warning($"{Player.Name} ({Player.UserId}) tried to issue a job ban with an invalid job: {job}");
+                }
             }
             _banManager.WebhookUpdateRoleBans(targetUid, target, Player.UserId, null, targetHWid, minutes, severity, reason, now, banids);
             // LOP edit end

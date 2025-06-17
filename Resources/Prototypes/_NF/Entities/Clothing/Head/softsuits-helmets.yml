@@ -43,7 +43,7 @@
     autoRecharge: true
     autoRechargeRate: 2 #recharge of 2 makes total drain 1w / s so max charge is 1:1 with time. Time to fully charge should be 5 minutes. Having recharge gives light an extended flicker period which gives you some warning to return to light area.
   - type: Appearance
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -168,7 +168,7 @@
       color: "#ff7f00"
     - state: icon-visor
       color: "#adcfd5"
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -322,7 +322,7 @@
       color: "#d6e6f3"
     - state: icon-visor
       color: "#8c1e50"
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -712,7 +712,7 @@
       color: "#784f1e"
     - state: icon-visor
       color: "#68b4ff"
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
@@ -828,7 +828,7 @@
   components:
   - type: Sprite
     sprite: _NF/Clothing/Head/Helmets/fsb_eva_helmet.rsi
-  - type: ToggleableLightVisuals
+  - type: ToggleableVisuals
     spriteLayer: light
     clothingVisuals:
       head:
