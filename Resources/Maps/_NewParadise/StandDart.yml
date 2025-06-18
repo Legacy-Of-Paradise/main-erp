@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 260.2.0
+  engineVersion: 261.2.0
   forkId: ""
   forkVersion: ""
-  time: 06/14/2025 20:42:22
-  entityCount: 37230
+  time: 06/17/2025 17:04:01
+  entityCount: 37248
 maps:
 - 263
 grids:
@@ -19857,7 +19857,7 @@ entities:
       pos: 45.5,82.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -20675.775
+      secondsUntilStateChange: -21010.26
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -28471,6 +28471,11 @@ entities:
     components:
     - type: Transform
       pos: 76.5,184.5
+      parent: 1
+  - uid: 3153
+    components:
+    - type: Transform
+      pos: 62.5,181.5
       parent: 1
   - uid: 3276
     components:
@@ -53756,6 +53761,81 @@ entities:
     components:
     - type: Transform
       pos: 70.5,168.5
+      parent: 1
+  - uid: 37231
+    components:
+    - type: Transform
+      pos: 62.5,182.5
+      parent: 1
+  - uid: 37232
+    components:
+    - type: Transform
+      pos: 63.5,182.5
+      parent: 1
+  - uid: 37233
+    components:
+    - type: Transform
+      pos: 64.5,182.5
+      parent: 1
+  - uid: 37234
+    components:
+    - type: Transform
+      pos: 65.5,182.5
+      parent: 1
+  - uid: 37235
+    components:
+    - type: Transform
+      pos: 66.5,182.5
+      parent: 1
+  - uid: 37236
+    components:
+    - type: Transform
+      pos: 67.5,182.5
+      parent: 1
+  - uid: 37237
+    components:
+    - type: Transform
+      pos: 68.5,182.5
+      parent: 1
+  - uid: 37238
+    components:
+    - type: Transform
+      pos: 68.5,186.5
+      parent: 1
+  - uid: 37239
+    components:
+    - type: Transform
+      pos: 67.5,186.5
+      parent: 1
+  - uid: 37240
+    components:
+    - type: Transform
+      pos: 66.5,186.5
+      parent: 1
+  - uid: 37241
+    components:
+    - type: Transform
+      pos: 65.5,186.5
+      parent: 1
+  - uid: 37242
+    components:
+    - type: Transform
+      pos: 64.5,186.5
+      parent: 1
+  - uid: 37243
+    components:
+    - type: Transform
+      pos: 63.5,186.5
+      parent: 1
+  - uid: 37244
+    components:
+    - type: Transform
+      pos: 62.5,186.5
+      parent: 1
+  - uid: 37245
+    components:
+    - type: Transform
+      pos: 62.5,187.5
       parent: 1
 - proto: CableApcStack
   entities:
@@ -110556,7 +110636,7 @@ entities:
       pos: 154.5,47.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -82091.53
+      secondsUntilStateChange: -82426.016
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -161260,16 +161340,6 @@ entities:
     - type: Transform
       pos: 68.5,182.5
       parent: 1
-  - uid: 18897
-    components:
-    - type: Transform
-      pos: 69.5,182.5
-      parent: 1
-  - uid: 18898
-    components:
-    - type: Transform
-      pos: 69.5,186.5
-      parent: 1
   - uid: 18899
     components:
     - type: Transform
@@ -184493,16 +184563,6 @@ entities:
     - type: Transform
       pos: 54.5,108.5
       parent: 1
-  - uid: 3153
-    components:
-    - type: Transform
-      pos: 69.5,186.5
-      parent: 1
-  - uid: 3154
-    components:
-    - type: Transform
-      pos: 69.5,182.5
-      parent: 1
   - uid: 3162
     components:
     - type: Transform
@@ -188800,10 +188860,10 @@ entities:
       parent: 1
 - proto: SignVault
   entities:
-  - uid: 35609
+  - uid: 25286
     components:
     - type: Transform
-      pos: 93.5,95.5
+      pos: 92.5,95.5
       parent: 1
 - proto: SignVirology
   entities:
@@ -200365,11 +200425,6 @@ entities:
     - type: Transform
       pos: 55.5,162.5
       parent: 1
-  - uid: 27723
-    components:
-    - type: Transform
-      pos: 54.5,162.5
-      parent: 1
   - uid: 27726
     components:
     - type: Transform
@@ -203357,6 +203412,17 @@ entities:
     components:
     - type: Transform
       pos: 10.5,79.5
+      parent: 1
+  - uid: 102
+    components:
+    - type: Transform
+      pos: 69.5,182.5
+      parent: 1
+  - uid: 104
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 69.5,186.5
       parent: 1
   - uid: 105
     components:
@@ -232623,111 +232689,235 @@ entities:
       parent: 1
 - proto: WeaponEnergyTurretAI
   entities:
-  - uid: 102
-    components:
-    - type: Transform
-      pos: 108.5,98.5
-      parent: 1
-  - uid: 104
-    components:
-    - type: Transform
-      pos: 106.5,98.5
-      parent: 1
-  - uid: 285
-    components:
-    - type: Transform
-      pos: 80.5,98.5
-      parent: 1
   - uid: 1863
     components:
     - type: Transform
       pos: 51.5,170.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 7501
   - uid: 1864
     components:
     - type: Transform
       pos: 55.5,170.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 7501
   - uid: 2487
     components:
     - type: Transform
       pos: 58.5,178.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18897
   - uid: 2530
     components:
     - type: Transform
       pos: 58.5,190.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18897
   - uid: 3254
     components:
     - type: Transform
       pos: 54.5,180.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 35609
   - uid: 3255
     components:
     - type: Transform
       pos: 54.5,188.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 37246
   - uid: 4580
     components:
     - type: Transform
       pos: 71.5,181.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 285
   - uid: 4656
     components:
     - type: Transform
       pos: 71.5,187.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 285
   - uid: 4657
     components:
     - type: Transform
       pos: 50.5,174.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 35609
   - uid: 4666
     components:
     - type: Transform
       pos: 50.5,194.5
       parent: 1
-  - uid: 7501
-    components:
-    - type: Transform
-      pos: 96.5,94.5
-      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 37246
   - uid: 18885
     components:
     - type: Transform
       pos: 60.5,183.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18897
   - uid: 18886
     components:
     - type: Transform
       pos: 69.5,188.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18898
   - uid: 18887
     components:
     - type: Transform
       pos: 69.5,180.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18898
   - uid: 18888
     components:
     - type: Transform
       pos: 62.5,185.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18898
   - uid: 18889
     components:
     - type: Transform
       pos: 69.5,183.5
       parent: 1
-  - uid: 25286
-    components:
-    - type: Transform
-      pos: 82.5,98.5
-      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 18898
   - uid: 28046
     components:
     - type: Transform
       pos: 75.5,184.5
       parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 285
+- proto: WeaponEnergyTurretAIControlPanel
+  entities:
+  - uid: 285
+    components:
+    - type: Transform
+      pos: 69.5,186.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 4656
+      - 4580
+      - 28046
+  - uid: 7501
+    components:
+    - type: Transform
+      pos: 54.5,163.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 1863
+      - 1864
+  - uid: 18897
+    components:
+    - type: Transform
+      pos: 52.5,182.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 18885
+      - 2487
+      - 2530
+  - uid: 18898
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 61.5,185.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 18888
+      - 18889
+      - 18886
+      - 18887
+  - uid: 35609
+    components:
+    - type: Transform
+      pos: 52.5,173.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 4657
+      - 3254
+  - uid: 37246
+    components:
+    - type: Transform
+      pos: 57.5,186.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 3255
+      - 4666
+- proto: WeaponEnergyTurretStation
+  entities:
+  - uid: 27723
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 96.5,94.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 3154
+  - uid: 37247
+    components:
+    - type: Transform
+      pos: 106.5,98.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 3154
+  - uid: 37248
+    components:
+    - type: Transform
+      pos: 82.5,98.5
+      parent: 1
+    - type: DeviceNetwork
+      deviceLists:
+      - 3154
+- proto: WeaponEnergyTurretStationControlPanel
+  entities:
+  - uid: 3154
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 93.5,95.5
+      parent: 1
+    - type: DeviceList
+      devices:
+      - 27723
+      - 37247
+      - 37248
 - proto: WeaponLaserCarbinePractice
   entities:
   - uid: 30582
