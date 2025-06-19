@@ -46,8 +46,8 @@ binds:
   key: Shift
 # Corvax edit start
 - function: ToggleStanding
-	type: State
-	key: C
+  type: State
+  key: C
 # Corvax edit end
 # Shuttle
 - function: ShuttleStrafeUp
