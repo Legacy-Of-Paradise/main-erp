@@ -4,7 +4,6 @@
          xmlns:parallax="clr-namespace:Content.Client.Parallax"
          xmlns:controls="clr-namespace:Content.Client.UserInterface.Controls">
     <parallax:ParallaxControl SpeedX="20"/>
-
     <!-- LOP edit start -->
     <BoxContainer Orientation="Vertical"
                   HorizontalAlignment="Right"
@@ -19,31 +18,26 @@
                                HorizontalAlignment="Center"/>
                     </BoxContainer>
                 </controls:StripeBack>
-
                 <PanelContainer Margin="0 5">
                     <Button Name="OpenDiscordButton"
                             Text="{Loc 'info-link-discord'}"
                     />
                 </PanelContainer>
-
                 <PanelContainer Margin="0 5">
                     <Button Name="OpenWikiButton"
                             Text="{Loc 'info-link-wiki'}"
                     />
                 </PanelContainer>
-
                 <PanelContainer Margin="0 5">
                     <Button Name="OpenWebsiteButton"
                             Text="{Loc 'info-link-website'}"
                     />
                 </PanelContainer>
-
                 <PanelContainer Margin="0 5">
                     <Button Name="OpenGithubButton"
                             Text="{Loc 'info-link-github'}"
                     />
                 </PanelContainer>
-
                 <PanelContainer Margin="0 5">
                     <Button Name="OpenForumButton"
                             Text="{Loc 'info-link-forum'}"
@@ -53,7 +47,6 @@
         </PanelContainer>
     </BoxContainer>
     <!-- LOP edit end -->
-
     <Control HorizontalAlignment="Center" VerticalAlignment="Center">
         <PanelContainer StyleClasses="AngleRect" />
         <BoxContainer Orientation="Vertical" MinSize="300 200">
