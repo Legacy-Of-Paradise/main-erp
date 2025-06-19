@@ -1,0 +1,60 @@
+- type: loadoutGroup
+  id: LPPAdjutantJumpsuit
+  name: loadout-group-jumpsuit-adjutant
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPAdjutantJumpsuit
+  - LPPAdjutantJumpskirt
+  - LPPAdjutantJumpsuitwhite
+  - LPPAdjutantJumpsuitblack
+  - LPPAdjutantJumpskirtblack
+
+- type: loadoutGroup
+  id: LPPAdjutantCloak
+  name: loadout-group-cloak-adjutant
+  loadouts:
+  - LPPAdjutantCloak
+
+- type: loadoutGroup
+  id: LPPAdjutantHead
+  name: loadout-group-head-adjutant
+  loadouts:
+  - LPPAdjutantCap
+
+- type: loadoutGroup
+  id: LPPBlueshieldJumpsuit
+  name: loadout-group-jumpsuit-blueshield
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPBlueShieldJumpsuit
+  - LPPBlueShieldJumpsuitAlt
+
+- type: loadoutGroup
+  id: LPPBlueshieldBack
+  name: loadout-group-back-blueshield
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPBlueShieldBackpack
+  - LPPBlueShieldSatchel
+  - LPPBlueShieldDuffel
+
+- type: loadoutGroup
+  id: LPPBrigtechBack
+  name: loadout-group-back-brigtech
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPBrigtechBackpack
+  - LPPBrigtechDuffel
+
+- type: loadoutGroup
+  id: LPPBrigtechJumpsuit
+  name: loadout-group-jumpsuit-brigtech
+  minLimit: 1
+  maxLimit: 1
+  loadouts:
+  - LPPBrigrechJumpsuit
+  - LPPBrigrechJumpskirt

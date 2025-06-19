@@ -5,9 +5,9 @@ cmd-roleban-help = Использование: roleban <name or user ID> <job> <
 
 ## Completion result hints
 
-cmd-roleban-hint-1 = <name or user ID>
-cmd-roleban-hint-2 = <job>
-cmd-roleban-hint-3 = <reason>
+cmd-roleban-hint-1 = <имя или ID>
+cmd-roleban-hint-2 = <работа>
+cmd-roleban-hint-3 = <причина>
 cmd-roleban-hint-4 = [продолжительность в минутах, не указывать или 0 для навсегда]
 cmd-roleban-hint-5 = [тяжесть]
 cmd-roleban-hint-duration-1 = Навсегда

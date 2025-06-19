@@ -1,0 +1,14 @@
+ent-ClothingHeadHelmetHardsuitMercenary = шлем скафандра наёмника
+    .desc = Легкобронированный жёсткий шлем для нужд наёмников.
+ent-ClothingHeadHelmetHardsuitPrivateSecurity = шлем скафандра частной охраны
+    .desc = Легкобронированный жёсткий шлем для нужд частной безопасности.
+ent-ClothingHeadHelmetHardsuitPilot = шлем скафандра пилота
+    .desc = Лёгкий шлем скафандра для пилотов.
+ent-ClothingHeadHelmetHardsuitMaximPrototype = шлем экспериментального скафандра утилизатора
+    .desc = Предчувствие распада омывает ваш разум.
+ent-ClothingHeadHelmetHardsuitScaf = шлем гвардейского скафандра
+    .desc = Прочный, крепкий шлем. Внутри пахнет сдерживаемым гневом.
+ent-ClothingHeadHelmetHardsuitTacticalMaid = тактический шлем горничной
+    .desc = Сварной сплав нержавеющей стали, покрытый несколькими слоями антикоррозионного материала, идеально поддаётся очистке.
+ent-ClothingHeadHelmetHardsuitPirateElite = шлем элитного скафандра пиратов
+    .desc = Элитный бронированный шлем для йо-хо-хо.

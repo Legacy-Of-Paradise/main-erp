@@ -1,0 +1,14 @@
+ent-ClothingHeadHelmetHardsuitMercenary = mercenary hardsuit helmet
+    .desc = Lightly armored hardsuit helmet for mercenary needs.
+ent-ClothingHeadHelmetHardsuitPrivateSecurity = private security hardsuit helmet
+    .desc = Lightly armored hardsuit helmet for private security needs.
+ent-ClothingHeadHelmetHardsuitPilot = pilot hardsuit helmet
+    .desc = Light hardsuit helmet for pilots.
+ent-ClothingHeadHelmetHardsuitMaximPrototype = experimental salvager helmet
+    .desc = A predication of decay washes over your mind.
+ent-ClothingHeadHelmetHardsuitScaf = scaf hardsuit helmet
+    .desc = A robust, strong helmet. On the inside smells of pent up anger.
+ent-ClothingHeadHelmetHardsuitTacticalMaid = tactical maid hardsuit helmet
+    .desc = Welded stainless steel alloy covered in multiple layers of anticorrosive materials, perfect for cleaning.
+ent-ClothingHeadHelmetHardsuitPirateElite = elite pirate hardsuit helmet
+    .desc = Elite armored hardsuit helmets for yo-hoers.

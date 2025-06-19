@@ -1,5 +1,13 @@
+ent-BaseAction = { "" }
+    .desc = { "" }
+ent-BaseMentalAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
 ent-BaseSuicideAction = { "" }
     .desc = { "" }
+ent-BaseImplantAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
+ent-BaseToggleAction = { ent-BaseAction }
+    .desc = { ent-BaseAction.desc }
 ent-ActionScream = Крикнуть
     .desc = ААААААААААААААААААААААААА
 ent-ActionTurnUndead = Обратиться в зомби
@@ -54,3 +62,7 @@ ent-FakeMindShieldToggleAction = [color=green]Переключить фальш�
     .desc = Переключить трансляцию фальшивого Щита разума
 ent-ActionToggleParamedicSiren = Переключить сирену парамедика
     .desc = Включает или выключает сирену парамедика.
+ent-ActionToggleRootable = action-name-toggle-rootable
+    .desc = action-description-toggle-rootable
+ent-ActionChameleonController = Управление одеждой
+    .desc = Быстро меняйте весь свой наряд!

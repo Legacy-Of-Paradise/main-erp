@@ -8,10 +8,10 @@
       sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi
       layers:
       - state: icon
-        map: [ "enum.ToggleVisuals.Layer" ]
+        map: [ "enum.ToggleableVisuals.Layer" ]
     - type: Clothing
       sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi
-    - type: NightVision
+    - type: LoPNightVision
       tint1: 0.3 # Red
       tint2: 0.7 # Green
       tint3: 0.3 # Blue
@@ -20,8 +20,8 @@
     - type: Appearance
     - type: GenericVisualizer
       visuals:
-        enum.ToggleVisuals.Toggled:
-          enum.ToggleVisuals.Layer:
+        enum.ToggleableVisuals.Enabled:
+          enum.ToggleableVisuals.Layer:
             True: {state: icon-on}
             False: {state: icon}
     - type: StaticPrice
@@ -47,7 +47,7 @@
   - type: Tag
     tags:
     - HudSecurity
-  - type: NightVision
+  - type: LoPNightVision
     tint1: 0.7
     tint2: 0.3
     tint3: 0.3
@@ -72,7 +72,7 @@
   - type: Tag
     tags:
     - HudMedical
-  - type: NightVision
+  - type: LoPNightVision
     tint1: 0.3
     tint2: 0.3
     tint3: 0.7
@@ -87,7 +87,7 @@
   name: diagnostic night vision goggles
   description: Now you can see in the dark and shows cyborgs health! It has the label "BL CORP technology".
   components:
-  - type: NightVision
+  - type: LoPNightVision
     tint1: 0.7
     tint2: 0.7
     tint3: 0.3
@@ -107,16 +107,17 @@
   description: Toggles the NVG on and off.
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     itemIconStyle: NoItem
-    event: !type:ToggleNightVisionEvent
+  - type: InstantAction
+    event: !type:ToggleLoPNightVisionEvent
 
 - type: entity
   id: ActionToggleNightVision
   parent: ActionBaseToggleNightVision
   categories: [ HideSpawnMenu ]
   components:
-  - type: InstantAction
+  - type: Action
     icon: { sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi, state: toggle-on }
     iconOn: { sprite: _NewParadise/Clothing/Eyes/NVG/nightvision.rsi, state: toggle-off }
 

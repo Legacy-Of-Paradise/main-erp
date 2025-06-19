@@ -1,5 +1,5 @@
 ent-AirSensorSupermatterBase = { ent-AirSensor }
-    .suffix = Supermatter
+    .suffix = Суперматерия
     .desc = { ent-AirSensor.desc }
 ent-AirSensorSupermatter = { ent-AirSensor }
     .desc = { ent-AirSensor.desc }
@@ -8,5 +8,5 @@ ent-GasVentPumpSupermatter = { ent-GasVentPump }
 ent-GasVentScrubberSupermatter = { ent-GasVentScrubber }
     .desc = { ent-GasVentScrubber.desc }
 ent-AirAlarmSupermatter = { ent-AirAlarm }
-    .suffix = Supermatter
+    .suffix = Суперматерия
     .desc = { ent-AirAlarm.desc }

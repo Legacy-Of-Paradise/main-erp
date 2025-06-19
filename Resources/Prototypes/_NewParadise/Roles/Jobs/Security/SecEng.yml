@@ -27,6 +27,7 @@
  - type: startingGear
    id: LPPSecurityEngineerGear
    equipment:
+     jumpsuit: LPPClothingUniformJumpsuitSecEngineer
      shoes: LPPClothingShoesBootsJackSecEnginer
      eyes: LPPClothingEyesHudSecEng
      gloves: ClothingHandsGlovesColorYellow
@@ -35,6 +36,7 @@
      outerClothing: ClothingOuterVestHazard
      ears: LPPClothingHeadsetSecurityEngineer
      belt: LPPClothingMilitaryWebbingSecEng
+     back: LPPClothingBackpackSecurityEngineer
    storage:
      back:
      - SheetSteel10

@@ -1,0 +1,10 @@
+ent-ClothingHandsGlovesArcadiaCombat = боевые перчатки Аркадии
+    .desc = Боевые перчатки от Аркадиа Индастриес.
+ent-ClothingHandsGlovesPilot = перчатки пилота
+    .desc = Водительские перчатки, но только для космического транспорта!
+ent-ClothingHandsGlovesSr = { ent-ClothingHandsGlovesHop }
+    .suffix = Изолированные
+    .desc = { ent-ClothingHandsGlovesHop.desc }
+ent-ClothingHandsGlovesForensicNF = { ent-ClothingHandsGlovesForensic }
+    .suffix = Изолированные
+    .desc = { ent-ClothingHandsGlovesForensic.desc }

@@ -3,8 +3,9 @@
   name: Drain battery
   description: Drain battery
   components:
-  - type: InstantAction
+  - type: Action
     icon: Corvax/Interface/Actions/off.png
     iconOn: Corvax/Interface/Actions/on.png
     itemIconStyle: NoItem
+  - type: InstantAction
     event: !type:ToggleDrainActionEvent

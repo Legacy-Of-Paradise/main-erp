@@ -1,0 +1,16 @@
+ent-ClothingEyesNightVisionGoggles = очки ночного видения
+    .desc = Теперь ты можешь видеть в темноте!
+ent-ClothingEyesNightVisionGogglesSyndie = { ent-ClothingEyesNightVisionGoggles }
+    .suffix = Chameleon
+    .desc = { ent-ClothingEyesNightVisionGoggles.desc }
+ent-ClothingEyesNightVisionGogglesNukie = { ent-ClothingEyesNightVisionGogglesSyndie }
+    .suffix = Chameleon, NukeOps
+    .desc = { ent-ClothingEyesNightVisionGogglesSyndie.desc }
+ent-ClothingEyesThermalVisionGoggles = прибор термального видения
+    .desc = Теперь ты можешь видеть всех! Имеет этикетку "BL CORP tech".
+ent-ClothingEyesThermalVisionGogglesSyndie = { ent-ClothingEyesThermalVisionGoggles }
+    .suffix = Chameleon
+    .desc = { ent-ClothingEyesThermalVisionGoggles.desc }
+ent-ClothingEyesThermalVisionGogglesNukie = { ent-ClothingEyesThermalVisionGogglesSyndie }
+    .suffix = Chameleon, NukeOps
+    .desc = { ent-ClothingEyesThermalVisionGogglesSyndie.desc }

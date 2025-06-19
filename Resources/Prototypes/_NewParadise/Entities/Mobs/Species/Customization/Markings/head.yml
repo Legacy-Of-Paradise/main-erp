@@ -2,7 +2,7 @@
   id: LPPAlldurak
   bodyPart: HeadTop
   markingCategory: HeadTop
-  speciesRestriction: [ Human, Dwarf, Goblin ]
+  speciesRestriction: [ Human, Dwarf ]
   sponsorOnly: true
   sprites:
     - sprite: _NewParadise/Customization/Markings/horns/head.rsi

@@ -1,0 +1,19 @@
+- type: loadout
+  id: LPPBrigtechBackpack
+  equipment:
+    back: LPPClothingBackpackSecurityEngineer
+
+- type: loadout
+  id: LPPBrigtechDuffel
+  equipment:
+    back: LPPClothingBackpackDuffelSecurityEngineer
+
+- type: loadout
+  id: LPPBrigrechJumpsuit
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitSecEngineer
+
+- type: loadout
+  id: LPPBrigrechJumpskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpSkirtSecEngineer

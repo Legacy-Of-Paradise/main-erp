@@ -1,0 +1,69 @@
+- type: entity
+  id: ClothingBeltArcadia
+  name: arcadia webbing
+  parent: NFClothingBeltStorageBase
+  description: A webbing created by Arcadia Industries. Seems very capable of fitting many items.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Belt/arcadia.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Belt/arcadia.rsi
+
+- type: entity
+  parent: NFClothingBeltStorageBase
+  id: ClothingBeltChaplainSash
+  name: chaplain sash
+  description: Who knew that scarves can be also tied around your waist?
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Belt/chaplain_sash.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Belt/chaplain_sash.rsi
+  - type: ItemMapper
+    mapLayers:
+      book:
+        whitelist:
+          tags:
+          - Book
+          components:
+          - Bible
+          - Paper
+      bottle:
+        whitelist:
+          tags:
+          - Bottle
+          - DrinkBottle
+          components:
+          - Drink
+          - Hypospray
+    sprite: _NF/Clothing/Belt/chaplain_sash_overlay.rsi
+  - type: Appearance
+
+- type: entity
+  parent: NFClothingBeltStorageBase
+  id: ClothingBeltPilot
+  name: pilot webbing
+  description: A webbing designed for someone seating a lot.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Belt/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Belt/pilot.rsi
+
+# Ported from Nyano
+- type: entity
+  parent: NFClothingBeltStorageBase # muh belt parity
+  id: ClothingBeltMartialBlack
+  name: black belt
+  description: This is the most martial of all the belts.
+  components:
+  - type: MeleeWeapon
+    attackRate: 1.25
+    damage:
+      types:
+        Blunt: 1
+        Slash: 1
+  - type: Sprite
+    sprite: _NF/Clothing/Belt/martial_black.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Belt/martial_black.rsi

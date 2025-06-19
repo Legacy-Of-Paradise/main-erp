@@ -176,8 +176,8 @@ uplink-surplus-bundle-name = Ящик припасов Синдиката
 uplink-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 50 телекристаллов. Оно может быть как бесполезным хламом, так и реально крутым.
 uplink-super-surplus-bundle-name = Ящик суперприпасов Синдиката
 uplink-super-surplus-bundle-desc = Содержит случайное снаряжение Синдиката, общей стоимостью в 125 телекристаллов.
-uplink-starter-kit-name = Basic Operative Bundle
-uplink-starter-kit-desc = Contains 40 telecrystals of basic operative gear. For those operatives who just don't know what they should buy.
+uplink-starter-kit-name = Базовый Набор Оперативника
+uplink-starter-kit-desc = Содержит снаряжение для оперативника на 40 телекристаллов. Для тех оперативников, кто просто не знает, что ему купить.
 # Tools
 uplink-toolbox-name = Ящик инструментов
 uplink-toolbox-desc = Полный набор инструментов для предателя с тягой к механике. Включает пару изолированных боевых перчаток и противогаз Синдиката.

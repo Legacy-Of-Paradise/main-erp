@@ -45,6 +45,9 @@ ui-options-interface-label = Интерфейс
 
 ## Graphics menu
 
+ui-options-auto-fill-highlights = Автоматически заполнять выделения информацией о персонаже
+ui-options-highlights-color = Цвет выделений:
+ui-options-highlights-color-example = Это выделенный текст!
 ui-options-show-held-item = Показать удерживаемый элемент рядом с курсором
 ui-options-show-combat-mode-indicators = Показать индикатор боевого режима рядом с курсором
 ui-options-opaque-storage-window = Непрозрачность окна хранилища
@@ -144,7 +147,7 @@ ui-options-function-alt-activate-item-in-world = Альтернативно ис
 ui-options-function-drop = Положить предмет
 ui-options-function-examine-entity = Осмотреть
 ui-options-function-swap-hands = Поменять руки
-ui-options-function-swap-hands-reverse = Swap hands (other direction)
+ui-options-function-swap-hands-reverse = Поменять руки местами (в другую сторону)
 ui-options-function-move-stored-item = Переместить хранящийся объект
 ui-options-function-rotate-stored-item = Повернуть хранящийся объект
 ui-options-function-save-item-location = Сохранить расположение объекта

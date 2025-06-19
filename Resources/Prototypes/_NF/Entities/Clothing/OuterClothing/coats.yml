@@ -1,0 +1,104 @@
+- type: entity
+  id: ClothingOuterCoatBHTrench
+  name: "bounty hunter's flak trenchcoat"
+  parent: ClothingOuterCoatHoSTrench
+  description: A greatcoat enhanced with a bulletproof alloy for some extra protection and style for those with a charismatic presence.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/bounty_hunter_coat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/bounty_hunter_coat.rsi
+  - type: Armor # ClothingOuterArmorBulletproof stats
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.4
+        Heat: 0.9
+  - type: ExplosionResistance
+    damageCoefficient: 0.80
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatBishop
+  name: bishop's robes
+  description: Golden threads aren't actually made of gold. Bummer.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Misc/bishop_robe.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Misc/bishop_robe.rsi
+
+- type: entity
+  parent:  ClothingOuterBaseToggleable
+  id: ClothingOuterCoatWitchHunter
+  name: witch hunter's coat
+  description: Looks even better under constant rain with storm wind.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Misc/witch_hunter_coat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Misc/witch_hunter_coat.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodChaplainHood
+
+- type: entity
+  parent:  ClothingOuterBaseToggleable
+  id: ClothingOuterCoatCardinal
+  name: cardinal's coat
+  description: Nobody expects the Spanish Inquisition!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Misc/cardinal_robe.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Misc/cardinal_robe.rsi
+  - type: ToggleableClothing
+    clothingPrototype: ClothingHeadHatHoodCardinalHood
+
+- type: entity
+  parent: ClothingOuterStorageBase
+  id: ClothingOuterCoatPirateCaptain
+  name: pirate captain's coat
+  description: Y'arrgh har fiddle di dee.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Misc/pirate_captain.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Misc/pirate_captain.rsi
+
+- type: entity
+  parent: ClothingOuterStorageFoldableBase
+  id: ClothingOuterCoatArcadiaTrench
+  name: arcadia flak trenchcoat
+  description: A flak trenchcoat produced by Arcadia Industries, enhanced with a bulletproof alloy for some extra protection.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/OuterClothing/Coats/arcadia_trench.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/OuterClothing/Coats/arcadia_trench.rsi
+  - type: Armor # ClothingOuterArmorBulletproof stats + caustic
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.4
+        Heat: 0.9
+        Caustic: 0.75
+  - type: ExplosionResistance
+    damageCoefficient: 0.50 # buffed 0.80<0.50
+
+- type: entity
+  parent: [ClothingOuterStorageFoldableBaseOpened, ClothingOuterCoatArcadiaTrench]
+  id: ClothingOuterCoatArcadiaTrenchOpened
+  name: arcadia flak trenchcoat
+  components:
+  - type: Armor # Open = less armor
+    modifiers:
+      coefficients:
+        Blunt: 0.9
+        Slash: 0.9
+        Piercing: 0.5
+        Heat: 0.9
+        Caustic: 0.8
+  - type: ExplosionResistance
+    damageCoefficient: 0.60

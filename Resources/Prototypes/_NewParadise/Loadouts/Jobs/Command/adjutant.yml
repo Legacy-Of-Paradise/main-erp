@@ -1,0 +1,42 @@
+# Head
+- type: loadout
+  id: LPPAdjutantCap
+  equipment:
+    head: LPPADJUCap
+# Jumpsuit
+
+- type: loadout
+  id: LPPAdjutantJumpsuit
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitAdjutant
+
+- type: loadout
+  id: LPPAdjutantJumpskirt
+  equipment:
+    jumpsuit: LPPClothingUniformJumpskirtAdjutant
+
+- type: loadout
+  id: LPPAdjutantJumpsuitwhite
+  equipment:
+    jumpsuit: LPPAdjuWhiteSuit
+
+- type: loadout
+  id: LPPAdjutantJumpskirtwhite
+  equipment:
+    jumpsuit: LPPAdjuWhiteSkirt
+
+- type: loadout
+  id: LPPAdjutantJumpsuitblack
+  equipment:
+    jumpsuit: LPPAdjuBlackSuit
+
+- type: loadout
+  id: LPPAdjutantJumpskirtblack
+  equipment:
+    jumpsuit: LPPAdjuBlackSkirt
+
+# cloak
+- type: loadout
+  id: LPPAdjutantCloak
+  equipment:
+    neck: LPPADJUCloak

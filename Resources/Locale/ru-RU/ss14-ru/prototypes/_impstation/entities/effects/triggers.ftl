@@ -1,5 +1,5 @@
 ent-DelayedEffectBase = мгновенный эффект
     .desc = { "" }
 ent-ArtifactWeakInstantEffectGravityWell = { ent-AdminInstantEffectBase }
-    .suffix = Weak Gravity Well
+    .suffix = Колодец со слабой гравитацией
     .desc = { ent-AdminInstantEffectBase.desc }

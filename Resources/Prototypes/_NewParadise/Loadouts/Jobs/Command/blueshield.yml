@@ -1,0 +1,26 @@
+# Jumpsuit
+- type: loadout
+  id: LPPBlueShieldJumpsuit
+  equipment:
+    jumpsuit: LPPClothingUniformJumpsuitBlueshield
+
+- type: loadout
+  id: LPPBlueShieldJumpsuitAlt
+  equipment:
+    jumpsuit: LPPClothingUniformSkirtleneckBlueshield
+
+# Back
+- type: loadout
+  id: LPPBlueShieldBackpack
+  equipment:
+    back: LPPClothingBackpackBlueshield
+
+- type: loadout
+  id: LPPBlueShieldSatchel
+  equipment:
+    back: LPPClothingBackpackSatchelBlueshield
+
+- type: loadout
+  id: LPPBlueShieldDuffel
+  equipment:
+    back: LPPClothingBackpackDuffelBlueshield

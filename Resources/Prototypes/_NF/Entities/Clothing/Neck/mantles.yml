@@ -1,0 +1,46 @@
+- type: entity
+  parent: [ClothingNeckBase, ClothingSlotBase]
+  id: ClothingNeckCloakJanitor
+  name: janitor's cloak
+  description: How did you even get this? did you make it yourself?
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
+  - type: ItemSlots
+    slots:
+      item:
+        name: Plunger
+        whitelist:
+          tags:
+          - Plunger
+  - type: ItemMapper
+    mapLayers:
+      plunger:
+        whitelist:
+          tags:
+            - Plunger
+    sprite: _NF/Clothing/Neck/Cloaks/janitor.rsi
+  - type: Appearance
+
+- type: entity
+  id: ClothingNeckCloakJanitorFilled
+  parent: ClothingNeckCloakJanitor
+  suffix: Filled
+  components:
+  - type: ContainerFill
+    containers:
+      item:
+      - Plunger
+
+- type: entity
+  id: ClothingNeckMantleBH
+  name: "bounty hunter's mantle"
+  parent: ClothingNeckMantleHOS
+  description: "I can bring you in warm or I can bring you in cold. Or you can outbid the bounty."
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Neck/Mantles/bounty_hunter_mantle.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Neck/Mantles/bounty_hunter_mantle.rsi

@@ -1,0 +1,5 @@
+
+- type: entity
+  parent: [ClothingHeadBandBase, ClothingMaskBalaclavaBlack]
+  id: ClothingHeadBalaclavaBlack
+  categories: [ HideSpawnMenu ]

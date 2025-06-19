@@ -400,7 +400,10 @@
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
-    - LoPNVGPackSec # LoP Edit
+    # LoP edit start
+    - LoPTVGPack
+    - LoPNVGPackSec
+    # LoP edit end
     - SalvageSecurityBoards
     - SalvageSecurityWeapons
     - SecurityEquipment

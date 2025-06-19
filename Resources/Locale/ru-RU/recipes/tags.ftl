@@ -26,7 +26,7 @@ construction-graph-tag-medical-hud = медицинский ИЛС
 construction-graph-tag-sun-glasses = солнечные очки
 construction-graph-tag-security-helmet = шлем безопасности
 # materials
-construction-graph-tag-capacitor = конденсатор
+construction-graph-tag-manipulator = манипулятор
 construction-graph-tag-voice-trigger = голосовой триггер
 construction-graph-tag-signal-trigger = сигнальный триггер
 construction-graph-tag-proximity-sensor = датчик приближения

@@ -18,3 +18,12 @@ loadout-group-SponsorUnder = Спонсорские предметы
 loadout-group-SponsorBreast = Спонсорские предметы
 loadout-group-SponsorSocks = Спонсорские предметы
 loadout-group-SponsorUniform = Спонсорские предметы
+#Clothing
+
+loadout-group-jumpsuit-adjutant = Комбинезоны
+loadout-group-cloak-adjutant = Плащи
+loadout-group-head-adjutant = Фуражки
+loadout-group-jumpsuit-blueshield = Комбинезоны
+loadout-group-back-blueshield = Спина
+loadout-group-back-brigtech = Спина
+loadout-group-jumpsuit-brigtech = Комбинезоны

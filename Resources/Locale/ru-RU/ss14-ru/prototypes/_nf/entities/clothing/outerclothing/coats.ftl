@@ -1,0 +1,14 @@
+ent-ClothingOuterCoatBHTrench = бронежилет охотника
+    .desc = Пальто, усиленное пуленепробиваемым сплавом, для дополнительной защиты и стиля для харизматичных личностей.
+ent-ClothingOuterCoatBishop = роба эпископа
+    .desc = Золотые нити на самом деле не сделаны из золота. Обидно.
+ent-ClothingOuterCoatWitchHunter = пальто инквизитора
+    .desc = Выглядит ещё лучше под постоянным дождём и штормовым ветром.
+ent-ClothingOuterCoatCardinal = пальто кардинала
+    .desc = Никто не ожидает испанскую инквизицию!
+ent-ClothingOuterCoatPirateCaptain = пальто капитана пиратов
+    .desc = Йарр! На корм рыбам!
+ent-ClothingOuterCoatArcadiaTrench = бронежилет Аркадии
+    .desc = Бронежилет производства Arcadia Industries, усиленный пуленепробиваемым сплавом для дополнительной защиты.
+ent-ClothingOuterCoatArcadiaTrenchOpened = бронежилет Аркадии
+    .desc = { ent-ClothingOuterStorageFoldableBaseOpened.desc }

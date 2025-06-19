@@ -927,12 +927,6 @@
   id: poppysweeting
 
 - type: ttsVoice
-  name: tts-voice-name-generic_goblin_c
-  sex: Male
-  speaker: generic_goblin_c
-  id: generic_goblin_c
-
-- type: ttsVoice
   name: tts-voice-name-dinah_hecat
   sex: Female
   speaker: dinah_hecat

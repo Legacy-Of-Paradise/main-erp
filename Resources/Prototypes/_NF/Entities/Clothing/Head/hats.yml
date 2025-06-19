@@ -1,0 +1,145 @@
+- type: entity
+  id: ClothingHeadHatBH
+  name: "bounty hunter's hat"
+  parent: ClothingHeadHatHoshat
+  description: "There's a new bounty hunter in the sector."
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/bounty_hunter_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/bounty_hunter_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatPilgrim
+  name: pilgrim's hat
+  description: "Thou shalt not suffer a turkey to live."
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/pilgrim_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/pilgrim_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatWideBrimmed
+  name: wide-brimmed hat
+  description: Works great as frisbee substitute.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/widebrim_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/widebrim_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatCardinal
+  name: cardinal's hat
+  description: Keeps your head well protected from sun and reason.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/cardinal_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/cardinal_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatWitchhunter
+  name: witch hunter's hat
+  description: "Thou shalt not suffer a witch to live."
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/witch_hunter_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/witch_hunter_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatBishopMitre
+  name: bishop's mitre
+  description: How to wear this thing? Ah! The other way around!
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/bishop_mitre.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/bishop_mitre.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatKippah
+  name: kippah
+  description: Worn on the head like a dome.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/kippah.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/kippah.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatHoodCardinalHood
+  categories: [ HideSpawnMenu ]
+  name: cardinal's hood
+  description: Hides your eyes, ensteels your faith.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hoods/cardinal_hood.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hoods/cardinal_hood.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatMcCrown
+  name: mccargo crown
+  description: 'Crowns and tiaras, McCargo King.'
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hoods/mccargocrown.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hoods/mccargocrown.rsi
+  - type: Butcherable
+    spawned:
+    - id: MaterialCardboard1
+      amount: 1
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatPilot
+  name: pilot's helmet
+  description: Can't hear the voices in my headset with these earflaps over my ears. And it feels good.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/pilot.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/pilot.rsi
+  - type: HideLayerClothing
+    slots:
+    - Hair
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatPirates
+  name: pirate's hat
+  description: Y'Arrgghhh.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/pirate_hat.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/pirate_hat.rsi
+
+- type: entity
+  parent: ClothingHeadBaseButcherable
+  id: ClothingHeadHatPirateLuffy
+  name: suspicious pirate's hat
+  description: This here hat be lookin' suspicious.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Head/Hats/pirate_hat_luffy.rsi
+  - type: Clothing
+    sprite: _NF/Clothing/Head/Hats/pirate_hat_luffy.rsi
+
+- type: entity
+  parent: ClothingHeadHatBeretHoS
+  id: ClothingHeadHatBeretCommander
+  name: commander's beret
+  description: A black beret with a commander's rank emblem.

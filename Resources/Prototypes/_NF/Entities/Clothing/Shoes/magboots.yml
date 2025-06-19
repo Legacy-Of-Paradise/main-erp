@@ -1,0 +1,36 @@
+- type: entity
+  parent: [ClothingShoesBootsMag, ClothingShoesBootsCombat]
+  id: ClothingShoesBootsMagSecurity
+  name: security magboots
+  description: Security magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Shoes/Boots/magboots-security.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Shoes/Boots/magboots-security.rsi
+
+- type: entity
+  parent: ClothingShoesBootsMagSecurity
+  id: ClothingShoesBootsMagMercenary
+  name: mercenary magboots
+  description: Mercenary magnetic boots, often used during extravehicular activity to ensure the user remains safely attached to the vehicle.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Shoes/Boots/magboots-mercenary.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Shoes/Boots/magboots-mercenary.rsi
+
+- type: entity
+  parent: ClothingShoesBootsMag
+  id: ClothingShoesBootsMagGaloshes
+  name: magnaloshes
+  description: Magnetic galoshes, often used during cleaning activity to ensure the user remains safely attached to the floor.
+  components:
+  - type: Sprite
+    sprite: _NF/Clothing/Shoes/Boots/magboots-galoshes.rsi
+    state: icon
+  - type: Clothing
+    sprite: _NF/Clothing/Shoes/Boots/magboots-galoshes.rsi
+  - type: NoSlip

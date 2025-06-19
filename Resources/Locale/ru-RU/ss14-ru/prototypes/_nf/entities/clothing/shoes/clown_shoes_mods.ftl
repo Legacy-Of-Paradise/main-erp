@@ -1,0 +1,12 @@
+ent-ClothingShoesClownModWhoopie = клоунские ботинки
+    .desc = Модифицированные стандартные клоунские ботинки. Черт, они такие мягкие!
+    .suffix = Вупи
+ent-ClothingShoesClownModKetchup = { ent-ClothingShoesClownModWhoopie }
+    .desc = Модифицированные стандартные клоунские ботинки. Черт, они мокрые!
+    .suffix = Кетчуп
+ent-ClothingShoesClownModMustarchup = { ent-ClothingShoesClownModWhoopie }
+    .desc = Модифицированные стандартные клоунские ботинки. Чёрт, они очень мокрые!
+    .suffix = Мустарчуп
+ent-ClothingShoesClownModUltimate = { ent-ClothingShoesClownModWhoopie }
+    .desc = Модифицированные стандартные клоунские ботинки. Чёрт, они мокрые и мягкие!
+    .suffix = Ультимэйт

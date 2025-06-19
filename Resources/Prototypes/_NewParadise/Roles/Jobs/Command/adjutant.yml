@@ -46,6 +46,8 @@
  - type: startingGear
    id: LPPAdjutantGear
    equipment:
+     jumpsuit: LPPClothingUniformJumpsuitAdjutant
      shoes: ClothingShoesColorBlack
      id: LPPAdjutantPDA
      ears: ClothingHeadsetCommand
+     back: ClothingBackpack
