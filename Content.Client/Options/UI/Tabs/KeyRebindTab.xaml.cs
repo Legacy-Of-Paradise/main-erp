@@ -151,6 +151,13 @@ namespace Content.Client.Options.UI.Tabs
                 KeybindsContainer.AddChild(newCheckBox);
             }
 
+            // Corvax edit start
+            void HandleToggleAutoGetUp(BaseButton.ButtonToggledEventArgs args)
+            {
+                _cfg.SetCVar(Shared._CorvaxNext.NextVars.NextVars.AutoGetUp, args.Pressed);
+                _cfg.SaveToFile();
+            }
+            // Corvax edit end
             AddHeader("ui-options-header-general");
             AddCheckBox("ui-options-hotkey-keymap", _cfg.GetCVar(CVars.DisplayUSQWERTYHotkeys), HandleToggleUSQWERTYCheckbox);
 
@@ -305,11 +312,13 @@ namespace Content.Client.Options.UI.Tabs
             AddButton(EngineKeyFunctions.TextHistoryNext);
             AddButton(EngineKeyFunctions.TextReleaseFocus);
             AddButton(EngineKeyFunctions.TextScrollToBottom);
+            AddCheckBox("ui-options-hotkey-auto-up", _cfg.GetCVar(Shared._CorvaxNext.NextVars.NextVars.AutoGetUp), HandleToggleAutoGetUp); // Corvax edit
 
             AddHeader("ui-options-header-text-other");
             AddButton(EngineKeyFunctions.TextTabComplete);
             AddButton(EngineKeyFunctions.TextCompleteNext);
             AddButton(EngineKeyFunctions.TextCompletePrev);
+            AddButton(ContentKeyFunctions.ToggleStanding); // Corvax edit
 
             foreach (var control in _keyControls.Values)
             {
