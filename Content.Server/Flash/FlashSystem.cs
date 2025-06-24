@@ -4,7 +4,7 @@ using Content.Shared.Flash.Components;
 using Content.Server.Light.EntitySystems;
 using Content.Server.Popups;
 using Content.Server.Stunnable;
-using Content.Shared._Goobstation.Flashbang;
+using Content.Shared._Goobstation.Flashbang; // Goob edit
 using Content.Shared.Charges.Components;
 using Content.Shared.Charges.Systems;
 using Content.Shared.Eye.Blinding.Components;
@@ -126,11 +126,11 @@ namespace Content.Server.Flash
             if (attempt.Cancelled)
                 return;
 
-            // Goobstation start
+            // Goob edit start
             var multiplierEv = new FlashDurationMultiplierEvent();
             RaiseLocalEvent(target, multiplierEv);
             var multiplier = multiplierEv.Multiplier;
-            // Goobstation end
+            // Goob edit end
 
             // don't paralyze, slowdown or convert to rev if the target is immune to flashes
             if (!_statusEffectsSystem.TryAddStatusEffect<FlashedComponent>(target, FlashedKey, TimeSpan.FromSeconds(flashDuration * multiplier / 1000f), true)) // Goob edit
