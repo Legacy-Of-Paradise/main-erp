@@ -106,7 +106,7 @@
 
 - type: entity
   parent: PaperFormCmd
-  id: DocССRStatement
+  id: DocCCRStatement
   components:
   - type: Paper
     content: doc-text-printer-cent-comm-representative-statement
@@ -190,14 +190,7 @@
 
 - type: entity
   parent: PaperFormCmd
-  id: DocСStatements
-  components:
-  - type: Paper
-    content: doc-text-printer-charter-statements
-
-- type: entity
-  parent: PaperFormCmd
-  id: DocСPDStatements
+  id: DocCPDStatements
   components:
   - type: Paper
     content: doc-text-printer-certificate-of-professional-development-statement

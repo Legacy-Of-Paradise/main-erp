@@ -779,8 +779,8 @@
     Paper: 100
 
 - type: latheRecipe
-  id: RecipeDocССRStatement
-  result: DocССRStatement
+  id: RecipeDocCCRStatement
+  result: DocCCRStatement
   categories:
   - Statements
   completetime: 2
@@ -809,18 +809,8 @@
     Paper: 100
 
 - type: latheRecipe
-  id: RecipeDocСStatements
-  result: DocСStatements
-  categories:
-  - Statements
-  completetime: 2
-  applyMaterialDiscount: false
-  materials:
-    Paper: 100
-
-- type: latheRecipe
-  id: RecipeDocСPDStatements
-  result: DocСPDStatements
+  id: RecipeDocCPDStatements
+  result: DocCPDStatements
   categories:
   - Statements
   completetime: 2

@@ -5,7 +5,7 @@
   - RecipeDocADStatement
   - RecipeDocRRTInquiriesAndAppeals
   - RecipeDocESStatement
-  - RecipeDocССRStatement
+  - RecipeDocCCRStatement
   - RecipeDocBASStatement
   - RecipeDocDWReport
   - RecipeDocRAOrders
@@ -17,8 +17,7 @@
   - RecipeDocAAStatement
   - RecipeDocJRSOrder
   - RecipeDocROrder
-  - RecipeDocСStatements
-  - RecipeDocСPDStatements
+  - RecipeDocCPDStatements
   - RecipeDocAFEStatements
   - RecipeDocPFEPermissions
   - RecipeDocAmenstyStatements
