@@ -23,10 +23,10 @@ doc-text-printer-acting-director-statement =
     ⠀
     ⠀[italic]Поле для печати[/italic]
     ⠀
-doc-text-printer-rapid-response-team-inquiry =
+doc-text-printer-emergency-response-team-inquiry =
     ⠀[bold](Название станции) | XX-000 ПД-КОМ[/bold]
     ⠀
-    ⠀═════[color=#2369AF]ЗАПРОС ВЫЗОВА ОТРЯДА РЕАГИРОВАНИЯ[/color]═══════
+    ⠀═════[color=#2369AF]ЗАПРОС ВЫЗОВА ОТРЯДА БЫСТРОГО РЕАГИРОВАНИЯ[/color]═══════
     ⠀
     ⠀[bold]Время и дата смены:[/bold]
     ⠀[bold]Составитель документа:[/bold]
@@ -504,7 +504,7 @@ doc-text-printer-remove-or-impose-legal-defense-order =
 doc-text-printer-court-verdict =
     ⠀[bold](Название станции) | XX-000 ЮР-СБ[/bold]
     ⠀
-    ⠀═══════════[color=#6E89A9]Судебный вердикт[/color]═══════════
+    ⠀═══════════[color=#6E89A9]СУДЕБНЫЙ ВЕРДИКТ[/color]═══════════
     ⠀
     ⠀[bold]Время и дата смены:[/bold]
     ⠀[bold]Составитель документа:[/bold]

@@ -95,10 +95,10 @@
 - type: entity
   parent: PaperFormCmd
   id: DocRRTInquiriesAndAppeals
-  name: Rapid Response Team Inquiry
+  name: Emergency Response Team Inquiry
   components:
   - type: Paper
-    content: doc-text-printer-rapid-response-team-inquiry
+    content: doc-text-printer-emergency-response-team-inquiry
 
 - type: entity
   parent: PaperFormCmd
