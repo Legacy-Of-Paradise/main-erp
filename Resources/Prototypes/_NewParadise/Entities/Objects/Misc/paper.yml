@@ -1,0 +1,77 @@
+﻿- type: entity
+  parent: Paper
+  id: BasePaperForm
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_form_header.png"
+    contentMargin: 32.0, 16.0, 32.0, 0.0
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSec
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_sec_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormLaw
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_law_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSci
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_sci_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCmd
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_cmd_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormMed
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_med_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCargo
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_cargo_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormEng
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_eng_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCC
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_cc_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormCCSecure
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/nanotrasen_cc_secure_form_header.png"
+
+- type: entity
+  parent: BasePaperForm
+  id: PaperFormSyndie
+  components:
+  - type: PaperVisuals
+    headerImagePath: "/Textures/_NewParadise/Paper/syndie_form_header.png"
