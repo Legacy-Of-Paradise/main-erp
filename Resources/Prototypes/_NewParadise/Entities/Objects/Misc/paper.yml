@@ -225,7 +225,7 @@
 
 - type: entity
   parent: PaperFormLaw
-  id: DocVOLOComplaintst
+  id: DocVOLOComplaints
   components:
   - type: Paper
     content: doc-text-printer-violation-of-the-labor-order-complaintst
@@ -260,13 +260,6 @@
 
 - type: entity
   parent: PaperFormLaw
-  id: DocParoleInquiriesAndAppeals
-  components:
-  - type: Paper
-    content: doc-text-printer-parole-inquiry
-
-- type: entity
-  parent: PaperFormLaw
   id: DocROCStatement
   components:
   - type: Paper
@@ -281,7 +274,7 @@
 
 - type: entity
   parent: PaperFormLaw
-  id: DocDocumentInquiriesAndAppeals
+  id: DocInquiriesAndAppeals
   components:
   - type: Paper
     content: doc-text-printer-document-inquiry
@@ -323,7 +316,7 @@
 
 - type: entity
   parent: PaperFormSec
-  id: DocCAOComplaintst
+  id: DocCAOComplaints
   components:
   - type: Paper
     content: doc-text-printer-complaint-about-offense
@@ -540,14 +533,7 @@
 
 - type: entity
   parent: PaperFormSci
-  id: DocExpeditionPermission
-  components:
-  - type: Paper
-    content: doc-text-printer-permission-to-an-expedition
-
-- type: entity
-  parent: PaperFormSci
-  id: DocPSReport
+  id: DocOSReport
   components:
   - type: Paper
     content: doc-text-printer-object-study-report

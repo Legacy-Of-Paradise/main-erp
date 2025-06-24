@@ -5,23 +5,23 @@
   - RecipeDocADStatement
   - RecipeDocRRTInquiriesAndAppeals
   - RecipeDocESStatement
-  - RecipeDocCCRStatement
+  - RecipeDocССRStatement
   - RecipeDocBASStatement
   - RecipeDocDWReport
   - RecipeDocRAOrders
   - RecipeDocEWReport
   - RecipeDocDHMReport
   - RecipeDocPAStatement
-  - RecipeDocJAStatement
-  - RecipeDocJRStatement
+  - RecipeDocJAStatment
+  - RecipeDocJRStatment
   - RecipeDocAAStatement
   - RecipeDocJRSOrder
   - RecipeDocROrder
-  - RecipeDocCStatements
-  - RecipeDocCPDStatements
+  - RecipeDocСStatements
+  - RecipeDocСPDStatements
   - RecipeDocAFEStatements
   - RecipeDocPFEPermissions
-  - RecipeDocAmnestyStatements
+  - RecipeDocAmenstyStatements
   - RecipeDocVOLOComplaints
   - RecipeDocIAAReport
   - RecipeDocIFRLDInquiriesAndAppeals
@@ -29,7 +29,7 @@
   - RecipeDocParoleInquiriesAndAppeals
   - RecipeDocROCStatement
   - RecipeDocCTWStatement
-  - RecipeDocDocumentInquiriesAndAppeals
+  - RecipeDocInquiriesAndAppeals
   - RecipeDocRILDOrder
   - RecipeDocCVConclusionsAndDecisions
   - RecipeDocBIRStatement
@@ -50,7 +50,7 @@
   - RecipeDocProductionInquiriesAndAppeals
   - RecipeDocCMIOrder
   - RecipeDocCMIReport
-  - RecipeDocPSReportMed
+  - RecipeDocPSReport
   - RecipeDocAFPDPermission
   - RecipeDocSHReport
   - RecipeDocMDDOrder
@@ -65,16 +65,15 @@
   - RecipeDocBuildingPermission
   - RecipeDocTCReport
   - RecipeDocRCWInquiriesAndAppeals
-  - RecipeDocPPInquiriesAndAppealsSci
-  - RecipeDocExpeditionPermissionSci
-  - RecipeDocPSReportSci
+  - RecipeDocPPInquiriesAndAppeals
+  - RecipeDocOSReport
   - RecipeDocExperimentReport
   - RecipeDocExpeditionReport
   - RecipeDocADReport
   - RecipeDocRRBOrder
   - RecipeDocLOSDReport
   - RecipeDocDisposalReport
-  - RecipeDocExpeditionPermissionCargo
+  - RecipeDocExpeditionPermission
   - RecipeDocPOInquiriesAndAppeals
   - RecipeDocEvacOrder
   - RecipeDocSGOrder
