@@ -5,7 +5,7 @@
   forkId: ""
   forkVersion: ""
   time: 04/19/2025 08:13:59
-  entityCount: 10537
+  entityCount: 10533
 maps: []
 grids:
 - 1
@@ -62420,38 +62420,6 @@ entities:
       powerLoad: 60
     - type: DamageOnInteract
       isDamageActive: False
-- proto: PrintedDocumentDecisionToStartTrial
-  entities:
-  - uid: 7653
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 81.7281,64.234924
-      parent: 1
-- proto: PrintedDocumentJudgment
-  entities:
-  - uid: 7654
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 83.765144,64.18863
-      parent: 1
-- proto: PrintedDocumentPermissionDisposeBody
-  entities:
-  - uid: 7655
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 25.624449,73.61168
-      parent: 1
-- proto: PrintedDocumentSentence
-  entities:
-  - uid: 7656
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 82.41329,63.697887
-      parent: 1
   - uid: 7657
     components:
     - type: Transform

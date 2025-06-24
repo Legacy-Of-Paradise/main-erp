@@ -13345,22 +13345,6 @@ entities:
     - type: Transform
       pos: 15.5,-17.5
       parent: 2
-- proto: PrintedDocumentApplicationAccess
-  entities:
-  - uid: 1572
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 8.2495365,-9.361857
-      parent: 2
-- proto: PrintedDocumentApplicationEmployment
-  entities:
-  - uid: 1571
-    components:
-    - type: Transform
-      rot: 3.141592653589793 rad
-      pos: 8.2495365,-9.611857
-      parent: 2
 - proto: Rack
   entities:
   - uid: 43
