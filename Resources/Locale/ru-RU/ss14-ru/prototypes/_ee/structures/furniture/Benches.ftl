@@ -1,4 +1,4 @@
-﻿ent-BenchBaseMiddle = скамья
+ent-BenchBaseMiddle = скамья
     .desc = Множество сидений, объединённых в одном объекте. Истинное чудо науки.
     .suffix = Средняя
 ent-BenchParkMiddle = парковая скамья

@@ -1,4 +1,4 @@
-﻿ent-BenchBaseMiddle = bench
+ent-BenchBaseMiddle = bench
     .desc = Multiple seats spanning a single object. Truly a marvel of science.
     .suffix = Middle
 ent-BenchParkMiddle = park bench
