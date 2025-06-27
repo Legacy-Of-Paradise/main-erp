@@ -30,7 +30,7 @@
 
 - type: entity
   id: LPPClothingMilitaryWebbingSecEng
-  parent: ClothingBeltMilitaryWebbing
+  parent: ClothingBeltSecurityWebbing
   name: Security engineer webbing
   description: Webbing with a lot of straps for security engineer.
   suffix: Security
