@@ -127,11 +127,13 @@
     attributes:
       gender: male
   - type: Sharp
-  - type: NightVision # Goobstation - Nigthvision
+  # Goob edit start
+  - type: NightVision
     toggleAction: null
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  # Goob edit end
     # LOP edit start
   - type: TTS
     voicePrototypeId: nyx_assassin_dota_2
@@ -315,10 +317,12 @@
   - type: FireVisuals
     sprite: Mobs/Effects/onfire.rsi
     normalState: Mouse_burning
-  - type: NightVision # Goobstation - Nigthvision
+  # Goob edit start
+  - type: NightVision
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  # Goob edit end
 
 - type: weightedRandomEntity
   id: RatKingLoot

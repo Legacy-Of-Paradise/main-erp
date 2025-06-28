@@ -55,10 +55,12 @@
     sprite: _White/Clothing/Eyes/Goggles/thermal.rsi
   - type: Clothing
     sprite: _White/Clothing/Eyes/Goggles/thermal.rsi
+  # WD EDIT START
   - type: ThermalVision
     flashDurationMultiplier: 2
     isEquipment: true
     toggleAction: ToggleThermalVision
+  # WD EDIT END
   - type: IdentityBlocker
     coverage: EYES
 

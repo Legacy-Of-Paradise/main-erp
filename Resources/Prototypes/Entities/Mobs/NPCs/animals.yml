@@ -78,10 +78,12 @@
   - type: Tag
     tags:
     - VimPilot
-  - type: NightVision # Goobstation - Nigthvision
+  # Goob edit start
+  - type: NightVision
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  # Goob edit end
 
 - type: entity
   name: bee
@@ -1864,10 +1866,12 @@
       Taco: RatTaco
       Burger: RatBurger
       Skewer: RatSkewer
-  - type: NightVision # Goobstation - Nigthvision
+  # Goob edit start
+  - type: NightVision
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  # Goob edit end
   - type: Destructible
     thresholds:
     - trigger:
@@ -2500,10 +2504,12 @@
       groups:
         Brute: -0.07
         Burn: -0.07
-  - type: NightVision # Goobstation - Nigthvision
+  # Goob edit start
+  - type: NightVision
     color: "#808080"
     activateSound: null
     deactivateSound: null
+  # Goob edit end
 
 - type: entity
   parent: MobSpiderBase

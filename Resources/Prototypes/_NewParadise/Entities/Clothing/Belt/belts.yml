@@ -30,11 +30,15 @@
 
 - type: entity
   id: LPPClothingMilitaryWebbingSecEng
-  parent: ClothingBeltMilitaryWebbing
+  parent: [ClothingBeltStorageBase, ContentsExplosionResistanceBase]
   name: Security engineer webbing
   description: Webbing with a lot of straps for security engineer.
   suffix: Security
   components:
+  - type: Sprite
+    sprite: Clothing/Belt/militarywebbing.rsi
+  - type: Clothing
+    sprite: Clothing/Belt/militarywebbing.rsi
   - type: StorageFill
     contents:
     - id: JawsOfLife

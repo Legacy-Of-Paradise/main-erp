@@ -44,6 +44,11 @@ binds:
 - function: Walk
   type: State
   key: Shift
+# Corvax edit start
+- function: ToggleStanding
+  type: State
+  key: C
+# Corvax edit end
 # Shuttle
 - function: ShuttleStrafeUp
   type: State
@@ -190,7 +195,7 @@ binds:
   mod1: Alt
 - function: OpenCharacterMenu
   type: State
-  key: C
+  key: H # LOP edit
 - function: OpenEmotesMenu
   type: State
   key: Y
