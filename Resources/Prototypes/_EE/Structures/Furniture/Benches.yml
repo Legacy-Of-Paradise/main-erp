@@ -14,8 +14,6 @@
   - type: Rotatable
   - type: Sprite
     state: middle
-  - type: StaticPrice # Frontier
-    price: 20 # Frontier: 20
 
 # Park benches
 - type: entity
@@ -28,8 +26,6 @@
   - type: Construction # Frontier
     graph: BenchesGraph # Frontier
     node: BenchParkMiddleNode # Frontier
-  - type: StaticPrice # Frontier
-    price: 30 # Frontier: 30
 
 - type: entity
   id: BenchParkLeft
@@ -64,8 +60,6 @@
   - type: Construction # Frontier
     graph: BenchesGraph # Frontier
     node: BenchParkBambooMiddleNode # Frontier
-  - type: StaticPrice # Frontier
-    price: 30 # Frontier: 30
 
 - type: entity
   id: BenchParkBambooLeft
@@ -100,8 +94,6 @@
   - type: Construction # Frontier
     graph: BenchesGraph # Frontier
     node: BenchPewMiddleNode # Frontier
-  - type: StaticPrice # Frontier
-    price: 30 # Frontier: 30
 
 - type: entity
   id: BenchPewLeft
@@ -204,8 +196,6 @@
   - type: Construction # Frontier
     graph: SofasGraph # Frontier
     node: BenchSofaMiddleNode # Frontier
-  - type: StaticPrice # Frontier
-    price: 25 # Frontier: 25
 
 - type: entity
   id: BenchSofaLeft
@@ -275,8 +265,6 @@
   - type: Construction # Frontier
     graph: SofasGraph # Frontier
     node: BenchSofaCorpMiddleNode # Frontier
-  - type: StaticPrice # Frontier
-    price: 25 # Frontier: 25
 
 - type: entity
   id: BenchSofaCorpLeft
