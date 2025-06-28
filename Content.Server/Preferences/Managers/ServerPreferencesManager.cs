@@ -424,7 +424,7 @@ namespace Content.Server.Preferences.Managers
                 if (_sponsors.TryGetInfo(session.UserId, out var sponsor))
                 {
                     sponsorTier = sponsor.Tier;
-                    if (sponsorTier > 3)
+                    if (sponsorTier >= 3)
                     {
                         var marks = Loc.GetString($"sponsor-markings-tier").Split(";", StringSplitOptions.RemoveEmptyEntries);
                         allowedMarkings = marks.Concat(sponsor.AllowedMarkings).ToList();
