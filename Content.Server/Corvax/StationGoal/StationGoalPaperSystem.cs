@@ -80,7 +80,7 @@ namespace Content.Server.Corvax.StationGoal
                 Loc.GetString(goal.Text, ("station", MetaData(ent).EntityName)),
                 Loc.GetString("station-goal-fax-paper-name"),
                 null,
-                "PaperFormCC",
+                "PaperFormCC", // LOP edit
                 "paper_stamp-centcom",
                 [new() { StampedName = Loc.GetString("stamp-component-stamped-name-centcom"), StampedColor = Color.FromHex("#006600") }]
             );

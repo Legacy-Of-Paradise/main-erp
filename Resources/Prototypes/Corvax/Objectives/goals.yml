@@ -63,10 +63,6 @@
   minPlayers: 10
 
 - type: stationGoal
-  id: Theatre
-  text: station-goal-theatre
-
-- type: stationGoal
   id: CellAI
   text: station-goal-ai
   minPlayers: 15

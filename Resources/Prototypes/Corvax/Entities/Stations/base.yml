@@ -17,8 +17,9 @@
       - ShuttleRnd
       - ShuttleSrv
       - ShuttleEmergency
-      - Theatre
       - CellAI
+      - Renovation
+      - Transit
       - Botany
       - Bunker
 

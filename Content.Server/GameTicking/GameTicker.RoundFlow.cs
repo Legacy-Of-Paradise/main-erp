@@ -616,6 +616,7 @@ namespace Content.Server.GameTicking
             _replayRoundText = roundEndText;
         }
 
+        // LOP edit start
         private async void SendRoundEndDiscordMessage()
         {
             try
@@ -668,6 +669,7 @@ namespace Content.Server.GameTicking
                 Log.Error($"Error while sending discord round end message:\n{e}");
             }
         }
+        // LOP edit end
 
         public void RestartRound()
         {
@@ -716,6 +718,7 @@ namespace Content.Server.GameTicking
             }
         }
 
+        // LOP edit start
         private async void SendRoundStartingDiscordMessage()
         {
             try
@@ -764,6 +767,7 @@ namespace Content.Server.GameTicking
                 Log.Error($"Error while sending discord round starting message:\n{e}");
             }
         }
+        // LOP edit end
 
         /// <summary>
         ///     Cleanup that has to run to clear up anything from the previous round.
@@ -867,6 +871,7 @@ namespace Content.Server.GameTicking
                 _audio.PlayGlobal(proto.Sound, Filter.Broadcast(), true);
         }
 
+        // LOP edit start
         private async void SendRoundStartedDiscordMessage()
         {
             try
@@ -915,6 +920,7 @@ namespace Content.Server.GameTicking
             }
         }
     }
+    // LOP edit end
 
     public enum GameRunLevel
     {

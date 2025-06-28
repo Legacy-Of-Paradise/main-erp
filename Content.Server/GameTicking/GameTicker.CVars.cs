@@ -1,8 +1,10 @@
 using Content.Server.Discord;
 using Content.Shared.CCVar;
 using Content.Shared.GameTicking;
+// LOP edit start
 using Robust.Shared;
 using Robust.Shared.Configuration;
+// LOP edit end
 
 namespace Content.Server.GameTicking
 {
@@ -53,7 +55,7 @@ namespace Content.Server.GameTicking
             Subs.CVar(_cfg, CCVars.GameLobbyDuration, value => LobbyDuration = TimeSpan.FromSeconds(value), true);
             Subs.CVar(_cfg, CCVars.GameDisallowLateJoins,
                 value => { DisallowLateJoin = value; UpdateLateJoinStatus(); }, true);
-            Subs.CVar(_cfg, CVars.GameHostName, value =>
+            Subs.CVar(_cfg, CVars.GameHostName, value => // LOP edit
             {
                 // TODO why tf is the server name on admin logs
                 ServerName = value;
