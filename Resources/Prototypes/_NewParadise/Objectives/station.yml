@@ -1,7 +1,0 @@
-﻿- type: stationGoal
-  id: Transit
-  text: station-goal-transit
-
-- type: stationGoal
-  id: Renovation
-  text: station-goal-renovation
