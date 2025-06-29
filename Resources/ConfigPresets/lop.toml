@@ -16,6 +16,7 @@ rules_file = "LPPRuleset"
 
 [ic]
 flavor_text = true
+flavor_text_length = 1024
 
 [rules]
 time = 60.0

@@ -947,7 +947,7 @@ doc-text-printer-death-certificate =
     ⠀
     ⠀[bold]ФИО умершего:[/bold]
     ⠀[bold]Должность умершего:[/bold]
-    ⠀[bold]Раса:[/bold]
+    ⠀[bold]Вид:[/bold]
     ⠀[bold]Пол:[/bold]
     ⠀[bold]Причина смерти:[/bold]
     ⠀[bold]Возможность проведения реанимации или клонирования:[/bold]
