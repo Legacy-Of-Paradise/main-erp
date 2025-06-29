@@ -404,7 +404,7 @@ namespace Content.Server.Preferences.Managers
             var prefs = await _db.GetPlayerPreferencesAsync(userId, cancel);
             if (prefs is null)
             {
-                return await _db.InitPrefsAsync(userId, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier), cancel); // LOP
+                return await _db.InitPrefsAsync(userId, HumanoidCharacterProfile.Random(sponsorTier: sponsorTier), cancel); // LOP edit
             }
 
             return prefs;
@@ -426,8 +426,9 @@ namespace Content.Server.Preferences.Managers
                     sponsorTier = sponsor.Tier;
                     if (sponsorTier >= 3)
                     {
-                        var marks = Loc.GetString($"sponsor-markings-tier").Split(";", StringSplitOptions.RemoveEmptyEntries);
-                        allowedMarkings = marks.Concat(sponsor.AllowedMarkings).ToList();
+                        var marks = _markingManager.Markings.Select((a,_) => a.Value).Where(a => a.SponsorOnly == true).Select((a,_) => a.ID).ToList();
+                        marks.AddRange(sponsor.AllowedMarkings.AsEnumerable());
+                        allowedMarkings.AddRange(marks);
                     }
                 }
 #endif

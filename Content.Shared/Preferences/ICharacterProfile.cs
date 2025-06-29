@@ -27,7 +27,7 @@ namespace Content.Shared.Preferences
         /// </summary>
         ICharacterProfile Validated(ICommonSession session, IDependencyCollection collection, List<string> sponsorPrototypes // LOP edit: sponsor system
 #if LOP
-        , int sponsorTier = 0
+        , int sponsorTier
 #endif
         );
     }
