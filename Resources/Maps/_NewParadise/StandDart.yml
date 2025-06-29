@@ -1,11 +1,11 @@
 meta:
   format: 7
   category: Map
-  engineVersion: 261.2.0
+  engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/28/2025 17:46:14
-  entityCount: 38441
+  time: 06/29/2025 11:06:22
+  entityCount: 38444
 maps:
 - 263
 grids:
@@ -522,7 +522,7 @@ entities:
           version: 7
         8,2:
           ind: 8,2
-          tiles: ggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAAARAAAAAAAAggAAAAAAADcAAAAAAAA3AAAAAAAANwAAAAAAADcAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABEAAAAAAACCAAAAAAAAEQAAAAAAAIIAAAAAAAA3AAAAAAAANwAAAAAAADcAAAAAAAA3AAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAACCAAAAAAAANwAAAAAAADcAAAAAAAA3AAAAAAAANwAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEQAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAANwAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAVAAAAAAAAFQAAAAAAABsAAAAAAAAfAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAFQAAAAAAABUAAAAAAAAfAAAAAAAAGwAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAFQAAAAAAABUAAAAAAAAVAAAAAAAAGwAAAAAAAB8AAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAA==
+          tiles: ggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAAARAAAAAAAAggAAAAAAADcAAAAAAAA3AAAAAAAANwAAAAAAADcAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABEAAAAAAACCAAAAAAAAEQAAAAAAAIIAAAAAAAA3AAAAAAAANwAAAAAAADcAAAAAAAA3AAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAARAAAAAAAAEQAAAAAAABEAAAAAAACCAAAAAAAANwAAAAAAADcAAAAAAAA3AAAAAAAANwAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEQAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAANwAAAAAAAIIAAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAAAVAAAAAAAAFQAAAAAAABsAAAAAAAAfAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAFQAAAAAAABUAAAAAAAAfAAAAAAAAGwAAAAAAAIIAAAAAAAASAAAAAAAAEgAAAAAAABIAAAAAAACCAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAAIIAAAAAAACCAAAAAAAAFQAAAAAAABUAAAAAAAAVAAAAAAAAGwAAAAAAAB8AAAAAAACCAAAAAAAAEgAAAAAAABIAAAAAAAASAAAAAAAAggAAAAAAABIAAAAAAAASAAAAAAAAEgAAAAAAAA==
           version: 7
         8,3:
           ind: 8,3
@@ -2004,11 +2004,9 @@ entities:
             5962: 32,83
             5963: 34,80
             5991: 73,86
-            5992: 75,90
             5993: 76,91
             5994: 75,94
             5996: 75,100
-            5997: 75,104
             5999: 76,109
             6000: 79,110
             6001: 80,110
@@ -2032,17 +2030,10 @@ entities:
             6020: 110,108
             6021: 112,107
             6022: 113,106
-            6023: 113,103
-            6024: 113,100
             6025: 114,97
-            6026: 112,95
-            6028: 113,89
-            6029: 113,86
             6032: 114,78
             6033: 113,76
             6036: 114,68
-            6037: 113,65
-            6038: 113,62
             6040: 113,57
             6041: 113,55
             6043: 113,50
@@ -2064,10 +2055,8 @@ entities:
             6060: 75,57
             6061: 75,60
             6062: 76,62
-            6063: 75,65
             6064: 74,68
             6065: 75,72
-            6066: 75,75
             6069: 76,83
             6070: 75,86
             6071: 75,88
@@ -2397,9 +2386,7 @@ entities:
             5953: 37,67
             6072: 76,88
             6073: 75,92
-            6074: 75,95
             6075: 76,98
-            6076: 75,102
             6077: 75,106
             6078: 75,109
             6079: 78,111
@@ -2425,16 +2412,10 @@ entities:
             6099: 112,109
             6100: 113,107
             6101: 112,104
-            6102: 113,101
             6103: 113,98
-            6104: 113,95
-            6105: 113,93
             6106: 114,90
-            6107: 113,87
-            6108: 113,85
             6109: 114,82
             6112: 113,74
-            6113: 113,71
             6114: 113,68
             6116: 113,64
             6118: 113,59
@@ -2458,8 +2439,6 @@ entities:
             6137: 75,52
             6138: 76,55
             6139: 75,58
-            6140: 75,63
-            6141: 75,67
             6226: 103,72
             6227: 103,75
             6228: 106,75
@@ -2890,11 +2869,8 @@ entities:
             5965: 37,87
             5966: 38,92
             6142: 73,70
-            6144: 75,77
-            6145: 75,79
             6147: 75,86
             6149: 75,92
-            6150: 75,95
             6151: 75,98
             6152: 76,100
             6154: 76,106
@@ -2921,17 +2897,10 @@ entities:
             6176: 110,108
             6177: 113,108
             6178: 113,105
-            6179: 112,102
             6180: 114,98
-            6181: 113,95
-            6183: 112,90
-            6184: 113,87
-            6185: 112,84
             6187: 114,79
             6190: 114,71
             6191: 114,70
-            6192: 113,66
-            6194: 113,61
             6195: 114,59
             6196: 113,55
             6197: 111,53
@@ -2954,10 +2923,7 @@ entities:
             6216: 76,53
             6217: 74,57
             6218: 75,60
-            6220: 75,67
             6221: 76,70
-            6222: 75,73
-            6223: 75,77
             6230: 105,75
             6231: 105,72
             6232: 109,75
@@ -3230,10 +3196,7 @@ entities:
             5980: 80,110
             5981: 77,110
             5982: 76,110
-            5983: 75,107
-            5984: 75,104
             5986: 75,98
-            5987: 75,95
             5988: 75,92
             5990: 75,86
             6239: 100,70
@@ -3954,7 +3917,6 @@ entities:
             color: '#9FED5896'
             id: HalfTileOverlayGreyscale90
           decals:
-            7750: 114,65
             7751: 114,66
             7752: 114,67
             7753: 114,68
@@ -4103,6 +4065,8 @@ entities:
             4848: 97,151
             4851: 97,146
             4852: 97,145
+            8308: 113,97
+            8309: 113,99
         - node:
             color: '#3EB38896'
             id: LPPFullTileOverlayGreyscaleS
@@ -4161,6 +4125,7 @@ entities:
             7725: 113,77
             7726: 113,79
             7727: 113,81
+            8301: 113,83
         - node:
             color: '#52B4E9FF'
             id: LPPFullTileOverlayGreyscaleS
@@ -4173,6 +4138,16 @@ entities:
             2798: 116,83
             2821: 116,77
             2822: 116,78
+        - node:
+            color: '#9FED5896'
+            id: LPPFullTileOverlayGreyscaleS
+          decals:
+            8332: 113,71
+            8333: 113,69
+            8334: 113,67
+            8336: 113,63
+            8337: 113,61
+            8388: 113,65
         - node:
             color: '#A4610696'
             id: LPPFullTileOverlayGreyscaleS
@@ -4436,23 +4411,7 @@ entities:
             7681: 114,109
             7682: 113,107
             7683: 113,105
-            7684: 113,103
-            7685: 113,101
-            7686: 113,99
-            7687: 113,97
-            7688: 113,95
-            7690: 113,93
-            7691: 113,91
-            7692: 113,89
-            7693: 113,87
-            7694: 113,85
             7696: 113,83
-            7702: 113,71
-            7703: 113,69
-            7704: 113,67
-            7705: 113,65
-            7706: 113,63
-            7707: 113,61
             7708: 113,59
             7709: 113,57
             7710: 113,55
@@ -4487,13 +4446,6 @@ entities:
             8030: 75,55
             8031: 75,57
             8032: 75,59
-            8033: 75,61
-            8034: 75,63
-            8036: 75,65
-            8038: 75,67
-            8039: 75,69
-            8040: 75,71
-            8041: 75,73
         - node:
             color: '#DE3A3A96'
             id: LPPFullTileOverlayGreyscaleS
@@ -5025,6 +4977,34 @@ entities:
             5158: 71,184
             5159: 71,185
             5160: 71,186
+            8279: 112,102
+            8280: 112,101
+            8281: 112,100
+            8282: 112,99
+            8283: 112,98
+            8284: 112,96
+            8285: 112,95
+            8286: 112,97
+            8287: 112,94
+            8288: 112,93
+            8289: 112,92
+            8291: 112,90
+            8292: 112,89
+            8293: 112,88
+            8294: 112,87
+            8295: 112,83
+            8296: 112,84
+            8297: 112,85
+            8298: 112,86
+            8315: 113,103
+            8316: 113,101
+            8321: 113,95
+            8322: 113,93
+            8323: 112,91
+            8324: 113,91
+            8325: 113,89
+            8326: 113,87
+            8327: 113,85
         - node:
             color: '#3EB38896'
             id: LPPHalfTileOverlayGreyscale270S
@@ -5381,25 +5361,6 @@ entities:
             7451: 112,58
             7452: 112,59
             7478: 112,83
-            7479: 112,84
-            7480: 112,85
-            7481: 112,86
-            7482: 112,87
-            7483: 112,88
-            7484: 112,89
-            7485: 112,90
-            7486: 112,91
-            7487: 112,92
-            7488: 112,93
-            7489: 112,94
-            7490: 112,95
-            7491: 112,96
-            7492: 112,97
-            7493: 112,98
-            7494: 112,99
-            7495: 112,100
-            7496: 112,101
-            7497: 112,102
             7498: 112,103
             7499: 112,104
             7500: 112,105
@@ -5407,6 +5368,11 @@ entities:
             8134: 74,108
             8135: 74,109
             8136: 74,110
+            8341: 75,61
+            8342: 75,63
+            8343: 75,65
+            8344: 75,67
+            8345: 75,69
         - node:
             color: '#D4D4D496'
             id: LPPHalfTileOverlayGreyscale270S
@@ -5522,6 +5488,25 @@ entities:
             8091: 74,100
             8092: 74,106
             8093: 74,107
+            8346: 75,71
+            8347: 75,73
+            8348: 75,75
+            8349: 75,77
+            8350: 75,79
+            8351: 75,81
+            8352: 75,83
+            8353: 75,85
+            8354: 75,87
+            8355: 75,89
+            8356: 75,91
+            8357: 75,93
+            8358: 75,95
+            8359: 75,97
+            8360: 75,99
+            8361: 75,101
+            8362: 75,103
+            8363: 75,105
+            8364: 75,107
         - node:
             color: '#EFB34196'
             id: LPPHalfTileOverlayGreyscale270S
@@ -5606,6 +5591,17 @@ entities:
             8214: 95,149
             8215: 95,148
             8216: 95,147
+            8365: 75,99
+            8366: 75,101
+            8367: 75,97
+            8368: 75,95
+            8369: 75,93
+            8370: 75,91
+            8371: 75,89
+            8372: 75,87
+            8373: 75,85
+            8374: 75,83
+            8375: 75,81
         - node:
             color: '#3EB38896'
             id: LPPHalfTileOverlayGreyscale90S
@@ -5630,7 +5626,9 @@ entities:
           decals:
             8181: 114,103
             8182: 114,102
-            8183: 114,101
+            8313: 114,101
+            8317: 113,103
+            8318: 113,101
         - node:
             color: '#52B4E996'
             id: LPPHalfTileOverlayGreyscale90S
@@ -5662,6 +5660,10 @@ entities:
             8190: 114,94
             8191: 114,93
             8192: 114,92
+            8299: 114,83
+            8300: 114,84
+            8319: 113,93
+            8320: 113,95
         - node:
             color: '#8D1C9996'
             id: LPPHalfTileOverlayGreyscale90S
@@ -5685,6 +5687,12 @@ entities:
             8052: 76,70
             8053: 76,71
             8054: 76,72
+            8380: 75,71
+            8381: 75,69
+            8382: 75,67
+            8383: 75,65
+            8384: 75,63
+            8385: 75,61
         - node:
             color: '#A4610696'
             id: LPPHalfTileOverlayGreyscale90S
@@ -5734,6 +5742,8 @@ entities:
             7882: 150,59
             7883: 150,58
             7884: 150,57
+            8386: 114,61
+            8387: 114,65
         - node:
             color: '#BE6BC3FF'
             id: LPPHalfTileOverlayGreyscale90S
@@ -5932,7 +5942,6 @@ entities:
             7305: 95,128
             7306: 95,127
             7307: 95,126
-            7885: 114,61
             7886: 114,60
             7887: 114,59
             7888: 114,58
@@ -5991,8 +6000,13 @@ entities:
             8186: 114,98
             8187: 114,97
             8188: 114,96
-            8203: 114,83
-            8204: 114,84
+            8338: 75,107
+            8339: 75,105
+            8340: 75,103
+            8376: 75,79
+            8377: 75,77
+            8378: 75,75
+            8379: 75,73
         - node:
             color: '#D4D4D496'
             id: LPPHalfTileOverlayGreyscale90S
@@ -6096,6 +6110,10 @@ entities:
             8200: 114,87
             8201: 114,86
             8202: 114,85
+            8328: 113,85
+            8329: 113,87
+            8330: 113,89
+            8331: 113,91
         - node:
             color: '#334E6DC8'
             id: LPPHalfTileOverlayGreyscaleS
@@ -14089,7 +14107,8 @@ entities:
           37,5:
             0: 32627
           37,6:
-            1: 65520
+            1: 65264
+            4: 256
           37,7:
             1: 65503
             3: 32
@@ -14098,7 +14117,8 @@ entities:
           38,5:
             0: 20224
           38,6:
-            1: 13104
+            1: 4912
+            4: 8192
             0: 8
           38,7:
             1: 13107
@@ -14515,8 +14535,8 @@ entities:
           id: docking425428
           localAnchorB: 0.49999997,0
           localAnchorA: 33.5,117
-          damping: 432.06348
-          stiffness: 3878.193
+          damping: 432.06357
+          stiffness: 3878.1934
     - type: BecomesStation
       id: StandDart
     - type: ImplicitRoof
@@ -21473,7 +21493,7 @@ entities:
       pos: 45.5,82.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -56569.99
+      secondsUntilStateChange: -57675.793
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -27171,51 +27191,6 @@ entities:
     - type: Transform
       pos: 68.5,146.5
       parent: 1
-  - uid: 10118
-    components:
-    - type: Transform
-      pos: 71.5,173.5
-      parent: 1
-  - uid: 10119
-    components:
-    - type: Transform
-      pos: 72.5,174.5
-      parent: 1
-  - uid: 10124
-    components:
-    - type: Transform
-      pos: 73.5,174.5
-      parent: 1
-  - uid: 10125
-    components:
-    - type: Transform
-      pos: 71.5,175.5
-      parent: 1
-  - uid: 18583
-    components:
-    - type: Transform
-      pos: 71.5,174.5
-      parent: 1
-  - uid: 18584
-    components:
-    - type: Transform
-      pos: 73.5,175.5
-      parent: 1
-  - uid: 18586
-    components:
-    - type: Transform
-      pos: 73.5,173.5
-      parent: 1
-  - uid: 18589
-    components:
-    - type: Transform
-      pos: 72.5,175.5
-      parent: 1
-  - uid: 18590
-    components:
-    - type: Transform
-      pos: 72.5,173.5
-      parent: 1
 - proto: AtmosFixFreezerMarker
   entities:
   - uid: 81
@@ -27348,10 +27323,55 @@ entities:
     - type: Transform
       pos: 77.5,183.5
       parent: 1
+  - uid: 10118
+    components:
+    - type: Transform
+      pos: 73.5,173.5
+      parent: 1
+  - uid: 10119
+    components:
+    - type: Transform
+      pos: 72.5,175.5
+      parent: 1
+  - uid: 10124
+    components:
+    - type: Transform
+      pos: 72.5,173.5
+      parent: 1
+  - uid: 10125
+    components:
+    - type: Transform
+      pos: 71.5,173.5
+      parent: 1
   - uid: 10234
     components:
     - type: Transform
       pos: 77.5,181.5
+      parent: 1
+  - uid: 18583
+    components:
+    - type: Transform
+      pos: 72.5,174.5
+      parent: 1
+  - uid: 18584
+    components:
+    - type: Transform
+      pos: 71.5,174.5
+      parent: 1
+  - uid: 18586
+    components:
+    - type: Transform
+      pos: 73.5,175.5
+      parent: 1
+  - uid: 18589
+    components:
+    - type: Transform
+      pos: 71.5,175.5
+      parent: 1
+  - uid: 18590
+    components:
+    - type: Transform
+      pos: 73.5,174.5
       parent: 1
   - uid: 25269
     components:
@@ -91704,10 +91724,10 @@ entities:
     - type: Transform
       pos: 123.5926,57.556076
       parent: 1
-  - uid: 29583
+  - uid: 38443
     components:
     - type: Transform
-      pos: 150.42424,33.546272
+      pos: 152.866,33.496574
       parent: 1
 - proto: ClothingHandsGlovesColorYellowBudget
   entities:
@@ -107015,6 +107035,24 @@ entities:
     - type: Transform
       pos: 113.5,130.5
       parent: 1
+- proto: ExtendedEmergencyNitrogenTankFilled
+  entities:
+  - uid: 38442
+    components:
+    - type: Transform
+      parent: 3438
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
+- proto: ExtendedEmergencyOxygenTankFilled
+  entities:
+  - uid: 29596
+    components:
+    - type: Transform
+      parent: 3227
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: ExtinguisherCabinetFilled
   entities:
   - uid: 32168
@@ -112969,7 +113007,7 @@ entities:
       pos: 154.5,47.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -117985.74
+      secondsUntilStateChange: -119091.55
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -181576,6 +181614,11 @@ entities:
     - type: Transform
       pos: 129.5,126.5
       parent: 1
+  - uid: 29583
+    components:
+    - type: Transform
+      pos: 152.5,31.5
+      parent: 1
 - proto: NitrousOxideCanister
   entities:
   - uid: 28628
@@ -181675,18 +181718,6 @@ entities:
       parent: 1
 - proto: OreBox
   entities:
-  - uid: 29595
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 152.5,30.5
-      parent: 1
-  - uid: 29596
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 152.5,31.5
-      parent: 1
   - uid: 29597
     components:
     - type: Transform
@@ -181754,6 +181785,11 @@ entities:
     components:
     - type: Transform
       pos: 129.5,127.5
+      parent: 1
+  - uid: 29574
+    components:
+    - type: Transform
+      pos: 152.5,30.5
       parent: 1
 - proto: PaintingSadClown
   entities:
@@ -182926,6 +182962,11 @@ entities:
     - type: Transform
       pos: 73.5,138.5
       parent: 1
+  - uid: 38444
+    components:
+    - type: Transform
+      pos: 80.5,165.5
+      parent: 1
 - proto: PlasmaChemistryVial
   entities:
   - uid: 11403
@@ -182976,12 +183017,6 @@ entities:
     - type: InsideEntityStorage
 - proto: PlasticFlapsAirtightClear
   entities:
-  - uid: 29468
-    components:
-    - type: Transform
-      rot: -1.5707963267948966 rad
-      pos: 154.5,40.5
-      parent: 1
   - uid: 29469
     components:
     - type: Transform
@@ -183004,6 +183039,12 @@ entities:
     components:
     - type: Transform
       pos: 143.5,56.5
+      parent: 1
+  - uid: 29595
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 154.5,40.5
       parent: 1
 - proto: PlayerStationAi
   entities:
@@ -183102,7 +183143,6 @@ entities:
     - type: Physics
       bodyType: Static
     - type: InsertingMaterialStorage
-      endTime: 0
   - uid: 9594
     components:
     - type: Transform
@@ -183130,7 +183170,6 @@ entities:
     - type: Physics
       bodyType: Static
     - type: InsertingMaterialStorage
-      endTime: 0
   - uid: 30451
     components:
     - type: Transform
@@ -212705,11 +212744,6 @@ entities:
     - type: Transform
       pos: 51.5,166.5
       parent: 1
-  - uid: 29574
-    components:
-    - type: Transform
-      pos: 150.5,33.5
-      parent: 1
   - uid: 29575
     components:
     - type: Transform
@@ -214742,6 +214776,13 @@ entities:
           - Reverse
         - - Middle
           - Off
+        29454:
+        - - Right
+          - Reverse
+        - - Middle
+          - Off
+        - - Left
+          - Forward
   - uid: 29514
     components:
     - type: Transform
@@ -215446,6 +215487,11 @@ entities:
     components:
     - type: Transform
       pos: 97.5,145.5
+      parent: 1
+  - uid: 29468
+    components:
+    - type: Transform
+      pos: 150.5,33.5
       parent: 1
 - proto: VendingMachineTheater
   entities:
@@ -244322,6 +244368,35 @@ entities:
       anchored: True
       pos: 148.5,26.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 29596
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: Physics
       bodyType: Static
   - uid: 3325
@@ -244370,6 +244445,35 @@ entities:
       anchored: True
       pos: 153.5,27.5
       parent: 1
+    - type: EntityStorage
+      air:
+        volume: 200
+        immutable: False
+        temperature: 293.14673
+        moles:
+        - 1.7459903
+        - 6.568249
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+        - 0
+    - type: ContainerContainer
+      containers:
+        entity_storage: !type:Container
+          showEnts: False
+          occludes: True
+          ents:
+          - 38442
+        paper_label: !type:ContainerSlot
+          showEnts: False
+          occludes: True
+          ent: null
     - type: Physics
       bodyType: Static
 - proto: WardrobeVirologyFilled
@@ -245120,7 +245224,7 @@ entities:
       devices:
       - 3255
       - 4666
-- proto: WeaponEnergyTurretStation
+- proto: WeaponEnergyTurretSecurity
   entities:
   - uid: 5435
     components:
@@ -245165,7 +245269,7 @@ entities:
     - type: DeviceNetwork
       deviceLists:
       - 3154
-- proto: WeaponEnergyTurretStationControlPanel
+- proto: WeaponEnergyTurretSecurityControlPanel
   entities:
   - uid: 3154
     components:
