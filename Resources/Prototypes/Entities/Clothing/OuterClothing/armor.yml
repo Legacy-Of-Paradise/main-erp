@@ -359,12 +359,16 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.2
-        Slash: 0.2
-        Piercing: 0.2
-        Heat: 0.5
-        Radiation: 0
+#LOP edit start
+        Blunt: 0.3
+        Slash: 0.3
+        Piercing: 0.3
+        Radiation: 0.9
         Caustic: 0.75
+  - type: ClothingSpeedModifier
+    walkModifier: 0.8
+    sprintModifier: 0.8
+#LOP edit end
   - type: GroupExamine
   - type: ProtectedFromStepTriggers
     slots: WITHOUT_POCKET
