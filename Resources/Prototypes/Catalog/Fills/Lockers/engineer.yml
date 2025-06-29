@@ -159,6 +159,7 @@
     - id: RCD
     - id: RCDAmmo
     - id: AirGrenade
+    - id: LPPClothingShoesBootsMagAtmos #LOP edit
 
 - type: entityTable
   id: FillAtmosphericsHardsuit

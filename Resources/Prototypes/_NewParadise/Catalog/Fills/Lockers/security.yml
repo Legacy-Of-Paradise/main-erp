@@ -1,0 +1,18 @@
+- type: entity
+  id: LPPLockerSecEngFilled
+  name: Seceng locker
+  parent: LockerSecurity
+  components:
+  - type: StorageFill
+    contents:
+      - id: SheetGlass
+      - id: SheetPlasteel10
+      - id: SheetSteel
+      - id: ToolboxMechanicalFilled
+      - id: ToolboxElectricalFilled
+      - id: ClothingHeadHatWeldingMaskPainted
+      - id: WeaponFlareGunSecurity
+      - id: BoxBeanbag
+      - id: BoxShotgunFlare
+      - id: LightReplacer
+      - id: RCD

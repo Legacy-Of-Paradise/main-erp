@@ -26,6 +26,10 @@
         amount: 2
       - id: RemoteSignaller
         amount: 2
+#LOP edit start
+      - id: LPPWeaponPistolPF20
+      - id: LPPBox20Pistol
+#LOP edit end
 
 - type: entity
   id: LockerWardenFilled
@@ -55,6 +59,10 @@
       - id: RemoteSignaller
         amount: 2
       - id: Binoculars
+#LOP edit start
+      - id: LPPWeaponPistolPF20
+      - id: LPPBox20Pistol
+#LOP edit end
 
 - type: entity
   id: LockerSecurityFilled
@@ -85,6 +93,7 @@
         prob: 0.6
       - id: BookSpaceLaw
         prob: 0.5
+      - id: LPPClothingHandsGlovesTacticalFingerless #LOP edit
 
 - type: entity
   id: LockerBrigmedicFilled
@@ -130,9 +139,13 @@
         # Corvax-Brigmedic-Start
       - id: ClothingMaskBreathMedicalSecurity 
       - id: BoxBodyBag 
-      - id: Defibrillator 
+      # - id: Defibrillator #LOP edit
       - id: MedkitAdvancedFilled 
         # Corvax-Brigmedic-End
+#LOP edit start
+      - id: LPPCombatHypospray 
+      - id: LPPCombatDefibrillator 
+#LOP edit end
 
 - type: entity
   id: LockerDetectiveFilled
@@ -158,6 +171,7 @@
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
       - id: HandLabeler
+      - id: LPPClothingOuterDetectiveHardsuit #LOP edit
 
 - type: entity
   id: ClosetBombFilled

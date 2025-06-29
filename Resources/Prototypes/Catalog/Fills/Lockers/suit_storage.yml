@@ -126,6 +126,7 @@
         - id: OxygenTankFilled
         - id: ClothingOuterHardsuitSecurity
         - id: ClothingMaskBreath
+        - id: ClothingShoesBootsMagSecurity #LOP edit
   - type: AccessReader
     access: [["Security"]]
 
@@ -192,6 +193,7 @@
         - id: OxygenTankFilled
         - id: ClothingOuterHardsuitWarden
         - id: ClothingMaskBreath
+        - id: ClothingShoesBootsMagSecurity #LOP edit
   - type: AccessReader
     access: [["Armory"]]
 

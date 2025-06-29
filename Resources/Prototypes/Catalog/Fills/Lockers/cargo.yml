@@ -21,6 +21,14 @@
       prob: 0.3
       rolls: !type:ConstantNumberSelector
         value: 3
+#LOP edit start
+    - id: LPPClothingHandsGlovesSalvage
+    - id: LPPExpeditorCoat
+    - id: LPPClothingUniformExplorerAlternative
+    - id: LPPClothingUniformJumpsuitExpeditor
+    - id: LPPClothingOuterVestSalvager
+    - id: LPPClothingHeadHelmetSalvager
+#LOP edit end
 
 - type: entity
   id: LockerSalvageSpecialistFilledHardsuit

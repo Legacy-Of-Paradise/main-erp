@@ -690,9 +690,9 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.6
-        Slash: 0.6
-        Piercing: 0.6
+        Blunt: 0.5
+        Slash: 0.5
+        Piercing: 0.7
         Caustic: 0.6
         Heat: 0.45
         Radiation: 0.5
@@ -742,12 +742,12 @@
   - type: ExplosionResistance
     damageCoefficient: 0.2
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+    walkModifier: 0.95
+    sprintModifier: 0.95
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunCommander
   - type: Reflect
-    reflectProb: 0.05
+    reflectProb: 0.025
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -780,13 +780,13 @@
   - type: ExplosionResistance
     damageCoefficient: 0.25
   - type: ClothingSpeedModifier
-    walkModifier: 1.0
-    sprintModifier: 1.0
+    walkModifier: 0.9
+    sprintModifier: 0.9
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexCommander
   - type: Reflect
-    reflectProb: 0.1
+    reflectProb: 0.05
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -806,11 +806,11 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 0.5
-        Slash: 0.5
-        Piercing: 0.5
-        Caustic: 0.5
-        Heat: 0.5
+        Blunt: 0.8
+        Slash: 0.8
+        Piercing: 0.55
+        Caustic: 0.6
+        Heat: 0.6
         Radiation: 0.5
         Shock: 0.5
   - type: TemperatureProtection

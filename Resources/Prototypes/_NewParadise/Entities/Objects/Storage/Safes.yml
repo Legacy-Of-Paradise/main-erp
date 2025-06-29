@@ -1,0 +1,69 @@
+- type: entity
+  parent: GunSafe
+  id: LPPGunSafeRifleM4A1
+  name: Gun safe with M4A1
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPM4A1
+      amount: 2
+    - id: LPPMagazineRifleM4A1Lethal
+      amount: 4
+
+- type: entity
+  parent: GunSafe
+  id: LPPGunSafeRifleM1AM14
+  name: Gun safe with M1A and M14
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPWeaponRifleLemas
+      amount: 2
+    - id: LPPWeaponRifleLemasciv
+      amount: 2
+    - id: MagazineRifle
+      amount: 8
+
+- type: entity
+  parent: GunSafe
+  id: LPPGunSafeRifleM1AM14
+  name: Gun safe with M1A and M14
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPWeaponRifleM1A
+      amount: 1
+    - id: LPPWeaponRifleM14
+      amount: 2
+    - id: MagazineLightRifle
+      amount: 6
+
+- type: entity
+  parent: GunSafe
+  id: LPPGunSafeRiflePredsedatel
+  name: Gun safe with Predsedatel
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPWeaponShotgunPredsedatel
+      amount: 4
+    - id: LPPMagazineShotgunPredsedatel
+      amount: 16
+
+- type: entity
+  parent: GunSafe
+  id: LPPGunSafeCowboy
+  name: Gun safe with cowboy weapons
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPWeaponShotgunLemington
+      amount: 1
+    - id: LPPWeaponSniperLeverPravoved
+      amount: 1
+    - id: LPPWeaponRevolverColtpeacemaker
+      amount: 1
+    - id: MagazineBoxMagnum
+      amount: 4
+    - id: BoxLethalshot
+      amount: 2

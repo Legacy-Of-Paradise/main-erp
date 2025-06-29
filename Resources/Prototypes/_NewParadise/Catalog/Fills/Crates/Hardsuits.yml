@@ -17,3 +17,160 @@
   - type: StorageFill
     contents:
     - id: LPPClothingOuterHardsuitUpgradedMining
+
+- type: entity
+  id: LPPCrateGorlexFill
+  parent: LPPCrateGorlex
+  name: Gorlex gear crate
+  description: Cool stuff.
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPClothingOuterHardsuitGorlexSoldier
+    - id: LPPClothingOuterHardsuitGorlexCommander
+    - id: LPPClothingOuterHardsuitGorlexElite
+    - id: LPPClothingOuterHardsuitGorlexMedic
+    - id: LPPWeaponRifleAek
+    - id: MagazineLightRifle
+    - id: BoxMagazineRifle
+    - id: LPPWeaponSubMachineGunMAC21
+    - id: LPPMagazineMinigun
+      amount: 2
+    - id: LPPWeaponSubMachineGunMAC21
+    - id: LPPClothingBackpackDuffelGorlex
+    - id: LPPWeaponRifleBCR25r
+    - id: MagazineCaselessRifle
+      amount: 2
+    - id: LPPEnergyBroadsword
+
+- type: entity
+  id: LPPCrateDonkFill
+  parent: LPPCrateDonk
+  name: Donk gear crate
+  description: Cool stuff.
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPClothingOuterHardsuitDonkMedic
+    - id: LPPClothingOuterHardsuitDonkTrooper
+    - id: LPPClothingOuterHardsuitDonkCommander
+    - id: LPPClothingOuterHardsuitDonkElite
+    - id: LPPWeaponMarsautopistol
+    - id: MagazineBoxMagnum
+    - id: LPPWeaponRifleMK556Liberator
+    - id: LPPMagazineRifleM4A1Lethal
+      amount: 2
+    - id: LPPMagazineBoxM4A1BigLethal
+    - id: LPPWeaponLightMachinegunLewis
+    - id: MagazineLightRifleMaxim
+    - id: LPPWeaponShotgunRemington320b
+    - id: BoxMagazineShotgun
+    - id: LPPClothingBackpackDuffelDonk
+    - id: LPPEnergyAxe
+
+- type: entity
+  id: LPPCrateCybersunFill
+  parent: LPPCrateCybersun
+  name: Cybersun gear crate
+  description: Cool stuff.
+  components:
+  - type: StorageFill
+    contents:
+    - id: LPPClothingBackpackDuffelCybersun
+    - id: LPPClothingOuterHardsuitCybersunCommander
+    - id: LPPClothingOuterHardsuitCybersunBasic
+    - id: LPPClothingOuterHardsuitCybersunJugger
+    - id: LPPClothingOuterHardsuitCybersunElite
+    - id: LPPWeaponEM1Gauss
+    - id: LPPWeaponNailGun
+    - id: LPPWeaponRifleBR12ARavager
+    - id: LPPBoxMagazineRifleM4A1Lethal
+    - id: LPPWeaponShotgunTBS2S
+    - id: BoxLethalshot
+    - id: LPPEnergyscythe
+
+- type: entity
+  id: LPPSuitStorageSecPilot
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: LPPClothingOuterHardsuitPilotSecurity
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  id: LPPSuitStorageSecEngineer
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: LPPClothingOuterHardsuitCombatAlternative
+        - id: ClothingMaskBreath
+        - id: ClothingShoesBootsMagSecurity
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  id: LPPSuitStorageSecAcientHos
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: LPPClothingOuterHardsuitAcientHos
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  id: LPPSuitStorageSecAcientHos
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: LPPClothingOuterHardsuitAcientHos
+        - id: ClothingMaskBreath
+  - type: AccessReader
+    access: [["Security"]]
+
+- type: entity
+  id: LPPSuitStorageRnd
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: ClothingOuterEVASuitScientist
+        - id: ClothingMaskBreath
+
+- type: entity
+  id: LPPSuitStorageSecRndAlt
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: LPPClothingOuterHardsuitRND
+        - id: ClothingMaskBreath
+
+- type: entity
+  id: LPPSuitStorageMedic
+  parent: SuitStorageBase
+  suffix: Security
+  components:
+  - type: StorageFill
+    contents:
+        - id: OxygenTankFilled
+        - id: ClothingOuterEVASuitMedic
+        - id: ClothingMaskBreath

@@ -366,6 +366,7 @@
     - id: ClothingOuterHardsuitSecurityRed
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
+    - id: ClothingShoesBootsMagSecurity #LOP edit
 
 # No hardsuit locker
 - type: entity
