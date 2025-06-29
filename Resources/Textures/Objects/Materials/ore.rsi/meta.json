@@ -116,6 +116,12 @@
     {
       "name": "diamond-inhand-right",
       "directions": 4
+    },
+    {
+      "name": "copper"
+    },
+    {
+      "name": "titanuim"
     }
   ]
 }
