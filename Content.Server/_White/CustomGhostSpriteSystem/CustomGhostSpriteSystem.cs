@@ -23,10 +23,10 @@ public sealed class CustomGhostSpriteSystem : EntitySystem
 
     private void OnChangeAppearance(EntityUid uid, GhostComponent component, PlayerAttachedEvent args)
     {
-        if(!_playerManager.TryGetSessionByEntity(uid, out var session))
+        if (!_playerManager.TryGetSessionByEntity(uid, out var session))
             return;
 
-        TrySetCustomSprite(uid, session.Name);
+        TrySetCustomSprite(uid, session.UserId.ToString());
     }
 
     public void TrySetCustomSprite(EntityUid ghostUid, string ckey)
