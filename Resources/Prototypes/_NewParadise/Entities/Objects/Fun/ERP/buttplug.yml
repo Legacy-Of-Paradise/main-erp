@@ -103,6 +103,8 @@
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/big.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: Medium tail buttplug
@@ -112,6 +114,8 @@
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/medium.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: Small tail buttplug
@@ -121,6 +125,8 @@
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/small.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: big teal buttplug
