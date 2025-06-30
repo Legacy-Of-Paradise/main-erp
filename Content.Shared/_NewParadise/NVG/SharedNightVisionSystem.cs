@@ -14,7 +14,6 @@ public abstract class SharedLoPNightVisionSystem : EntitySystem
     [Dependency] private readonly ClothingSystem _clothing = default!;
     [Dependency] private readonly InventorySystem _inventory = default!;
     [Dependency] private readonly SharedActionsSystem _sharedActions = default!;
-    [Dependency] private readonly SharedActionsSystem _actionContainer = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedContainerSystem _sharedContainer = default!;
     [Dependency] private readonly SharedItemSystem _item = default!;
@@ -31,7 +30,7 @@ public abstract class SharedLoPNightVisionSystem : EntitySystem
 
     private void OnMapInit(EntityUid uid, LoPNightVisionComponent component, MapInitEvent args)
     {
-        _actionContainer.AddAction(uid, ref component.ToggleActionEntity, component.ToggleAction);
+        _sharedActions.AddAction(uid, ref component.ToggleActionEntity, component.ToggleAction);
         Dirty(uid, component);
     }
 

@@ -1,6 +1,6 @@
 <Document>
 # Воры
-  
+
   <Box>
     [color=#999999][italic]"Йоинк! Я возьму это! И это! О, не возражаешь, если я прихвачу?"[/italic][/color]
   </Box>
@@ -14,15 +14,10 @@
   В отличие от других антагонистов, [bold]избежание неприятностей для вас почти обязательно[/bold] из-за вашего импланта.
   Вы можете только убегать, если [color=#cb0000]Служба Безопасности[/color] начнёт с вами драку, и, поскольку вы работаете в одиночку, у вас нет друзей, которые могли бы вытащить вас из опасности.
 
-  Но, несмотря ни на что, вы успешно стащите то, что хотите, используя решимость, ловкость рук, несколько инструментов и свои [color=cyan]воровские перчатки.[/color]
+  Но, несмотря ни на что, вы успешно проведете пальцем по тому, что хотите, используя решительность, ловкость рук, несколько инструментов и свои [color=cyan] легкие пальцы.[/color]
 
-  Пара перчаток, которые у вас есть, даёт вам серьёзное преимущество: [bold]способность забирать вещи у людей, даже не привлекая их внимания.[/bold] С небольшой практикой вы сможете украсть их кошелёк и одновременно поддерживать разговор.
-
-  Они также сделаны из высококачественных [bold]голографических хамелеоновых волокон[/bold], которые вы смогли украсть, но, хотя они могут выглядеть как изолированные перчатки, вам всё равно понадобится настоящая пара, чтобы не обжечь руки.
-
-  <Box>
-    <GuideEntityEmbed Entity="ClothingHandsChameleonThief" Caption="ваши воровские перчатки"/>
-  </Box>
+  Ваш многолетний опыт научил вас [bold] быстро снимать вещи с тела другого человека так, что он этого даже не заметит.[/bold]
+  Немного потренировавшись, вы даже сможете украсть у него бумажник и одновременно поддерживать беседу.
 
   ## Инструменты торговли
   У вас есть ещё два козыря в украденных рукавах: ваш [color=cyan]маяк[/color] и ваша [color=cyan]воровская сумка.[/color]
@@ -43,14 +38,14 @@
     <GuideEntityEmbed Entity="SatchelThief"/>
   </Box>
   <Box>
-    <GuideEntityEmbed Entity="StorageImplanter" Caption="анатомия"/>
+    <GuideEntityEmbed Entity="Implanter" Caption="анатомия"/>
     <GuideEntityEmbed Entity="C4" Caption="взломщик"/>
     <GuideEntityEmbed Entity="ChameleonProjector" Caption="хамелеон"/>
-    <GuideEntityEmbed Entity="EncryptionKeyStationMaster" Caption="коммуникатор"/>
+    <GuideEntityEmbed Entity="BaseUplinkRadio" Caption="коммуникатор"/>
   </Box>
   <Box>
     <GuideEntityEmbed Entity="NitrousOxideTank" Caption="снотворное"/>
-    <GuideEntityEmbed Entity="Emag" Caption="контрабанда"/>
+    <GuideEntityEmbed Entity="Fulton" Caption="контрабанда"/>
     <GuideEntityEmbed Entity="Telecrystal" Caption="синдикат"/>
   </Box>
 
@@ -58,7 +53,7 @@
 
   ## Центральный элемент коллекции
   Ваша клептомания приведёт вас в разные места. В один день вам захочется украсть несколько фигурок. В другой день — промышленный аппарат.
-  
+
   Неважно. Все они станут частью вашей коллекции в кратчайшие сроки.
 
   Вы можете украсть предметы, [bold]имея их при себе[/bold], когда доберётесь до Центпрального Командования. Если это не удастся, вы можете украсть более крупные предметы, [bold]оставив их рядом с вашим маяком.[/bold]
@@ -66,12 +61,12 @@
   Некоторые из более [italic]одушевлённых[/italic] целей могут не сотрудничать с вами. Убедитесь, что они живы и находятся с вами или вашим маяком по окончании смены.
 
   Вещи, которые вы можете пожелать, включают, но не ограничиваются:
-  
+
   <Box>
-   <GuideEntityEmbed Entity="ToyFigurineGreytider" Caption="фигурки"/>
-   <GuideEntityEmbed Entity="PassengerIDCard" Caption="ID карты"/>
-   <GuideEntityEmbed Entity="ChemDispenser" Caption="структуры"/>
-   <GuideEntityEmbed Entity="MobCorgiIan" Caption="животные/питомцы"/>
+    <GuideEntityEmbed Entity="ToyFigurineGreytider" Caption="фигурки"/>
+    <GuideEntityEmbed Entity="PassengerIDCard" Caption="ID карты"/>
+    <GuideEntityEmbed Entity="ChemDispenser" Caption="структуры"/>
+    <GuideEntityEmbed Entity="MobCorgiIan" Caption="животные/питомцы"/>
   </Box>
 
 </Document>

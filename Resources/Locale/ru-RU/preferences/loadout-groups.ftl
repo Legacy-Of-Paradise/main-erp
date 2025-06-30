@@ -1,5 +1,5 @@
 # Errors
-loadout-group-species-restriction = Этот предмет недоступен для вашей текущей расы.
+loadout-group-species-restriction = Этот предмет недоступен для вашей текущего вида.
 # Miscellaneous
 loadout-group-trinkets = Безделушки
 loadout-group-glasses = Очки

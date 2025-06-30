@@ -398,6 +398,10 @@
   parent: BaseGameRule
   components:
   - type: BasicStationEventScheduler
+    minimumTimeUntilFirstEvent: 600
+    minMaxEventTiming:
+      min: 1000
+      max: 1600
     scheduledGameRules: !type:NestedSelector
       tableId: BasicGameRulesTable
 

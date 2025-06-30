@@ -5,7 +5,7 @@
     <LangVersion>12</LangVersion>
     <IsPackable>false</IsPackable>
     <AppendTargetFrameworkToOutputPath>false</AppendTargetFrameworkToOutputPath>
-    <WarningsAsErrors>nullable</WarningsAsErrors>
+    <WarningsAsErrors>RA0032;nullable</WarningsAsErrors>
     <Nullable>enable</Nullable>
   </PropertyGroup>
   <Import Project="..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props" Condition="Exists('..\Content.Shared\_PrivateShared\LOP_GlobalDefines.props')" />

@@ -60,7 +60,7 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
     /// </summary>
     public void EnsureValid(HumanoidCharacterProfile profile, ICommonSession? session, IDependencyCollection collection
 #if LOP
-    , int sponsorTier = 0
+    , int sponsorTier
 #endif
     )
     {
