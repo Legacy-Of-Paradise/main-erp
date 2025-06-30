@@ -11,6 +11,9 @@
       - state: dildo_avian
   - type: Item
     size: Tiny
+  - type: Tag
+    tags:
+    - Buttplug
 
 - type: entity
   name: dildo canine
