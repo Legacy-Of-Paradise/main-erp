@@ -64,3 +64,6 @@ admin_prefix_webhook = true
 
 [discord]
 rich_main_icon_id = "https://bit.ly/lopicon"
+
+[supermatter]
+rads_base = 1
