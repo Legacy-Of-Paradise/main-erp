@@ -18,7 +18,7 @@
     prototype: Tajaran
     requiredLegs: 2
   - type: Inventory
-    speciesId: reptilian # whyyy
+    speciesId: tajaran # whyyy
     femaleDisplacements:
       jumpsuit:
         sizeMaps:
@@ -80,7 +80,7 @@
   - type: HumanoidAppearance
     species: Tajaran
   - type: Inventory
-    speciesId: reptilian
+    speciesId: tajaran
     femaleDisplacements:
       jumpsuit:
         sizeMaps:
