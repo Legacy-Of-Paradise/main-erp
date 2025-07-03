@@ -48,4 +48,4 @@
     mask: ClothingMaskBreathMedicalSecurity
     outerClothing: ClothingUniformJumpsuitBrigmedic #верхняя одежда
     neck: ClothingNeckScarfStripedRed #шея
-    gloves: LPPClothingHandsGlovesCombatNitrile #LOP edit LPPClothingHandsGlovesCombatNitrile>ClothingHandsGlovesLatex
+    gloves: LPPClothingHandsGlovesCombatNitrile #LOP edit ClothingHandsGlovesLatex>LPPClothingHandsGlovesCombatNitrile
