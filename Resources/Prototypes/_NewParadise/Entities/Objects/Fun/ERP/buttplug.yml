@@ -11,226 +11,179 @@
       - state: green_big
   - type: Item
     size: Tiny
+  - type: Tag
+    tags:
+    - Buttplug
 
 - type: entity
   name: Medium green buttplug
   id: LPPMedGreenButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: green_med
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Small green buttplug
   id: LPPSmallGreenButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: green_small
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: big metal buttplug
   id: LPPBigmetalButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: metal_big
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Medium metal buttplug
   id: LPPMedmetalButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: metal_med
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Small metal buttplug
   id: LPPSmallmetalButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: metal_small
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: big pink buttplug
   id: LPPBigpinkButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: pink_big
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Medium pink buttplug
   id: LPPMedpinkButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: pink_med
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Small pink buttplug
   id: LPPSmallpinkButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: pink_small
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: big tail buttplug
   id: LPPBigtailButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/big.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: Medium tail buttplug
   id: LPPMedtailButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/medium.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: Small tail buttplug
   id: LPPSmalltailButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
     sprite: _NewParadise/Clothing/Underwear/buttplugtail/small.rsi
+    layers:
+    - state: icon
 
 - type: entity
   name: big teal buttplug
   id: LPPBigtealButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: teal_big
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Medium teal buttplug
   id: LPPMedtealButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: teal_med
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Small teal buttplug
   id: LPPSmalltealButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: teal_small
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: big yellow buttplug
   id: LPPBigyellowButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: yellow_big
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Medium yellow buttplug
   id: LPPMedyellowButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: yellow_med
-  - type: Item
-    size: Tiny
 
 - type: entity
   name: Small yellow buttplug
   id: LPPSmallyellowButtplug
-  parent: LPPClothingUnderwearBase
+  parent: LPPBigGreenButtplug
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/buttplug.rsi
-    scale: 1.0, 1.0
     layers:
       - state: yellow_small
-  - type: Item
-    size: Tiny

@@ -19,6 +19,9 @@
       path: /Audio/_NewParadise/Effects/whip.ogg
       params:
         variation: 0.246
+  - type: Tag
+    tags:
+    - Whips
 
 - type: entity
   parent: BaseItem

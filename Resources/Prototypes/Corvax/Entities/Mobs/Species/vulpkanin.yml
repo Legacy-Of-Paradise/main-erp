@@ -30,7 +30,7 @@
     prototype: Vulpkanin
     requiredLegs: 2
   - type: Inventory
-    speciesId: reptilian # whyyy
+    speciesId: vulpkanin # whyyy
     femaleDisplacements:
       socks:
         sizeMaps:
@@ -114,7 +114,7 @@
   - type: HumanoidAppearance
     species: Vulpkanin
   - type: Inventory
-    speciesId: reptilian
+    speciesId: vulpkanin
     femaleDisplacements:
       jumpsuit:
         sizeMaps:

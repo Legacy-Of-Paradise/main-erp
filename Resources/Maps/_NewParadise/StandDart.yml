@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 06/29/2025 11:06:22
-  entityCount: 38444
+  time: 07/02/2025 18:38:29
+  entityCount: 38451
 maps:
 - 263
 grids:
@@ -21493,7 +21493,7 @@ entities:
       pos: 45.5,82.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -57675.793
+      secondsUntilStateChange: -59491.504
       state: Opening
     - type: DeviceLinkSource
       lastSignals:
@@ -78712,6 +78712,13 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 163.5,90.5
       parent: 1
+- proto: CaptainIDCard
+  entities:
+  - uid: 29537
+    components:
+    - type: Transform
+      pos: 108.4695,86.00809
+      parent: 1
 - proto: CarbonDioxideCanister
   entities:
   - uid: 3108
@@ -103738,11 +103745,6 @@ entities:
       rot: 1.5707963267948966 rad
       pos: 112.5,99.5
       parent: 1
-  - uid: 33459
-    components:
-    - type: Transform
-      pos: 114.5,97.5
-      parent: 1
 - proto: DisposalRouterFlipped
   entities:
   - uid: 33252
@@ -103779,6 +103781,12 @@ entities:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 99.5,131.5
+      parent: 1
+  - uid: 33459
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 114.5,97.5
       parent: 1
 - proto: DisposalTagger
   entities:
@@ -113007,7 +113015,7 @@ entities:
       pos: 154.5,47.5
       parent: 1
     - type: Door
-      secondsUntilStateChange: -119091.55
+      secondsUntilStateChange: -120907.266
       state: Closing
     - type: DeviceNetwork
       deviceLists:
@@ -179717,18 +179725,23 @@ entities:
       pos: 109.5,76.5
       parent: 1
     - type: MailingUnit
+      tag: Кухня (Холодильник)
       target: Кухня (Холодильник)
   - uid: 13727
     components:
     - type: Transform
       pos: 107.5,135.5
       parent: 1
+    - type: MailingUnit
+      tag: Научный отдел.
+      target: Научный отдел.
   - uid: 26520
     components:
     - type: Transform
       pos: 88.5,99.5
       parent: 1
     - type: MailingUnit
+      tag: Мостик
       target: Мостик
   - uid: 29281
     components:
@@ -179736,6 +179749,7 @@ entities:
       pos: 152.5,56.5
       parent: 1
     - type: MailingUnit
+      tag: Почтовое отделение
       target: Почтовое отделение
   - uid: 29282
     components:
@@ -179743,6 +179757,7 @@ entities:
       pos: 126.5,95.5
       parent: 1
     - type: MailingUnit
+      tag: Мед. отдел
       target: Мед. отдел
   - uid: 29284
     components:
@@ -179750,6 +179765,7 @@ entities:
       pos: 72.5,129.5
       parent: 1
     - type: MailingUnit
+      tag: Инженерный отдел
       target: Инженерный отдел
   - uid: 33462
     components:
@@ -179757,7 +179773,8 @@ entities:
       pos: 58.5,82.5
       parent: 1
     - type: MailingUnit
-      target: Бриг
+      tag: Служба Безопасности
+      target: Служба Безопасности
 - proto: MailTeleporterMachineCircuitboard
   entities:
   - uid: 27293
@@ -185985,6 +186002,24 @@ entities:
     - type: Transform
       pos: 64.5,64.5
       parent: 1
+  - uid: 38445
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 138.5,62.5
+      parent: 1
+  - uid: 38447
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 141.5,59.5
+      parent: 1
+  - uid: 38448
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 150.5,55.5
+      parent: 1
 - proto: PoweredlightOrange
   entities:
   - uid: 34814
@@ -187777,6 +187812,18 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 84.5,151.5
+      parent: 1
+  - uid: 38449
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 122.5,82.5
+      parent: 1
+  - uid: 38450
+    components:
+    - type: Transform
+      rot: 1.5707963267948966 rad
+      pos: 122.5,82.5
       parent: 1
 - proto: PrefilledSyringe
   entities:
@@ -207704,6 +207751,17 @@ entities:
       - SurveillanceCameraMedical
       nameSet: True
       id: Парамедик
+  - uid: 38451
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 154.5,79.5
+      parent: 1
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraMedical
+      nameSet: True
+      id: Морг 2
 - proto: SurveillanceCameraRouterCircuitboard
   entities:
   - uid: 27288
@@ -209095,6 +209153,16 @@ entities:
       - SurveillanceCameraSupply
       nameSet: True
       id: Проход на шаттл утилизаторов
+  - uid: 38446
+    components:
+    - type: Transform
+      pos: 139.5,62.5
+      parent: 1
+    - type: SurveillanceCamera
+      setupAvailableNetworks:
+      - SurveillanceCameraSupply
+      nameSet: True
+      id: Коридор к Снабжению
 - proto: SurveillanceCameraWirelessRouterEntertainment
   entities:
   - uid: 21068
@@ -245786,12 +245854,6 @@ entities:
     components:
     - type: Transform
       pos: 148.5,56.5
-      parent: 1
-  - uid: 29537
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 151.5,58.5
       parent: 1
   - uid: 29538
     components:

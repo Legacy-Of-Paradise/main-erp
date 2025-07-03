@@ -26,6 +26,10 @@ discord = "https://wiki.legacyofparadise.space/discord"
 github = "https://github.com/Legacy-Of-Paradise/main-nonerp"
 wiki = "http://wiki.legacyofparadise.space/"
 website = "https://boosty.to/legacy-of-paradise"
+appeal = "https://wiki.legacyofparadise.space/discord"
+
+[votekick]
+enabled = false
 
 [vote]
 restart_required_ratio = 0.85
@@ -34,6 +38,9 @@ timerrestart = 30
 map_enabled = true
 preset_enabled = true
 restart_enabled = true
+
+[interaction]
+rate_limit_announce_admins_delay = -1
 
 [hub]
 advertise = true
@@ -57,3 +64,6 @@ admin_prefix_webhook = true
 
 [discord]
 rich_main_icon_id = "https://bit.ly/lopicon"
+
+[supermatter]
+rads_base = 1
