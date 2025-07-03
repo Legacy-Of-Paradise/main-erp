@@ -75,7 +75,12 @@ namespace Content.IntegrationTests.Tests
             "Relic",
             "dm01-entryway",
             "Exo",
-            "StandDart", // LOP edit
+            // LOP edit start
+            "StandDart",
+            "LoPPaper",
+            "LoPSaltern",
+            "LoPTushkan",
+            // LOP edit end
         };
 
         /// <summary>
