@@ -1,2 +1,10 @@
 ent-LPPGunSafeRifleM4A1 = Gun safe with M4A1
     .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRifleM1AM14 = Gun safe with M1A and M14
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRifleFrench = Gun safe with french weapon
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRiflePredsedatel = Gun safe with Predsedatel
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeCowboy = Gun safe with cowboy weapons
+    .desc = { ent-GunSafe.desc }

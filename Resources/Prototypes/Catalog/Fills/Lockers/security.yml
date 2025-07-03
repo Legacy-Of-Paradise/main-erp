@@ -145,6 +145,7 @@
 #LOP edit start
       - id: LPPCombatHypospray 
       - id: LPPCombatDefibrillator 
+      - id: LPPClothingHandsGlovesCombatNitrile
 #LOP edit end
 
 - type: entity

@@ -16,3 +16,8 @@
       - id: BoxShotgunFlare
       - id: LightReplacer
       - id: RCD
+      - id: LPPClothingEyesHudSecEng
+      - id: ClothingHandsGlovesColorYellow
+      - id: ClothingBeltUtilityEngineering
+      - id: DoorElectronics
+      - id: DrinkShinyFlask

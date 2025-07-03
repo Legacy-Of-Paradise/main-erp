@@ -1,0 +1,10 @@
+ent-LPPGunSafeRifleM4A1 = сейф М4А1
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRifleM1AM14 = сейф с М14 и М1А
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRifleFrench = сейф с французским оружием
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeRiflePredsedatel = сейф с Председатель
+    .desc = { ent-GunSafe.desc }
+ent-LPPGunSafeCowboy = сейф с ковбойским оружием
+    .desc = { ent-GunSafe.desc }

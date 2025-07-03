@@ -13,7 +13,7 @@
 - type: entity
   parent: GunSafe
   id: LPPGunSafeRifleFrench
-  name: Gun safe with M1A and M14
+  name: Gun safe with french weapon
   components:
   - type: StorageFill
     contents:
