@@ -102,6 +102,11 @@ public sealed class TTSSystem : EntitySystem
             return;
         }
 
+        if (TerminatingOrDeleted(uid))
+        {
+            return;
+        }
+
         var stream = CreateAudioStream(data);
 
         if (isWhisper is true)

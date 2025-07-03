@@ -73,7 +73,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var ttsPrototype))
             return;
 
-        var message = FormattedMessage.RemoveMarkupOrThrow(ev.Message);
+        var message = FormattedMessage.RemoveMarkupPermissive(ev.Message);
         var soundData = await GenerateTTS(null, message, ttsPrototype.Speaker, speechRate: "slow", effect: "announce");
 
         if (soundData == null)
@@ -166,7 +166,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (!_prototypeManager.TryIndex(voiceId, out var protoVoice))
             return;
 
-        var message = FormattedMessage.RemoveMarkupOrThrow(args.Message);
+        var message = FormattedMessage.RemoveMarkupPermissive(args.Message);
 
         var soundData = await GenerateTTS(uid, message, protoVoice.Speaker);
         if (soundData is null)

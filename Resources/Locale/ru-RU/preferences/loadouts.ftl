@@ -10,6 +10,6 @@ loadouts-points-limit = Очки: { $count } / { $max }
 loadouts-count-items-in-group =
     { $item } и ещё { $count } { $count ->
         [1] предмет
-        *[other] предмета
+       *[other] предмета
     }
 loadouts-points-restriction = Не хватает очков

@@ -75,7 +75,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
 
     public HumanoidCharacterProfile FromStream(Stream stream, ICommonSession session, List<string> sponsorProtos // LOP edit
 #if LOP
-        , int sponsorTier = 0
+        , int sponsorTier
 #endif
     )
     {

@@ -90,6 +90,7 @@
   - greenshift
   - shittersafarideluxeedition
   name: greenshift-title
+  maxPlayers: 15
   showInVote: true #4boring4vote
   description: greenshift-description
   rules:
@@ -167,7 +168,7 @@
   name: death-match-title
   description: death-match-description
   maxPlayers: 15
-  showInVote: true
+  showInVote: false
   supportedMaps: DeathMatchMapPool
   rules:
     - DeathMatch31
