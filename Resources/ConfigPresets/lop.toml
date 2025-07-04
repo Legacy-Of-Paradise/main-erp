@@ -35,6 +35,7 @@ enabled = false
 restart_required_ratio = 0.85
 same_type_timeout = 300.0
 timerrestart = 30
+autovote_enabled = true
 map_enabled = true
 preset_enabled = true
 restart_enabled = true
