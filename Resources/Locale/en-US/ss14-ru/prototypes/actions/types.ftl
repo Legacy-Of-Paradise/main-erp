@@ -62,7 +62,7 @@ ent-FakeMindShieldToggleAction = [color=green]Toggle Fake Mindshield[/color]
     .desc = Turn the Fake Mindshield implant's transmission on/off
 ent-ActionToggleParamedicSiren = Toggle Paramedic Siren
     .desc = Toggles the paramedic siren on and off.
-ent-ActionToggleRootable = Укорениться
-    .desc = Начните или перестаньте быть прикованным к полу.
+ent-ActionToggleRootable = Rootable
+    .desc = Begin or stop being rooted to the floor.
 ent-ActionChameleonController = Control clothing
     .desc = Change your entire outfit fast!
