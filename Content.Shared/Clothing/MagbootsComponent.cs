@@ -1,6 +1,7 @@
 using Content.Shared.Alert;
 using Robust.Shared.GameStates;
 using Robust.Shared.Prototypes;
+using Robust.Shared.Audio; // LOP edit
 
 namespace Content.Shared.Clothing;
 
@@ -22,4 +23,12 @@ public sealed partial class MagbootsComponent : Component
     /// </summary>
     [DataField]
     public string Slot = "shoes";
+
+    // LOP edit start
+    [DataField]
+    public SoundSpecifier SoundOn = new SoundPathSpecifier("/Audio/_NewParadise/SoundUse/magboots_on.ogg");
+
+    [DataField]
+    public SoundSpecifier SoundOff = new SoundPathSpecifier("/Audio/_NewParadise/SoundUse/magboots_off.ogg");
+    // LOP edit end
 }
