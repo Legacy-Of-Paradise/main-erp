@@ -1,6 +1,6 @@
-using Content.Server.DNALocker;
 using Content.Server.Explosion.EntitySystems;
 using Content.Shared.Emag.Systems;
+using Content.Shared.Forensics.Components;
 using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
