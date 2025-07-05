@@ -1,16 +1,16 @@
-using Content.Server.Forensics;
+using Content.Server.DNALocker;
+using Content.Server.Explosion.EntitySystems;
+using Content.Shared.Emag.Systems;
+using Content.Shared.Interaction.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
-using Content.Server.Explosion.EntitySystems;
-using Robust.Shared.Audio.Systems;
 using Content.Shared.Popups;
-using Content.Shared.Emag.Systems;
-using Robust.Shared.Timing;
-using Content.Shared.Interaction.Components;
 using Content.Shared.Verbs;
+using Robust.Shared.Audio.Systems;
+using Robust.Shared.Timing;
 using Robust.Shared.Utility;
 
-namespace Content.Server.DNALocker;
+namespace Content.Server._ADT.DNALocker.Systems;
 
 public sealed partial class DNALockerSystem : EntitySystem
 {
@@ -23,27 +23,29 @@ public sealed partial class DNALockerSystem : EntitySystem
     {
         base.Initialize();
 
-        SubscribeLocalEvent<DNALockerComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
-        SubscribeLocalEvent<DNALockerComponent, GotEquippedEvent>(OnEquip);
-        SubscribeLocalEvent<DNALockerComponent, GotEmaggedEvent>(OnGotEmagged);
+        SubscribeLocalEvent<Components.DNALockerComponent, GetVerbsEvent<AlternativeVerb>>(OnAltVerb);
+        SubscribeLocalEvent<Components.DNALockerComponent, GotEquippedEvent>(OnEquip);
+        SubscribeLocalEvent<Components.DNALockerComponent, GotEmaggedEvent>(OnGotEmagged);
     }
 
-    public void LockEntity(EntityUid uid, DNALockerComponent component, EntityUid equipee)
+    public void LockEntity(EntityUid uid, Components.DNALockerComponent component, EntityUid equipee)
     {
         if (!TryComp<DnaComponent>(equipee, out var dna))
         {
             ExplodeEntity(uid, component, equipee);
             return;
         }
-
-        component.DNA = dna.DNA;
+        if (dna.DNA != null)
+            component.DNA = dna.DNA;
         _audioSystem.PlayPvs(component.LockSound, uid);
         var selfMessage = Loc.GetString("dna-locker-success");
         _popup.PopupEntity(selfMessage, equipee, equipee);
     }
 
-    public void ExplodeEntity(EntityUid uid, DNALockerComponent component, EntityUid equipee)
+    public void ExplodeEntity(EntityUid uid, Components.DNALockerComponent component, EntityUid equipee)
     {
+        if (!component.Enabled)
+            return;
         if (!component.IsLocked)
             return;
 
@@ -61,7 +63,7 @@ public sealed partial class DNALockerSystem : EntitySystem
         });
     }
 
-    private void OnEquip(EntityUid uid, DNALockerComponent component, GotEquippedEvent args)
+    private void OnEquip(EntityUid uid, Components.DNALockerComponent component, GotEquippedEvent args)
     {
         Log.Debug($"{args.Slot}");
         if (!component.IsLocked)
@@ -79,9 +81,9 @@ public sealed partial class DNALockerSystem : EntitySystem
         }
     }
 
-    private void OnGotEmagged(EntityUid uid, DNALockerComponent component, ref GotEmaggedEvent args)
+    private void OnGotEmagged(EntityUid uid, Components.DNALockerComponent component, ref GotEmaggedEvent args)
     {
-        if (!component.CanBeEmagged)
+        if (!component.CanBeEmagged || !component.Enabled)
             return;
 
         component.DNA = string.Empty;
@@ -93,13 +95,14 @@ public sealed partial class DNALockerSystem : EntitySystem
             var selfMessage = Loc.GetString("dna-locker-unlock");
             _popup.PopupEntity(selfMessage, uid, userUid);
         });
+        component.Enabled = !component.Enabled;
         args.Repeatable = true;
         args.Handled = true;
     }
 
-    private void OnAltVerb(EntityUid uid, DNALockerComponent component, GetVerbsEvent<AlternativeVerb> args)
+    private void OnAltVerb(EntityUid uid, Components.DNALockerComponent component, GetVerbsEvent<AlternativeVerb> args)
     {
-        if (!component.IsLocked)
+        if (!component.IsLocked || !component.Enabled)
             return;
 
         AlternativeVerb verbDNALock = new()
@@ -111,7 +114,7 @@ public sealed partial class DNALockerSystem : EntitySystem
         args.Verbs.Add(verbDNALock);
     }
 
-    private void MakeUnlocked(EntityUid uid, DNALockerComponent component, EntityUid userUid)
+    private void MakeUnlocked(EntityUid uid, Components.DNALockerComponent component, EntityUid userUid)
     {
         if (TryComp<DnaComponent>(userUid, out var userDNAComponent) && component.DNA == userDNAComponent.DNA)
         {

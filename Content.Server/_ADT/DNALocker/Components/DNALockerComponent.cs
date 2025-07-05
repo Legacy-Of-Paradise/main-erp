@@ -1,6 +1,6 @@
 using Robust.Shared.Audio;
 
-namespace Content.Server.DNALocker;
+namespace Content.Server._ADT.DNALocker.Components;
 
 [RegisterComponent]
 public sealed partial class DNALockerComponent : Component
@@ -8,6 +8,8 @@ public sealed partial class DNALockerComponent : Component
     [DataField]
     public string DNA = string.Empty;
 
+    [DataField]
+    public bool Enabled = true;
     public bool IsLocked => DNA != string.Empty;
 
     [DataField]
@@ -17,7 +19,7 @@ public sealed partial class DNALockerComponent : Component
     public bool CanBeEmagged = true;
 
     [DataField("lockSound")]
-    public SoundSpecifier LockSound = new SoundPathSpecifier("/Audio/ADT/dna-lock.ogg");
+    public SoundSpecifier LockSound = new SoundPathSpecifier("/Audio/_ADT/dna-lock.ogg");
 
     [DataField("emagSound")]
     public SoundSpecifier EmagSound = new SoundCollectionSpecifier("sparks");
