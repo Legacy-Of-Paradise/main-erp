@@ -7,6 +7,8 @@ using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Controls;
 using Content.Client.UserInterface.Systems.Hands.Controls;
 using Content.Client.Verbs.UI;
+using Content.Shared._EstacaoPirata.Cards.Card; // Estacao Pirata edit
+using Content.Shared._EstacaoPirata.Cards.Hand; // Estacao Pirata edit
 using Content.Shared.Cuffs;
 using Content.Shared.Cuffs.Components;
 using Content.Shared.Ensnaring.Components;
@@ -193,8 +195,7 @@ namespace Content.Client.Inventory
                 if (EntMan.TryGetComponent<CuffableComponent>(Owner, out var cuff) && _cuffable.GetAllCuffs(cuff).Contains(virt.BlockingEntity))
                     button.BlockedRect.MouseFilter = MouseFilterMode.Ignore;
             }
-
-            UpdateEntityIcon(button, heldEntity);
+            UpdateEntityIcon(button, EntMan.HasComponent<Shared._EstacaoPirata.StripMenuHiddenComponent>(heldEntity) ? _virtualHiddenEntity : heldEntity); // Estacao Pirata edit
             _strippingMenu!.HandsContainer.AddChild(button);
             LayoutContainer.SetPosition(button, new Vector2i(_handCount, 0) * (SlotControl.DefaultButtonSize + ButtonSeparation));
             _handCount++;
@@ -237,6 +238,9 @@ namespace Content.Client.Inventory
             // this does not work for modified clients because they are still sent the real entity
             if (entity != null && _strippable.IsStripHidden(slotDef, _player.LocalEntity))
                 entity = _virtualHiddenEntity;
+
+            if (entity != null && EntMan.HasComponent<Shared._EstacaoPirata.StripMenuHiddenComponent>(entity)) // Estacao Pirata edit
+                entity = _virtualHiddenEntity; // Estacao Pirata edit
 
             var button = new SlotButton(new SlotData(slotDef, container));
             button.Pressed += SlotPressed;
