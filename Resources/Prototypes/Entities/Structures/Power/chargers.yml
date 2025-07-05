@@ -153,6 +153,19 @@
   components:
   - type: Sprite
     sprite: Structures/Power/recharger.rsi
+    # WD edit start
+    layers:
+    - map: ["enum.PowerChargerVisualLayers.Base"]
+      state: "empty"
+    - map: ["enum.PowerChargerVisualLayers.Light"]
+      state: "light-off"
+      shader: "unshaded"
+    - map: ["enum.PowerChargerVisualLayers.ItemDisplay"]
+      shader: "FlickerHologram"
+      color: "#ffffffaa"
+      offset: 0,0.45
+      scale: 0.5,0.5
+    # WD edit end
   - type: Machine
     board: WeaponCapacitorRechargerCircuitboard
   # no powercellslot since stun baton etc arent powercells
@@ -165,6 +178,11 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+    # WD edit start
+  - type: ItemSlotRenderer
+    mapping:
+      charger_slot: enum.PowerChargerVisualLayers.ItemDisplay
+    # WD edit end
 
 - type: entity
   parent: BaseItemRecharger
