@@ -1,55 +1,4 @@
 - type: latheRecipe
-  id: ADTBorgModuleHarm
-  result: ADTBorgModuleHarm
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 500
-    Plastic: 250
-    Gold: 50
-    Plasma: 500
-
-- type: latheRecipe
-  id: ADTBorgModuleDisabler
-  result: ADTBorgModuleDisabler
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 500
-    Plastic: 250
-    Gold: 50
-    Plasma: 50
-
-- type: latheRecipe
-  id: ADTBorgModuleDetention
-  result: ADTBorgModuleDetention
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 500
-    Plastic: 250
-
-- type: latheRecipe
-  id: ADTBorgModuleRPD
-  result: ADTBorgModuleRPD
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 500
-    Plastic: 250
-    Gold: 50
-
-- type: latheRecipe
-  id: ADTCustomLawCircuitBoard
-  result: ADTCustomLawCircuitBoard
-  completetime: 3
-  materials:
-    Steel: 500
-    Glass: 500
-    Plastic: 250
-    Gold: 50
-
-- type: latheRecipe
   id: ADTModsuitHelmet
   result: ADTModsuitHelmet
   completetime: 2
@@ -324,17 +273,6 @@
     Plastic: 250
     Gold: 100
     Plasma: 50
-
-- type: latheRecipe
-  id: ADTClothingOuterExoskeletonBase
-  result: ADTClothingOuterExoskeletonBase
-  completetime: 2
-  materials:
-    Steel: 2000
-    Plastic: 250
-    Gold: 100
-    Plasma: 50
-    Silver: 400
 
 - type: latheRecipe
   id: ADTModsuitModEmpProtection
