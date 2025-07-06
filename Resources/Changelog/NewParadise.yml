@@ -431,3 +431,12 @@
   id: 33
   time: '2025-07-05T17:32:33.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/85
+- author: Evgencheg
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0431\u0438\u043E\u043A\
+      \u043E\u0434\u0438\u043D\u0433 \u0434\u043B\u044F \u0441\u043A\u0430\u0444\u0430\
+      \u043D\u0434\u0440\u043E\u0432!"
+    type: Add
+  id: 34
+  time: '2025-07-06T20:38:19.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/87
