@@ -82,13 +82,6 @@
     slots:
     - MODcore
     components:
-    - type: MovementSpeedModifier
-      weightlessAcceleration: 1
-      weightlessFriction: 0.3
-      weightlessModifier: 1.2
-    - type: CanMoveInAir
-    - type: InputMover
-      toParent: true
     - type: GasTank
       toggleAction: null
       outputPressure: 21.3
