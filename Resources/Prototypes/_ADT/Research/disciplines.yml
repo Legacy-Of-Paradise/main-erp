@@ -1,7 +1,6 @@
 - type: techDiscipline
   id: Mech
   name: research-discipline-mech
-  uiName: МЕХ
   color: "#824a9c"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi
@@ -14,7 +13,6 @@
 - type: techDiscipline
   id: Biochemical
   name: research-discipline-biochemical
-  uiName: МЕД
   color: "#3d8dbb"
   icon:
     sprite: Interface/Misc/research_disciplines.rsi

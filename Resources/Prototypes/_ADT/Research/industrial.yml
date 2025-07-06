@@ -14,9 +14,6 @@
     - ADTModsuitPlateAtmospheric
   technologyPrerequisites:
     - ADTModsuitBase
-  position: 1,-2
-  requiredTech:
-  - AtmosphericTech
 
 - type: technology
   id: ADTIndustrialMODsuitMODs
@@ -41,6 +38,3 @@
     - ADTModsuitModDrill
   technologyPrerequisites:
     - ADTIndustrialMODsuit
-  position: 1,-3
-  requiredTech:
-  - ADTIndustrialMODsuit

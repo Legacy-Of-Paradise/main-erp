@@ -14,9 +14,6 @@
     - ADTModsuitModNoslip
   technologyPrerequisites:
     - ADTMedicalMODsuit
-  position: 3,1
-  requiredTech:
-  - AdvancedEntertainment
 
 - type: technology
   id: ADTExoskeletons
@@ -29,9 +26,6 @@
   cost: 10000
   recipeUnlocks:
   - ADTClothingOuterExoskeletonBase
-  position: 2,3
-  requiredTech:
-  - BluespaceCargoTransport
 
 - type: technology
   id: ADTServicePlus
@@ -47,9 +41,6 @@
     - ADTCoffeeMachineBluespaceCircuitboard # Окей, братан. Я тебя понял :3
     - ADTKitchenAssemblerMachineCircuitBoard
     - ADTElectricRangeMachineCircuitBoard
-  position: 1,-2
-  requiredTech:
-  - MeatManipulation
 
 - type: technology
   id: ADTHydroponicsAdvanced
@@ -63,9 +54,6 @@
   recipeUnlocks:
     - ADTHydroponicsTrayAdvancedMachineCircuitboard
     - ADTAdvancedPlantAnalyzer
-  position: 1,-1
-  requiredTech:
-  - Hydroponics
 
 - type: technology
   id: ADTReagentGrinder
@@ -78,6 +66,3 @@
   cost: 5000
   recipeUnlocks:
   - ADTAdvancedReagentGrinderMachineCircuitboard
-  requiredTech:
-  - MeatManipulation
-  position: 3,-2

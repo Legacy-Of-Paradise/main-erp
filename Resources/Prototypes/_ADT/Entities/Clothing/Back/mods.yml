@@ -208,7 +208,6 @@
       - ADTModsuitModOrebag
       - ADTModsuitModStorage
       - ADTModsuitModLight
-      - ADTModsuitModPlasmaStabilizer
   - type: Tag
     tags:
     - ADTHardsuitSalvage

@@ -4,7 +4,6 @@
   startNode: start
   targetNode: adtmodsuitatmospheric
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/atmospheric.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -13,7 +12,6 @@
   startNode: start
   targetNode: adtmodsuitclown
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/clown.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -22,7 +20,6 @@
   startNode: start
   targetNode: adtmodsuitengineering
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/engineering.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -31,7 +28,6 @@
   startNode: start
   targetNode: adtmodsuitmedical
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/medical.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -40,7 +36,6 @@
   startNode: start
   targetNode: adtmodsuitmining
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/mining.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -49,7 +44,6 @@
   startNode: start
   targetNode: adtmodsuitsecurity
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/security.rsi, state: icon }
   objectType: Item
 
 - type: construction
@@ -58,7 +52,6 @@
   startNode: start
   targetNode: adtmodsuitstandard
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/standart.rsi, state: icon }
   objectType: Item
 
 
@@ -68,5 +61,4 @@
   startNode: start
   targetNode: adtmodsuitscience
   category: construction-category-clothing
-  icon: { sprite: _ADT/Clothing/Back/Modsuit/science.rsi, state: icon }
   objectType: Item

@@ -11,9 +11,6 @@
     - ADTModsuitPlateSecurity
   technologyPrerequisites:
     - ADTModsuitBase
-  position: 1,0
-  requiredTech:
-  - SalvageWeapons
 
 - type: technology
   id: ADTSecMODsuitMODs
@@ -31,6 +28,3 @@
     - ADTModsuitModStun
   technologyPrerequisites:
     - ADTSecMODsuit
-  position: 2,0
-  requiredTech:
-  - ADTSecMODsuit

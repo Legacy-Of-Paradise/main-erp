@@ -27,4 +27,5 @@ research-technology-services-modsuit-mods = Модификации сервис�
 research-technology-basic-modsuit = Сборка МОДов
 research-technology-industrial-modsuits = Индустриальный МОДы
 research-technology-industrial-modsuits-mods = Модификации индустриальных МОДов
-
+fibers-carbon-adt = углеродные
+fibers-advancedcarbon-adt = продвинутые углеродные
