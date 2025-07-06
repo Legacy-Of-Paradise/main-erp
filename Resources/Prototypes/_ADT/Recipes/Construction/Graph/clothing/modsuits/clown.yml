@@ -1,0 +1,20 @@
+﻿- type: constructionGraph
+  id: ADTModsuitClown
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: adtmodsuitclown
+          steps:
+            - tag: ADTModsuitPlateCosmohonk
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: cosmohonk
+              doAfter: 2
+            - tag: ADTModsuitAssembledPart
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: adtmodsuitclown
+      entity: ADTClothingModsuitBackClown

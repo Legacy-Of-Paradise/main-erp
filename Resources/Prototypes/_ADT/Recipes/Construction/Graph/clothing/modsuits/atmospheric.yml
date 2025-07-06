@@ -1,0 +1,20 @@
+﻿- type: constructionGraph
+  id: ADTModsuitAtmospheric
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: adtmodsuitatmospheric
+          steps:
+            - tag: ADTModsuitPlateAtmospheric
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: atmospheric
+              doAfter: 2
+            - tag: ADTModsuitAssembledPart
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: adtmodsuitatmospheric
+      entity: ADTClothingModsuitBackAtmos

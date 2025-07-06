@@ -1,0 +1,20 @@
+﻿- type: constructionGraph
+  id: ADTModsuitSecurity
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: adtmodsuitsecurity
+          steps:
+            - tag: ADTModsuitPlateSecurity
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: security
+              doAfter: 2
+            - tag: ADTModsuitAssembledPart
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: adtmodsuitsecurity
+      entity: ADTClothingModsuitBackSecurity

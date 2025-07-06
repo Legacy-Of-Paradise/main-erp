@@ -1,0 +1,20 @@
+﻿- type: constructionGraph
+  id: ADTModsuitMining
+  start: start
+  graph:
+    - node: start
+      edges:
+        - to: adtmodsuitmining
+          steps:
+            - tag: ADTModsuitPlateMining
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: engineering
+              doAfter: 2
+            - tag: ADTModsuitAssembledPart
+              icon:
+                sprite: _ADT/Objects/Specific/Modsuits/modcore_construction.rsi
+                state: modcore8
+              doAfter: 2
+    - node: adtmodsuitmining
+      entity: ADTClothingModsuitBackMining
