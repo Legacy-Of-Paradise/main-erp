@@ -1,7 +1,7 @@
 namespace Content.Server._ADT.Emp;
 
 [RegisterComponent]
-public sealed partial class EmpContainerProtectionComponent : Component
+public sealed partial class EmpContainerProtactionComponent : Component
 {
     public EntityUid? BatteryUid;
     [DataField]

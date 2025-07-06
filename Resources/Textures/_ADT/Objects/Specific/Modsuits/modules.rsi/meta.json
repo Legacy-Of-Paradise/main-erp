@@ -71,9 +71,6 @@
       "name": "kinesis"
     },
     {
-      "name": "longfall"
-    },
-    {
       "name": "mag_harmess"
     },
     {
@@ -87,9 +84,6 @@
     },
     {
       "name": "meson_visor"
-    },
-    {
-      "name": "micriwave_beam"
     },
     {
       "name": "mine_bomb"

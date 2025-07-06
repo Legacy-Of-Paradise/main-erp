@@ -67,7 +67,8 @@ public abstract class SharedGasTankSystem : EntitySystem
 
     private void OnGetActions(EntityUid uid, GasTankComponent component, GetItemActionsEvent args)
     {
-        args.AddAction(ref component.ToggleActionEntity, component.ToggleAction);
+        if (component.ToggleAction != null)
+            args.AddAction(ref component.ToggleActionEntity, component.ToggleAction);
         Dirty(uid, component);
     }
 
