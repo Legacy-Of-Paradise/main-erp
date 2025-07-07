@@ -50,7 +50,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitAtmos
   name: atmos MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/atmospheric.rsi
@@ -84,7 +83,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitClown
   name: clown MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/clown.rsi
@@ -98,7 +96,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitEngineering
   name: engineering MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/engineering.rsi
@@ -129,7 +126,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitMedical
   name: medical MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/medical.rsi
@@ -151,7 +147,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitMining
   name: mining MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/mining.rsi
@@ -162,7 +157,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitSecurity
   name: security MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/security.rsi
@@ -184,7 +178,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitScience
   name: Science MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/science.rsi
@@ -213,7 +206,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitSafeguard
   name: safeguard MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/hos.rsi
@@ -243,7 +235,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitBso
   name: bso MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/bso.rsi
@@ -272,7 +263,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitAdvanced
   name: advanced MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/advanced.rsi
@@ -291,7 +281,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitSyndicate
   name: syndicate MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/syndicate.rsi
@@ -322,7 +311,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitSyndicateElite
   name: syndicate MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/syndicate_elite.rsi
@@ -353,7 +341,6 @@
   parent: ADTClothingHeadHelmetModsuitBase
   id: ADTClothingHeadHelmetModsuitSyndicateCommander
   name: syndicate MOD helmet
-  description: A helmet for a MODsuit.
   components:
   - type: Sprite
     sprite: _ADT/Clothing/Head/Modsuit/syndicate_comma.rsi
