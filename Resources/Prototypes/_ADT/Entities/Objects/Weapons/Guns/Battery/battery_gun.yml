@@ -17,7 +17,7 @@
   - type: BatteryRecharge
     multiplier: 1.25
   - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/cutter.rsi
+    sprite: _ADT/Objects/Weapons/Guns/Battery/cutter.rsi
     state: icon
   - type: Gun
     fireRate: 0.6
@@ -38,7 +38,7 @@
   description: A self-defense weapon that exhausts organic targets, weakening them until they collapse.
   components:
   - type: Sprite
-    sprite: ADT/Objects/Weapons/Guns/Battery/cutteradv.rsi
+    sprite: _ADT/Objects/Weapons/Guns/Battery/cutteradv.rsi
     state: icon
   - type: Gun
     fireRate: 1
