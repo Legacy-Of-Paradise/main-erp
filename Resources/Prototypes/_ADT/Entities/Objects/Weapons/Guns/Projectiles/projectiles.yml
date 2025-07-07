@@ -2,7 +2,7 @@
   id: ADTBulletCutter
   name: cutter bolt
   parent: BaseBullet
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   description: Not too bad, but you still don't want to get hit by it.
   components:
   - type: Reflective
@@ -33,7 +33,7 @@
   id: ADTBulletCutterAdv
   name: cutter bolt advanced
   parent: ADTBulletCutter
-  noSpawn: true
+  categories: [ HideSpawnMenu ]
   components:
   - type: Projectile
     damage:
