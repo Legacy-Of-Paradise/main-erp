@@ -45,6 +45,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #Mercenary Helmet
 - type: entity
@@ -86,6 +90,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #Syndicate SWAT Helmet
 - type: entity
@@ -102,6 +110,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #Light Riot Helmet
 - type: entity
@@ -124,6 +136,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Bombsuit Helmet
 - type: entity
@@ -149,6 +165,10 @@
     layers:
       Hair: HEAD
       Snout: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Janitorial Bombsuit Helmet
 - type: entity
@@ -188,6 +208,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Space Ninja Helmet
 - type: entity
@@ -226,6 +250,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Thunderdome Helmet
 - type: entity
@@ -258,6 +286,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Fire Helmet
 - type: entity
@@ -286,6 +318,10 @@
     layers:
       Hair: HEAD
       Snout: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Atmos Fire Helmet
 - type: entity
@@ -319,6 +355,10 @@
       Hair: HEAD
       Snout: HEAD
   - type: BreathMask
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #Chitinous Helmet
 - type: entity
@@ -341,6 +381,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  #ADT-Tweak-End
 
 #ERT HELMETS
 #ERT Leader Helmet
@@ -357,6 +401,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #ERT Security Helmet
 - type: entity
@@ -372,6 +420,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #ERT Medic Helmet
 - type: entity
@@ -387,6 +439,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #ERT Engineer Helmet
 - type: entity
@@ -402,6 +458,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #ERT Janitor Helmet
 - type: entity
@@ -417,6 +477,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 - type: entity
   parent: [ BaseSyndicateContraband, ClothingHeadHelmetBase ]
@@ -438,6 +502,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 #Bone Helmet
 #No need to hide the hair on this one
@@ -454,6 +522,10 @@
   - type: Construction
     graph: BoneHelmet
     node: helmet
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes, mask]
+  #ADT-Tweak-End
 
 #Ironclad II Helmet
 - type: entity
@@ -543,6 +615,10 @@
   - type: HideLayerClothing
     layers:
       Hair: HEAD
+  #ADT-Tweak-Start
+  - type: CoveredSlot
+    slots: [eyes]
+  #ADT-Tweak-End
 
 - type: entity
   parent: ClothingHeadHelmetJustice
