@@ -1,4 +1,3 @@
-using Content.Shared.ADT.Inventory.CoveredSlot;
 using Content.Shared.Clothing.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
