@@ -209,6 +209,10 @@
         blacklist:
           tags:
           - PotatoBattery
+          # ADT edit start
+          components:
+          - BatteryRecharge
+          # ADT edit end
 
 - type: entity
   parent: BaseItemRecharger
@@ -235,6 +239,11 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+        # ADT edit start
+        blacklist:
+          components:
+          - BatteryRecharge
+        # ADT edit end
 
 - type: entity
   parent: BaseRecharger

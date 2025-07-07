@@ -211,6 +211,7 @@
     - Instruments
     - Equipment
     - FauxTiles
+    - ADTCutterPack # ADT edit
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo
