@@ -2,7 +2,6 @@ modsuit-remove-all-attached-first = Вначале вам нужно снять 
 modsuit-attach-tooltip = Надеть.
 modsuit-unattach-tooltip = Снять.
 modsuit-close-wires = В начале надо закрутить МОД.
-
 mod-module-space = Сложность: { $complexity } ({ $maxcomplexity })
 mod-energy-waste = Расход W: { $energy }
 mod-username = Имя пользователя:
@@ -19,10 +18,8 @@ mod-lock = заблокирован🔒
 mod-locked = разблокирован🔓
 mod-user = пользователь:
 mod-no-user = пользователь отсутствует
-
 alerts-modsuit-power-name = Заряд МОДсьюта
 alerts-modsuit-power-desc = Показывает, сколько заряда осталось у вашего МОДа.
-
 research-technology-security-modsuit = МОД "Офицер"
 research-technology-security-modsuit-mods = Модификации арсенальных МОДов
 research-technology-medical-modsuit = Медицинский МОД
@@ -30,10 +27,8 @@ research-technology-services-modsuit-mods = Модификации сервис�
 research-technology-basic-modsuit = Сборка МОДов
 research-technology-industrial-modsuits = Индустриальный МОДы
 research-technology-industrial-modsuits-mods = Модификации индустриальных МОДов
-
 fibers-carbon-adt = углеродные
 fibers-advancedcarbon-adt = продвинутые углеродные
-
 construction-graph-tag-modsuit-core = собранное ядро МОДа
 construction-graph-tag-modsuit-atmospheric = покрытие атмосферного МОДа
 construction-graph-tag-modsuit-cosmohonk = покрытие МОДа "космохонк"
