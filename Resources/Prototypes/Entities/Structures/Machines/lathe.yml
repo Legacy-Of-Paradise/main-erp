@@ -131,7 +131,7 @@
     - ServiceStatic
     - PowerCellsStatic
     - ElectronicsStatic
-    - ReportingStatic # DeltaV
+    - ReportingStatic # DeltaV edit
   - type: EmagLatheRecipes
     emagStaticPacks:
     - SecurityAmmoStatic
