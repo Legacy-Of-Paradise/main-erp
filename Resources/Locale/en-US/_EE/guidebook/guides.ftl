@@ -1,1 +1,1 @@
-guide-entry-sm = Supermatter Engine
+guide-entry-sm = Двигатель суперматерии

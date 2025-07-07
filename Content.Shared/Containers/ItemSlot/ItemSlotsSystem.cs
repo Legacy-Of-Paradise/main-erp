@@ -617,11 +617,11 @@ namespace Content.Shared.Containers.ItemSlots
 
             if (user != null)
                 _handsSystem.PickupOrDrop(user.Value, item.Value);
-            //ADT tweak start
+            // ADT edit start
             var ev = new ItemSlotEjectedEvent(uid, item.Value, user, slot);
             RaiseLocalEvent(uid, ref ev);
             RaiseLocalEvent(item.Value, ref ev);
-            //ADT tweak end
+            // ADT edit end
 
             return true;
         }

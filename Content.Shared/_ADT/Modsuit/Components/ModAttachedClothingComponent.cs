@@ -21,7 +21,6 @@ public sealed partial class ModAttachedClothingComponent : Component
     [DataField, AutoNetworkedField]
     public EntityUid AttachedUid;
 
-    //ADT tweak start
     /// <summary>
     ///     Container ID for clothing that will be replaced with this one
     /// </summary>
@@ -32,5 +31,4 @@ public sealed partial class ModAttachedClothingComponent : Component
     public ContainerSlot? ClothingContainer;
 
     public const string DefaultClothingContainerId = "replaced-clothing";
-    //ADT tweak end
 }

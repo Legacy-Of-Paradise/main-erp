@@ -34,16 +34,16 @@ public abstract class SharedJetpackSystem : EntitySystem
 
         SubscribeLocalEvent<GravityChangedEvent>(OnJetpackUserGravityChanged);
         SubscribeLocalEvent<JetpackComponent, MapInitEvent>(OnMapInit);
-        SubscribeLocalEvent<JetpackComponent, ComponentShutdown>(OnComponentRemoved); //ADT tweak
+        SubscribeLocalEvent<JetpackComponent, ComponentShutdown>(OnComponentRemoved); // ADT edit
     }
 
-    //ADT tweak start
+    // ADT edit start
     private void OnComponentRemoved(EntityUid uid, JetpackComponent component, ComponentShutdown args)
     {
         SetEnabled(uid, component, false);
         Dirty(uid, component);
     }
-    //ADT tweak end
+    // ADT edit end
 
     private void OnJetpackUserWeightlessMovement(Entity<JetpackUserComponent> ent, ref RefreshWeightlessModifiersEvent args)
     {
@@ -153,12 +153,12 @@ public abstract class SharedJetpackSystem : EntitySystem
     {
         // No and no again! Do not attempt to activate the jetpack on a grid with gravity disabled. You will not be the first or the last to try this.
         // https://discord.com/channels/310555209753690112/310555209753690112/1270067921682694234
-        // ADT Tweak start
+        // ADT edit start
         if (gridUid == null || !TryComp<GravityComponent>(gridUid, out var comp))
             return true;
 
         return !comp.Enabled;
-        // ADT Tweak End
+        // ADT edit End
     }
 
     private void OnJetpackGetAction(EntityUid uid, JetpackComponent component, GetItemActionsEvent args)

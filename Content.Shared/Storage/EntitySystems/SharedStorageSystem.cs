@@ -208,10 +208,10 @@ public abstract class SharedStorageSystem : EntitySystem
 
     private void OnRemove(Entity<StorageComponent> entity, ref ComponentRemove args)
     {
-        //ADT tweak start
+        // ADT edit start
         var coordinates = TransformSystem.GetMoverCoordinates(entity);
         ContainerSystem.EmptyContainer(entity.Comp.Container, destination: coordinates);
-        //ADT tweak end
+        // ADT edit end
         UI.CloseUi(entity.Owner, StorageComponent.StorageUiKey.Key);
     }
 

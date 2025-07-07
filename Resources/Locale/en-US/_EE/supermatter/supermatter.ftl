@@ -1,57 +1,28 @@
-supermatter-examine-integrity =
-    Its integrity is [color=yellow]{$integrity}%[/color].
-supermatter-healing =
-    Crystalline hyperstructure returning to safe operating parameters. Integrity: {$integrity}%.
-supermatter-warning =
-    Warning! Crystal hyperstructure integrity faltering! Integrity: {$integrity}%.
-supermatter-emergency =
-    DANGER! Crystal hyperstructure integrity reaching critical levels! Integrity: {$integrity}%.
-supermatter-delam-explosion =
-    CRYSTAL DELAMINATION IMMINENT! The crystal has reached critical integrity failure! Emergency causality destabilization field has been engaged.
-supermatter-delam-overmass =
-    CRYSTAL DELAMINATION IMMINENT! Crystal hyperstructure integrity has reached critical mass failure! Singularity formation imminent!
-supermatter-delam-tesla =
-    CRYSTAL DELAMINATION IMMINENT! Crystal hyperstructure integrity has reached critical power surge failure! Energy ball formation imminent!
-supermatter-delam-cascade =
-    CRYSTAL DELAMINATION IMMINENT! Harmonic frequency limits exceeded, causality destabilization field could not be engaged!
-supermatter-delam-cancel =
-    Crystalline hyperstructure returning to safe operating parameters. Failsafe has been disengaged. Integrity: {$integrity}%.
-supermatter-delam-player =
-    You feel reality distort for a moment...
-supermatter-seconds-before-delam =
-    Estimated time before delamination: {$seconds} seconds.
-supermatter-seconds-before-delam-countdown =
-    {$seconds} seconds remain before causality stabilization.
-supermatter-seconds-before-delam-imminent =
-    {$seconds}...
-
-supermatter-threshold-power =
-    Warning: Hyperstructure has reached dangerous power level.
-supermatter-threshold-powerloss =
-    DANGER: CHARGE INERTIA CHAIN REACTION IN PROGRESS.
-supermatter-threshold-mole =
-    Warning: Critical coolant mass reached.
-
-supermatter-tamper-begin =
-    You begin carefully cutting a piece off the supermatter crystal...
-supermatter-tamper-end =
-    You feel the power of a thousand suns laying on your palms. Or is it all the radiation?
+supermatter-examine-integrity = Целостность: [color=yellow]{ $integrity }%[/color].
+supermatter-healing = Кристаллическая гиперструктура возвращается к безопасным рабочим параметрам. Целостность: { $integrity }%.
+supermatter-warning = Предупреждение! Нарушена целостность кристаллической гиперструктуры! Целостность: { $integrity }%.
+supermatter-emergency = ОПАСНОСТЬ! Целостность кристаллической гиперструктуры достигает критического уровня! Целостность: { $integrity }%.
+supermatter-delam-explosion = НЕИЗБЕЖНОЕ РАССЛОЕНИЕ КРИСТАЛЛА! Целостность кристалла достигла критической отметки! Задействовано поле дестабилизации аварийной причинно-следственной связи.
+supermatter-delam-overmass = НЕИЗБЕЖНОЕ РАССЛОЕНИЕ КРИСТАЛЛОВ! Целостность кристаллической гиперструктуры достигла критической массы разрушения! Неизбежное образование сингулярности!
+supermatter-delam-tesla = НЕИЗБЕЖНОЕ РАССЛОЕНИЕ КРИСТАЛЛОВ! Целостность кристаллической гиперструктуры достигла критического уровня из-за скачка напряжения! Неизбежное образование энергетического шара!
+supermatter-delam-cascade = НЕИЗБЕЖНОЕ РАССЛОЕНИЕ КРИСТАЛЛОВ! Превышены пределы частоты гармоник, поле дестабилизации причинно-следственной связи задействовать не удалось!
+supermatter-delam-cancel = Кристаллическая гиперструктура возвращается к безопасным рабочим параметрам. Система защиты от сбоев отключена. Целостность: { $integrity }%.
+supermatter-delam-player = Вы чувствуете, как реальность на мгновение искажается...
+supermatter-seconds-before-delam = Расчетное время до расслаивания: { $seconds } секунд.
+supermatter-seconds-before-delam-countdown = { $seconds } секунд остаётся перед расслоением.
+supermatter-seconds-before-delam-imminent = { $seconds }...
+supermatter-threshold-power = Предупреждение: Мощность гиперструктуры достигла опасного уровня.
+supermatter-threshold-powerloss = ОПАСНОСТЬ: ПРОИСХОДИТ ЦЕПНАЯ РЕАКЦИЯ ЗАРЯДА ПО ИНЕРЦИИ.
+supermatter-threshold-mole = Предупреждение: достигнута критическая масса охлаждающей жидкости.
+supermatter-tamper-begin = Вы начинаете осторожно отрезать кусочек от кристалла сверхматерии...
+supermatter-tamper-end = Вы чувствуете силу тысячи солнц, лежащих на ваших ладонях. Или это все из-за радиации?
 supermatter-announcement-cc-tamper =
-    Our automatic casualty system has detected that the supermatter crystal structural integrity was compromised by an external force.
-    Engineering department, report to the supermatter engine immediately.
-
-supermatter-collide =
-    {CAPITALIZE(THE($target))} slams into {THE($sm)}!
-supermatter-collide-mob =
-    {CAPITALIZE(THE($target))}'s body flashes into dust!
-supermatter-collide-insert =
-    {CAPITALIZE(THE($target))} touches {THE($sm)} with {THE($item)} and it flashes into dust!
-supermatter-collide-insert-user =
-    You touch {THE($sm)} with {THE($item)} and it flashes into dust!
-supermatter-collide-insert-unremoveable =
-    {CAPITALIZE(THE($target))} touches {THE($sm)} with {THE($item)} and flashes into dust!
-supermatter-collide-insert-unremoveable-user =
-    You touch {THE($sm)} with {THE($item)} and flash into dust!
-
-supermatter-paracusia-player-message =
-    You feel your head throb with otherworldly visions...
+    Наша автоматическая система обнаружения несчастных случаев обнаружила, что структурная целостность кристалла сверхматерии была нарушена в результате воздействия внешней силы.
+    Инженерный отдел, немедленно доложите о двигателе сверхматерии.
+supermatter-collide = { CAPITALIZE(THE($target)) } врезается в { THE($sm) }!
+supermatter-collide-mob = { CAPITALIZE(THE($target)) } тело превращается в пыль!
+supermatter-collide-insert = { CAPITALIZE(THE($target)) } трогает { THE($sm) } держа { THE($item) } и оно превращается в пыль!
+supermatter-collide-insert-user = Ты трогаешь { THE($sm) } держа { THE($item) } и оно превращается в пыль!
+supermatter-collide-insert-unremoveable = { CAPITALIZE(THE($target)) } трогает { THE($sm) } держа { THE($item) } и превращается в пыль!
+supermatter-collide-insert-unremoveable-user = Ты трогаешь { THE($sm) } держа { THE($item) } и превращается в пыль!
+supermatter-paracusia-player-message = Вы чувствуете, как ваша голова раскалывается от потусторонних видений...

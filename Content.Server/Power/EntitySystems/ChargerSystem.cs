@@ -11,8 +11,10 @@ using System.Diagnostics.CodeAnalysis;
 using Content.Shared.Storage.Components;
 using Robust.Server.Containers;
 using Content.Shared.Whitelist;
+// ADT edit start
 using Content.Shared.Inventory;
 using Content.Shared.PowerCell;
+// ADT edit end
 
 namespace Content.Server.Power.EntitySystems;
 
@@ -23,7 +25,7 @@ internal sealed class ChargerSystem : EntitySystem
     [Dependency] private readonly PowerCellSystem _powerCell = default!;
     [Dependency] private readonly BatterySystem _battery = default!;
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
-    [Dependency] private readonly InventorySystem _inventorySystem = default!;
+    [Dependency] private readonly InventorySystem _inventorySystem = default!; // ADT edit
     [Dependency] private readonly EntityWhitelistSystem _whitelistSystem = default!;
 
     public override void Initialize()
@@ -253,7 +255,7 @@ internal sealed class ChargerSystem : EntitySystem
         UpdateStatus(uid, component);
     }
 
-    /// ADT tweak method fully rewrited
+    // ADT edit start
     public bool SearchForBattery(EntityUid uid, [NotNullWhen(true)] out EntityUid? batteryUid, [NotNullWhen(true)] out BatteryComponent? component)
     {
         // try get a battery directly on the inserted entity
@@ -281,5 +283,6 @@ internal sealed class ChargerSystem : EntitySystem
         }
 
         return false;
+    // ADT edit end
     }
 }
