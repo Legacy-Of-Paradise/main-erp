@@ -173,8 +173,10 @@
       - id: BoxEvidenceMarkers
       - id: HandLabeler
       - id: LPPClothingOuterDetectiveHardsuit #LOP edit
-      - id: BoxTapeRecorder # DeltaV
+      # DeltaV edit start
+      - id: BoxTapeRecorder
         prob: 0.3
+      # DeltaV edit end
 
 - type: entity
   id: ClosetBombFilled
