@@ -25,7 +25,6 @@
   tier: 2
   cost: 10000
   recipeUnlocks:
-    - ADTModsuitModJump
     - ADTModsuitModIsulation
     - ADTModsuitModTray
     - ADTModsuitModWelding

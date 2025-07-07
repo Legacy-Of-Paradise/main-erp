@@ -30,5 +30,5 @@
   - ADTModsuitModStorageLarge
   - ADTModsuitModTray
   - ADTModsuitModIsulation
-  - ADTModsuitModJump
+#  - ADTModsuitModJump
   - ADTModsuitModNoslip
