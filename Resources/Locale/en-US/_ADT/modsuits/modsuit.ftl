@@ -1,9 +1,9 @@
-modsuit-remove-all-attached-first = Вначале вам нужно снять части МОДа.
+﻿modsuit-remove-all-attached-first = Вначале вам нужно снять части МОДа.
 modsuit-attach-tooltip = Надеть.
 modsuit-unattach-tooltip = Снять.
 modsuit-close-wires = В начале надо закрутить МОД.
-mod-module-space = Сложность: { $complexity } ({ $maxcomplexity })
-mod-energy-waste = Расход W: { $energy }
+mod-module-space = Сложность: {$complexity} ({$maxcomplexity})
+mod-energy-waste = Расход W: {$energy}
 mod-username = Имя пользователя:
 mod-all-toggled = Полностью включен
 mod-partly-toggled = Частично включен

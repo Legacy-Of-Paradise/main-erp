@@ -212,37 +212,7 @@
     - Equipment
     - FauxTiles
     # ADT edit start
-    - ADTModsuitHelmet
-    - ADTModsuitGauntlets
-    - ADTModsuitChestplate
-    - ADTModsuitBoots
-    - ADTModsuitPlateAtmospheric
-    - ADTModsuitPlateCosmohonk
-    - ADTModsuitPlateEngineering
-    - ADTModsuitPlateMedical
-    - ADTModsuitPlateSecurity
-    - ADTModsuitPlateStandard
-    - ADTModsuitPlateCience
-    - ADTModsuitPlateMining
-    - ADTModsuitAssembly
-    - ADTModsuitModAntigrav
-    - ADTModsuitModApparatus
-    - ADTModsuitModDrill
-    - ADTModsuitModJetpack
-    - ADTModsuitModJetpack
-    - ADTModsuitModMagboot
-    - ADTModsuitModNightVision
-    - ADTModsuitModStun
-    - ADTModsuitModPowerKick
-    - ADTModsuitModSechud
-    - ADTModsuitModStorage
-    - ADTModsuitModWelding
-    - ADTModsuitModArmor
-    - ADTModsuitModStorageLarge
-    - ADTModsuitModTray
-    - ADTModsuitModIsulation
-    - ADTModsuitModJump
-    - ADTModsuitModNoslip
+    - ADTModsuitPack
     - ADTCutterPack
     # ADT edit end
   - type: EmagLatheRecipes

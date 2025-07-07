@@ -256,7 +256,6 @@
     Glass: 300
     Silver: 200
 
-
 - type: latheRecipe
   id: ADTModsuitModNoslip
   result: ADTModsuitModNoslip
