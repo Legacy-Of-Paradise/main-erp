@@ -239,9 +239,11 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
-        blacklist: # ADT plasmacutters start
+        # ADT edit start
+        blacklist:
           components:
-          - BatteryRecharge # ADT plasmacutters end
+          - BatteryRecharge
+        # ADT edit end
 
 - type: entity
   parent: BaseRecharger
