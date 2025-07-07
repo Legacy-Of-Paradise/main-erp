@@ -148,7 +148,7 @@
     slots: OUTERCLOTHING
   # ADT edit start
   - type: CoveredSlot
-    slots: [innerclothing, gloves, feet, underwearb, underweart, socks]
+    slots: [innerclothing, gloves, feet, underwear, breast, socks]
   # ADT edit end
 
 - type: entity
@@ -181,7 +181,7 @@
     slots: OUTERCLOTHING
   # ADT edit start
   - type: CoveredSlot
-    slots: [innerclothing, gloves, feet, underwearb, underweart, socks]
+    slots: [innerclothing, gloves, feet, underwear, breast, socks]
   # ADT edit end
 
 - type: entity

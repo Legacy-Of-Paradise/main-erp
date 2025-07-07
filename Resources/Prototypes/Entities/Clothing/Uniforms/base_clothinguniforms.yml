@@ -33,7 +33,7 @@
     - WhitelistChameleon
   # ADT edit start
   - type: CoveredSlot
-    slots: [underwearb, underweart]
+    slots: [underwear, breast]
   # ADT edit end
 
 - type: entity
@@ -46,7 +46,7 @@
     femaleMask: UniformTop
   # ADT edit start
   - type: CoveredSlot # Backmen
-    slots: [underweart]
+    slots: [breast]
   # ADT edit end
 
 
@@ -65,7 +65,7 @@
   - type: StationLimitedNetwork
   # ADT edit start
   - type: CoveredSlot
-    slots: [underwearb, underweart]
+    slots: [underwear, breast]
   # ADT edit end
 
 - type: entity
@@ -78,5 +78,5 @@
     femaleMask: UniformTop
   # ADT edit start
   - type: CoveredSlot
-    slots: [underweart]
+    slots: [breast]
   # ADT edit end
