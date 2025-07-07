@@ -141,10 +141,10 @@
     - Snout
     - HeadTop
     - HeadSide
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [eyes, mask, ears]
-  #ADT-Tweak-End
+  # ADT edit end
 
 
 - type: entity
@@ -194,10 +194,10 @@
     - Snout
     - HeadTop
     - HeadSide
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [eyes, mask, ears]
-  #ADT-Tweak-End
+  # ADT edit end
 
 - type: entity
   abstract: true

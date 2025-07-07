@@ -1,7 +1,7 @@
 using Content.Shared.Inventory;
 using Robust.Shared.GameStates;
 
-namespace Content.Shared.ADT.Inventory.CoveredSlot;
+namespace Content.Shared._ADT.Inventory.CoveredSlot;
 
 /// <summary>
 /// Used to prevent items from being unequipped and equipped from slots that are listed in <see cref="Slots"/>.

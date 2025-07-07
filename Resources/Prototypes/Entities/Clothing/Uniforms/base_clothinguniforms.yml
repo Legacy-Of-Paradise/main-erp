@@ -31,10 +31,10 @@
     - ClothMade
     - Recyclable
     - WhitelistChameleon
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [underwearb, underweart]
-  #ADT-Tweak-End
+  # ADT edit end
 
 - type: entity
   abstract: true
@@ -44,10 +44,10 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot # Backmen
     slots: [underweart]
-  #ADT-Tweak-End
+  # ADT edit end
 
 
 - type: entity
@@ -63,10 +63,10 @@
   - type: WirelessNetworkConnection
     range: 1200
   - type: StationLimitedNetwork
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [underwearb, underweart]
-  #ADT-Tweak-End
+  # ADT edit end
 
 - type: entity
   abstract: true
@@ -76,7 +76,7 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [underweart]
-  #ADT-Tweak-End
+  # ADT edit end

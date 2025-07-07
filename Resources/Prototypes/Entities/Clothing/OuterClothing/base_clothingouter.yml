@@ -146,10 +146,10 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [innerclothing, gloves, feet, underwearb, underweart, socks]
-  #ADT-Tweak-End
+  # ADT edit end
 
 - type: entity
   abstract: true
@@ -179,10 +179,10 @@
       flatReductions:
         Heat: 10 # the average lightbulb only does around four damage!
     slots: OUTERCLOTHING
-  #ADT-Tweak-Start
+  # ADT edit start
   - type: CoveredSlot
     slots: [innerclothing, gloves, feet, underwearb, underweart, socks]
-  #ADT-Tweak-End
+  # ADT edit end
 
 - type: entity
   parent: ClothingOuterBase

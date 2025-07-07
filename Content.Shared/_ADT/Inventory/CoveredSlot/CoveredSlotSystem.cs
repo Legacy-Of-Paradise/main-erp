@@ -1,8 +1,9 @@
+using Content.Shared.ADT.Inventory.CoveredSlot;
+using Content.Shared.Clothing.Components;
 using Content.Shared.Inventory;
 using Content.Shared.Inventory.Events;
-using Content.Shared.Clothing.Components;
 
-namespace Content.Shared.ADT.Inventory.CoveredSlot;
+namespace Content.Shared._ADT.Inventory.CoveredSlot;
 
 /// <summary>
 /// Handles prevention of items being unequipped and equipped from slots that are blocked by <see cref="CoveredSlotComponent"/>.
