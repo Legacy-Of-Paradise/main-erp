@@ -48,6 +48,13 @@
           path: /Audio/Effects/break_stone.ogg
           params:
             volume: -6
+  # ADT edit start
+  - type: SoundOnGather
+  - type: Gatherable
+    toolWhitelist:
+      tags:
+        - Pickaxe
+  # ADT edit end
   - type: Fixtures
     fixtures:
       fix1:

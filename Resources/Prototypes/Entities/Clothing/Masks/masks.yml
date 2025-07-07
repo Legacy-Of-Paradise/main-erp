@@ -345,6 +345,10 @@
     slots:
     - Snout
     hideOnToggle: true
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [eyes, ears]
+  # ADT edit end
 
 - type: entity
   parent: ClothingMaskClownBase

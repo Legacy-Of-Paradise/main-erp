@@ -28,3 +28,17 @@
     - ADTModsuitModStun
   technologyPrerequisites:
     - ADTSecMODsuit
+
+- type: technology
+  id: AdvSalvageWeapons
+  name: research-technology-salvage-weapons-adv
+  icon:
+    sprite: _ADT/Objects/Weapons/Guns/Battery/cutteradv.rsi
+    state: icon
+  discipline: Arsenal
+  tier: 2
+  cost: 10000
+  recipeUnlocks:
+    - ADTWeaponCutterAdv
+  technologyPrerequisites:
+    - SalvageWeapons

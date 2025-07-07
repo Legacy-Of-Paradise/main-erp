@@ -17,11 +17,11 @@ construction-graph-tag-red-crayon = красный мелок
 construction-graph-tag-yellow-crayon = жёлтый мелок
 construction-graph-tag-black-crayon = чёрный мелок
 # eva
-construction-graph-tag-eva-suit = скафандр EVA
-construction-graph-tag-eva-helmet = шлем EVA
+construction-graph-tag-eva-suit = скафандр ВКД
+construction-graph-tag-eva-helmet = шлем ВКД
 # hud
-construction-graph-tag-security-hud = ИЛС службы безопасности
-construction-graph-tag-medical-hud = медицинский ИЛС
+construction-graph-tag-security-hud = худ службы безопасности
+construction-graph-tag-medical-hud = медицинский худ
 # security
 construction-graph-tag-sun-glasses = солнечные очки
 construction-graph-tag-security-helmet = шлем безопасности

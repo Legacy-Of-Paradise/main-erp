@@ -32,6 +32,9 @@ using JetBrains.Annotations;
 using Robust.Shared;
 using Robust.Shared.IoC;
 using Content.Shared._NewParadise;
+#if LOP
+using Content.Server._NC.Discord;
+#endif
 // LOP edit end
 
 namespace Content.Server.Administration.Managers;
@@ -39,6 +42,9 @@ namespace Content.Server.Administration.Managers;
 public sealed partial class BanManager : IBanManager, IPostInjectInit
 {
     [Dependency] private readonly IServerDbManager _db = default!;
+    #if LOP
+    [Dependency] private readonly DiscordAuthManager _discordAuthManager = default!; // Добавляем эту строку
+    #endif
     [Dependency] private readonly IPlayerManager _playerManager = default!;
     [Dependency] private readonly IPrototypeManager _prototypeManager = default!;
     [Dependency] private readonly IEntitySystemManager _systems = default!;
@@ -466,33 +472,61 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
     }
     private async Task<WebhookPayload> GenerateJobBanPayload(ServerRoleBanDef banDef, Dictionary<string, int> banids, uint? minutes = null)
     {
+        var targetlink = Loc.GetString("server-ban-no-name");
+        var adminlink = Loc.GetString("system-user");
+#if LOP
+        string? targetDiscordId = null;
+        if (banDef.UserId.HasValue)
+        {
+            targetDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.UserId.Value);
+        }
+
+        targetlink = targetDiscordId != null ? $"<@{targetDiscordId}>" : Loc.GetString("server-ban-no-name-dc");
+
+        string? adminDiscordId = null;
+        if (banDef.BanningAdmin.HasValue)
+        {
+            adminDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
+        }
+
+        adminlink = adminDiscordId != null ? $"<@{adminDiscordId}>" : Loc.GetString("system-user");
+#endif
+
         var hwidString = banDef.HWId != null ? string.Concat(banDef.HWId.Hwid.Select(x => x.ToString("x2"))) : "null";
         var adminName = banDef.BanningAdmin == null
             ? Loc.GetString("system-user")
             : (await _db.GetPlayerRecordByUserId(banDef.BanningAdmin.Value))?.LastSeenUserName ?? Loc.GetString("system-user");
         var targetName = banDef.UserId == null
             ? Loc.GetString("server-ban-no-name", ("hwid", hwidString))
-            : (await _db.GetPlayerRecordByUserId(banDef.UserId.Value))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", hwidString));
-        var expiresString = banDef.ExpirationTime == null ? Loc.GetString("server-ban-string-never") : "" + TimeZoneInfo.ConvertTimeFromUtc(
-    banDef.ExpirationTime.Value.UtcDateTime,
-    TimeZoneInfo.FindSystemTimeZoneById("Russian Standard Time"));
+            : (await _db.GetPlayerRecordByUserId(banDef.UserId.Value))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", banDef.UserId.Value));
+        var expiresString = banDef.ExpirationTime == null
+            ? Loc.GetString("server-ban-string-never")
+            : $"<t:{((DateTimeOffset)banDef.ExpirationTime.Value.UtcDateTime).ToUnixTimeSeconds()}:R>";
         var reason = banDef.Reason;
         var id = banDef.Id;
         var round = "" + banDef.RoundId;
         var severity = "" + banDef.Severity;
         var serverName = _serverName[..Math.Min(_serverName.Length, 1500)];
-        var timeNow = TimeZoneInfo.ConvertTimeFromUtc(
-    DateTimeOffset.Now.UtcDateTime,
-    TimeZoneInfo.FindSystemTimeZoneById("Russian Standard Time"));
+        var timeNow = $"<t:{((DateTimeOffset)DateTimeOffset.Now.UtcDateTime).ToUnixTimeSeconds()}:R>";
         var rolesString = "";
         foreach (var (role, banid) in banids)
             rolesString += $"\n> `#{banid}`: `{role}`";
 
         var mentions = new List<User> { };
+        #if LOP
+        if (targetDiscordId != null)
+        {
+            mentions.Add(new User { Id = targetDiscordId });
+        }
+        if (adminDiscordId != null)
+        {
+            mentions.Add(new User { Id = adminDiscordId });
+        }
+        #endif
         var allowedMentions = new Dictionary<string, string[]>
-         {
-             { "parse", new List<string> {"users"}.ToArray() }
-         };
+        {
+            { "parse", new List<string> {"users"}.ToArray() },
+        };
 
         if (banDef.ExpirationTime != null && minutes != null) // Time ban
             return new WebhookPayload
@@ -510,6 +544,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
              ("serverName", serverName),
              ("targetName", targetName),
              ("adminName", adminName),
+             ("targetLink", targetlink),
+             ("adminLink", adminlink),
              ("TimeNow", timeNow),
              ("roles", rolesString),
              ("expiresString", expiresString),
@@ -524,7 +560,7 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
                          {
                              Text =  Loc.GetString("server-ban-footer", ("server", serverName), ("round", round)),
                          },
-         },
+                     },
                  },
             };
         else // Perma ban
@@ -543,6 +579,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
              ("serverName", serverName),
              ("targetName", targetName),
              ("adminName", adminName),
+             ("targetLink", targetlink),
+             ("adminLink", adminlink),
              ("TimeNow", timeNow),
              ("roles", rolesString),
              ("expiresString", expiresString),
@@ -564,6 +602,26 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
 
     private async Task<WebhookPayload> GenerateBanPayload(ServerBanDef banDef, uint? minutes = null)
     {
+        var targetlink = Loc.GetString("server-ban-no-name");
+        var adminlink = Loc.GetString("system-user");
+        #if LOP
+        string? targetDiscordId = null;
+        if (banDef.UserId.HasValue)
+        {
+            targetDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.UserId.Value);
+        }
+
+        targetlink = targetDiscordId != null ? $"<@{targetDiscordId}>" : Loc.GetString("server-ban-no-name-dc");
+
+        string? adminDiscordId = null;
+        if (banDef.BanningAdmin.HasValue)
+        {
+            adminDiscordId = _discordAuthManager.GetDiscordIdForPlayer(banDef.BanningAdmin.Value);
+        }
+
+        adminlink = adminDiscordId != null ? $"<@{adminDiscordId}>" : Loc.GetString("system-user");
+        #endif
+
         var hwidString = banDef.HWId != null
     ? string.Concat(banDef.HWId.Hwid.Select(x => x.ToString("x2")))
     : "null";
@@ -573,23 +631,31 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
         var targetName = banDef.UserId == null
             ? Loc.GetString("server-ban-no-name", ("hwid", hwidString))
             : (await _db.GetPlayerRecordByUserId(banDef.UserId.Value))?.LastSeenUserName ?? Loc.GetString("server-ban-no-name", ("hwid", hwidString));
-        var expiresString = banDef.ExpirationTime == null ? Loc.GetString("server-ban-string-never") : "" + TimeZoneInfo.ConvertTimeFromUtc(
-    banDef.ExpirationTime.Value.UtcDateTime,
-    TimeZoneInfo.FindSystemTimeZoneById("Russian Standard Time"));
+        var expiresString = banDef.ExpirationTime == null
+            ? Loc.GetString("server-ban-string-never")
+            : $"<t:{((DateTimeOffset)banDef.ExpirationTime.Value.UtcDateTime).ToUnixTimeSeconds()}:R>";
         var reason = banDef.Reason;
         var id = banDef.Id;
         var round = "" + banDef.RoundId;
         var severity = "" + banDef.Severity;
         var serverName = _serverName[..Math.Min(_serverName.Length, 1500)];
-        var timeNow = TimeZoneInfo.ConvertTimeFromUtc(
-    DateTimeOffset.Now.UtcDateTime,
-    TimeZoneInfo.FindSystemTimeZoneById("Russian Standard Time"));
+        var timeNow = $"<t:{((DateTimeOffset)DateTimeOffset.Now.UtcDateTime).ToUnixTimeSeconds()}:R>";
 
         var mentions = new List<User> { };
+        #if LOP
+        if (targetDiscordId != null)
+        {
+            mentions.Add(new User { Id = targetDiscordId });
+        }
+        if (adminDiscordId != null)
+        {
+            mentions.Add(new User { Id = adminDiscordId });
+        }
+        #endif
         var allowedMentions = new Dictionary<string, string[]>
-         {
-             { "parse", new List<string> {"users"}.ToArray() }
-         };
+        {
+            { "parse", new List<string> {"users"}.ToArray() }
+        };
 
         if (banDef.ExpirationTime != null && minutes != null) // Time ban
             return new WebhookPayload
@@ -607,6 +673,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
              ("serverName", serverName),
              ("targetName", targetName),
              ("adminName", adminName),
+             ("targetLink", targetlink),
+             ("adminLink", adminlink),
              ("TimeNow", timeNow),
              ("expiresString", expiresString),
              ("reason", reason),
@@ -639,6 +707,8 @@ public sealed partial class BanManager : IBanManager, IPostInjectInit
              ("serverName", serverName),
              ("targetName", targetName),
              ("adminName", adminName),
+             ("targetLink", targetlink),
+             ("adminLink", adminlink),
              ("TimeNow", timeNow),
              ("reason", reason),
              ("severity", Loc.GetString($"admin-note-editor-severity-{severity.ToLower()}"))),

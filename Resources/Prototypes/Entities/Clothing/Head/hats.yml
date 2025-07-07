@@ -1113,6 +1113,10 @@
       Hair: HEAD
       HeadTop : HEAD
       HeadSide : HEAD
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  # ADT edit end
 
 - type: entity
   parent: ClothingHeadBase

@@ -299,7 +299,7 @@
     sprite: Clothing/Uniforms/Jumpskirt/brigmedic.rsi
 
 - type: entity
-  parent: ClothingUniformBase
+  parent: ClothingUniformSkirtBase # ADT edit
   id: ClothingUniformJumpskirtPrisoner
   name: prisoner jumpskirt
   description: A jumpskirt used for prisoners. It has suit sensors automatically enabled at all times.

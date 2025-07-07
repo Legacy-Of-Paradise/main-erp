@@ -141,6 +141,11 @@
     - Snout
     - HeadTop
     - HeadSide
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  # ADT edit end
+
 
 - type: entity
   abstract: true
@@ -189,6 +194,10 @@
     - Snout
     - HeadTop
     - HeadSide
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [eyes, mask, ears]
+  # ADT edit end
 
 - type: entity
   abstract: true
