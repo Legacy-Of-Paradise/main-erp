@@ -48,7 +48,7 @@ ent-ClothingBackpackChameleonFill = { ent-ClothingBackpackDuffelSyndicate }
 # Corvax-HiddenDesc-Start
 ent-ClothingBackpackDuffelSyndicateEVABundle = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
-    .suffix = набор EVA Синдиката
+    .suffix = набор ВКД Синдиката
 ent-ClothingBackpackDuffelSyndicateHardsuitBundle = { ent-ClothingBackpackDuffelSyndicate }
     .desc = { ent-ClothingBackpackDuffelSyndicate.desc }
     .suffix = набор скафандров Синдиката

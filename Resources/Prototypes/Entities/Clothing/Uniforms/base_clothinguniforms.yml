@@ -31,6 +31,10 @@
     - ClothMade
     - Recyclable
     - WhitelistChameleon
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [underwear, breast]
+  # ADT edit end
 
 - type: entity
   abstract: true
@@ -40,6 +44,10 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  # ADT edit start
+  - type: CoveredSlot # Backmen
+    slots: [breast]
+  # ADT edit end
 
 
 - type: entity
@@ -55,6 +63,10 @@
   - type: WirelessNetworkConnection
     range: 1200
   - type: StationLimitedNetwork
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [underwear, breast]
+  # ADT edit end
 
 - type: entity
   abstract: true
@@ -64,3 +76,7 @@
   - type: Clothing
     slots: [innerclothing]
     femaleMask: UniformTop
+  # ADT edit start
+  - type: CoveredSlot
+    slots: [breast]
+  # ADT edit end

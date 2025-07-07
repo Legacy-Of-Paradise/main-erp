@@ -1,3 +1,3 @@
 ent-LPPAirlockEVA = { ent-Airlock }
-    .suffix = ЕВА
+    .suffix = ВКД
     .desc = { ent-Airlock.desc }
