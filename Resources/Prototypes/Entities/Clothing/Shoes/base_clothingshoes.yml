@@ -25,6 +25,10 @@
     - Recyclable
     - WhitelistChameleon
   - type: ProtectedFromStepTriggers
+  # ADT Start
+  - type: CoveredSlot
+    slots: [socks]
+  # ADT End
 
 - type: entity
   abstract: true

@@ -32,6 +32,17 @@ namespace Content.Shared.Preferences
         private static readonly Regex RestrictedNameRegex = new("[^А-Яа-яёЁ0-9' -]"); // Corvax-Localization
         private static readonly Regex ICNameCaseRegex = new(@"^(?<word>\w)|\b(?<word>\w)(?=\w*$)");
 
+
+        // LOP edit start
+        public static int DescriptionLength(int tier)
+        {
+            if (tier >= 4)
+                return 2048;
+
+            return 1024;
+        }
+        // LOP edit end
+
         /// <summary>
         /// Job preferences for initial spawn.
         /// </summary>
@@ -620,10 +631,15 @@ namespace Content.Shared.Preferences
             }
 
             string flavortext;
-            var maxFlavorTextLength = configManager.GetCVar(CCVars.MaxFlavorTextLength);
-            if (FlavorText.Length > maxFlavorTextLength)
+            // LOP edit start
+            var descLength = DescriptionLength(0);
+#if LOP
+            descLength = DescriptionLength(sponsorTier);
+#endif
+            // LOP edit end
+            if (FlavorText.Length > descLength)
             {
-                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..maxFlavorTextLength];
+                flavortext = FormattedMessage.RemoveMarkupOrThrow(FlavorText)[..descLength];
             }
             else
             {

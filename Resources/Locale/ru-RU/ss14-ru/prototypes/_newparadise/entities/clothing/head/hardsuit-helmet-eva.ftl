@@ -1,5 +1,5 @@
 ent-LPPClothingHeadHelmetAcientSyndieEVA = шлем CSA-21BM
-    .desc = Шлем от странного скафандра Синдиката, он в EVA режиме.
+    .desc = Шлем от странного скафандра Синдиката, он в ВКД режиме.
 ent-LPPClothingHeadHelmetHunter = шлем GRT-42w
     .desc = Крайне комфорнтый шлем, что позволяет вам защититься от морозной погоды.
 ent-LPPClothingHeadHelmetRND = шлем RHS-14s

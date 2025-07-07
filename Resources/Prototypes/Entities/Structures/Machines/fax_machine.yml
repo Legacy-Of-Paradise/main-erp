@@ -85,7 +85,7 @@
         map: [ "base" ]
         color: "#bfe3ff"
   - type: FaxMachine
-    name: "Central Command"
+    name: "ЦентКом"
     notifyAdmins: true
     receiveAllStationGoals: true # Corvax-StationGoal
 
@@ -114,7 +114,7 @@
   suffix: NukeCodes
   components:
     - type: FaxMachine
-      name: "Captain's Office"
+      name: "Офис Капитана"
       receiveNukeCodes: true
       receiveStationGoal: true # Corvax-StationGoal
     - type: StealTarget
