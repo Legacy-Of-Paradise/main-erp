@@ -211,6 +211,10 @@
     - Instruments
     - Equipment
     - FauxTiles
+    # ADT edit start
+    - ADTModsuitPack
+    - ADTCutterPack
+    # ADT edit end
   - type: EmagLatheRecipes
     emagDynamicPacks:
     - SecurityAmmo

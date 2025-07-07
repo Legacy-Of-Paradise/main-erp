@@ -3,6 +3,7 @@ using Content.Shared.PowerCell.Components;
 using Content.Shared.Rejuvenate;
 using Robust.Shared.Containers;
 using Robust.Shared.Timing;
+using Content.Shared.Inventory; // ADT edit
 
 namespace Content.Shared.PowerCell;
 
@@ -105,3 +106,13 @@ public abstract class SharedPowerCellSystem : EntitySystem
         PowerCellSlotComponent? cell = null,
         EntityUid? user = null);
 }
+
+// ADT edit start
+[ByRefEvent]
+public record struct FindInventoryBatteryEvent() : IInventoryRelayEvent
+{
+    public SlotFlags TargetSlots { get; } = SlotFlags.WITHOUT_POCKET;
+
+    public EntityUid? FoundBattery { get; set; }
+}
+// ADT edit end

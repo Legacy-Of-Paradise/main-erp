@@ -395,7 +395,7 @@ namespace Content.Shared.Containers.ItemSlots
             if (!Resolve(user, ref hands, false))
                 return false;
 
-            if (!_handsSystem.TryGetActiveItem((uid, hands), out var held))
+            if (!_handsSystem.TryGetActiveItem((user, hands), out var held))
                 return false;
 
             if (!CanInsert(uid, held.Value, user, slot))
@@ -617,6 +617,11 @@ namespace Content.Shared.Containers.ItemSlots
 
             if (user != null)
                 _handsSystem.PickupOrDrop(user.Value, item.Value);
+            // ADT edit start
+            var ev = new ItemSlotEjectedEvent(uid, item.Value, user, slot);
+            RaiseLocalEvent(uid, ref ev);
+            RaiseLocalEvent(item.Value, ref ev);
+            // ADT edit end
 
             return true;
         }

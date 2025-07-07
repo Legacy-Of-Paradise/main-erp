@@ -422,4 +422,17 @@ public abstract class SharedMaterialStorageSystem : EntitySystem
 
         return composition.MaterialComposition.FirstOrDefault(kvp => kvp.Key == material.ID).Value;
     }
+    // ADT edit start
+    public bool TryChangeStorageLimit(
+        EntityUid uid,
+        int value,
+        MaterialStorageComponent? storage = null)
+    {
+        if (!Resolve(uid, ref storage) || value < 0)
+            return false;
+
+        storage.StorageLimit = value;
+        return true;
+    }
+    // ADT edit end
 }

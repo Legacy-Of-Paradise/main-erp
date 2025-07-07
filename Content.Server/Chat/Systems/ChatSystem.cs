@@ -217,7 +217,7 @@ public sealed partial class ChatSystem : SharedChatSystem
             message = message[1..];
         }
 
-        bool shouldCapitalize = (desiredType != InGameICChatType.Emote);
+        bool shouldCapitalize = (desiredType != InGameICChatType.Emote && desiredType != InGameICChatType.HiddenEmote); // LOP edit
         bool shouldPunctuate = _configurationManager.GetCVar(CCVars.ChatPunctuation);
         // Capitalizing the word I only happens in English, so we check language here
         bool shouldCapitalizeTheWordI = (!CultureInfo.CurrentCulture.IsNeutralCulture && CultureInfo.CurrentCulture.Parent.Name == "en")
@@ -257,6 +257,11 @@ public sealed partial class ChatSystem : SharedChatSystem
             case InGameICChatType.Emote:
                 SendEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
                 break;
+            // LOP edit start
+            case InGameICChatType.HiddenEmote:
+                SendHiddenEntityEmote(source, message, range, nameOverride, hideLog: hideLog, ignoreActionBlocker: ignoreActionBlocker);
+                break;
+            // LOP edit end
         }
     }
 
@@ -605,6 +610,54 @@ public sealed partial class ChatSystem : SharedChatSystem
             else
                 _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Emote from {ToPrettyString(source):user}: {action}");
     }
+
+    // LOP edit start
+    private void SendHiddenEntityEmote(
+        EntityUid source,
+        string action,
+        ChatTransmitRange range,
+        string? nameOverride,
+        bool hideLog = false,
+        bool checkEmote = true,
+        bool ignoreActionBlocker = false
+    )
+    {
+        if (!_actionBlocker.CanEmote(source) && !ignoreActionBlocker)
+            return;
+
+        var ent = Identity.Entity(source, EntityManager);
+        string name = FormattedMessage.EscapeText(nameOverride ?? Name(ent));
+
+        var coloredName = $"[color=#FFD29E]{name}[/color]";
+        var coloredAction = $"[color=#FFD29E]{FormattedMessage.RemoveMarkup(action)}[/color]";
+        string wrappedMessage = Loc.GetString("chat-manager-entity-me-wrap-message",
+            ("entityName", coloredName),
+            ("entity", ent),
+            ("message", coloredAction));
+
+
+        if (checkEmote)
+            TryEmoteChatInput(source, action);
+
+        float hiddenEmoteRange = 2;
+
+        foreach (var (session, data) in GetRecipients(source, VoiceRange))
+        {
+            var entRange = MessageRangeCheck(session, data, range);
+            if (entRange == MessageRangeCheckResult.Disallowed)
+                continue;
+            if (data.Range <= hiddenEmoteRange)
+            {
+                _chatManager.ChatMessageToOne(ChatChannel.HiddenEmotes, action, wrappedMessage, source, false, session.Channel);
+            }
+        }
+        if (!hideLog)
+            if (name != Name(source))
+                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Hidden emote from {ToPrettyString(source):user} as {name}: {action}");
+            else
+                _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Hidden emote from {ToPrettyString(source):user}: {action}");
+    }
+    // LOP edit end
 
     // ReSharper disable once InconsistentNaming
     private void SendLOOC(EntityUid source, ICommonSession player, string message, bool hideChat)
@@ -974,6 +1027,7 @@ public enum InGameICChatType : byte
 {
     Speak,
     Emote,
+    HiddenEmote,
     Whisper
 }
 

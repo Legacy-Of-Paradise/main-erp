@@ -209,6 +209,10 @@
         blacklist:
           tags:
           - PotatoBattery
+          # ADT edit start
+          components:
+          - BatteryRecharge
+          # ADT edit end
 
 - type: entity
   parent: BaseItemRecharger
@@ -235,6 +239,11 @@
           - HitscanBatteryAmmoProvider
           - ProjectileBatteryAmmoProvider
           - Stunbaton
+        # ADT edit start
+        blacklist:
+          components:
+          - BatteryRecharge
+        # ADT edit end
 
 - type: entity
   parent: BaseRecharger
@@ -263,6 +272,7 @@
     whitelist:
       components:
       - BorgChassis
+      - Inventory # ADT edit
   - type: Construction
     containers:
     - machine_parts
@@ -306,6 +316,7 @@
     whitelist:
       components:
       - BorgChassis
+      - Inventory # ADT edit
   - type: ContainerContainer
     containers:
       entity_storage: !type:Container

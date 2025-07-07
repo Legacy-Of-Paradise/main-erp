@@ -17,10 +17,13 @@ public abstract class SharedChatSystem : EntitySystem
     public const char ConsolePrefix = '/';
     public const char DeadPrefix = '\\';
     public const char LOOCPrefix = '_'; // Corvax-Localization
-    public const char OOCPrefix = '[';
+    public const char OOCPrefix = '+'; // LOP edit
     public const char EmotesPrefix = '%'; // Corvax-Localization
     public const char EmotesAltPrefix = '*';
-    public const char AdminPrefix = ']';
+    // LOP edit start
+    public const char HiddenEmotesPrefix = ')';
+    public const char AdminPrefix = '=';
+    // LOP edit end
     public const char WhisperPrefix = ',';
     public const char DefaultChannelKey = 'р'; // Corvax-Localization
     public const int WhisperClearRange = 2; // how far whisper goes while still being understandable, in world units

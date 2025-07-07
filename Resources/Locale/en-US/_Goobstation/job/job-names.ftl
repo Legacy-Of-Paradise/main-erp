@@ -1,1 +1,1 @@
-job-name-overall = Overall
+job-name-overall = Общее

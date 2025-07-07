@@ -10,9 +10,11 @@ server-time-ban-string =
     
     > **Нарушитель**
     > **Логин:** ``{ $targetName }``
+    > **Дискорд:** { $targetLink }
     
     > **Администратор**
     > **Логин:** ``{ $adminName }``
+    > **Дискорд:** { $adminLink }
     
     > **Выдан:** { $TimeNow }
     > **Истечёт:** { $expiresString }
@@ -24,9 +26,11 @@ server-perma-ban-string =
     
     > **Нарушитель**
     > **Логин:** ``{ $targetName }``
+    > **Дискорд:** { $targetLink }
     
     > **Администратор**
     > **Логин:** ``{ $adminName }``
+    > **Дискорд:** { $adminLink }
     
     > **Выдан:** { $TimeNow }
     
@@ -36,9 +40,11 @@ server-role-ban-string =
     
     > **Нарушитель**
     > **Логин:** ``{ $targetName }``
+    > **Дискорд:** { $targetLink }
     
     > **Администратор**
     > **Логин:** ``{ $adminName }``
+    > **Дискорд:** { $adminLink }
     
     > **Выдан:** { $TimeNow }
     > **Истечёт:** { $expiresString }
@@ -51,9 +57,11 @@ server-perma-role-ban-string =
     
     > **Нарушитель**
     > **Логин:** ``{ $targetName }``
+    > **Дискорд:** { $targetLink }
     
     > **Администратор**
     > **Логин:** ``{ $adminName }``
+    > **Дискорд:** { $adminLink }
     
     > **Выдан:** { $TimeNow }
     
@@ -62,6 +70,7 @@ server-perma-role-ban-string =
     > **Причина:** { $reason }
 server-ban-string-infinity = Вечно
 server-ban-no-name = Не найдено. ({ $hwid })
+server-ban-no-name-dc = Не найдено.
 server-time-ban =
     Временный бан на { $mins } { $mins ->
         [one] минуту

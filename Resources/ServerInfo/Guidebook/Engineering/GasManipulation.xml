@@ -5,7 +5,6 @@
  **Внимание: Открепление (откручивание) большинства устройств, содержащих газ, приведёт к [color=red]утечке газа[/color] в атмосферу.**
  Вы можете безопасно открепить [textlink="баллоны" link="GasCanisters"], [textlink="переносные очистители" link="PortableScrubber"], [textlink="конденсаторы" link="GasCondensing"] и [textlink="термомашины" link="Thermomachines"].
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="GasPipeStraight" Caption=""/>
@@ -21,7 +20,6 @@
   [color=#999999][italic]Распределение газов из одного места в другое[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="GasPressurePump" Caption=""/>
@@ -34,7 +32,6 @@
   [color=#999999][italic]Принудительное перемещение газов из одного места в другое[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="GasVentPump" Caption=""/>
@@ -50,14 +47,13 @@
   [color=#999999][italic]Введение и извлечение газов из существующей (или отсутствующей) атмосферы[/italic][/color]
  </Box>
 
- ---
-
  <Box>
   <GuideEntityEmbed Entity="GasValve" Caption=""/>
   <GuideEntityEmbed Entity="SignalControlledValve" Caption=""/>
   <GuideEntityEmbed Entity="PressureControlledValve" Caption=""/>
   <GuideEntityEmbed Entity="GasPassiveGate" Caption=""/>
- </Box>
+ <GuideEntityEmbed Entity="GasPressureRegulator" Caption=""/>
+  </Box>
  <Box>
   ## Клапаны
  </Box>
@@ -65,7 +61,6 @@
   [color=#999999][italic]Управление потоком газа через трубы[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="GasMixer" Caption=""/>
@@ -78,7 +73,6 @@
   [color=#999999][italic]Манипулирование составом газа[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="AirCanister" Caption=""/>
@@ -95,7 +89,6 @@
   [color=#999999][italic]Хранение и транспортировка газа для удобного использования экипажем[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="SpaceHeater" Caption=""/>
@@ -110,7 +103,6 @@
   [color=#999999][italic]Манипулирование температурой газов в трубопроводе или атмосфере[/italic][/color]
  </Box>
 
- ---
 
  <Box>
   <GuideEntityEmbed Entity="BaseGasCondenser" Caption=""/>

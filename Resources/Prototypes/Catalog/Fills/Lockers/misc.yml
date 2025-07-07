@@ -153,6 +153,10 @@
   id: MaintenanceLockerLoot
   table: !type:AllSelector
     children:
+    # ADT edit start
+    - id: ADTModsuitCoreEnergy
+      prob: 0.03
+    # ADT edit end
     - id: StrangePill
       prob: 0.20
     # Tools

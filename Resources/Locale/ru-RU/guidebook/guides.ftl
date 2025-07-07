@@ -20,6 +20,7 @@ guide-entry-manualvalve = Ручной клапан
 guide-entry-signalvalve = Сигнальный клапан
 guide-entry-pneumaticvalve = Пневматический клапан
 guide-entry-passivegate = Пассивный шлюз
+guide-entry-ressureregulator = Регулятор Давления
 guide-entry-mixingandfiltering = Смешивание и фильтрация
 guide-entry-gascanisters = Газовые баллоны
 guide-entry-thermomachines = Термомашины

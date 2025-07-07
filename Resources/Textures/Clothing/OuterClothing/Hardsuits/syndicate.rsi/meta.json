@@ -26,6 +26,10 @@
       "name": "equipped-OUTERCLOTHING-tajaran",
       "directions": 4
     },
+      {
+          "name": "equipped-OUTERCLOTHING-scurret",
+          "directions": 4
+      },
     {
       "name": "equipped-OUTERCLOTHING-vox",
       "directions": 4

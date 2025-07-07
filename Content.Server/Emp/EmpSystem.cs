@@ -6,11 +6,13 @@ using Content.Shared.Emp;
 using Content.Shared.Examine;
 using Robust.Server.GameObjects;
 using Robust.Shared.Map;
+using Content.Shared._ADT.EmpProtection; // ADT edit
 
 namespace Content.Server.Emp;
 
 public sealed class EmpSystem : SharedEmpSystem
 {
+    [Dependency] private readonly ChargerSystem _charger = default!; // ADT edit
     [Dependency] private readonly EntityLookupSystem _lookup = default!;
     [Dependency] private readonly TransformSystem _transform = default!;
 
@@ -68,6 +70,7 @@ public sealed class EmpSystem : SharedEmpSystem
     /// <param name="duration">The duration of the EMP effects.</param>
     public void TryEmpEffects(EntityUid uid, float energyConsumption, float duration)
     {
+        if (HasComp<EmpProtectionComponent>(uid)) return; // ADT edit
         var attemptEv = new EmpAttemptEvent();
         RaiseLocalEvent(uid, attemptEv);
         if (attemptEv.Cancelled)

@@ -7,7 +7,7 @@
     ///     Maps to <see cref="ChatChannel"/>, giving better names.
     /// </remarks>
     [Flags]
-    public enum ChatSelectChannel : ushort
+    public enum ChatSelectChannel : uint // LOP edit
     {
         None = 0,
 
@@ -40,6 +40,13 @@
         ///     Emotes
         /// </summary>
         Emotes = ChatChannel.Emotes,
+
+         // LOP edit start
+        /// <summary>
+        ///     HiddenEmotes
+        /// </summary>
+        HiddenEmotes = ChatChannel.HiddenEmotes,
+        // LOP edit end
 
         /// <summary>
         ///     Deadchat

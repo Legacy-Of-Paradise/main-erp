@@ -6,7 +6,8 @@
   <GuideEntityEmbed Entity="SignalControlledValve"/>
   <GuideEntityEmbed Entity="PressureControlledValve"/>
   <GuideEntityEmbed Entity="GasPassiveGate"/>
- </Box>
+ <GuideEntityEmbed Entity="GasPressureRegulator"/>
+  </Box>
  Все **клапаны** не требуют [textlink="энергии" link="Power"] для работы.
 
  **Клапаны** могут выглядеть просто, но они позволяют создавать широкий спектр сложных трубопроводных систем, включая:
