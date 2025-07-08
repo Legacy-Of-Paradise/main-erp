@@ -15,10 +15,8 @@ public sealed partial class SponsorLoadoutEffect : LoadoutEffect
         LoadoutPrototype proto, // Corvax-Sponsors
         ICommonSession? session,
         IDependencyCollection collection,
-        [NotNullWhen(false)] out FormattedMessage? reason
-        #if LOP
-        , int sponsorTier = 0
-        #endif
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0 //LOP edit
         )
     {
         reason = null;
