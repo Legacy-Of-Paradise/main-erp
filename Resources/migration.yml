@@ -182,33 +182,33 @@ SpyCrewMonitorEmpty: null
 SyndiCrewMonitor: null
 SyndiCrewMonitorEmpty: null
 
-#SpawnVehicleWheelchair: null Goobstation - Re-add vehicles
-#SpawnVehicleWheelchairFolded: null Goobstation - Re-add vehicles
-#VehicleWheelchair: null Goobstation - Re-add vehicles
-#VehicleWheelchairFolded: null Goobstation - Re-add vehicles
+SpawnVehicleWheelchair: null
+SpawnVehicleWheelchairFolded: null
+VehicleWheelchair: null
+VehicleWheelchairFolded: null
 VehicleSecwayStealObjective: null
-#VehicleKeyJanicart: null Goobstation - Re-add vehicles
-#VehicleKeySecway: null Goobstation - Re-add vehicles
-#VehicleKeyATV: null Goobstation - Re-add vehicles
+VehicleKeyJanicart: null
+VehicleKeySecway: null
+VehicleKeyATV: null
 VehicleKeySkeleton: null
-#VehicleKeySyndicateSegway: null Goobstation - Re-add vehicles
+VehicleKeySyndicateSegway: null
 VehicleKeySkeletonMotorcycle: null
-#VehicleSecway: null Goobstation - Re-add vehicles
-#VehicleATV: null Goobstation - Re-add vehicles
-#VehicleSyndicateSegway: null Goobstation - Re-add vehicles
+VehicleSecway: null
+VehicleATV: null
+VehicleSyndicateSegway: null
 VehicleSkeletonMotorcycle: null
 VehicleUnicycle: null
 VehicleUnicycleFolded: null
 ActionVehicleHorn: null
-#CrateFunATV: null Goobstation - Re-add vehicles
-#CrateFunSyndicateSegway: null Goobstation - Re-add vehicles
+CrateFunATV: null
+CrateFunSyndicateSegway: null
 MobTaxiBot: null
 # MobSupplyBot: null
-#SpawnVehicleMotobike: null
-#SpawnVehicleATV: null
-#SpawnVehicleSecway: null Goobstation - Re-add vehicles
-#SpawnVehicleJanicart: null Goobstation - Re-add vehicles
-#VehicleJanicart: null Goobstation - Re-add vehicles
+SpawnVehicleMotobike: null
+SpawnVehicleATV: null
+SpawnVehicleSecway: null
+SpawnVehicleJanicart: null
+VehicleJanicart: null
 VehicleJanicartDestroyed: null
 
 # 2024-02-01

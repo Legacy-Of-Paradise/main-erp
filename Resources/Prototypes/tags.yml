@@ -801,9 +801,6 @@
 - type: Tag
   id: IntercomElectronics
 
-- type: Tag # Goobstation
-  id: JanicartKeys
-
 - type: Tag
   id: InvalidForGlobalSpawnSpell
 
@@ -1428,9 +1425,6 @@
 
 - type: Tag
   id: Vegetable
-
-- type: Tag # Goobstation
-  id: VehicleKey
 
 - type: Tag
   id: VGRoidInterior
