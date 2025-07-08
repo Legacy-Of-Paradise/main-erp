@@ -19,7 +19,7 @@ public sealed partial class JobRequirementLoadoutEffect : LoadoutEffect
     #if LOP
     , int sponsorTier = 0
     #endif
-    )  //LOP edit
+    )
     {
         if (session == null
         #if LOP
