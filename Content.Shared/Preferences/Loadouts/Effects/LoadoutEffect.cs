@@ -16,7 +16,9 @@ public abstract partial class LoadoutEffect
         LoadoutPrototype proto, // Corvax-Sponsors
         ICommonSession? session,
         IDependencyCollection collection,
-        [NotNullWhen(false)] out FormattedMessage? reason);
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0
+        );
 
-    public virtual void Apply(RoleLoadout loadout) {}
+    public virtual void Apply(RoleLoadout loadout) { }
 }
