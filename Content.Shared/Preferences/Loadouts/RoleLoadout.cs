@@ -162,7 +162,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 }
 
                 // Validate the loadout can be applied (e.g. points).
-                if (!IsValid(profile, session, loadout.Prototype, collection, out _, sponsorTier))
+                if (!IsValid(profile, session, loadout.Prototype, collection, out _
+                #if LOP
+                , sponsorTier
+                #endif
+                ))
                 {
                     loadouts.RemoveAt(i);
                     continue;
@@ -193,7 +197,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                         continue;
 
                     // Not valid so don't default to it anyway.
-                    if (!IsValid(profile, session, defaultLoadout.Prototype, collection, out _, sponsorTier))
+                    if (!IsValid(profile, session, defaultLoadout.Prototype, collection, out _
+                    #if LOP
+                    , sponsorTier
+                    #endif
+                    ))
                         continue;
 
                     loadouts.Add(defaultLoadout);
@@ -276,7 +284,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
     /// <summary>
     /// Returns whether a loadout is valid or not.
     /// </summary>
-    public bool IsValid(HumanoidCharacterProfile profile, ICommonSession? session, ProtoId<LoadoutPrototype> loadout, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason, int sponsorTier = 0)
+    public bool IsValid(HumanoidCharacterProfile profile, ICommonSession? session, ProtoId<LoadoutPrototype> loadout, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason
+    #if LOP
+    , int sponsorTier = 0
+    #endif
+    )
     {
         reason = null;
 
@@ -310,7 +322,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
         foreach (var effect in loadoutProto.Effects)
         {
-            valid = valid && effect.Validate(profile, this, loadoutProto, session, collection, out reason, sponsorTier);
+            valid = valid && effect.Validate(profile, this, loadoutProto, session, collection, out reason
+            #if LOP
+            , sponsorTier
+            #endif
+            );
         }
 
         return valid;
