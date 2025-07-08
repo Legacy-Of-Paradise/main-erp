@@ -11,6 +11,7 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing
 
 - type: roleLoadout
   id: JobLPPАdjutant
@@ -25,6 +26,7 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing
 
 # Sec
 - type: roleLoadout
@@ -39,3 +41,4 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing

@@ -20,7 +20,7 @@ entities:
   - uid: 818
     components:
     - type: MetaData
-      name: NT-EM Terminal
+      name: NT-EM Терминал
     - type: Transform
       parent: invalid
     - type: MapGrid
@@ -9540,7 +9540,7 @@ entities:
       pos: -0.5,1.5
       parent: 818
     - type: WarpPoint
-      location: Terminal
+      location: Терминал
     - type: Godmode
 - proto: Windoor
   entities:

@@ -54,6 +54,10 @@ public sealed partial class RoleLoadoutPrototype : IPrototype
                 {
                     _sortedGroups.Add(new ProtoId<LoadoutGroupPrototype>(protoid));
                 }
+                if (!(protoid.Contains("Lichnie") && !moduled)) //добавляем группу в том случае, если ее возможно добавить
+                {
+                    _sortedGroups.Add(new ProtoId<LoadoutGroupPrototype>(protoid));
+                }
             }
         }
         return _sortedGroups;
