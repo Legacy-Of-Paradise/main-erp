@@ -163,9 +163,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
                 // Validate the loadout can be applied (e.g. points).
                 if (!IsValid(profile, session, loadout.Prototype, collection, out _
-                #if LOP
+#if LOP
                 , sponsorTier
-                #endif
+#endif
                 ))
                 {
                     loadouts.RemoveAt(i);
@@ -198,9 +198,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
 
                     // Not valid so don't default to it anyway.
                     if (!IsValid(profile, session, defaultLoadout.Prototype, collection, out _
-                    #if LOP
+#if LOP
                     , sponsorTier
-                    #endif
+#endif
                     ))
                         continue;
 
@@ -310,7 +310,7 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
         // LOP edit start
         if (loadoutProto.PlayerUUID != null)
         {
-            if (session != null && loadoutProto.PlayerUUID == session.UserId.ToString())
+            if (session != null && loadoutProto.PlayerUUID.ToUpper() == session.UserId.ToString().ToUpper())
                 return true;
 
             reason = FormattedMessage.FromUnformatted("Это принадлежит другому игроку");    //замените потом на ftl сами
@@ -323,9 +323,9 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
         foreach (var effect in loadoutProto.Effects)
         {
             valid = valid && effect.Validate(profile, this, loadoutProto, session, collection, out reason
-            #if LOP
+#if LOP
             , sponsorTier
-            #endif
+#endif
             );
         }
 

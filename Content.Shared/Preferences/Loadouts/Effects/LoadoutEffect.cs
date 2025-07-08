@@ -16,10 +16,8 @@ public abstract partial class LoadoutEffect
         LoadoutPrototype proto, // Corvax-Sponsors
         ICommonSession? session,
         IDependencyCollection collection,
-        [NotNullWhen(false)] out FormattedMessage? reason
-        #if LOP
-        , int sponsorTier = 0
-        #endif
+        [NotNullWhen(false)] out FormattedMessage? reason,
+        int sponsorTier = 0 //LOP edit
         );
 
     public virtual void Apply(RoleLoadout loadout) { }
