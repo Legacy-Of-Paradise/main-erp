@@ -308,7 +308,7 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
         }
 
         // LOP edit start
-        if (loadoutProto.PlayerUUID != default!)
+        if (loadoutProto.PlayerUUID != null)
         {
             if (session != null && loadoutProto.PlayerUUID == session.UserId.ToString())
                 return true;

@@ -55,6 +55,6 @@ public sealed partial class LoadoutPrototype : IPrototype, IEquipmentLoadout
     /// Указатель UUID игрока, которому будет доступен лодаут
     /// </summary>
     [DataField("uuid")]
-    public string PlayerUUID = default!;
+    public string? PlayerUUID = null;
     // LOP edit end
 }
