@@ -34,9 +34,6 @@
   - type: Strap
     buckleOffset: "0, 0"
     unbuckleDistanceSquared: 0.09 # Frontier: (30 cm)^2 - seems unnecessary, but for consistency with vehicles
-  - type: Construction
-    graph: TaxiBot
-    node: bot
   - type: VehicleHorn # Frontier: beep beep
 
 # Frontier
@@ -70,17 +67,10 @@
     friction: 1.5
     baseWalkSpeed: 4.5
     baseSprintSpeed: 7
-  - type: Construction
-    graph: HoverTaxiBot
-    node: bot
   - type: UserInterface
     interfaces:
       enum.RadarConsoleUiKey.Key:
         type: RadarConsoleBoundUserInterface
-  - type: IntrinsicUI
-    uis:
-      enum.RadarConsoleUiKey.Key:
-        toggleAction: ActionObserverShowRadar
   - type: RadarConsole
     followEntity: true
   - type: VehicleHorn
@@ -88,21 +78,15 @@
 - type: entity
   parent:
   - MobCleanBot
-  - BaseC3SyndicateContrabandNoValue
-  - NFMobRestrictions
   id: MobCleanBotSyndie
   name: syndicate cleanbot
   description: The creep of automation now threatening space janitors with a knife.
   components:
   - type: NpcFactionMember
     factions:
-    - SyndicateNF
+    - Syndicate
   - type: Sprite
     sprite: _NF/Mobs/Silicons/Bots/syndicatecleanbot.rsi
   - type: HTN
     rootTask:
       task: CleanbotCompound
-  - type: NFSalvageMobRestrictions
-    despawnIfOffLinkedGrid: false
-    addComponentsOnDeath: []
-    removeComponentsOnDeath: []

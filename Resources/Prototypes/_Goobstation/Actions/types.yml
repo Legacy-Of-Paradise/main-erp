@@ -3,9 +3,10 @@
   name: Honk!
   description: Honk the horn! # Frontier: no fun allowed
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 3.4 # Frontier: keep the old value
     icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
+  - type: InstantAction
     event: !type:HornActionEvent
 
 - type: entity
@@ -13,7 +14,8 @@
   name: Siren
   description: Alert everyone around to your presence. # Frontier: no fun allowed
   components:
-  - type: InstantAction
+  - type: Action
     useDelay: 3.4 # Frontier: keep the old value
     icon: { sprite: Objects/Fun/bikehorn.rsi, state: icon }
+  - type: InstantAction
     event: !type:SirenActionEvent
