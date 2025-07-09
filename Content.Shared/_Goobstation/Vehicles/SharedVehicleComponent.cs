@@ -53,7 +53,7 @@ public sealed partial class VehicleComponent : Component
     [DataField]
     public VehicleRenderOver RenderOver = VehicleRenderOver.None;
 
-    // Frontier: extra fields
+    // Frontier: sprite offset per
     [DataField]
     public Vector2 SouthOffset = Vector2.Zero;
 
@@ -71,7 +71,7 @@ public sealed partial class VehicleComponent : Component
     /// </summary>
     [DataField]
     public string KeySlotId = "key_slot";
-    // End Frontier: extra fields
+    // End Frontier: old buckle offset logic
 }
 [Serializable, NetSerializable]
 public enum VehicleState : byte

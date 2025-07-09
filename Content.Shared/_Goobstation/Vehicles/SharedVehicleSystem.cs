@@ -11,16 +11,16 @@ using Content.Shared.Movement.Systems;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Containers;
 using Content.Shared._NF.Vehicle.Components; // Frontier
-using Robust.Shared.Prototypes; // Frontier
+using Content.Shared.ActionBlocker;
+using Content.Shared.Actions.Components; // Frontier
 using Content.Shared.Light.Components; // Frontier
 using Content.Shared.Light.EntitySystems; // Frontier
 using Content.Shared.Movement.Pulling.Components; // Frontier
+using Content.Shared.Movement.Pulling.Events; // Frontier
 using Content.Shared.Popups; // Frontier
 using Robust.Shared.Network; // Frontier
+using Robust.Shared.Prototypes; // Frontier
 using Robust.Shared.Timing; // Frontier
-using Content.Shared.Weapons.Melee.Events; // Frontier
-using Content.Shared.Actions.Components; // Frontier
-using Content.Shared.Movement.Pulling.Events; // Frontier
 
 namespace Content.Shared._Goobstation.Vehicles; // Frontier: migrate under _Goobstation
 
@@ -37,6 +37,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
     [Dependency] private readonly INetManager _net = default!; // Frontier
     [Dependency] private readonly UnpoweredFlashlightSystem _flashlight = default!; // Frontier
     [Dependency] private readonly SharedPopupSystem _popup = default!; // Frontier
+    [Dependency] private readonly ActionBlockerSystem _actionBlocker = default!; // Frontier
     [Dependency] private readonly ActionContainerSystem _actionContainer = default!; // Frontier
     [Dependency] private readonly IGameTiming _timing = default!; // Frontier
 
@@ -53,7 +54,6 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         SubscribeLocalEvent<VehicleComponent, StrappedEvent>(OnStrapped);
         SubscribeLocalEvent<VehicleComponent, UnstrappedEvent>(OnUnstrapped);
         SubscribeLocalEvent<VehicleComponent, VirtualItemDeletedEvent>(OnDropped);
-        SubscribeLocalEvent<VehicleComponent, MeleeHitEvent>(OnMeleeHit); // Frontier
 
         SubscribeLocalEvent<VehicleComponent, EntInsertedIntoContainerMessage>(OnInsert);
         SubscribeLocalEvent<VehicleComponent, EntRemovedFromContainerMessage>(OnEject);
@@ -211,7 +211,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         // AddHorns(driver, ent); // Frontier: delay until mounted
     }
 
-    private void OnStrapped(Entity<VehicleComponent> ent, ref StrappedEvent args)
+    protected virtual void OnStrapped(Entity<VehicleComponent> ent, ref StrappedEvent args) // Frontier: private<protected virtual
     {
         var driver = args.Buckle.Owner;
 
@@ -231,7 +231,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         Mount(driver, ent.Owner);
     }
 
-    private void OnUnstrapped(Entity<VehicleComponent> ent, ref UnstrappedEvent args)
+    protected virtual void OnUnstrapped(Entity<VehicleComponent> ent, ref UnstrappedEvent args) // Frontier: private<protected virtual
     {
         if (ent.Comp.Driver != args.Buckle.Owner)
             return;
@@ -255,14 +255,6 @@ public abstract partial class SharedVehicleSystem : EntitySystem
         RemComp<VehicleRiderComponent>(args.User); // Frontier
     }
 
-    // Frontier: do not hit your own vehicle
-    private void OnMeleeHit(Entity<VehicleComponent> ent, ref MeleeHitEvent args)
-    {
-        if (args.User == ent.Comp.Driver) // Don't hit your own vehicle
-            args.Handled = true;
-    }
-    // End Frontier: do not hit your own vehicle
-
     private void AddHorns(EntityUid driver, EntityUid vehicle)
     {
         if (!TryComp<VehicleComponent>(vehicle, out var vehicleComp))
@@ -281,7 +273,9 @@ public abstract partial class SharedVehicleSystem : EntitySystem
             grantedActions.Add(flashlight.ToggleActionEntity.Value);
             _flashlight.SetLight((vehicle, flashlight), flashlight.LightOn, quiet: true);
         }
-        _actions.GrantActions(driver, grantedActions, vehicle);
+        // Only try to grant actions if the vehicle actually has them.
+        if (grantedActions.Count > 0)
+            _actions.GrantActions(driver, grantedActions, vehicle);
         // End Frontier
     }
 
@@ -309,6 +303,7 @@ public abstract partial class SharedVehicleSystem : EntitySystem
             return;
 
         RemComp<RelayInputMoverComponent>(driver);
+        _actionBlocker.UpdateCanMove(driver); // Frontier: bugfix, relay input mover only updates on shutdown, not remove
 
         if (removeDriver) // Frontier
             vehicleComp.Driver = null;
