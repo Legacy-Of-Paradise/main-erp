@@ -47,5 +47,5 @@ names-scurret-last-dataset-46 = Филдс
 names-scurret-last-dataset-47 = Анцесторс
 names-scurret-last-dataset-48 = Форестс
 names-scurret-last-dataset-49 = Секретс
- # Nobody's quite sure how this one is in the dictionary.
+# Nobody's quite sure how this one is in the dictionary.
 names-scurret-last-dataset-50 = Спейс Феррет

@@ -1138,13 +1138,13 @@ namespace Content.Server.Database
 #if LOP
         public async Task<Sponsor?> GetSponsorInfo(NetUserId userId, CancellationToken cancel = default)
         {
-            DbWriteOpsMetric.Inc();
+            DbReadOpsMetric.Inc();
             return await _db.GetSponsorInfo(userId);
         }
 
         public async Task<Sponsor[]?> GetSponsorList(CancellationToken cancel = default)
         {
-            DbWriteOpsMetric.Inc();
+            DbReadOpsMetric.Inc();
             return await _db.GetSponsorList();
         }
 #endif

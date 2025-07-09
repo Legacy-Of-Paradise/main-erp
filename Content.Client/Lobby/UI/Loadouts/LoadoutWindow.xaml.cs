@@ -90,6 +90,13 @@ public sealed partial class LoadoutWindow : FancyWindow
                     groupProto.Hidden = true;
                     continue;
                 }
+#if !LOP
+                if (groupProto.ID.ToString().Contains("Lichnie"))
+                {
+                    groupProto.Hidden = true;
+                    continue;
+                }
+#endif
                 // LOP edit end
 
                 var container = new LoadoutGroupContainer(profile, loadout, protoManager.Index(group), session, collection);

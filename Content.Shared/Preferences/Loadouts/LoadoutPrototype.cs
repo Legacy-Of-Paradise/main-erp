@@ -49,4 +49,12 @@ public sealed partial class LoadoutPrototype : IPrototype, IEquipmentLoadout
     /// <inheritdoc />
     [DataField]
     public Dictionary<string, List<EntProtoId>> Storage { get; set; } = new();
+
+    // LOP edit start
+    /// <summary>
+    /// Указатель UUID игрока, которому будет доступен лодаут
+    /// </summary>
+    [DataField("uuid")]
+    public string? PlayerUUID = null;
+    // LOP edit end
 }

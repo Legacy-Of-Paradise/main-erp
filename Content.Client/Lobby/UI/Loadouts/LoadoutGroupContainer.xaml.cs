@@ -7,6 +7,9 @@ using Robust.Client.UserInterface.XAML;
 using Robust.Shared.Player;
 using Robust.Shared.Prototypes;
 using System.Linq;
+#if LOP
+using Content.Client._NewParadise.Sponsors;
+#endif
 
 namespace Content.Client.Lobby.UI.Loadouts;
 
@@ -218,7 +221,18 @@ public sealed partial class LoadoutGroupContainer : BoxContainer
 
         var pressed = selected.Any(e => e.Prototype == proto.ID);
 
-        var enabled = loadout.IsValid(profile, session, proto.ID, collection, out var reason);
+        int sponsorTier = 0;
+#if LOP
+        var sponsorman = IoCManager.Resolve<SponsorsManager>();
+        if (sponsorman.TryGetInfo(out var sponsorInfo))
+            sponsorTier = sponsorInfo.Tier;
+#endif
+
+        var enabled = loadout.IsValid(profile, session, proto.ID, collection, out var reason
+        #if LOP
+        , sponsorTier
+        #endif
+        );
 
         var cont = new LoadoutContainer(proto, !enabled, reason);
 

@@ -12,6 +12,7 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing
   # LOP edit end
 
 - type: roleLoadout
@@ -30,6 +31,7 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing
   # LOP edit end
 
 - type: roleLoadout
@@ -49,4 +51,5 @@
   - LOPsocksloadout
   - LOPbraloadout
   - SponsorsClothing
+  - LichnieClothing
   # LOP edit end

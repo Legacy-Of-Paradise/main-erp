@@ -138,6 +138,13 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 groupRemove.Add(group);
                 continue;
             }
+#if !LOP
+            if (groupProto.ID.ToString().Contains("Lichnie"))
+            {
+                groupRemove.Add(group);
+                continue;
+            }
+#endif
             // LOP edit end
 
             var loadouts = groupLoadouts[..Math.Min(groupLoadouts.Count, groupProto.MaxLimit)];
@@ -162,7 +169,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 }
 
                 // Validate the loadout can be applied (e.g. points).
-                if (!IsValid(profile, session, loadout.Prototype, collection, out _))
+                if (!IsValid(profile, session, loadout.Prototype, collection, out _
+#if LOP
+                , sponsorTier
+#endif
+                ))
                 {
                     loadouts.RemoveAt(i);
                     continue;
@@ -193,7 +204,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                         continue;
 
                     // Not valid so don't default to it anyway.
-                    if (!IsValid(profile, session, defaultLoadout.Prototype, collection, out _))
+                    if (!IsValid(profile, session, defaultLoadout.Prototype, collection, out _
+#if LOP
+                    , sponsorTier
+#endif
+                    ))
                         continue;
 
                     loadouts.Add(defaultLoadout);
@@ -276,7 +291,11 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
     /// <summary>
     /// Returns whether a loadout is valid or not.
     /// </summary>
-    public bool IsValid(HumanoidCharacterProfile profile, ICommonSession? session, ProtoId<LoadoutPrototype> loadout, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason)
+    public bool IsValid(HumanoidCharacterProfile profile, ICommonSession? session, ProtoId<LoadoutPrototype> loadout, IDependencyCollection collection, [NotNullWhen(false)] out FormattedMessage? reason
+    #if LOP
+    , int sponsorTier = 0
+    #endif
+    )
     {
         reason = null;
 
@@ -295,11 +314,26 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
             return false;
         }
 
+        // LOP edit start
+        if (loadoutProto.PlayerUUID != null)
+        {
+            if (session != null && loadoutProto.PlayerUUID.ToUpper() == session.UserId.ToString().ToUpper())
+                return true;
+
+            reason = FormattedMessage.FromUnformatted("Это принадлежит другому игроку");    //замените потом на ftl сами
+            return false;
+        }
+        // LOP edit end
+
         var valid = true;
 
         foreach (var effect in loadoutProto.Effects)
         {
-            valid = valid && effect.Validate(profile, this, loadoutProto, session, collection, out reason);
+            valid = valid && effect.Validate(profile, this, loadoutProto, session, collection, out reason
+#if LOP
+            , sponsorTier
+#endif
+            );
         }
 
         return valid;

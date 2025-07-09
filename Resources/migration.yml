@@ -182,34 +182,34 @@ SpyCrewMonitorEmpty: null
 SyndiCrewMonitor: null
 SyndiCrewMonitorEmpty: null
 
-SpawnVehicleWheelchair: null
-SpawnVehicleWheelchairFolded: null
-VehicleWheelchair: null
-VehicleWheelchairFolded: null
+# SpawnVehicleWheelchair: null # Frontier
+# SpawnVehicleWheelchairFolded: null # Frontier
+# VehicleWheelchair: null # Frontier
+# VehicleWheelchairFolded: null # Frontier
 VehicleSecwayStealObjective: null
-VehicleKeyJanicart: null
-VehicleKeySecway: null
-VehicleKeyATV: null
-VehicleKeySkeleton: null
-VehicleKeySyndicateSegway: null
-VehicleKeySkeletonMotorcycle: null
-VehicleSecway: null
-VehicleATV: null
-VehicleSyndicateSegway: null
-VehicleSkeletonMotorcycle: null
-VehicleUnicycle: null
-VehicleUnicycleFolded: null
-ActionVehicleHorn: null
-CrateFunATV: null
-CrateFunSyndicateSegway: null
-MobTaxiBot: null
-# MobSupplyBot: null
-SpawnVehicleMotobike: null
-SpawnVehicleATV: null
-SpawnVehicleSecway: null
-SpawnVehicleJanicart: null
-VehicleJanicart: null
-VehicleJanicartDestroyed: null
+# VehicleKeyJanicart: null # Frontier
+# VehicleKeySecway: null # Frontier
+# VehicleKeyATV: null # Frontier
+# VehicleKeySkeleton: null # Frontier
+# VehicleKeySyndicateSegway: null # Frontier
+# VehicleKeySkeletonMotorcycle: null # Frontier
+# VehicleSecway: null # Frontier
+# VehicleATV: null # Frontier
+# VehicleSyndicateSegway: null # Frontier
+# VehicleSkeletonMotorcycle: null # Frontier
+# VehicleUnicycle: null # Frontier
+# VehicleUnicycleFolded: null # Frontier
+# ActionVehicleHorn: null # Frontier
+# CrateFunATV: null # Frontier
+# CrateFunSyndicateSegway: null # Frontier
+# MobTaxiBot: null # Frontier
+# MobSupplyBot: null # Frontier
+# SpawnVehicleMotobike: null # Frontier
+# SpawnVehicleATV: null # Frontier
+# SpawnVehicleSecway: null # Frontier
+# SpawnVehicleJanicart: null # Frontier
+# VehicleJanicart: null # Frontier
+# VehicleJanicartDestroyed: null # Frontier
 
 # 2024-02-01
 YellowOxygenTank: OxygenTank

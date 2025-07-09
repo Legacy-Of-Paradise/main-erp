@@ -149,6 +149,7 @@
     - id: ClothingEyesHudCommand
     - id: ClothingOuterCoatHOP # Corvax-Resprite
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: ADTClothingModsuitBackBase #LOP edit
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -363,10 +364,10 @@
   table: !type:AllSelector
     children:
     - id: ClothingMaskGasSwat
-    - id: ClothingOuterHardsuitSecurityRed
+    # - id: ClothingOuterHardsuitSecurityRed #LOP edit
     - id: JetpackSecurityFilled
     - id: OxygenTankFilled
-    - id: ClothingShoesBootsMagSecurity #LOP edit
+    - id: ADTClothingModsuitBackSafeguard #LOP edit
 
 # No hardsuit locker
 - type: entity

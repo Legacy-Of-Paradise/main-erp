@@ -1,0 +1,16 @@
+ent-NFVehicleATV = { ent-VehicleATV }
+    .desc = { ent-VehicleATV.desc }
+ent-NFVehicleSkeletonMotorcycle = skeleton motorcycle
+    .desc = Bad to the Bone.
+ent-VehicleUnicycle = unicycle
+    .desc = It only has one wheel!
+ent-VehicleUnicycleFolded = { ent-VehicleUnicycle }
+    .suffix = folded
+    .desc = { ent-VehicleUnicycle.desc }
+ent-VehicleJanicartDestroyed = destroyed janicart
+    .desc = { ent-MachineFrameDestroyed.desc }
+ent-NFVehicleJanicart = { ent-VehicleJanicart }
+    .desc = { ent-VehicleJanicart.desc }
+ent-NFVehicleJanicartKey = { ent-NFVehicleJanicart }
+    .suffix = With key
+    .desc = { ent-NFVehicleJanicart.desc }

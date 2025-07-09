@@ -1,0 +1,16 @@
+ent-NFVehicleATV = { ent-VehicleATV }
+    .desc = { ent-VehicleATV.desc }
+ent-NFVehicleSkeletonMotorcycle = скелетный мотоцикл
+    .desc = Плохой до мозга костей.
+ent-VehicleUnicycle = уницикл
+    .desc = У него только одно колесо!
+ent-VehicleUnicycleFolded = { ent-VehicleUnicycle }
+    .suffix = сложенный
+    .desc = { ent-VehicleUnicycle.desc }
+ent-VehicleJanicartDestroyed = сломанная тележка уборщика
+    .desc = { ent-MachineFrameDestroyed.desc }
+ent-NFVehicleJanicart = { ent-VehicleJanicart }
+    .desc = { ent-VehicleJanicart.desc }
+ent-NFVehicleJanicartKey = { ent-NFVehicleJanicart }
+    .suffix = С ключом
+    .desc = { ent-NFVehicleJanicart.desc }
