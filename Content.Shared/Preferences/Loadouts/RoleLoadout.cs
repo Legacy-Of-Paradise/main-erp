@@ -138,6 +138,13 @@ public sealed partial class RoleLoadout : IEquatable<RoleLoadout>
                 groupRemove.Add(group);
                 continue;
             }
+#if !LOP
+            if (groupProto.ID.ToString().Contains("Lichnie"))
+            {
+                groupRemove.Add(group);
+                continue;
+            }
+#endif
             // LOP edit end
 
             var loadouts = groupLoadouts[..Math.Min(groupLoadouts.Count, groupProto.MaxLimit)];
