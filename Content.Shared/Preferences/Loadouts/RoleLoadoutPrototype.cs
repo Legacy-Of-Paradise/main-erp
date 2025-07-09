@@ -50,7 +50,7 @@ public sealed partial class RoleLoadoutPrototype : IPrototype
 #if LOP
                 moduled = true;
 #endif
-                if (!(protoid.Contains("Sponsor") || protoid.Contains("Lichnie") && !moduled)) //добавляем группу в том случае, если ее возможно добавить
+                if (!((protoid.Contains("Sponsor") || protoid.Contains("Lichnie")) && !moduled)) // Add if not (Sponsor/Lichnie AND LOP is not active)
                 {
                     _sortedGroups.Add(new ProtoId<LoadoutGroupPrototype>(protoid));
                 }
