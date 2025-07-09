@@ -279,6 +279,10 @@ namespace Content.Server.Preferences.Managers
         // Should only be called via UserDbDataManager.
         public async Task LoadData(ICommonSession session, CancellationToken cancel)
         {
+#if LOP
+            await _sponsors.WaitForSponsorInfoLoaded(session.UserId);
+#endif
+
             if (!ShouldStorePrefs(session.Channel.AuthType))
             {
                 // LOP edit start
@@ -302,16 +306,9 @@ namespace Content.Server.Preferences.Managers
             else
             {
                 var prefsData = new PlayerPrefData();
-                var loadTask = LoadPrefs();
                 _cachedPlayerPrefs[session.UserId] = prefsData;
 
-                await loadTask;
-
-                async Task LoadPrefs()
-                {
-                    var prefs = await GetOrCreatePreferencesAsync(session.UserId, cancel);
-                    prefsData.Prefs = prefs;
-                }
+                prefsData.Prefs = await GetOrCreatePreferencesAsync(session.UserId, cancel);
             }
         }
 
