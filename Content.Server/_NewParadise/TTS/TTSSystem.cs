@@ -70,6 +70,11 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void OnAnnounceRequest(TTSAnnouncementEvent ev)
     {
+        if (!_isEnabled || string.IsNullOrEmpty(_apiUrl) || args.Message.Length > MaxMessageChars)
+        {
+            return;
+        }
+        
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var ttsPrototype))
             return;
 
