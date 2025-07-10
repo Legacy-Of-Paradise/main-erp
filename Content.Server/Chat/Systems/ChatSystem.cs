@@ -1,7 +1,7 @@
 using System.Globalization;
 using System.Linq;
 using System.Text;
-using Content.Server._NewParadise.TTS;
+using Content.Server._NewParadise.TTS; // LOP edit
 using Content.Server.Administration.Logs;
 using Content.Server.Administration.Managers;
 using Content.Server.Chat.Managers;
@@ -340,10 +340,10 @@ public sealed partial class ChatSystem : SharedChatSystem
             _audio.PlayGlobal(announcementSound == null ? DefaultAnnouncementSound : _audio.ResolveSound(announcementSound), Filter.Broadcast(), true, AudioParams.Default.WithVolume(-2f));
         }
 
-        // LOP-EDIT
+        // LOP edit start
         var ttsEv = new TTSAnnouncementEvent(message, "glados", null, true);
         RaiseLocalEvent(ttsEv);
-        // LOP-EDIT
+        // LOP edit end
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Global station announcement from {sender}: {message}");
     }
@@ -376,10 +376,10 @@ public sealed partial class ChatSystem : SharedChatSystem
             _audio.PlayGlobal(announcementSound?.ToString() ?? DefaultAnnouncementSound, filter, true, AudioParams.Default.WithVolume(-2f));
         }
 
-        // LOP-EDIT
+        // LOP edit start
         var ttsEv = new TTSAnnouncementEvent(message, "glados", null, true);
         RaiseLocalEvent(ttsEv);
-        // LOP-EDIT
+        // LOP edit end
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement from {sender}: {message}");
     }
@@ -423,10 +423,10 @@ public sealed partial class ChatSystem : SharedChatSystem
         }
 
 
-        // LOP-EDIT
+        // LOP edit start
         var ttsEv = new TTSAnnouncementEvent(message, "glados", null, true);
         RaiseLocalEvent(ttsEv);
-        // LOP-EDIT
+        // LOP edit end
 
         _adminLogger.Add(LogType.Chat, LogImpact.Low, $"Station Announcement on {station} from {sender}: {message}");
     }
