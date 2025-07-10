@@ -2,7 +2,7 @@
   id: StandDart
   mapName: 'StandDart Station'
   mapPath: /Maps/_NewParadise/StandDart.yml
-  minPlayers: 0
+  minPlayers: 35
   stations:
     StandDart:
       stationProto: StandardNanotrasenStation
