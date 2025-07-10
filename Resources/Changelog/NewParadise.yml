@@ -553,3 +553,12 @@
   id: 45
   time: '2025-07-09T16:29:59.0000000+00:00'
   url: https://github.com/Legacy-Of-Paradise/main-erp/pull/100
+- author: rhailrake
+  changes:
+  - message: "\u0414\u043E\u0431\u0430\u0432\u043B\u0435\u043D \u0442\u0442\u0441\
+      \ \u043A\u043E\u043D\u0441\u043E\u043B\u044F\u043C \u0441\u0432\u044F\u0437\u0438\
+      !"
+    type: Add
+  id: 46
+  time: '2025-07-10T15:59:23.0000000+00:00'
+  url: https://github.com/Legacy-Of-Paradise/main-erp/pull/105
