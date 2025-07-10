@@ -70,7 +70,7 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void OnAnnounceRequest(TTSAnnouncementEvent ev)
     {
-        if (!_isEnabled || string.IsNullOrEmpty(_apiUrl) || args.Message.Length > MaxMessageChars)
+        if (!_isEnabled || string.IsNullOrEmpty(_apiUrl) || ev.Message.Length > MaxMessageChars)
         {
             return;
         }
