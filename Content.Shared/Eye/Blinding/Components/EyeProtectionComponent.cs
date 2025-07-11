@@ -1,9 +1,11 @@
+using Robust.Shared.GameStates;
+
 namespace Content.Shared.Eye.Blinding.Components;
 
 /// <summary>
 /// For welding masks, sunglasses, etc.
 /// </summary>
-[RegisterComponent]
+[RegisterComponent, NetworkedComponent]
 public sealed partial class EyeProtectionComponent : Component
 {
     /// <summary>

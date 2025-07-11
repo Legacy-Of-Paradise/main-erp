@@ -1,5 +1,7 @@
 using Content.Shared.Interaction;
 using Robust.Shared.Containers;
+using Robust.Shared.GameObjects;
+using Robust.Shared.IoC;
 using Robust.Shared.Timing;
 
 namespace Content.Shared._ADT.ModSuits;
@@ -92,7 +94,11 @@ public sealed class SharedModSuitModSystem : EntitySystem
             foreach (var compEntry in component.Components)
             {
                 if (!EntityManager.HasComponent(modSuit, compEntry.Value.Component.GetType()))
-                    EntityManager.AddComponent(modSuit, compEntry.Value.Component);
+                {
+                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
+                    newComponent.Owner = modSuit;
+                    EntityManager.AddComponent(modSuit, newComponent);
+                }
             }
         }
 
@@ -106,7 +112,11 @@ public sealed class SharedModSuitModSystem : EntitySystem
             foreach (var compEntry in component.Components)
             {
                 if (!EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
-                    EntityManager.AddComponent(attached.Key, compEntry.Value.Component);
+                {
+                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
+                    newComponent.Owner = attached.Key;
+                    EntityManager.AddComponent(attached.Key, newComponent);
+                }
             }
 
             if (component.RemoveComponents != null)
