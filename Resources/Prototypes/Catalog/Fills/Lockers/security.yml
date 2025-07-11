@@ -172,11 +172,10 @@
       - id: HoloprojectorSecurity
       - id: BoxEvidenceMarkers
       - id: HandLabeler
-      - id: LPPClothingOuterDetectiveHardsuit #LOP edit
-      # DeltaV edit start
+#LOP edit start
+      - id: LPPClothingOuterDetectiveHardsuit
       - id: BoxTapeRecorder
-        prob: 0.3
-      # DeltaV edit end
+#LOP edit end
 
 - type: entity
   id: ClosetBombFilled
