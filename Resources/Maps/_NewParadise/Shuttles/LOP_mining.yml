@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/11/2025 10:43:41
-  entityCount: 120
+  time: 07/11/2025 19:29:06
+  entityCount: 122
 maps: []
 grids:
 - 1
@@ -29,6 +29,7 @@ entities:
       name: NT-SAL "Копатель"
     - type: Transform
       pos: -0.52229434,-0.43310228
+      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
@@ -147,6 +148,58 @@ entities:
     - type: GridAtmosphere
       version: 2
       data:
+        tiles:
+          0,0:
+            0: 4471
+            1: 18432
+          0,-1:
+            0: 29489
+            1: 128
+          -1,0:
+            0: 204
+            1: 16913
+          0,1:
+            1: 2
+          -1,1:
+            1: 8
+          1,0:
+            1: 17
+          1,-1:
+            1: 4352
+          -1,-1:
+            1: 4384
+            0: 51328
+        uniqueMixes:
+        - volume: 2500
+          temperature: 293.15
+          moles:
+          - 21.824879
+          - 82.10312
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+        - volume: 2500
+          immutable: True
+          moles:
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
+          - 0
         chunkSize: 4
     - type: GasTileOverlay
     - type: RadiationGridResistance
@@ -481,6 +534,20 @@ entities:
     - type: Transform
       pos: 0.5,3.5
       parent: 1
+- proto: DecalSpawnerBloodSplatters
+  entities:
+  - uid: 121
+    components:
+    - type: Transform
+      pos: 0.5,0.5
+      parent: 1
+- proto: DecalSpawnerBurns
+  entities:
+  - uid: 122
+    components:
+    - type: Transform
+      pos: 0.5,-0.5
+      parent: 1
 - proto: GasPassiveVent
   entities:
   - uid: 108
@@ -730,7 +797,6 @@ entities:
       storage:
         Plasma: 3000
     - type: InsertingMaterialStorage
-      endTime: 0
 - proto: PoweredSmallLight
   entities:
   - uid: 17
