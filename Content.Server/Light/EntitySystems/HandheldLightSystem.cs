@@ -70,6 +70,7 @@ namespace Content.Server.Light.EntitySystems
         private void OnGetActions(EntityUid uid, HandheldLightComponent component, GetItemActionsEvent args)
         {
             args.AddAction(ref component.ToggleActionEntity, component.ToggleAction);
+            Dirty(uid, component);
         }
 
         private void OnToggleAction(Entity<HandheldLightComponent> ent, ref ToggleActionEvent args)
@@ -95,6 +96,7 @@ namespace Content.Server.Light.EntitySystems
             var component = ent.Comp;
             _actions.AddAction(ent, ref component.ToggleActionEntity, component.ToggleAction);
             _actions.AddAction(ent, ref component.SelfToggleActionEntity, component.ToggleAction);
+            Dirty(ent, component);
         }
 
         private void OnShutdown(EntityUid uid, HandheldLightComponent component, ComponentShutdown args)
@@ -109,6 +111,7 @@ namespace Content.Server.Light.EntitySystems
                 _actions.RemoveAction(uid, component.SelfToggleActionEntity.Value);
                 component.SelfToggleActionEntity = null;
             }
+            Dirty(uid, component);
         }
 
         private byte? GetLevel(Entity<HandheldLightComponent> ent)

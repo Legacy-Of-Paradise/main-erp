@@ -520,7 +520,7 @@ public sealed class ModSuitSystem : EntitySystem
         }
         modSuit.Comp.ModEnergyModifyedUsing = modSuit.Comp.ModEnergyBaseUsing * attachedCount;
         celldraw.DrawRate = modSuit.Comp.ModEnergyModifyedUsing;
-        UpdateUserInterface(modSuit.Owner, modSuit.Comp);
+        UpdateUserInterface(modSuit.Owner, modSuit.Comp); // UI apdts
     }
     private void EquipClothing(EntityUid user, Entity<ModSuitComponent> modSuit, EntityUid clothing, string slot)
     {
