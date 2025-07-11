@@ -95,9 +95,11 @@ public sealed class SharedModSuitModSystem : EntitySystem
             {
                 if (!EntityManager.HasComponent(modSuit, compEntry.Value.Component.GetType()))
                 {
+                    // LOP edit start
                     var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
                     newComponent.Owner = modSuit;
                     EntityManager.AddComponent(modSuit, newComponent);
+                    // LOP edit end
                 }
             }
         }
@@ -113,9 +115,11 @@ public sealed class SharedModSuitModSystem : EntitySystem
             {
                 if (!EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
                 {
+                    // LOP edit start
                     var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
                     newComponent.Owner = attached.Key;
                     EntityManager.AddComponent(attached.Key, newComponent);
+                    // LOP edit end
                 }
             }
 
