@@ -1,0 +1,43 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "Created by discord:prazat911",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "piercing_brow_l",
+            "directions": 4
+
+        },
+        {    "name": "piercing_brow_r",
+            "directions": 4
+
+        },
+        {    "name": "piercing_ear_l",
+            "directions": 4
+
+        },
+        {    "name": "piercing_ear_r",
+            "directions": 4
+
+        },
+        {    "name": "piercing_navel",
+            "directions": 4
+
+        },
+        {    "name": "piercing_nipple",
+            "directions": 4
+
+        },
+        {    "name": "piercing_nipple_l",
+            "directions": 4
+
+        },
+        {    "name": "piercing_nipple_r",
+            "directions": 4
+        }
+    ]
+}

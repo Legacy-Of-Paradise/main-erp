@@ -26,7 +26,6 @@
  - type: startingGear
    id: LPPBlueShieldOfficerGear
    equipment:
-     jumpsuit: LPPClothingUniformJumpsuitBlueshield
      head: LPPClothingHeadHatBeretBlueshield
      shoes: ClothingShoesBootsCombatFilled
      eyes: LPPBlueHudGlasses
@@ -38,7 +37,6 @@
      pocket1: LPPBlueshieldlaser
      pocket2: HandheldCrewMonitor
      belt: ClothingBeltSecurityFilled
-     back: LPPClothingBackpackBlueshield
    storage:
      back:
      - Flash
