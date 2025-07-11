@@ -7,6 +7,9 @@
   - type: Sprite
     sprite: _NewParadise/Objects/Weapons/Melee/rubber_buton.rsi
     state: icon
+  - type: Item
+    size: Normal
+    sprite: _NewParadise/Objects/Weapons/Melee/rubber_buton.rsi
   - type: MeleeWeapon
     wideAnimationRotation: -135
     damage:
@@ -19,9 +22,6 @@
     damage: 37
   - type: StaminaDamageOnCollide
     damage: 20
-  - type: Item
-    heldPrefix: off
-    size: Normal
   - type: DisarmMalus
     malus: 0.125
   - type: Appearance

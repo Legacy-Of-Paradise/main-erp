@@ -80,7 +80,7 @@
   - type: AmmoCounter
   - type: GunRequiresWield
   - type: Gun
-    fireRate: 0.5
+    fireRate: 2
     selectedMode: SemiAuto
     availableModes:
     - SemiAuto

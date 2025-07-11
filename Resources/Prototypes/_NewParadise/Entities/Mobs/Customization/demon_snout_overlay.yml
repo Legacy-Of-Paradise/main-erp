@@ -1,0 +1,26 @@
+- type: marking
+  id: LPPDemonFreakyTongue
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [DemonSpecies]
+  sprites:
+    - sprite: _NewParadise/Mobs/Customization/Demon/demon_snout_overlay.rsi
+      state: demon_freaky_tongue
+
+- type: marking
+  id: LPPDemonFreakyTongueFast
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [DemonSpecies]
+  sprites:
+    - sprite: _NewParadise/Mobs/Customization/Demon/demon_snout_overlay.rsi
+      state: demon_freaky_tongue_fast
+
+- type: marking
+  id: LPPDemonFreakyTongueSlow
+  bodyPart: Snout
+  markingCategory: Snout
+  speciesRestriction: [DemonSpecies]
+  sprites:
+    - sprite: _NewParadise/Mobs/Customization/Demon/demon_snout_overlay.rsi
+      state: demon_freaky_tongue_slow
