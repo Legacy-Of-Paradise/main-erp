@@ -1,7 +1,7 @@
 using Content.Shared.Interaction;
 using Robust.Shared.Containers;
-using Robust.Shared.GameObjects;
-using Robust.Shared.IoC;
+using Robust.Shared.GameObjects; // LOP edit
+using Robust.Shared.IoC; // LOP edit
 using Robust.Shared.Timing;
 
 namespace Content.Shared._ADT.ModSuits;
