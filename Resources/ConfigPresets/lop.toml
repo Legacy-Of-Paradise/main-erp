@@ -50,6 +50,7 @@ tags = "18+,lang:ru,region:eu_e,rp:med"
 [shuttle]
 auto_call_time = 90
 arrivals = true
+arrivals_map = "/Maps/_NewParadise/Misc/paradise_terminal.yml"
 arrivals_planet = false
 emergency_early_launch_allowed = true
 
