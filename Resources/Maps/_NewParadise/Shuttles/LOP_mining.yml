@@ -29,7 +29,6 @@ entities:
       name: NT-SAL "Копатель"
     - type: Transform
       pos: -0.52229434,-0.43310228
-      parent: invalid
     - type: MapGrid
       chunks:
         0,0:
