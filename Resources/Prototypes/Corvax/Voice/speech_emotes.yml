@@ -146,16 +146,16 @@
   chatTriggers:
     - пикает
 
-- type: emote
-  id: HonkIpc
-  name: chat-emote-name-honk
-  category: Vocal
-  icon: Interface/Emotes/honk.png
-  whitelist:
-    requireAll: true
-    components:
-    - Vocal
-    - BorgChassis
-  chatMessages: ["chat-emote-msg-honk"]
-  chatTriggers:
-    - хонкает
+#- type: emote
+#  id: HonkIpc
+#  name: chat-emote-name-honk
+#  category: Vocal
+#  icon: Interface/Emotes/honk.png
+#  whitelist:
+#    requireAll: true
+#    components:
+#    - Vocal
+#    - BorgChassis
+#  chatMessages: ["chat-emote-msg-honk"]
+#  chatTriggers:
+#    - хонкает

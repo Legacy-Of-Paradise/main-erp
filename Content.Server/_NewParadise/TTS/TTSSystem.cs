@@ -70,6 +70,11 @@ public sealed partial class TTSSystem : EntitySystem
 
     private async void OnAnnounceRequest(TTSAnnouncementEvent ev)
     {
+        if (!_isEnabled || string.IsNullOrEmpty(_apiUrl) || ev.Message.Length > MaxMessageChars)
+        {
+            return;
+        }
+        
         if (!_prototypeManager.TryIndex<TTSVoicePrototype>(ev.VoiceId, out var ttsPrototype))
             return;
 
@@ -79,57 +84,7 @@ public sealed partial class TTSSystem : EntitySystem
         if (soundData == null)
             return;
 
-        Filter filter;
-        if (ev.Global)
-        {
-            filter = Filter.Broadcast();
-        }
-        else
-        {
-            var station = _stationSystem.GetOwningStation(ev.Source);
-            if (station == null)
-                return;
-
-            if (!EntityManager.TryGetComponent<StationDataComponent>(station, out var stationDataComp))
-                return;
-
-            filter = _stationSystem.GetInStation(stationDataComp);
-        }
-
-        foreach (var player in filter.Recipients)
-        {
-            if (player.AttachedEntity == null)
-                continue;
-
-            // Get emergency lights in range to broadcast from
-            var entities = _lookup.GetEntitiesInRange(player.AttachedEntity.Value, 30f)
-                .Where(HasComp<EmergencyLightComponent>)
-                .ToList();
-
-            if (entities.Count == 0)
-                return;
-
-            // Get closest emergency light
-            var entity = entities.First();
-            var range = new Vector2(100f);
-
-            foreach (var item in entities)
-            {
-                var itemSource = _xforms.GetWorldPosition(Transform(item));
-                var playerSource = _xforms.GetWorldPosition(Transform(player.AttachedEntity.Value));
-
-                var distance = playerSource - itemSource;
-
-                if (range.Length() > distance.Length())
-                {
-                    range = distance;
-                    entity = item;
-                }
-            }
-
-            RaiseNetworkEvent(new PlayTTSEvent(GetNetEntity(entity), soundData, true), Filter.SinglePlayer(player),
-                false);
-        }
+        RaiseNetworkEvent(new PlayTTSGlobalEvent(soundData, true));
     }
 
     private async void OnRequestTTS(MsgRequestTTS ev)

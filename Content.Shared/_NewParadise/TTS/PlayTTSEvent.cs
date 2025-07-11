@@ -16,6 +16,15 @@ public sealed class PlayTTSEvent(NetEntity uid, byte[] data, bool boostVolume, b
 }
 
 [Serializable, NetSerializable]
+// ReSharper disable once InconsistentNaming
+public sealed class PlayTTSGlobalEvent(byte[] data, bool boostVolume) : EntityEventArgs
+{
+    public byte[] Data { get; } = data;
+
+    public bool BoostVolume { get; } = boostVolume;
+}
+
+[Serializable, NetSerializable]
 public sealed class PlayPreviewTTSEvent : EntityEventArgs
 {
     public PlayPreviewTTSEvent(byte[] data)

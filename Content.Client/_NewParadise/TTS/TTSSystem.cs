@@ -32,7 +32,13 @@ public sealed class TTSSystem : EntitySystem
     {
         _cfg.OnValueChanged(NewParadiseCvars.TtsVolume, OnTtsVolumeChanged, true);
         SubscribeNetworkEvent<PlayTTSEvent>(OnPlayTTS);
+        SubscribeNetworkEvent<PlayTTSGlobalEvent>(OnPlayTTSGlobal);
         SubscribeNetworkEvent<PlayPreviewTTSEvent>(OnPlayPreview);
+    }
+
+    private void OnPlayTTSGlobal(PlayTTSGlobalEvent ev)
+    {
+        PlayTTSGlobal(ev.Data, ev.BoostVolume ? _volume + 5 : _volume);
     }
 
     private void OnPlayPreview(PlayPreviewTTSEvent ev)
@@ -89,6 +95,22 @@ public sealed class TTSSystem : EntitySystem
     {
         _volume = volume;
     }
+
+    public void PlayTTSGlobal(byte[] data, float? overrideVolume = null)
+    {
+        if (_volume <= 0)
+            return;
+
+        var stream = CreateAudioStream(data);
+
+        var audioParams = new AudioParams
+        {
+            Volume = overrideVolume ?? _volume
+        };
+
+        _audioSystem.PlayGlobal(stream, null, audioParams);
+    }
+
 
     private void OnPlayTTS(PlayTTSEvent ev)
     {
