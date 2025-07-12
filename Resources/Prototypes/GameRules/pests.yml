@@ -23,8 +23,6 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
     earliestStart: 15
     weight: 6
     duration: 50
@@ -46,8 +44,6 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
     earliestStart: 15
     weight: 6
     duration: 50
@@ -72,8 +68,6 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
     weight: 6
     duration: 50
   - type: VentCrittersRule
@@ -89,8 +83,6 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
     weight: 6
     duration: 50
   - type: VentCrittersRule
@@ -108,8 +100,6 @@
   components:
   - type: StationEvent
     startAnnouncement: station-event-vent-creatures-start-announcement
-    startAudio:
-      path: /Audio/Announcements/attention.ogg
     earliestStart: 15
     weight: 6
     duration: 50
