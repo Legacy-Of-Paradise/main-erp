@@ -22576,7 +22576,7 @@ entities:
       pos: -0.5,-12.5
       parent: 2
     - type: WarpPoint
-      location: Terminal
+      location: Терминал
 - proto: WaterTankFull
   entities:
   - uid: 1111

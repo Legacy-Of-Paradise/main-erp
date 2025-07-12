@@ -63,7 +63,6 @@ marking-MakeupNailPolishLeft-nail_polish_l = Лак для ногтей (лев�
 marking-MakeupNailPolishLeft = Лак для ногтей (левый)
 marking-MakeupNailPolishRight-nail_polish_r = Лак для ногтей (правый)
 marking-MakeupNailPolishRight = Лак для ногтей (правый)
-
 # Пирсинг
 marking-HumanPiercingEarL = Пирсинг, левое ухо
 marking-HumanPiercingEarL-piercing_ear_l = Пирсинг
@@ -77,7 +76,6 @@ marking-HumanPiercingNippleR = Пирсинг, правый сосок
 marking-HumanPiercingNippleR-piercing_nipple_r = Пирсинг
 marking-HumanPiercingNipple = Пирсинг, соски
 marking-HumanPiercingNipple-piercing_nipple = Пирсинг
-
 # Аргументации
 marking-AugmentsRoboticArmRight-r_roboarm = Аугментация, правая рука
 marking-AugmentsRoboticArmRight = Аугментация, правая рука (Робот)
@@ -123,7 +121,6 @@ marking-Terminator = Аугментация, Терминатор
 marking-Terminator-terminator = Терминатор
 marking-Iron_jaw = Аугментация, Стальная челюсть
 marking-Iron_jaw-iron_jaw = Стальная челюсть
-
 # Прочее
 marking-ADTHumanElfEars = Эльфийские уши, Человек
 marking-ADTHumanElfEars-elf_ears = Эльфийские уши
@@ -178,7 +175,6 @@ marking-ADTLegTwistingRight = Скрученный шрам, правая ног
 marking-ADTLegTwistingRight-leg_r_twisting = Скрученный шрам, правая нога
 marking-ADTTorsoIncision = Разрез на туловище
 marking-ADTTorsoIncision-torso_incision = Разрез на туловище
-
 # Уши
 marking-DemonCowEars = Аркана, уши (Коровьи)
 marking-DemonCowEars-cow_ears = Уши
@@ -186,7 +182,6 @@ marking-DemonEars = Аркана, уши (Демонические)
 marking-DemonEars-demon_ears = Уши
 marking-DemonElfEars = Аркана, уши (Эльфийские)
 marking-DemonElfEars-ears_elf = Уши
-
 # Хвост
 marking-DemomTail1 = Аркана, хвост (Демонические)
 marking-DemomTail1-demon_tail = Хвост
@@ -194,7 +189,6 @@ marking-DemomTailLong = Аркана, хвост (Длинный демонич�
 marking-DemomTailLong-long = Хвост
 marking-DemomTailUp = Аркана, хвост (Демонические вверх)
 marking-DemomTailUp-up = Хвост
-
 # Туловище
 marking-DemonChestCowSpots = Аркана, туловище (Коровьи пятна)
 marking-DemonChestCowSpots-cow_spots = Пятна
@@ -208,16 +202,13 @@ marking-DemonChestTreeLines = Аркана, туловище (Древесные
 marking-DemonChestTreeLines-tree_lines = Линии
 marking-DemonChestTrinitySpots = Аркана, туловище (Троичные пятна)
 marking-DemonChestTrinitySpots-trinity_spots = Пятна
-
 # Борода
 marking-DemonGoatee = Аркана, Козлиная бородка
-
 # Глаза
 marking-_NewParadiseDemonrigth_eye = Аркана, Правый глаз
 marking-_NewParadiseDemonrigth_eye-tattoo_eye_r = Глаз
 marking-_NewParadiseDemonleft_eye = Аркана, Левый глаз
 marking-_NewParadiseDemonleft_eye-tattoo_eye_l = Глаз
-
 # Рога
 marking-DemonCowHorns = Аркана, рога (Коровьи)
 marking-DemonCowHorns-cow_horns = Рога
@@ -241,7 +232,6 @@ marking-DemonHornsRam = Аркана, рога (Бараньи)
 marking-DemonHornsRam-horns_ram = Рога
 marking-DemonHornsUnicorn = Аркана, рога (Единорожьи)
 marking-DemonHornsUnicorn-horns_unicorn = Рога
-
 # Рога 32х64
 marking-DemonHornsBackwardHorns = Аркана, рога (Обратные)
 marking-DemonHornsBackwardHorns-backward_horns = Рога
@@ -255,7 +245,6 @@ marking-DemonHornsDevilPrime2 = Аркана, рога (Прайм, 2)
 marking-DemonHornsDevilPrime2-devil_prime2 = Рога
 marking-DemonHornsFat_Horn = Аркана, рога (Толстые)
 marking-DemonHornsFat_Horn-fat_horn = Рога
-
 marking-LPPDemonFreakyTongue = Язык суккуба
 marking-LPPDemonFreakyTongue-demon_freaky_tongue = Язык
 marking-LPPDemonFreakyTongueFast = Язык суккуба (Быстрый)
