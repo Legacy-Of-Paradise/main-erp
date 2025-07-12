@@ -5,7 +5,7 @@ meta:
   forkId: ""
   forkVersion: ""
   time: 07/11/2025 10:16:15
-  entityCount: 38674
+  entityCount: 38673
 maps:
 - 263
 grids:
@@ -14693,15 +14693,6 @@ entities:
           damping: 432.06168
           stiffness: 3878.1765
     - type: ImplicitRoof
-- proto: ADTClothingModsuitBackBlueShield
-  entities:
-  - uid: 14518
-    components:
-    - type: Transform
-      parent: 8109
-    - type: Physics
-      canCollide: False
-    - type: InsideEntityStorage
 - proto: ADTWeaponCutter
   entities:
   - uid: 14516
