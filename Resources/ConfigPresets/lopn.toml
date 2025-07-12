@@ -6,6 +6,7 @@ limit = 25.0
 
 [game]
 map_pool = "LPPMapPool"
+secret_weight_prototype = "CorvaxSecretDefault"
 soft_max_players = "111"
 lobbyenabled = true
 panic_bunker.min_account_age = 1440

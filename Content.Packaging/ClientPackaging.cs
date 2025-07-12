@@ -1,4 +1,4 @@
-﻿using System.Diagnostics;
+﻿﻿using System.Diagnostics;
 using System.IO.Compression;
 using Robust.Packaging;
 using Robust.Packaging.AssetProcessing;
@@ -10,7 +10,6 @@ namespace Content.Packaging;
 
 public static class ClientPackaging
 {
-    private static readonly bool UseSecrets = File.Exists(Path.Combine("Secrets", "CorvaxSecrets.sln")); // Corvax-Secrets
     /// <summary>
     /// Be advised this can be called from server packaging during a HybridACZ build.
     /// </summary>
@@ -72,40 +71,15 @@ public static class ClientPackaging
 
         var inputPass = graph.Input;
 
-        // Corvax-Secrets-Start: Add Corvax interfaces to Magic ACZ
-        var assemblies = new List<string> { "Content.Client", "Content.Shared", "Content.Shared.Database" };
-        if (UseSecrets)
-            assemblies.AddRange(new[] { "Content.Corvax.Shared", "Content.Corvax.Client" });
-        // Corvax-Secrets-End
-
         await RobustSharedPackaging.WriteContentAssemblies(
             inputPass,
             contentDir,
             "Content.Client",
-            assemblies, // Corvax-Secrets
+            new[] { "Content.Client", "Content.Shared", "Content.Shared.Database" },
             cancel: cancel);
 
-        await WriteClientResources(contentDir, inputPass, cancel); // Corvax-Secrets: Support content resource ignore to ignore server-only prototypes
+        await RobustClientPackaging.WriteClientResources(contentDir, inputPass, cancel);
 
         inputPass.InjectFinished();
     }
-
-    // Corvax-Secrets-Start
-    public static IReadOnlySet<string> ContentClientIgnoredResources { get; } = new HashSet<string>
-    {
-        "CorvaxSecretsServer"
-    };
-
-    private static async Task WriteClientResources(
-        string contentDir,
-        AssetPass pass,
-        CancellationToken cancel = default)
-    {
-        var ignoreSet = RobustClientPackaging.ClientIgnoredResources
-            .Union(RobustSharedPackaging.SharedIgnoredResources)
-            .Union(ContentClientIgnoredResources).ToHashSet();
-
-        await RobustSharedPackaging.DoResourceCopy(Path.Combine(contentDir, "Resources"), pass, ignoreSet, cancel: cancel);
-    }
-    // Corvax-Secrets-End
 }
