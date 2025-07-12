@@ -1,2 +1,2 @@
-objective-condition-steal-smsliver-title = Отрежьте кусочек от кристалла суперматерии.
-objective-condition-steal-smsliver-description = Используйте любой режущий инструмент, который попадется под руку. Рекомендуется использовать скальпель. Кроме того, не умирайте от радиационного отравления.
+objective-condition-steal-smsliver-title = Cut off a sliver from the supermatter crystal.
+objective-condition-steal-smsliver-description = Use any cutting tool that comes in handy. A scalpel is more recommended. Also, don't die of radiation poisoning.
