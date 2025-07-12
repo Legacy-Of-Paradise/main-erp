@@ -1,7 +1,5 @@
 using Content.Shared.Interaction;
 using Robust.Shared.Containers;
-using Robust.Shared.GameObjects; // LOP edit
-using Robust.Shared.IoC; // LOP edit
 using Robust.Shared.Timing;
 
 namespace Content.Shared._ADT.ModSuits;
@@ -94,13 +92,7 @@ public sealed class SharedModSuitModSystem : EntitySystem
             foreach (var compEntry in component.Components)
             {
                 if (!EntityManager.HasComponent(modSuit, compEntry.Value.Component.GetType()))
-                {
-                    // LOP edit start
-                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
-                    newComponent.Owner = modSuit;
-                    EntityManager.AddComponent(modSuit, newComponent);
-                    // LOP edit end
-                }
+                    EntityManager.AddComponent(modSuit, compEntry.Value.Component);
             }
         }
 
@@ -114,13 +106,7 @@ public sealed class SharedModSuitModSystem : EntitySystem
             foreach (var compEntry in component.Components)
             {
                 if (!EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
-                {
-                    // LOP edit start
-                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
-                    newComponent.Owner = attached.Key;
-                    EntityManager.AddComponent(attached.Key, newComponent);
-                    // LOP edit end
-                }
+                    EntityManager.AddComponent(attached.Key, compEntry.Value.Component);
             }
 
             if (component.RemoveComponents != null)
