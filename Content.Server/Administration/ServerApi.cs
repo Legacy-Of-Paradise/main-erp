@@ -69,7 +69,7 @@ public sealed partial class ServerApi : IPostInjectInit
         _sawmill = _logManager.GetSawmill("serverApi");
 
         // Get
-        RegisterActorHandler(HttpMethod.Get, "/admin/info", InfoHandler);
+        RegisterHandler(HttpMethod.Get, "/admin/info", InfoHandler); // LOP edit
         RegisterHandler(HttpMethod.Get, "/admin/game_rules", GetGameRules);
         RegisterHandler(HttpMethod.Get, "/admin/presets", GetPresets);
 
@@ -490,7 +490,7 @@ public sealed partial class ServerApi : IPostInjectInit
     /// <summary>
     ///     Handles fetching information.
     /// </summary>
-    private async Task InfoHandler(IStatusHandlerContext context, Actor actor)
+    private async Task InfoHandler(IStatusHandlerContext context) // LOP edit
     {
         /*
         Information to display

@@ -1,5 +1,7 @@
 using Content.Shared.Interaction;
 using Robust.Shared.Containers;
+using Robust.Shared.GameObjects; // LOP edit
+using Robust.Shared.IoC; // LOP edit
 using Robust.Shared.Timing;
 
 namespace Content.Shared._ADT.ModSuits;
@@ -85,58 +87,96 @@ public sealed class SharedModSuitModSystem : EntitySystem
     }
     public bool ActivateModule(EntityUid modSuit, EntityUid module, ModSuitModComponent component, ModSuitComponent modcomp)
     {
-        //ЛЮБЫЕ МАНИПУЛЯЦИИ С ИНТЕРФЕЙСАМИ РАБОТАЮТ ТОЛЬКО ЧЕРЕЗ ЭТИ ДВА МЕТОДА. ДАЖЕ НЕ ПЫТАЙТЕСЬ СДЕЛАТЬ ЭТО ВСЁ ВНЕ ИХ
         var attachedClothings = modcomp.ClothingUids;
+
         if (component.Slots.Contains("MODcore"))
         {
-            EntityManager.AddComponents(modSuit, component.Components);
+            foreach (var compEntry in component.Components)
+            {
+                if (!EntityManager.HasComponent(modSuit, compEntry.Value.Component.GetType()))
+                {
+                    // LOP edit start
+                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
+                    newComponent.Owner = modSuit;
+                    EntityManager.AddComponent(modSuit, newComponent);
+                    // LOP edit end
+                }
+            }
         }
+
         component.Active = true;
+
         foreach (var attached in attachedClothings)
         {
             if (!component.Slots.Contains(attached.Value))
                 continue;
-            EntityManager.AddComponents(attached.Key, component.Components);
+
+            foreach (var compEntry in component.Components)
+            {
+                if (!EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
+                {
+                    // LOP edit start
+                    var newComponent = (Component)IoCManager.Resolve<IComponentFactory>().GetComponent(compEntry.Value.Component.GetType());
+                    newComponent.Owner = attached.Key;
+                    EntityManager.AddComponent(attached.Key, newComponent);
+                    // LOP edit end
+                }
+            }
+
             if (component.RemoveComponents != null)
-                EntityManager.RemoveComponents(attached.Key, component.RemoveComponents);
+            {
+                foreach (var compEntry in component.RemoveComponents)
+                {
+                    if (EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
+                        EntityManager.RemoveComponent(attached.Key, compEntry.Value.Component.GetType());
+                }
+            }
         }
+
         Dirty(module, component);
         Dirty(modSuit, modcomp);
-
-        // этот таймер нужен в связи с тем, что обновление интерфейса происходит до того, как на клиент передаёт информацию о включении модуля
-        Timer.Spawn(1, () =>
-        {
-            _mod.UpdateUserInterface(modSuit, modcomp);
-        });
+        Timer.Spawn(1, () => _mod.UpdateUserInterface(modSuit, modcomp));
         return true;
     }
+
     public bool DeactivateModule(EntityUid modSuit, EntityUid module, ModSuitModComponent component, ModSuitComponent modcomp)
     {
-        //ЛЮБЫЕ МАНИПУЛЯЦИИ С ИНТЕРФЕЙСАМИ РАБОТАЮТ ТОЛЬКО ЧЕРЕЗ ЭТИ ДВА МЕТОДА. ДАЖЕ НЕ ПЫТАЙТЕСЬ СДЕЛАТЬ ЭТО ВСЁ ВНЕ ИХ
-
         var attachedClothings = modcomp.ClothingUids;
+
         if (component.Slots.Contains("MODcore"))
         {
-            EntityManager.RemoveComponents(modSuit, component.Components);
+            foreach (var compEntry in component.Components)
+            {
+                if (EntityManager.HasComponent(modSuit, compEntry.Value.Component.GetType()))
+                    EntityManager.RemoveComponent(modSuit, compEntry.Value.Component.GetType());
+            }
         }
 
         foreach (var attached in attachedClothings)
         {
             if (!component.Slots.Contains(attached.Value))
                 continue;
-            EntityManager.RemoveComponents(attached.Key, component.Components);
+
+            foreach (var compEntry in component.Components)
+            {
+                if (EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
+                    EntityManager.RemoveComponent(attached.Key, compEntry.Value.Component.GetType());
+            }
+
             if (component.RemoveComponents != null)
-                EntityManager.AddComponents(attached.Key, component.RemoveComponents);
-            break;
+            {
+                foreach (var compEntry in component.RemoveComponents)
+                {
+                    if (!EntityManager.HasComponent(attached.Key, compEntry.Value.Component.GetType()))
+                        EntityManager.AddComponent(attached.Key, compEntry.Value.Component);
+                }
+            }
         }
+
         component.Active = false;
         Dirty(module, component);
         Dirty(modSuit, modcomp);
-        // этот таймер нужен в связи с тем, что обновление интерфейса происходит до того, как на клиент передаёт информацию о включении модуля
-        Timer.Spawn(1, () =>
-        {
-            _mod.UpdateUserInterface(modSuit, modcomp);
-        });
+        Timer.Spawn(1, () => _mod.UpdateUserInterface(modSuit, modcomp));
         return true;
     }
 }

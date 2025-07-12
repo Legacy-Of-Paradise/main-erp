@@ -1,0 +1,53 @@
+- type: marking
+  id: HumanPiercingEarL
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Human]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_ear_l
+
+- type: marking
+  id: HumanPiercingEarR
+  bodyPart: Head
+  markingCategory: HeadSide
+  speciesRestriction: [Human]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_ear_r
+
+- type: marking
+  id: HumanPiercingNavel
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, DemonSpecies]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_navel
+
+- type: marking
+  id: HumanPiercingNippleL
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, DemonSpecies]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_nipple_l
+
+- type: marking
+  id: HumanPiercingNippleR
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, DemonSpecies]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_nipple_r
+
+- type: marking
+  id: HumanPiercingNipple
+  bodyPart: Chest
+  markingCategory: Chest
+  speciesRestriction: [Human, DemonSpecies]
+  sprites:
+  - sprite: _NewParadise/Mobs/Customization/Human/custom.rsi
+    state: piercing_nipple

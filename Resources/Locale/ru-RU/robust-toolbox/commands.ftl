@@ -430,3 +430,20 @@ cmd-vfs_ls-help =
     vfs_list /Assemblies
 cmd-vfs_ls-err-args = Нужен ровно 1 аргумент.
 cmd-vfs_ls-hint-path = <path>
+
+cmd-reloadtiletextures-desc = Перезагружает атлас текстур тайлов, чтобы разрешить горячую перезагрузку спрайтов тайлов.
+cmd-reloadtiletextures-help = Использование: reloadtiletextures
+
+cmd-audio_length-desc = Показывает длительность аудиофайла.
+cmd-audio_length-help = Использование: audio_length { cmd-audio_length-arg-file-name }
+cmd-audio_length-arg-file-name = <имя файла>
+
+cmd-pvs-override-info-desc = Выводит информацию о любых PVS-переопределениях, связанных с сущностью.
+cmd-pvs-override-info-empty = Сущность {$nuid} не имеет PVS-переопределений.
+cmd-pvs-override-info-global = Сущность {$nuid} имеет глобальное переопределение.
+cmd-pvs-override-info-clients = Сущность {$nuid} имеет переопределение сессии для {$clients}.
+
+cmd-localization_set_culture-desc = Устанавливает DefaultCulture для LocalizationManager клиента.
+cmd-localization_set_culture-help = Использование: localization_set_culture <cultureName>
+cmd-localization_set_culture-culture-name = <имя культуры>
+cmd-localization_set_culture-changed = Локализация изменена на { $code } ({ $nativeName } / { $englishName })

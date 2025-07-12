@@ -324,6 +324,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitInteq
   - type: StaticPrice
     price: 250
+  - type: DNALocker
 
 - type: entity
   parent: ClothingOuterHardsuitBase
@@ -475,6 +476,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkTrooper
   - type: StaticPrice
     price: 250
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -514,6 +516,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkElite
   - type: StaticPrice
     price: 500
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -553,6 +556,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkMedic
   - type: StaticPrice
     price: 300
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -592,6 +596,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitDonkCommander
   - type: StaticPrice
     price: 500
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -632,6 +637,7 @@
   - type: FootstepModifier
     footstepSoundCollection:
       collection: LPPHeavyHardsuitMovement
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -671,6 +677,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunBasic
   - type: StaticPrice
     price: 250
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -710,6 +717,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunElite
   - type: Reflect
     reflectProb: 0.45
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -748,6 +756,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitCybersunCommander
   - type: Reflect
     reflectProb: 0.025
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -787,6 +796,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexCommander
   - type: Reflect
     reflectProb: 0.05
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -824,7 +834,7 @@
   - type: HeldSpeedModifier
   - type: ToggleableClothing
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexElite
-
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -864,6 +874,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexMedic
   - type: StaticPrice
     price: 250
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -903,6 +914,7 @@
     clothingPrototype: LPPClothingHeadHelmetHardsuitGorlexSoldier
   - type: StaticPrice
     price: 2500
+  - type: DNALocker
 
 - type: entity
   parent: [ClothingOuterHardsuitBase]
@@ -1261,3 +1273,4 @@
     slot: head
   - type: StaticPrice
     price: 125
+  - type: DNALocker

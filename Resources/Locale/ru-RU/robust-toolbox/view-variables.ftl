@@ -9,3 +9,17 @@ view-variable-instance-entity-client-components-search-bar-placeholder = Пои�
 view-variable-instance-entity-server-components-search-bar-placeholder = Поиск
 view-variable-instance-entity-add-window-server-components = Добавить компонент [Сервер]
 view-variable-instance-entity-add-window-client-components = Добавить компонен [Клиент]
+
+## SoundSpecifier
+vv-sound-none = Нет
+vv-sound-path = Путь
+vv-sound-collection = Коллекция
+
+vv-sound-volume = Громкость
+vv-sound-pitch = Высота тона
+vv-sound-max-distance = Максимальная дистанция
+vv-sound-rolloff-factor = Фактор затухания
+vv-sound-reference-distance = Опорное расстояние
+vv-sound-loop = Зациклить
+vv-sound-play-offset = Смещение воспроизведения (с)
+vv-sound-variation = Вариация высоты тона

@@ -54,6 +54,7 @@
     clothingPrototype: LPPClothingOuterHardsuitHelmetNPZ
   - type: StaticPrice
     price: 250
+  - type: DNALocker
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
@@ -118,6 +119,7 @@
     clothingPrototype: LPPClothingOuterHardsuitHelmetSpecopsNPZ
   - type: StaticPrice
     price: 300
+  - type: DNALocker
 
 - type: entity
   parent: [ ClothingHeadHardsuitBase, ClothingHeadSuitWithLightBase ]
