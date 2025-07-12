@@ -119,7 +119,7 @@
         # Corvax-Mapping-Start
         mining: !type:GridSpawnGroup
           paths:
-          - /Maps/Corvax/Shuttles/corvax_mining.yml
+          - /Maps/_NewParadise/Shuttles/LOP_mining.yml
         # Corvax-Mapping-End
 
 - type: entity
@@ -127,7 +127,7 @@
   abstract: true
   components:
     - type: StationCentcomm
-      map: "/Maps/_NewParadise/Shuttles/LOP_mining.yml" # Corvax-Mapping
+      map: "/Maps/Corvax/corvax_centcomm.yml" # Corvax-Mapping
 
 - type: entity
   id: BaseStationEvacuation

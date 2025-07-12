@@ -97,7 +97,7 @@
   description: uplink-catalog-donk-bundle-desc
   productEntity: LPPCrateDonkFill
   cost:
-    Telecrystal: 100
+    Telecrystal: 120
   categories:
   - UplinkDisruption
   conditions:
@@ -112,7 +112,7 @@
   description: uplink-catalog-gorlex-bundle-desc
   productEntity: LPPCrateGorlexFill
   cost:
-    Telecrystal: 120
+    Telecrystal: 140
   categories:
   - UplinkDisruption
   conditions:
@@ -124,10 +124,10 @@
 - type: listing
   id: LPPUplinkCubersunBundle
   name: uplink-catalog-cybersun-bundle-name
-  description: uplink-catalog-cybersun-bundle-desc
+  description: uplink-catalog-gorlex-bundle-desc
   productEntity: LPPCrateCybersunFill
   cost:
-    Telecrystal: 140
+    Telecrystal: 160
   categories:
   - UplinkDisruption
   conditions:
@@ -135,73 +135,3 @@
     whitelist:
       tags:
       - NukeOpsUplink
-
-- type: listing
-  id: LPPUplinkModsuitBackSyndicate
-  name: uplink-catalog-modsuitsyndicate-name
-  description: uplink-catalog-modsuitsyndicate-desc
-  productEntity: ADTClothingModsuitBackSyndicate
-  cost:
-    Telecrystal: 14
-  categories:
-  - UplinkWearables
-
-- type: listing
-  id: LPPUplinkModsuitBackSyndicateCommander
-  name: uplink-catalog-modsuitsyndicatecommander-name
-  description: uplink-catalog-modsuitsyndicatecommander-desc
-  productEntity: ADTClothingModsuitBackSyndicateCommander
-  cost:
-    Telecrystal: 20
-  categories:
-  - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-
-- type: listing
-  id: LPPUplinkModsuitBackSyndicateElite
-  name: uplink-catalog-modsuitsyndicateelite-name
-  description: uplink-catalog-modsuitsyndicateelite-desc
-  productEntity: ADTClothingModsuitBackSyndicateElite
-  cost:
-    Telecrystal: 18
-  categories:
-  - UplinkWearables
-  conditions:
-  - !type:StoreWhitelistCondition
-    whitelist:
-      tags:
-      - NukeOpsUplink
-
-- type: listing
-  id: LPPUplinkModsuitModEmpProtection
-  name: uplink-catalog-modempprotection-name
-  description: uplink-catalog-modempprotection-desc
-  productEntity: ADTModsuitModEmpProtection
-  cost:
-    Telecrystal: 5
-  categories:
-  - UplinkDisruption
-
-- type: listing
-  id: LPPUplinkModsuitModStun
-  name: uplink-catalog-modstun-name
-  description: uplink-catalog-modstun-desc
-  productEntity: ADTModsuitModStun
-  cost:
-    Telecrystal: 6
-  categories:
-  - UplinkDisruption
-
-- type: listing
-  id: LPPUplinkModsuitModPowerKick
-  name: uplink-catalog-modpowerkick-name
-  description: uplink-catalog-modpowerkick-desc
-  productEntity: ADTModsuitModPowerKick
-  cost:
-    Telecrystal: 8
-  categories:
-  - UplinkDisruption

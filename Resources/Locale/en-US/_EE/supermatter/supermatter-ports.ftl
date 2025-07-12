@@ -1,14 +1,20 @@
-signal-port-name-supermatter-inactive = Неактивный
-signal-port-description-supermatter-inactive = Этот порт вызывается, когда суперматерия неактивна.
-signal-port-name-supermatter-normal = Нормальный
-signal-port-description-supermatter-normal = Этот порт вызывается, когда суперматерия подключена к сети и имеет высокую степень целостности.
-signal-port-name-supermatter-caution = Осторожность
-signal-port-description-supermatter-caution = Этот порт активируется, когда сверхматериал обладает высокой степенью целостности, но достигает опасных температур.
-signal-port-name-supermatter-warning = ВНИМАНИЕ
-signal-port-description-supermatter-warning = Этот порт вызывается, когда сверхматерия немного теряет целостность.
-signal-port-name-supermatter-danger = ОПАСНОСТЬ
-signal-port-description-supermatter-danger = Этот порт вызывается, когда сверхматерия теряет значительную часть целостности.
-signal-port-name-supermatter-emergency = ЧРЕЗВЫЧАЙНАЯ СИТУАЦИЯ
-signal-port-description-supermatter-emergency = Этот порт вызывается, когда сверхматерия в значительной степени теряет целостность.
-signal-port-name-supermatter-delaminating = РАССЛОЕНИЕ
-signal-port-description-supermatter-delaminating = Этот порт вызывается, когда сверхматерия достигает обратного отсчета времени расслаивания.
+signal-port-name-supermatter-inactive = Inactive
+signal-port-description-supermatter-inactive = This port is invoked when the supermatter is inactive.
+
+signal-port-name-supermatter-normal = Normal
+signal-port-description-supermatter-normal = This port is invoked when the supermatter is powered and at high integrity.
+
+signal-port-name-supermatter-caution = Caution
+signal-port-description-supermatter-caution = This port is invoked when the supermatter is at high integrity, but reaching dangerous temperatures.
+
+signal-port-name-supermatter-warning = Warning
+signal-port-description-supermatter-warning = This port is invoked when the supermatter has lost a small amount of integrity.
+
+signal-port-name-supermatter-danger = Danger
+signal-port-description-supermatter-danger = This port is invoked when the supermatter has lost a fair amount of integrity.
+
+signal-port-name-supermatter-emergency = Emergency
+signal-port-description-supermatter-emergency = This port is invoked when the supermatter has lost a great deal of integrity.
+
+signal-port-name-supermatter-delaminating = Delaminating
+signal-port-description-supermatter-delaminating = This port is invoked when the supermatter has reached the delamination countdown.

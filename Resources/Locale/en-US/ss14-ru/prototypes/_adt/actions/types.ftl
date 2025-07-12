@@ -1,4 +1,0 @@
-ent-ADTActionToggleMODPiece = Toggle Suit Piece
-    .desc = Remember to equip the important pieces of your suit before going into action.
-ent-ADTActionToggleMODMenu = Toggle Suit Piece
-    .desc = Remember to equip the important pieces of your suit before going into action.
