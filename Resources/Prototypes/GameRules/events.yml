@@ -213,6 +213,7 @@
       briefing:
         text: ninja-role-greeting
         color: Green
+        sound: /Audio/Misc/ninja_greeting.ogg
       components:
       - type: SpaceNinja
       - type: NpcFactionMember
@@ -261,6 +262,7 @@
       briefing:
         text: paradox-clone-role-greeting
         color: lightblue
+        sound: /Audio/Misc/paradox_clone_greeting.ogg
       mindRoles:
       - MindRoleParadoxClone
 
