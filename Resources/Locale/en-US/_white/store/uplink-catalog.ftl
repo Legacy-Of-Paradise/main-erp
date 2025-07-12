@@ -1,2 +1,3 @@
-uplink-thermal-vision-name = Прибор Термального Видения
-uplink-thermal-vision-desc = Они позволяют вам видеть живых существ независимо от препятствий, выглядя при этом как обычные солнцезащитные очки!
+uplink-thermal-vision-name = Thermal Vision Goggles
+uplink-thermal-vision-desc = They allow you to see living creatures regardless of obstacles, while looking like normal sunglasses!
+
