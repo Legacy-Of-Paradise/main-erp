@@ -21,7 +21,7 @@ public abstract class SharedChatSystem : EntitySystem
     public const char EmotesPrefix = '%'; // Corvax-Localization
     public const char EmotesAltPrefix = '*';
     // LOP edit start
-    public const char HiddenEmotesPrefix = ')';
+    public const char HiddenEmotesPrefix = '"';
     public const char AdminPrefix = '=';
     // LOP edit end
     public const char WhisperPrefix = ',';
