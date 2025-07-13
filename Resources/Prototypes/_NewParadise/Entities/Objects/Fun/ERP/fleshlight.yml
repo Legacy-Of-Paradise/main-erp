@@ -5,11 +5,12 @@
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    sprite: _NewParadise/Objects/Fun/ERP/fleshlight.rsi
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_green.rsi
     scale: 1.0, 1.0
-    layers:
-      - state: fleshlight_green
+    state: fleshlight_green
   - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_green.rsi
+    heldPrefix: fleshlight
     size: Normal
   - type: Tag
     tags:
@@ -22,8 +23,11 @@
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    layers:
-      - state: fleshlight_pink
+    state: fleshlight_pink
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_pink.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_pink.rsi
+    heldPrefix: fleshlight
 
 - type: entity
   name: fleshlight red
@@ -32,8 +36,11 @@
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    layers:
-      - state: fleshlight_red
+    state: fleshlight_red
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_red.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_red.rsi
+    heldPrefix: fleshlight
 
 - type: entity
   name: fleshlight teal
@@ -42,8 +49,11 @@
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    layers:
-      - state: fleshlight_teal
+    state: fleshlight_teal
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_teal.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_teal.rsi
+    heldPrefix: fleshlight
 
 - type: entity
   name: fleshlight yellow
@@ -52,8 +62,11 @@
   description: A hamburger bun. Round and convenient to hold.
   components:
   - type: Sprite
-    layers:
-      - state: fleshlight_yellow
+    state: fleshlight_yellow
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_yellow.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/fleshlight_yellow.rsi
+    heldPrefix: fleshlight
 
 - type: entity
   name: pillow pink round
@@ -62,8 +75,11 @@
   description: A soft pillow that is comfortable to sit on.
   components:
   - type: Sprite
-    layers:
-      - state: pillow_pink_round
+    state: pillow_pink_round
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
+    heldPrefix: fleshlight
 
 - type: entity
   name: pillow teal round
@@ -72,5 +88,8 @@
   description: A soft pillow that is comfortable to sit on.
   components:
   - type: Sprite
-    layers:
-      - state: pillow_teal_round
+    state: pillow_teal_round
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
+  - type: Item
+    sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
+    heldPrefix: fleshlight
