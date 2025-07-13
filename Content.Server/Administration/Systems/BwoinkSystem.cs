@@ -699,7 +699,7 @@ namespace Content.Server.Administration.Systems
                     oocColor = prefs.AdminOOCColor.ToHex();
                 }
 #if LOP
-                if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(senderId, out var sponsorInfo))
+                if (IoCManager.Resolve<SponsorsManager>().TryGetInfo(senderId, out var sponsorInfo) && sponsorInfo.Tier > 0)
                 {
                     sponsorColor = sponsorInfo.OOCColor;
                 }

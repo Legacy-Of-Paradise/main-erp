@@ -1,1 +1,1 @@
-research-technology-salvage-weapons-adv = Продвинутое оружие утилизаторов
+﻿research-technology-salvage-weapons-adv = Продвинутое оружие утилизаторов

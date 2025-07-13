@@ -1,1 +1,1 @@
-steal-target-supermatter-sliver = осколок суперматерии
+steal-target-supermatter-sliver = supermatter-sliver
