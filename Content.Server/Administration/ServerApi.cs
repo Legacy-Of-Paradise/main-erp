@@ -739,6 +739,7 @@ public sealed partial class ServerApi : IPostInjectInit
             // LOP edit start
             public required bool IsStealth { get; init; }
             public required bool IsAFK { get; init; }
+            // LOP edit end
         }
 
         public sealed class MapInfo
