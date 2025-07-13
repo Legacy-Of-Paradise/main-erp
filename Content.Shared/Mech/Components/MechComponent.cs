@@ -99,7 +99,7 @@ public sealed partial class MechComponent : Component
     public Container EquipmentContainer = default!;
 
     [ViewVariables]
-    public readonly string EquipmentContainerId = "mod-modules-container"; // ADT edit
+    public readonly string EquipmentContainerId = "mech-equipment-container";
 
     /// <summary>
     /// How long it takes to enter the mech.

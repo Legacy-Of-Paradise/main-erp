@@ -154,6 +154,15 @@
   components:
   - type: NavMapBeacon
     defaultText: station-beacon-captain
+    # Corvax-start
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+    # Corvax-end
 
 - type: entity
   parent: DefaultStationBeaconCommand
@@ -864,6 +873,15 @@
   components:
   - type: NavMapBeacon
     text: CentComm
+    # Corvax-start
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+    # Corvax-end
 
 - type: entity
   parent: DefaultStationBeaconGhost
@@ -872,6 +890,15 @@
   components:
   - type: NavMapBeacon
     text: Afterhours
+    # Corvax-start
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+    # Corvax-end
 
 - type: entity
   parent: DefaultStationBeaconGhost
@@ -880,6 +907,15 @@
   components:
   - type: NavMapBeacon
     text: Thunderdome
+    # Corvax-start
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+    # Corvax-end
 
 - type: entity
   parent: DefaultStationBeaconGhost
@@ -888,3 +924,12 @@
   components:
   - type: NavMapBeacon
     text: ERT
+    # Corvax-start
+  - type: Tag
+    tags:
+    - GhostOnlyWarp
+  - type: WarpPoint
+    blacklist:
+      tags:
+      - GhostOnlyWarp
+    # Corvax-end
