@@ -1,24 +1,26 @@
+using Content.Server.Atmos;
 using Content.Server.Atmos.EntitySystems;
 using Content.Shared.Atmos;
+using Content.Shared.Atmos.Reactions;
 using JetBrains.Annotations;
 
-namespace Content.Server.Atmos.Reactions
+namespace Content.Server._AruMoon.Atmos.Reactions
 {
     [UsedImplicitly]
     [DataDefinition]
-    public sealed class HydrogenFireReaction : IGasReactionEffect
+    public sealed partial class HydrogenFireReaction : IGasReactionEffect
     {
-        public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem)
+        public ReactionResult React(GasMixture mixture, IGasMixtureHolder? holder, AtmosphereSystem atmosphereSystem, float heatScale)
         {
             var initialHyperNoblium = mixture.GetMoles(Gas.HyperNoblium);
             if (initialHyperNoblium >= 5.0f && mixture.Temperature > 20f)
                 return ReactionResult.NoReaction;
 
             var energyReleased = 0f;
-            var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+            var oldHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
             var temperature = mixture.Temperature;
             var location = holder as TileAtmosphere;
-            mixture.ReactionResults[GasReaction.Fire] = 0;
+            mixture.ReactionResults[(int)GasReaction.Fire] = 0;
 
             var initialOxygen = mixture.GetMoles(Gas.Oxygen);
             var initialHydrogen = mixture.GetMoles(Gas.Hydrogen);
@@ -33,12 +35,12 @@ namespace Content.Server.Atmos.Reactions
                 mixture.AdjustMoles(Gas.Hydrogen, -burnedFuel);
                 mixture.AdjustMoles(Gas.Oxygen, -burnedFuel * 0.5f);
 
-                mixture.ReactionResults[GasReaction.Fire] += burnedFuel;
+                mixture.ReactionResults[(int)GasReaction.Fire] += burnedFuel;
             }
 
             if (energyReleased > 0)
             {
-                var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture);
+                var newHeatCapacity = atmosphereSystem.GetHeatCapacity(mixture, true);
                 if (newHeatCapacity > Atmospherics.MinimumHeatCapacity)
                     mixture.Temperature = (temperature * oldHeatCapacity + energyReleased) / newHeatCapacity;
             }
@@ -52,7 +54,7 @@ namespace Content.Server.Atmos.Reactions
                 }
             }
 
-            return mixture.ReactionResults[GasReaction.Fire] != 0 ? ReactionResult.Reacting : ReactionResult.NoReaction;
+            return mixture.ReactionResults[(int)GasReaction.Fire] != 0 ? ReactionResult.Reacting : ReactionResult.NoReaction;
         }
     }
 }

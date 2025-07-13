@@ -206,7 +206,7 @@ namespace Content.Shared.Atmos
         /// <summary>
         ///     Total number of gases. Increase this if you want to add more!
         /// </summary>
-        public const int TotalNumberOfGases = 20;
+        public const int TotalNumberOfGases = 20; // AruMoon edit
 
         /// <summary>
         ///     This is the actual length of the gases arrays in mixtures.
@@ -289,6 +289,7 @@ namespace Content.Shared.Atmos
         /// </summary>
         public const float HazardHighPressure = 550f;
 
+        // AruMoon edit start
         /// <summary>
         ///     Defines energy released in BZ formation.
         /// </summary>
@@ -333,6 +334,7 @@ namespace Content.Shared.Atmos
         public const float ProtoNitrateHydrogenConversionEnergy = 2500f;
         public const float ProtoNitrateTritiumConversionEnergy = 10000f;
         public const float ProtoNitrateBZaseConversionEnergy = 60000f;
+        // AruMoon edit end
 
         /// <summary>
         ///     Determines when the orange pressure icon is displayed.
@@ -415,6 +417,7 @@ namespace Content.Shared.Atmos
         Ammonia = 6,
         NitrousOxide = 7,
         Frezon = 8,
+        // AruMoon edit start
         BZ = 9,
         Pluoxium = 10,
         Hydrogen = 11,
@@ -426,5 +429,6 @@ namespace Content.Shared.Atmos
         Halon = 17,
         Helium = 18,
         AntiNoblium = 19
+        // AruMoon edit end
     }
 }

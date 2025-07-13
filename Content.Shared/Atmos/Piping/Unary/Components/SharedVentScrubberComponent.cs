@@ -24,6 +24,7 @@ namespace Content.Shared.Atmos.Piping.Unary.Components
             Gas.Ammonia,
             Gas.NitrousOxide,
             Gas.Frezon,
+            // AruMoon edit start
             Gas.BZ,
             Gas.Pluoxium,
             Gas.Hydrogen,
@@ -35,6 +36,7 @@ namespace Content.Shared.Atmos.Piping.Unary.Components
             Gas.Halon,
             Gas.Helium,
             Gas.AntiNoblium
+            // AruMoon edit end
         };
 
         // Presets for 'dumb' air alarm modes
