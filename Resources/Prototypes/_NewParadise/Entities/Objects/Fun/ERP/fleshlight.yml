@@ -79,7 +79,7 @@
     sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
   - type: Item
     sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_pink_round.rsi
-    heldPrefix: fleshlight
+    heldPrefix: pillow
 
 - type: entity
   name: pillow teal round
@@ -92,4 +92,4 @@
     sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
   - type: Item
     sprite: _NewParadise/Objects/Fun/ERP/Fleshlight/pillow_teal_round.rsi
-    heldPrefix: fleshlight
+    heldPrefix: pillow
