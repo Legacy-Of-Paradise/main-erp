@@ -21,7 +21,24 @@
     clothingVisuals:
       head:
         - state: equipped-HELMET
-          offset: "0, 0.15625" # пока так, если спрайты не забуту перенести на два pixel выше
+          offset: "0, 0.15625"
+  - type: StaminaDamageOnHit
+    damage: 8
+  - type: MeleeWeapon
+    wideAnimationRotation: -135
+    soundHit:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    soundNoDamage:
+      collection: Dildo
+      params:
+        variation: 0.03
+        volume: 3
+    damage:
+      types:
+        Blunt: 0
 
 - type: entity
   name: dildo canine
