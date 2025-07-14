@@ -8,7 +8,10 @@
     },
     "states": [
         {
-            "name": "green_small"
+            "name": "green_small",
+            "delays": [
+                [ 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1, 0.1 ]
+            ]
         },
         {
             "name": "buttplug-inhand-left",
