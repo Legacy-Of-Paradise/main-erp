@@ -39,6 +39,9 @@
     },
     {
       "name": "keys"
+    },
+    {
+      "name": "icon"
     }
   ]
 }
