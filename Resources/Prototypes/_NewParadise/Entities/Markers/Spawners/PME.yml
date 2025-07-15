@@ -1,0 +1,109 @@
+# PME - Personal Mobility Equipment (Средства индивидуальной мобильности)
+
+# SecWay 
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleSecway
+  name: Secway (spawner)
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/secway.rsi
+        state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleSecway
+
+# SyndicateSegway
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleSyndicateSegway
+  name: SyndicateSegway (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/syndicatesegway.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleSecway
+
+# ATV
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleATV
+  name: ATW (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/atv.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleATV
+
+# Janicart
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleJanicart
+  name: Janicart (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/janicart.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleJanicart
+
+# Wheelchair
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleWheelchair
+  name: Wheelchair (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Goobstation/Objects/Vehicles/wheelchair.rsi
+      state: vehicle_folded
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleWheelchair
+
+# Unicycle
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleUnicycle
+  name: Unicycle (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/unicycle.rsi
+      state: vehicle_unfolded
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleUnicycle
+
+# WTF Honk-chair
+- type: entity
+  parent: MarkerBase
+  id: SpawnPMEVehicleHoverchair
+  name: Hoverchair (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Goobstation/Objects/Vehicles/hoverchair.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleHoverchair
+
+
+

@@ -1,0 +1,14 @@
+ent-SpawnPMEVehicleSecway = Secway (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleSyndicateSegway = SyndicateSegway (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleATV = ATW (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleJanicart = Janicart (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleWheelchair = Wheelchair (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleUnicycle = Unicycle (spawner)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnPMEVehicleHoverchair = Hoverchair (spawner)
+    .desc = { ent-MarkerBase.desc }
