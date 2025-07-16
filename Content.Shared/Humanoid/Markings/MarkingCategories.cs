@@ -16,6 +16,7 @@ namespace Content.Shared.Humanoid.Markings
         Arms,
         Legs,
         Tail,
+        Wings, // LoP Edit for moths
         Overlay
     }
 
@@ -42,6 +43,7 @@ namespace Content.Shared.Humanoid.Markings
                 HumanoidVisualLayers.LFoot => MarkingCategories.Legs,
                 HumanoidVisualLayers.RFoot => MarkingCategories.Legs,
                 HumanoidVisualLayers.Tail => MarkingCategories.Tail,
+                HumanoidVisualLayers.Wings => MarkingCategories.Wings, // LoP Edit for moths
                 _ => MarkingCategories.Overlay
             };
         }

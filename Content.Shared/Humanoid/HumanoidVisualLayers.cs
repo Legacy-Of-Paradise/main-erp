@@ -8,6 +8,7 @@ namespace Content.Shared.Humanoid
     {
         Special, // for the cat ears
         Tail,
+        Wings, // LoP Edit for moths.
         Hair,
         FacialHair,
         Chest,
