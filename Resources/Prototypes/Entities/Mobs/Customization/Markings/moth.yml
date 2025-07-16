@@ -304,8 +304,8 @@
 #- type: marking
 #  id: MothWingsMaple
 #  # LoP Edit Start
-#  # bodyPart: Wings
-#  # markingCategory: Wings
+#  bodyPart: Wings
+#  markingCategory: Wings
 #  # LoP Edit End
 #  speciesRestriction: [Moth]
 #  sprites:

@@ -25,5 +25,4 @@ markings-category-Chest = Грудь
 markings-category-Arms = Руки
 markings-category-Legs = Ноги
 markings-category-Tail = Хвост
-markings-category-Wings = Крылья
 markings-category-Overlay = Наложение

@@ -25,5 +25,4 @@ markings-category-Chest = Chest
 markings-category-Arms = Arms
 markings-category-Legs = Legs
 markings-category-Tail = Tail
-markings-category-Wings = Wings
 markings-category-Overlay = Overlay
