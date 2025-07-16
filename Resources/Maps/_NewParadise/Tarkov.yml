@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/16/2025 18:00:39
-  entityCount: 5505
+  time: 07/16/2025 18:58:08
+  entityCount: 5530
 maps:
 - 2
 grids:
@@ -15034,6 +15034,149 @@ entities:
       - Arsenal
       - Experimental
       - CivilianServices
+- proto: DefaultStationBeaconAI
+  entities:
+  - uid: 1943
+    components:
+    - type: Transform
+      pos: 25.5,83.5
+      parent: 1
+- proto: DefaultStationBeaconArrivals
+  entities:
+  - uid: 1951
+    components:
+    - type: Transform
+      pos: 3.5,81.5
+      parent: 1
+- proto: DefaultStationBeaconAtmospherics
+  entities:
+  - uid: 1939
+    components:
+    - type: Transform
+      pos: 8.5,65.5
+      parent: 1
+- proto: DefaultStationBeaconBotany
+  entities:
+  - uid: 1941
+    components:
+    - type: Transform
+      pos: 43.5,63.5
+      parent: 1
+- proto: DefaultStationBeaconBrig
+  entities:
+  - uid: 1940
+    components:
+    - type: Transform
+      pos: 52.5,73.5
+      parent: 1
+- proto: DefaultStationBeaconCommand
+  entities:
+  - uid: 1945
+    components:
+    - type: Transform
+      pos: 38.5,48.5
+      parent: 1
+    - type: BombingTarget
+- proto: DefaultStationBeaconCryosleep
+  entities:
+  - uid: 1946
+    components:
+    - type: Transform
+      pos: 32.5,69.5
+      parent: 1
+    - type: BombingTarget
+- proto: DefaultStationBeaconDisposals
+  entities:
+  - uid: 1949
+    components:
+    - type: Transform
+      pos: 36.5,54.5
+      parent: 1
+- proto: DefaultStationBeaconDorms
+  entities:
+  - uid: 1942
+    components:
+    - type: Transform
+      pos: 55.5,64.5
+      parent: 1
+- proto: DefaultStationBeaconEngineering
+  entities:
+  - uid: 1944
+    components:
+    - type: Transform
+      pos: 25.5,55.5
+      parent: 1
+- proto: DefaultStationBeaconEvac
+  entities:
+  - uid: 1957
+    components:
+    - type: Transform
+      pos: 25.5,97.5
+      parent: 1
+- proto: DefaultStationBeaconEVAStorage
+  entities:
+  - uid: 1955
+    components:
+    - type: Transform
+      pos: 12.5,82.5
+      parent: 1
+    - type: BombingTarget
+- proto: DefaultStationBeaconKitchen
+  entities:
+  - uid: 1947
+    components:
+    - type: Transform
+      pos: 38.5,59.5
+      parent: 1
+- proto: DefaultStationBeaconMedical
+  entities:
+  - uid: 1948
+    components:
+    - type: Transform
+      pos: 40.5,81.5
+      parent: 1
+- proto: DefaultStationBeaconScience
+  entities:
+  - uid: 1950
+    components:
+    - type: Transform
+      pos: 14.5,75.5
+      parent: 1
+- proto: DefaultStationBeaconSolars
+  entities:
+  - uid: 1934
+    components:
+    - type: Transform
+      pos: 25.5,45.5
+      parent: 1
+- proto: DefaultStationBeaconSupply
+  entities:
+  - uid: 1952
+    components:
+    - type: Transform
+      pos: 54.5,56.5
+      parent: 1
+- proto: DefaultStationBeaconTEG
+  entities:
+  - uid: 1953
+    components:
+    - type: Transform
+      pos: 10.5,50.5
+      parent: 1
+- proto: DefaultStationBeaconToolRoom
+  entities:
+  - uid: 1956
+    components:
+    - type: Transform
+      pos: 23.5,76.5
+      parent: 1
+- proto: DefaultStationBeaconVault
+  entities:
+  - uid: 1954
+    components:
+    - type: Transform
+      pos: 19.5,82.5
+      parent: 1
 - proto: DefibrillatorCabinetFilled
   entities:
   - uid: 5716
@@ -27527,7 +27670,7 @@ entities:
       parent: 1
 - proto: PlayerStationAi
   entities:
-  - uid: 5643
+  - uid: 1938
     components:
     - type: Transform
       pos: 27.5,83.5
@@ -31516,6 +31659,13 @@ entities:
     - type: Transform
       pos: 27.5,78.5
       parent: 1
+- proto: SpawnPointObserver
+  entities:
+  - uid: 1958
+    components:
+    - type: Transform
+      pos: 32.5,69.5
+      parent: 1
 - proto: SpawnPointPassenger
   entities:
   - uid: 1889
@@ -31776,6 +31926,23 @@ entities:
     - type: Transform
       pos: 23.5,58.5
       parent: 1
+- proto: SpawnPointWarden
+  entities:
+  - uid: 1935
+    components:
+    - type: Transform
+      pos: 53.5,74.5
+      parent: 1
+  - uid: 1936
+    components:
+    - type: Transform
+      pos: 54.5,73.5
+      parent: 1
+  - uid: 1937
+    components:
+    - type: Transform
+      pos: 50.5,72.5
+      parent: 1
 - proto: StasisBed
   entities:
   - uid: 5722
@@ -31790,6 +31957,14 @@ entities:
     - type: Transform
       rot: -1.5707963267948966 rad
       pos: 29.5,83.5
+      parent: 1
+- proto: StationMap
+  entities:
+  - uid: 1933
+    components:
+    - type: Transform
+      rot: -1.5707963267948966 rad
+      pos: 9.5,75.5
       parent: 1
 - proto: StorageCanister
   entities:
