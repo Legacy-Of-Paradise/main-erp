@@ -48,9 +48,9 @@
       Female: UnisexMoth
       Unsexed: UnisexMoth
   - type: MovementSpeedModifier
-    weightlessAcceleration: 1.5 # Move around more easily in space.
+    weightlessAcceleration: 1.75 # Move around more easily in space.
     weightlessFriction: 1
-    baseWeightlessModifier: 1
+    baseWeightlessModifier: 1.4
   - type: Flammable
     damage:
       types:
@@ -184,6 +184,8 @@
   components:
   - type: HumanoidAppearance
     species: Moth
+    hideLayersOnEquip:
+    - Hair
   - type: Inventory
     speciesId: moth
     femaleDisplacements:
