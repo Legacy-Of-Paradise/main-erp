@@ -1,5 +1,5 @@
 - type: gameMap
-  id: Tarkov
+  id: LoPTarkov
   mapName: 'Tarkov Station'
   mapPath: /Maps/_NewParadise/Tarkov.yml
   minPlayers: 0

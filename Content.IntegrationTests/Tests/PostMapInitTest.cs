@@ -76,11 +76,11 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Exo",
             // LOP edit start
-            "StandDart",
+            "LoPStandDart",
             "LoPPaper",
             "LoPSaltern",
             "LoPTushkan",
-            "Tarkov",
+            "LoPTarkov",
             // LOP edit end
         };
 

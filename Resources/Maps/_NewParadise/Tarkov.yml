@@ -2596,7 +2596,7 @@ entities:
     - type: ImplicitRoof
     - type: RadiationGridResistance
     - type: BecomesStation
-      id: Tarkov
+      id: LoPTarkov
   - uid: 2
     components:
     - type: MetaData
