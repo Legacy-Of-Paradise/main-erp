@@ -19,6 +19,11 @@
           - MachineLayer
   - type: Lathe
   - type: MaterialStorage
+    whitelist: # Frontier
+      tags: # Frontier
+        - Sheet # Frontier
+        - RawMaterial # Frontier
+        - Ingot # Frontier
   - type: Destructible
     thresholds:
     - trigger:
@@ -595,6 +600,9 @@
   name: ore processor
   description: It produces sheets and ingots using ores.
   components:
+    - type: MaterialStorageMagnetPickup # Frontier
+      range: 1 # LoP Edit 0.3 < 1
+      magnetEnabled: true
     - type: Sprite
       sprite: Structures/Machines/ore_processor.rsi
       layers:
@@ -621,6 +629,8 @@
       staticPacks:
       - OreSmelting
       - RGlassSmelting
+    - type: PlaceableSurface # DeltaV: Allow ore bags to dump into it directly
+      isPlaceable: false # but not place on it if you just click it with a random item
 
 - type: entity
   parent: OreProcessor

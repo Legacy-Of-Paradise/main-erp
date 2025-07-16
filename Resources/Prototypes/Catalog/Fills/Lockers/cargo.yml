@@ -2,6 +2,11 @@
   id: FillSalvageSpecialistHardsuitSpatio
   table: !type:AllSelector
     children:
+    #LOP edit start
+    - id: DoubleEmergencyOxygenTankFilled
+    - id: DoubleEmergencyNitrogenTankFilled
+    - id: JetpackMiniFilled
+    #LOP edit end
     - id: OxygenTankFilled
     - id: ClothingShoesBootsMag
     - id: ClothingOuterHardsuitSpatio

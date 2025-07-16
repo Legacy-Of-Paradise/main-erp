@@ -4,6 +4,8 @@
   description: A large storage container for holding unprocessed ores.
   parent: BaseStructureDynamic
   components:
+  - type: MaterialStorageMagnetPickup # Frontier
+    range: 0.30 # Frontier
   - type: StaticPrice
     price: 500
   - type: Anchorable
@@ -51,7 +53,7 @@
           False: { visible: true }
   - type: Storage
     grid:
-    - 0,0,9,5
+    - 0,0,11,7
     maxItemSize: Normal
     storageOpenSound: /Audio/Effects/closetopen.ogg
     storageCloseSound: /Audio/Effects/closetclose.ogg
