@@ -80,6 +80,7 @@ namespace Content.IntegrationTests.Tests
             "LoPPaper",
             "LoPSaltern",
             "LoPTushkan",
+            "Tarkov",
             // LOP edit end
         };
 
