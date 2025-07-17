@@ -51,7 +51,6 @@
     - back
     - suitStorage
   - type: Execution
-  - type: CursorOffsetRequiresWield
   - type: MeleeRequiresWield
   - type: AltFireMelee
     attackType: Light
