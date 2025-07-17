@@ -1,0 +1,16 @@
+ent-SpawnVehicleSecway = сбвей (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleSyndicateSegway = сегвей Синдиката (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleATV = внедорожник (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleJanicart = убортелега (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleWheelchair = инвалидная коляска (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleUnicycle = уницикл (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleHoverchair = ховеркресло (спавнер)
+    .desc = { ent-MarkerBase.desc }
+ent-SpawnVehicleSkeletonMotorcycle = скелетный мотоцикл (спавнер)
+    .desc = { ent-MarkerBase.desc }
