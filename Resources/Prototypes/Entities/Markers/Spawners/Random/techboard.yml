@@ -27,6 +27,6 @@
     - ShuttleConsoleCircuitboard
     - ComputerMassMediaCircuitboard
     - AutolatheMachineCircuitboard
-    - ProtolatheMachineCircuitboard
+    # - ProtolatheMachineCircuitboard LoP Edit
     - SalvageMagnetMachineCircuitboard
     rareChance: 0.05

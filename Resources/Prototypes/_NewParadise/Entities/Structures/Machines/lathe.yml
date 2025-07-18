@@ -1,0 +1,233 @@
+- type: entity
+  id: LoPProtolatheEngineering
+  parent: BaseLatheLube
+  name: engineering protolathe
+  description: Converts raw materials into advanced items. Engineering Edition. It has a label "BL CORP technology"
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Structures/Machines/protolatheENG.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LoPProtolatheEngineeringMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: OreSiloClient
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - ToolsStatic
+    - PartsStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - AtmosStatic
+    - CablesStatic
+    - EngineeringBoardsStatic
+    dynamicPacks:
+    - LoPNVGPackEngi
+    - AdvancedTools
+    - PowerCells
+    - AtmosTools
+    - EngineeringWeapons
+    - Equipment
+    - FauxTiles
+  - type: EmagLatheRecipes
+    emagDynamicPacks:
+    - SecurityAmmo
+    - SecurityExplosives
+    - SecurityEquipment
+    - SecurityWeapons
+
+- type: entity
+  id: LoPProtolatheScience
+  parent: BaseLatheLube
+  name: science protolathe
+  description: Converts raw materials into advanced items. Science Edition! It has a label "BL CORP technology"
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Structures/Machines/protolatheRnD.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LoPProtolatheScienceMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: OreSiloClient
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - ScienceBoardsStatic
+    - ToolsStatic
+    - PartsStatic
+    - CablesStatic
+    - MaterialsStatic
+    - BasicChemistryStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - ElectronicsStatic
+    - ChemistryStatic
+    - SurgeryStatic
+    dynamicPacks:
+    - LoPNVGPackScience
+    - ScienceEquipment
+    - ScienceExplosives
+    - ScienceClothing
+    - PowerCells
+    - ScienceWeapons
+    - Chemistry
+    - Instruments
+    - Equipment
+  - type: EmagLatheRecipes
+    emagDynamicPacks:
+    - SecurityAmmo
+    - SecurityExplosives
+    - SecurityEquipment
+    - SecurityWeapons
+
+- type: entity
+  id: LoPProtolatheSupply
+  parent: BaseLatheLube
+  name: cargo protolathe
+  description: Converts raw materials into advanced items. Cargo Edition! It has a label "BL CORP technology"
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Structures/Machines/protolatheCargo.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LoPProtolatheCargoMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: OreSiloClient
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - CargoBoardsStatic
+    - ToolsStatic
+    - PartsStatic
+    - MaterialsStatic
+    - LightsStatic
+    - PowerCellsStatic
+    - CargoStatic
+    dynamicPacks:
+    - PowerCells
+    - LoPNVGPackEngi
+    - Mining
+    - Instruments
+    - Equipment
+    - ScienceWeapons
+    - ADTCutterPack # ADT edit
+  - type: EmagLatheRecipes
+    emagDynamicPacks:
+    - SecurityAmmo
+    - SecurityExplosives
+    - SecurityEquipment
+    - SecurityWeapons
+
+- type: entity
+  id: LoPProtolatheService
+  parent: BaseLatheLube
+  name: service protolathe
+  description: Converts raw materials into advanced items. Service Edition! It has a label "BL CORP technology"
+  components:
+  - type: Sprite
+    sprite: _NewParadise/Structures/Machines/protolatheService.rsi
+    snapCardinals: true
+    layers:
+    - state: icon
+      map: ["enum.LatheVisualLayers.IsRunning"]
+    - state: unlit
+      shader: unshaded
+      map: ["enum.PowerDeviceVisualLayers.Powered"]
+    - state: inserting
+      map: ["enum.MaterialStorageVisualLayers.Inserting"]
+    - state: panel
+      map: ["enum.WiresVisualLayers.MaintenancePanel"]
+  - type: Machine
+    board: LoPProtolatheServiceMachineCircuitboard
+  - type: MaterialStorage
+    whitelist:
+      tags:
+        - Sheet
+        - RawMaterial
+        - Ingot
+  - type: OreSiloClient
+  - type: Lathe
+    idleState: icon
+    runningState: building
+    unlitIdleState: unlit
+    unlitRunningState: unlit-building
+    staticPacks:
+    - ServiceBoardsStatic
+    - ToolsStatic
+    - PartsStatic
+    - MaterialsStatic
+    - CablesStatic
+    - LightsStatic
+    - ServiceStatic
+    - PowerCellsStatic
+    - ChemistryStatic
+    dynamicPacks:
+    - LoPNVGPackService
+    - PowerCells
+    - Chemistry
+    - Janitor
+    - Instruments
+    - Equipment
+    - FauxTiles
+  - type: EmagLatheRecipes
+    emagDynamicPacks:
+    - SecurityAmmo
+    - SecurityExplosives
+    - SecurityEquipment
+    - SecurityWeapons

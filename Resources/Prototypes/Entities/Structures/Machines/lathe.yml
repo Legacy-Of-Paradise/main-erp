@@ -402,12 +402,22 @@
     idleState: icon
     runningState: icon
     staticPacks:
+    # LoP edit start
+    - ToolsStatic
+    - SurgeryStatic
+    - PowerCellsStatic
+    - RollerBedsStatic
+    # LoP edit end
     - SecurityEquipmentStatic
     - SecurityPracticeStatic
     - SecurityAmmoStatic
     - SecurityWeaponsStatic
     dynamicPacks:
     # LoP edit start
+    - PowerCells
+    - Instruments
+    - Equipment
+    - ScienceWeapons
     - LoPTVGPack
     - LoPNVGPackSec
     # LoP edit end
@@ -486,6 +496,13 @@
     idleState: icon
     runningState: icon
     staticPacks:
+    # LoP Edit Start
+    - ToolsStatic
+    - PartsStatic
+    - BasicChemistryStatic
+    - PowerCellsStatic
+    - MedicalBoardsStatic
+    # LoP Edit End
     - TopicalsStatic
     - ChemistryStatic
     - MedicalStatic
@@ -494,7 +511,12 @@
     - EmptyMedkitsStatic
     - SurgeryStatic
     dynamicPacks:
-    - LoPNVGPackM # LoP Edit
+    # LoP Edit Start
+    - PowerCells
+    - Instruments
+    - Equipment
+    - LoPNVGPackM
+    # LoP Edit End
     - Chemistry
   - type: Machine
     board: MedicalTechFabCircuitboard

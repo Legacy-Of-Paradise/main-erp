@@ -21,6 +21,7 @@
     - id: ClothingHandsKnuckleDustersQM
     - id: MailTeleporterMachineCircuitboard
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: LoPProtolatheCargoMachineCircuitboard # LoP Edit
 
 - type: entity
   id: LockerQuarterMasterFilled
@@ -149,6 +150,7 @@
     - id: ClothingEyesHudCommand
     - id: ClothingOuterCoatHOP # Corvax-Resprite
     - id: PrinterDocFlatpack # Corvax-Printer
+    - id: LoPProtolatheServiceMachineCircuitboard # LoP Edit
 
 - type: entity
   id: LockerHeadOfPersonnelFilled
@@ -179,6 +181,7 @@
     - id: RCDAmmo
     - id: RubberStampCE
     - id: MetalFoamGrenade
+    - id: LoPProtolatheEngineeringMachineCircuitboard # LoP Edit
 
 # Hardsuit table, used for suit storage as well
 - type: entityTable
@@ -286,7 +289,7 @@
     - id: ClothingHeadsetAltScience
     - id: DoorRemoteResearch
     - id: HandTeleporter
-    - id: ProtolatheMachineCircuitboard
+    - id: LoPProtolatheScienceMachineCircuitboard # LoP Edit
     - id: ResearchComputerCircuitboard
     - id: CargoRequestScienceComputerCircuitboard
     - id: RubberStampRd
