@@ -1,9 +1,7 @@
-# PME - Personal Mobility Equipment (Средства индивидуальной мобильности)
-
 # SecWay 
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleSecway
+  id: SpawnVehicleSecway
   name: Secway (spawner)
   components:
   - type: Sprite
@@ -18,7 +16,7 @@
 # SyndicateSegway
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleSyndicateSegway
+  id: SpawnVehicleSyndicateSegway
   name: SyndicateSegway (spawner)
   components:
   - type: Sprite
@@ -28,12 +26,12 @@
       state: icon
   - type: ConditionalSpawner
     prototypes:
-    - VehicleSecway
+    - VehicleSyndicateSegway
 
 # ATV
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleATV
+  id: SpawnVehicleATV
   name: ATW (spawner)
   components:
   - type: Sprite
@@ -48,7 +46,7 @@
 # Janicart
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleJanicart
+  id: SpawnVehicleJanicart
   name: Janicart (spawner)
   components:
   - type: Sprite
@@ -63,7 +61,7 @@
 # Wheelchair
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleWheelchair
+  id: SpawnVehicleWheelchair
   name: Wheelchair (spawner)
   components:
   - type: Sprite
@@ -78,7 +76,7 @@
 # Unicycle
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleUnicycle
+  id: SpawnVehicleUnicycle
   name: Unicycle (spawner)
   components:
   - type: Sprite
@@ -90,10 +88,25 @@
     prototypes:
     - VehicleUnicycle
 
+# Skeleton Motorcycle
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleSkeletonMotorcycle
+  name: Skeleton Motorcycle (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/motorbike.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - NFVehicleSkeletonMotorcycle
+
 # WTF Honk-chair
 - type: entity
   parent: MarkerBase
-  id: SpawnPMEVehicleHoverchair
+  id: SpawnVehicleHoverchair
   name: Hoverchair (spawner)
   components:
   - type: Sprite
