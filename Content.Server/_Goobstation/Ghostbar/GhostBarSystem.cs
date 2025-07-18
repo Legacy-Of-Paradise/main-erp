@@ -38,7 +38,7 @@ public sealed class GhostBarSystem : EntitySystem
         SubscribeLocalEvent<GhostBarPlayerComponent, MindRemovedMessage>(OnPlayerGhosted);
     }
 
-    const string MapPath = "Maps/_Goobstation/Nonstations/ghostbar.yml";
+    const string MapPath = "Maps/_NewParadise/Nonstations/lop_ghostbar.yml";
     private void OnRoundStart(RoundStartingEvent ev)
     {
         var resPath = new ResPath(MapPath);
