@@ -39,7 +39,7 @@ entities:
   - uid: 2
     components:
     - type: MetaData
-      name: Космическоёе депо
+      name: Космическое депо
     - type: Transform
       parent: invalid
     - type: MapGrid
