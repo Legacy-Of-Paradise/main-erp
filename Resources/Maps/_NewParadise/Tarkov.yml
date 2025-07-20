@@ -4,8 +4,8 @@ meta:
   engineVersion: 264.0.0
   forkId: ""
   forkVersion: ""
-  time: 07/16/2025 18:58:08
-  entityCount: 5530
+  time: 07/18/2025 20:34:32
+  entityCount: 5536
 maps:
 - 2
 grids:
@@ -13733,17 +13733,17 @@ entities:
       parent: 1
 - proto: CableTerminal
   entities:
+  - uid: 1963
+    components:
+    - type: Transform
+      rot: 3.141592653589793 rad
+      pos: 17.5,84.5
+      parent: 1
   - uid: 3438
     components:
     - type: Transform
       rot: 1.5707963267948966 rad
       pos: 22.5,56.5
-      parent: 1
-  - uid: 6105
-    components:
-    - type: Transform
-      rot: 1.5707963267948966 rad
-      pos: 17.5,85.5
       parent: 1
 - proto: CaptainIDCard
   entities:
@@ -14896,10 +14896,12 @@ entities:
           showEnts: False
           occludes: True
           ents:
-          - 5963
+          - 1961
+          - 1960
           - 5964
-          - 5965
           - 5966
+          - 5965
+          - 5963
         paper_label: !type:ContainerSlot
           showEnts: False
           occludes: True
@@ -17145,6 +17147,31 @@ entities:
     - type: Transform
       pos: 51.5,51.5
       parent: 1
+- proto: FaxMachineBase
+  entities:
+  - uid: 1962
+    components:
+    - type: Transform
+      pos: 33.5,70.5
+      parent: 1
+    - type: FaxMachine
+      name: Факс общего пользования
+  - uid: 1966
+    components:
+    - type: Transform
+      pos: 51.5,72.5
+      parent: 1
+    - type: FaxMachine
+      name: Служба Безопасности
+- proto: FaxMachineCaptain
+  entities:
+  - uid: 1964
+    components:
+    - type: Transform
+      pos: 41.5,45.5
+      parent: 1
+    - type: FaxMachine
+      name: Мостик
 - proto: FenceMetalCorner
   entities:
   - uid: 3319
@@ -27433,13 +27460,6 @@ entities:
     - type: Transform
       pos: 53.5,59.5
       parent: 1
-- proto: MaintenanceToolSpawner
-  entities:
-  - uid: 6208
-    components:
-    - type: Transform
-      pos: 33.5,70.5
-      parent: 1
 - proto: Mattress
   entities:
   - uid: 6102
@@ -30003,6 +30023,15 @@ entities:
     - type: Transform
       pos: 22.58524,76.660515
       parent: 1
+- proto: SheetPGlass
+  entities:
+  - uid: 1961
+    components:
+    - type: Transform
+      parent: 5962
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SheetPlastic
   entities:
   - uid: 5766
@@ -30097,6 +30126,15 @@ entities:
     - type: Transform
       pos: 22.632114,77.39489
       parent: 1
+- proto: SheetUGlass
+  entities:
+  - uid: 1960
+    components:
+    - type: Transform
+      parent: 5962
+    - type: Physics
+      canCollide: False
+    - type: InsideEntityStorage
 - proto: SheetUranium
   entities:
   - uid: 1790
@@ -32680,6 +32718,11 @@ entities:
       rot: -1.5707963267948966 rad
       pos: 39.5,46.5
       parent: 1
+  - uid: 1959
+    components:
+    - type: Transform
+      pos: 41.5,45.5
+      parent: 1
   - uid: 4793
     components:
     - type: Transform
@@ -32702,6 +32745,11 @@ entities:
       parent: 1
 - proto: TableReinforcedGlass
   entities:
+  - uid: 1965
+    components:
+    - type: Transform
+      pos: 51.5,72.5
+      parent: 1
   - uid: 5726
     components:
     - type: Transform
