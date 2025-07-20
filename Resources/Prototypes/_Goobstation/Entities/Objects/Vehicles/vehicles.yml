@@ -220,7 +220,7 @@
   description: A chair with big wheels. It looks like you can move in these on your own.
   components:
   - type: Sprite
-    sprite: Objects/Vehicles/wheelchair.rsi
+    sprite: _Goobstation/Objects/Vehicles/wheelchair.rsi
     layers:
     - state: vehicle
       map: ["unfoldedLayer"]

@@ -7,6 +7,8 @@ on:
 jobs:
   update_label:
     if: github.event.review.state == 'changes_requested'
+    permissions:
+      pull-requests: write
     runs-on: ubuntu-latest
     steps:
     - uses: actions-ecosystem/action-add-labels@v1
