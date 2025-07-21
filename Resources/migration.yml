@@ -459,7 +459,7 @@ HeadBorgEngineer: LightHeadBorg
 TorsoBorgEngineer: TorsoBorg
 
 LeftArmBorgMedical: LeftArmBorg
-RightArmBorgMedical: RightArmBorg
+RightArmBorgMedical: RightArmBorg 
 LeftLegBorgMedical: LeftLegBorg
 RightLegBorgMedical: RightLegBorg
 HeadBorgMedical: LightHeadBorg
@@ -747,3 +747,7 @@ ClothingNeckHeadphones: ClothingMultipleHeadphones
 
 # 2025-07-12
 ADTClothingModsuitBackBlueShield: null
+
+# 2025-07-21
+DVSmartFridgeMedical: SmartFridge
+DVSmartFridge: SmartFridge
