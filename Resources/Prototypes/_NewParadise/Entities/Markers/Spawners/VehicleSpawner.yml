@@ -1,0 +1,122 @@
+# SecWay 
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleSecway
+  name: Secway (spawner)
+  components:
+  - type: Sprite
+    layers:
+      - state: green
+      - sprite: Objects/Vehicles/secway.rsi
+        state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleSecway
+
+# SyndicateSegway
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleSyndicateSegway
+  name: SyndicateSegway (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/syndicatesegway.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleSyndicateSegway
+
+# ATV
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleATV
+  name: ATW (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/atv.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleATV
+
+# Janicart
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleJanicart
+  name: Janicart (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/janicart.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleJanicart
+
+# Wheelchair
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleWheelchair
+  name: Wheelchair (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Goobstation/Objects/Vehicles/wheelchair.rsi
+      state: vehicle_folded
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleWheelchair
+
+# Unicycle
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleUnicycle
+  name: Unicycle (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/unicycle.rsi
+      state: vehicle_unfolded
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleUnicycle
+
+# Skeleton Motorcycle
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleSkeletonMotorcycle
+  name: Skeleton Motorcycle (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: Objects/Vehicles/motorbike.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - NFVehicleSkeletonMotorcycle
+
+# WTF Honk-chair
+- type: entity
+  parent: MarkerBase
+  id: SpawnVehicleHoverchair
+  name: Hoverchair (spawner)
+  components:
+  - type: Sprite
+    layers:
+    - state: green
+    - sprite: _Goobstation/Objects/Vehicles/hoverchair.rsi
+      state: icon
+  - type: ConditionalSpawner
+    prototypes:
+    - VehicleHoverchair
+
+
+

@@ -73,10 +73,10 @@
 <GuideEntityEmbed Entity="DiseaseSwab"/>
 </Box>
 
-## Chemicals
-Some chemicals have special effects on plants.
+## Химические вещества
+Некоторые химические вещества оказывают особое воздействие на растения.
 
-[textlink="Click here to see all botanical chemicals." link="Botanical"]
+[textlink="Нажмите здесь, чтобы увидеть все химические вещества для растений." link="Botanical"]
 
 <GuideReagentEmbed Reagent="Dylovene"/>
 <GuideReagentEmbed Reagent="Cryoxadone"/>
