@@ -78,6 +78,12 @@
         },
         {
             "name": "zauker-1"
+        },
+        {
+            "name": "can-connector"
+        },
+        {
+            "name": "locked"
         }
     ]
 }
