@@ -8,6 +8,7 @@
     strippingWindowPos: 0,0
     displayName: Head
     offset: 0, -0.45
+    # Lop edit start
   - name: back
     slotTexture: back
     slotFlags: BACK
@@ -26,3 +27,4 @@
     strippingWindowPos: 0,4
     displayName: Pocket 1
     stripHidden: true
+      # Lop edit end

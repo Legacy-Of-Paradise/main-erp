@@ -1,5 +1,5 @@
 - type: entity
-  parent: [BaseMob, StripableInventoryBase]
+  parent: [BaseMob, StripableInventoryBase] # Lop edit
   id: PlayerSiliconBase #for player controlled silicons
   components:
   - type: Reactive
@@ -40,8 +40,10 @@
         layer:
         - MobLayer
   - type: MovementSpeedModifier
+    # Lop edit start
     baseWalkSpeed : 5
     baseSprintSpeed : 6
+    # Lop edit end
   - type: Sprite
     noRot: true
     drawdepth: Mobs
@@ -49,10 +51,12 @@
     bodyType: KinematicController
   - type: Hands
     showInHands: false
+    # Lop edit start
     disableExplosionRecursion: true
     canBeStripped: false
+    # Lop edit end
   - type: Body
-    prototype: Bot
+    prototype: Bot # Lop edit
   - type: DoAfter
   - type: Pullable
   - type: Examiner
@@ -60,6 +64,7 @@
     needsHands: false
   - type: StandingState
   - type: Alerts
+  # Lop edit start
   - type: Speech
     speechVerb: Robotic
     speechSounds: Pai
@@ -120,6 +125,7 @@
     laws: NTDefault
   - type: EmagSiliconLaw
     stunTime: 5
+    # Lop edit end
 
 
 - type: entity
@@ -130,24 +136,27 @@
   - type: Tag
     tags:
     - InnateDontDelete
+    # Lop edit start
   - type: StorageFill
     contents:
       - id: trayScanner
       - id: Omnitool
       - id: WelderExperimental
+    # Lop edit end
 
 - type: entity
   name: Blue Space Drone
   id: BackmenDrone
   parent: PlayerSiliconBase
   components:
-  - type: InnateTool
-  - type: NameIdentifier
-    group: Silicon
+  - type: InnateTool # Lop edit
+  - type: NameIdentifier # Lop edit
+    group: Silicon # Lop edit
   - type: Inventory
     templateId: drone
   - type: InventorySlots
   - type: Strippable
+  # Lop edit start
   - type: UserInterface
     interfaces:
       enum.SiliconLawsUiKey.Key:
@@ -157,6 +166,7 @@
         type: BorgBoundUserInterface
       enum.StrippingUiKey.Key:
         type: StrippableBoundUserInterface
+  # Lop edit end
   - type: GhostRole
     makeSentient: true
     allowSpeech: true # backmen
@@ -170,28 +180,34 @@
      2. Выживание и целостность станции превыше всего(даже экипажа).
      3. Вред станции недопустим.
   - type: GhostTakeoverAvailable
+  # Lop edit start
   - type: MovementSpeedModifier
     baseWalkSpeed : 5.5
     baseSprintSpeed : 6.8
+  # Lop edit end
   - type: MobState
     allowedStates:
       - Alive
       - Dead
+  # Lop edit start
   - type: MobThresholds
     thresholds:
       0: Alive
       100: Critical
       120: Dead
+  # Lop edit end
   - type: NoSlip
   - type: StatusEffects
     allowed:
     - Stun
     - KnockedDown
     - SlowedDown
+  # Lop edit start
   - type: SlowOnDamage
     speedModifierThresholds:
       60: 0.7
-      100: 0.5
+      85: 0.55
+  # Lop edit end
   - type: Temperature
     heatDamageThreshold: 5000
     currentTemperature: 310.15
@@ -199,6 +215,7 @@
     heatDamage:
       types:
         Heat : 1 #per second, scales with temperature & other constants
+  # Lop edit start
   - type: Sprite
     drawdepth: SmallMobs
     layers:
@@ -208,6 +225,7 @@
     - state: drone
       sprite: _Backmen/Mobs/Silicon/drone.rsi
       map: ["enum.VehicleVisualLayers.AutoAnimate"]
+  # Lop edit end
   - type: MovementIgnoreGravity
   - type: Fixtures
     fixtures:
@@ -229,25 +247,27 @@
           On: { state: drone }
   - type: ReplacementAccent
     accent: silicon
-  - type: TTS
-    voicePrototypeId: nyx_assassin_dota_2
-  - type: Repairable
-    doAfterDelay: 8
+  - type: TTS # Lop edit
+    voicePrototypeId: nyx_assassin_dota_2 # Lop edit
+  - type: Repairable # Lop edit
+    doAfterDelay: 8 # Lop edit
   - type: Actions
-  - type: UnpoweredFlashlight
-  - type: PointLight
-    enabled: false
-    radius: 4.25
-    softness: 1
-    mask: /Textures/Effects/LightMasks/cone.png
-    autoRot: true
+  - type: UnpoweredFlashlight # Lop edit
+  - type: PointLight # Lop edit
+    enabled: false # Lop edit
+    radius: 4.25 # Lop edit
+    softness: 1 # Lop edit
+    mask: /Textures/Effects/LightMasks/cone.png # Lop edit
+    autoRot: true # Lop edit
   - type: Tag
     tags:
-      - CanPilot
-  - type: Loadout
-    prototypes: [ LOPDroneBCD ]
+      - CanPilot # Lop edit
+  - type: Loadout # Lop edit
+    prototypes: [ LOPDroneBCD ] # Lop edit
 
+# Lop edit start (Остается тут, т.к. не вижу смысла создавать доп. файл для пяти строчек ПРОТОТИПА)
 - type: startingGear
   id: LOPDroneBCD
   equipment:
     back: BSSClothingBackpackSatchelDrone
+# Lop edit end
