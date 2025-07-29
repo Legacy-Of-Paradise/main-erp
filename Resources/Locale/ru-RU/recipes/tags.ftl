@@ -64,6 +64,7 @@ construction-graph-tag-corgi-hide = шкура корги
 construction-graph-tag-apron = фартук
 construction-graph-tag-utility-belt = рабочий пояс
 soil-construction-graph-any-mushroom = любые мухоморы
+construction-graph-tag-mop-basic = швабра
 # toys
 construction-graph-tag-rubber-ducky = резиновая уточка
 construction-graph-tag-ghost = мягкая игрушка-призрак

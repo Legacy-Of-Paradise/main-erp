@@ -10,3 +10,7 @@ ent-LPPMagazineRifleMars = обойма винтовки "Марс"
     .desc = { ent-BaseItem.desc }
 ent-LPPMagazineRifleGarand = обойма "гаранда"
     .desc = { ent-BaseItem.desc }
+ent-LoPMagazineLightRifleMaxim = дисковый магазин (.30 винтовочный)
+    .desc = { ent-BaseMagazineLightRifle.desc }
+ent-LoPMagazineCaselessRifle10x24 = коробчатый магазин (.25 безгильзовый)
+    .desc = { ent-BaseMagazineCaselessRifle.desc }

@@ -7,8 +7,6 @@
     sprite: _NewParadise/Structures/Doors/Standard/eva.rsi
   - type: WiresPanelSecurity
     securityLevel: medSecurity
-  - type: PaintableAirlock
-    department: Command
   - type: AccessReader
     access: [["EVA"]]
 

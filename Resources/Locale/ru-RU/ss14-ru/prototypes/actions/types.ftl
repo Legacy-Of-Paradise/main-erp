@@ -62,6 +62,8 @@ ent-FakeMindShieldToggleAction = [color=green]Переключить фальш�
     .desc = Переключить трансляцию фальшивого Щита разума
 ent-ActionToggleParamedicSiren = Переключить сирену парамедика
     .desc = Включает или выключает сирену парамедика.
+ent-ActionGravityJump = Прыжок
+    .desc = Активируя усовершенствованную двигательную систему, вы отталкиваетесь на небольшое расстояние в направлении своего взгляда.
 ent-ActionToggleRootable = action-name-toggle-rootable
     .desc = action-description-toggle-rootable
 ent-ActionChameleonController = Управление одеждой
