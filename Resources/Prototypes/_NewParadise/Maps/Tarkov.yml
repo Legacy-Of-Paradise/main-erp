@@ -5,7 +5,7 @@
   minPlayers: 0
   maxPlayers: 20
   stations:
-    Tarkov:
+    LoPTarkov:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup

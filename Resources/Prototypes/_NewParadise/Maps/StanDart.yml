@@ -1,10 +1,10 @@
 - type: gameMap
-  id: LoPStandDart
-  mapName: 'StandDart Station'
-  mapPath: /Maps/_NewParadise/StandDart.yml
+  id: LoPStanDart
+  mapName: 'StanDart Station'
+  mapPath: /Maps/_NewParadise/StanDart.yml
   minPlayers: 35
   stations:
-    StandDart:
+    LoPStanDart:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationNameSetup
@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: ' LOP'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/_NewParadise/Shuttles/StandDartEvac.yml
+          emergencyShuttlePath: /Maps/_NewParadise/Shuttles/StanDartEvac.yml
         - type: StationJobs
           availableJobs:
             #Command
