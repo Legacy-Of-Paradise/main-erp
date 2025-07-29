@@ -76,7 +76,7 @@ namespace Content.IntegrationTests.Tests
             "dm01-entryway",
             "Exo",
             // LOP edit start
-            "LoPStandDart",
+            "LoPStanDart",
             "LoPPaper",
             "LoPSaltern",
             "LoPTushkan",

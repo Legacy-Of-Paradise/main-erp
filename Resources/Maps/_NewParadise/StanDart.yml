@@ -14582,7 +14582,7 @@ entities:
           damping: 432.06357
           stiffness: 3878.1934
     - type: BecomesStation
-      id: LoPStandDart
+      id: LoPStanDart
     - type: ImplicitRoof
   - uid: 263
     components:
