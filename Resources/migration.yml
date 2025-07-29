@@ -577,9 +577,6 @@ MagazineBoxCaselessRifle10x24: null
 MagazineBoxCaselessRifleBig: null
 MagazinePistolHighCapacityRubber: null
 
-# 2025-03-12
-SmartFridge: DVSmartFridgeMedical
-
 # 2025-03-18
 EpinephrineChemistryBottle: ChemistryBottleEpinephrine
 RobustHarvestChemistryBottle: ChemistryBottleRobustHarvest
@@ -766,3 +763,7 @@ ClothingNeckHeadphones: ClothingMultipleHeadphones
 
 # 2025-07-12
 ADTClothingModsuitBackBlueShield: null
+
+# 2025-07-21
+DVSmartFridgeMedical: SmartFridge
+DVSmartFridge: SmartFridge
