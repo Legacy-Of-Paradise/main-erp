@@ -111,7 +111,7 @@
   parent: BaseHumanOrgan
   name: liver
   description: "Pairing suggestion: chianti and fava beans."
-  `categories: [ HideSpawnMenu ]`
+  categories: [ HideSpawnMenu ]
   components:
   - type: Item
     size: Small
