@@ -1,7 +1,7 @@
 ﻿- type: gameMapPool
   id: LPPMapPool
   maps:
-  - LoPStandDart
+  - LoPStanDart
   - LoPTarkov
   - LoPSaltern
   - LoPPaper
