@@ -1,8 +1,8 @@
 ﻿- type: gameMapPool
   id: LPPMapPool
   maps:
-  - StandDart
-  - Tarkov
+  - LoPStandDart
+  - LoPTarkov
   - LoPSaltern
   - LoPPaper
   - LoPTushkan
