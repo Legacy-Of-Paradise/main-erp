@@ -7,10 +7,10 @@ loadout-group-SponsorsClothing = Спонсорские предметы
 loadout-group-LichnieClothing = Личные предметы
 #Clothing
 
-loadout-group-jumpsuit-adjutant = Комбинезоны
-loadout-group-cloak-adjutant = Плащи
-loadout-group-head-adjutant = Фуражки
-loadout-group-jumpsuit-blueshield = Комбинезоны
-loadout-group-back-blueshield = Спина
-loadout-group-back-brigtech = Спина
-loadout-group-jumpsuit-brigtech = Комбинезоны
+loadout-group-jumpsuit-adjutant = Адъютант, комбинезон
+loadout-group-cloak-adjutant = Адъютант, плащ
+loadout-group-head-adjutant = Адъютант, фуражка
+loadout-group-jumpsuit-blueshield = Офицер "Синий Щит", комбинезон
+loadout-group-back-blueshield = Офицер "Синий Щит", рюкзак
+loadout-group-back-brigtech = БригТех, рюкзак
+loadout-group-jumpsuit-brigtech = БригТех, комбинезон

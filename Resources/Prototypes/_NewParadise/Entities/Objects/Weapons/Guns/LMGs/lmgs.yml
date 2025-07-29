@@ -15,7 +15,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        startingItem: MagazineLightRifleMaxim
+        startingItem: LoPMagazineLightRifleMaxim
         priority: 2
         whitelist:
           tags:
@@ -75,7 +75,7 @@
   - type: ItemSlots
     slots:
       gun_magazine:
-        startingItem: MagazineCaselessRifle10x24
+        startingItem: LoPMagazineCaselessRifle10x24
         priority: 2
         whitelist:
           tags:

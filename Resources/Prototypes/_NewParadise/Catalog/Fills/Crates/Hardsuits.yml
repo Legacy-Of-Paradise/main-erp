@@ -62,7 +62,7 @@
       amount: 2
     - id: LPPMagazineBoxM4A1BigLethal
     - id: LPPWeaponLightMachinegunLewis
-    - id: MagazineLightRifleMaxim
+    - id: LoPMagazineLightRifleMaxim
     - id: LPPWeaponShotgunRemington320b
     - id: BoxMagazineShotgun
     - id: LPPClothingBackpackDuffelDonk

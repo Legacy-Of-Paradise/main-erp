@@ -137,8 +137,21 @@
   - type: Sprite
     sprite: Objects/Vehicles/syndicatesegway.rsi
     state: vehicle
-    renderOver: North, NorthEast, NorthWest
     noRot: true
+  - type: Vehicle
+    renderOver: West, South, East # Frontier
+    southOffset: 0, -0.1 # Frontier
+    northOffset: 0, -0.1 # Frontier
+    eastOffset: 0, -0.1 # Frontier
+    westOffset: 0, -0.1 # Frontier
+    hornSound:
+      collection: NFVehicleHorn
+      params:
+        variation: 0.125
+    sirenSound:
+      collection: PoliceSiren
+      params:
+        variation: 0.125
   - type: ItemSlots
     slots:
       key_slot:

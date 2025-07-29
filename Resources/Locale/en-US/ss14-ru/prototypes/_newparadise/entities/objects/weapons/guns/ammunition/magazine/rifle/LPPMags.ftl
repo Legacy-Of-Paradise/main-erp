@@ -10,3 +10,7 @@ ent-LPPMagazineRifleMars = Magazine from rifle "Mars"
     .desc = { ent-BaseItem.desc }
 ent-LPPMagazineRifleGarand = Magazine "garand"
     .desc = { ent-BaseItem.desc }
+ent-LoPMagazineLightRifleMaxim = pan magazine (.30 rifle)
+    .desc = { ent-BaseMagazineLightRifle.desc }
+ent-LoPMagazineCaselessRifle10x24 = box magazine (.25 caseless)
+    .desc = { ent-BaseMagazineCaselessRifle.desc }

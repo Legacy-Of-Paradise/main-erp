@@ -359,6 +359,7 @@ reagent-effect-guidebook-add-to-solution-reaction =
         [1] Заставляет
        *[other] заставляют
     } химикаты, применённые к объекту, добавиться во внутренний контейнер для растворов этого объекта
+reagent-effect-guidebook-artifact-durability-restore = Восстанавливает { $restored } прочности активным узлам инопланетного артефакта.
 reagent-effect-guidebook-plant-attribute =
     { $chance ->
         [1] Изменяет

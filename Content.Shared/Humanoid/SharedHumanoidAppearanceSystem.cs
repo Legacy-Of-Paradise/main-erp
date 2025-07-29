@@ -42,8 +42,7 @@ public abstract class SharedHumanoidAppearanceSystem : EntitySystem
     [Dependency] private readonly GrammarSystem _grammarSystem = default!;
     [Dependency] private readonly SharedIdentitySystem _identity = default!;
 
-    [ValidatePrototypeId<SpeciesPrototype>]
-    public const string DefaultSpecies = "Human";
+    public static readonly ProtoId<SpeciesPrototype> DefaultSpecies = "Human";
     // LOP edit start
     public static readonly Dictionary<Sex, ProtoId<TTSVoicePrototype>> DefaultSexVoice = new()
     {
