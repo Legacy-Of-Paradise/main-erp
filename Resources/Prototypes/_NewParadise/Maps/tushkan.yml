@@ -67,6 +67,7 @@
             # silicon
             StationAi: [ 1, 1 ]
             Borg: [ 1, 1 ]
+            Drone: [ 1, 1 ] # Lop Role
             #LOP Role
             LPPBlueShieldOfficer: [ 1, 1 ]
             LPPSecurityEngineer: [ 1, 1 ]
