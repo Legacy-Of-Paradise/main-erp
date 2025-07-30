@@ -29,3 +29,17 @@
   supervisors: job-supervisors-rd
   jobEntity: PlayerBorgBattery
   applyTraits: false
+
+- type: job
+  id: BackmenDrone
+  name: job-name-drone
+  description: job-description-drone
+  playTimeTracker: JobDrone
+  requirements:
+    - !type:OverallPlaytimeRequirement
+      time: 3600 # 1 hrs
+  canBeAntag: false
+  icon: JobIconDrone
+  supervisors: job-supervisors-rd
+  jobEntity: PlayerBorgBattery
+  applyTraits: false

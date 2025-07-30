@@ -50,6 +50,11 @@
   nameDataset: NamesAI
   canCustomizeName: true
 
+- type: roleLoadout
+  id: JobDrone
+  nameDataset: NamesBorg
+  canCustomizeName: true
+
 # Civilian
 - type: roleLoadout
   id: JobPassenger

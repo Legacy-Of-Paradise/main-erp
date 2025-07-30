@@ -1,0 +1,273 @@
+- type: entity
+  parent: [BaseMob, StripableInventoryBase] # Lop edit
+  id: PlayerSiliconBase #for player controlled silicons
+  components:
+  - type: Reactive
+    groups:
+      Acidic: [Touch]
+  - type: Input
+    context: "human"
+  - type: DamageOnHighSpeedImpact
+    damage:
+      types:
+        Blunt: 5
+    soundHit:
+      path: /Audio/Effects/hit_kick.ogg
+  - type: Clickable
+  - type: Damageable
+    damageContainer: Inorganic
+  - type: Bloodstream
+    bloodReagent: Oil
+    bloodlossDamage:
+      types:
+        Bloodloss:
+          1
+    bloodlossHealDamage:
+      types:
+        Bloodloss:
+          -1
+  - type: InteractionOutline
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          # Circles, cuz rotation of rectangles looks very bad
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - MobMask
+        layer:
+        - MobLayer
+  - type: MovementSpeedModifier
+    # Lop edit start
+    baseWalkSpeed : 5
+    baseSprintSpeed : 6
+    # Lop edit end
+  - type: Sprite
+    noRot: true
+    drawdepth: Mobs
+  - type: Physics
+    bodyType: KinematicController
+  - type: Hands
+    showInHands: false
+    # Lop edit start
+    disableExplosionRecursion: true
+    canBeStripped: false
+    # Lop edit end
+  - type: Body
+    prototype: Bot # Lop edit
+  - type: DoAfter
+  - type: Pullable
+  - type: Examiner
+  - type: Puller
+    needsHands: false
+  - type: StandingState
+  - type: Alerts
+  # Lop edit start
+  - type: Speech
+    speechVerb: Robotic
+    speechSounds: Pai
+  - type: Vocal
+    sounds:
+      Unsexed: UnisexSilicon
+    wilhelmProbability: 0
+  - type: TypingIndicator
+    proto: robot
+  - type: ActiveRadio
+    channels:
+    - Binary
+    - Common
+    - Science
+  - type: ZombieImmune
+  - type: StaticPrice
+    price: 3000
+  - type: GuideHelp
+    guides:
+    - Robotics
+  - type: Stamina
+    critThreshold: 120
+  - type: GhostRole
+    makeSentient: true
+    name: ghost-role-information-honkbot-name
+    description: ghost-role-information-honkbot-description
+    rules: ghost-role-information-freeagent-rules
+    mindRoles:
+    - MindRoleGhostRoleFreeAgentHarmless
+    raffle:
+      settings: default
+  - type: GhostTakeoverAvailable
+  - type: Emoting
+  - type: Tag
+    tags:
+      - FootstepSound
+      - SiliconEmotes
+      - CannotSuicide
+  - type: EyeProtection
+    protectionTime: 12
+  - type: CombatMode
+  - type: ComplexInteraction
+  - type: FootstepModifier
+    footstepSoundCollection:
+      collection: FootstepBorg
+  - type: ActionGrant
+    actions:
+    - ActionViewLaws
+  - type: Access
+    enabled: false
+    groups:
+    - AllAccess
+    tags:
+    - Borg
+  - type: ShowJobIcons
+  - type: SiliconLawBound
+  - type: SiliconLawProvider
+    laws: NTDefault
+  - type: EmagSiliconLaw
+    stunTime: 5
+    # Lop edit end
+
+
+- type: entity
+  parent: ClothingBackpackSatchel
+  id: BSSClothingBackpackSatchelDrone
+  components:
+  - type: Storage
+  - type: Tag
+    tags:
+    - InnateDontDelete
+    # Lop edit start
+  - type: StorageFill
+    contents:
+      - id: trayScanner
+      - id: Omnitool
+      - id: WelderExperimental
+    # Lop edit end
+
+- type: entity
+  name: Blue Space Drone
+  id: BackmenDrone
+  parent: PlayerSiliconBase
+  components:
+  - type: InnateTool # Lop edit
+  - type: NameIdentifier # Lop edit
+    group: Silicon # Lop edit
+  - type: Inventory
+    templateId: drone
+  - type: InventorySlots
+  - type: Strippable
+  # Lop edit start
+  - type: UserInterface
+    interfaces:
+      enum.SiliconLawsUiKey.Key:
+        type: SiliconLawBoundUserInterface
+        requireInputValidation: false
+      enum.BorgUiKey.Key:
+        type: BorgBoundUserInterface
+      enum.StrippingUiKey.Key:
+        type: StrippableBoundUserInterface
+  # Lop edit end
+  - type: GhostRole
+    makeSentient: true
+    allowSpeech: true # backmen
+    allowMovement: true # backmen
+    name: Блюспейс Дрон #ghost-role-information-drone-name # backmen
+    description: ghost-role-information-drone-description # backmen
+    rules: | # backmen
+     Вы являетесь ВЫСШИМ интеллектом на станции.
+     Вы связаны этими законами как в игре, так и вне персонажа:
+     1. Ваша главная задача - поддерживать работу станции.
+     2. Выживание и целостность станции превыше всего(даже экипажа).
+     3. Вред станции недопустим.
+  - type: GhostTakeoverAvailable
+  # Lop edit start
+  - type: MovementSpeedModifier
+    baseWalkSpeed : 5.5
+    baseSprintSpeed : 6.8
+  # Lop edit end
+  - type: MobState
+    allowedStates:
+      - Alive
+      - Dead
+  # Lop edit start
+  - type: MobThresholds
+    thresholds:
+      0: Alive
+      100: Critical
+      120: Dead
+  # Lop edit end
+  - type: NoSlip
+  - type: StatusEffects
+    allowed:
+    - Stun
+    - KnockedDown
+    - SlowedDown
+  # Lop edit start
+  - type: SlowOnDamage
+    speedModifierThresholds:
+      60: 0.7
+      85: 0.55
+  # Lop edit end
+  - type: Temperature
+    heatDamageThreshold: 5000
+    currentTemperature: 310.15
+    specificHeat: 42
+    heatDamage:
+      types:
+        Heat : 1 #per second, scales with temperature & other constants
+  # Lop edit start
+  - type: Sprite
+    drawdepth: SmallMobs
+    layers:
+    - state: shell
+      sprite: _Backmen/Mobs/Silicon/drone.rsi
+      map: ["base"]
+    - state: drone
+      sprite: _Backmen/Mobs/Silicon/drone.rsi
+      map: ["enum.VehicleVisualLayers.AutoAnimate"]
+  # Lop edit end
+  - type: MovementIgnoreGravity
+  - type: Fixtures
+    fixtures:
+      fix1:
+        shape:
+          !type:PhysShapeCircle
+          radius: 0.35
+        density: 50
+        mask:
+        - SmallMobMask
+        layer:
+        - SmallMobLayer
+  - type: Appearance
+  - type: GenericVisualizer
+    visuals:
+      enum.DroneVisuals.Status:
+        base:
+          Off: { state: shell }
+          On: { state: drone }
+  - type: ReplacementAccent
+    accent: silicon
+  - type: TTS # Lop edit
+    voicePrototypeId: nyx_assassin_dota_2 # Lop edit
+  - type: Repairable # Lop edit
+    doAfterDelay: 8 # Lop edit
+  - type: Actions
+  - type: UnpoweredFlashlight # Lop edit
+  - type: PointLight # Lop edit
+    enabled: false # Lop edit
+    radius: 4.25 # Lop edit
+    softness: 1 # Lop edit
+    mask: /Textures/Effects/LightMasks/cone.png # Lop edit
+    autoRot: true # Lop edit
+  - type: Tag
+    tags:
+      - CanPilot # Lop edit
+  - type: Loadout # Lop edit
+    prototypes: [ LOPDroneBCD ] # Lop edit
+
+# Lop edit start (Остается тут, т.к. не вижу смысла создавать доп. файл для пяти строчек ПРОТОТИПА)
+- type: startingGear
+  id: LOPDroneBCD
+  equipment:
+    back: BSSClothingBackpackSatchelDrone
+# Lop edit end

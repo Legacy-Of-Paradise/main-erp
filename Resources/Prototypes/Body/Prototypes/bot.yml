@@ -1,7 +1,34 @@
 ﻿- type: body
   id: Bot
   name: "bot"
-  root: hand 1
+  root: torso # Lop edit (Все части тела крепятся к туловищу - torso.)
   slots:
-    hand 1:
+    # Lop edit start
+    torso:
+      part: TorsoBorg
+      connections:
+      - lefthand
+    lefthand:
       part: LeftArmBorg
+
+- type: body
+  id: Borg
+  name: "borg"
+  root: torso
+  slots:
+    torso:
+      part: TorsoBorg
+      connections:
+      - righthand
+      - lefthand
+      - rightleg
+      - leftleg
+    lefthand:
+      part: LeftArmBorg
+    righthand:
+      part: RightArmBorg
+    leftleg:
+      part: LeftLegBorg
+    rightleg:
+      part: RightLegBorg
+# Lop edit end
