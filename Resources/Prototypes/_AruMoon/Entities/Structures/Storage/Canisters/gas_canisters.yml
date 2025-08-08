@@ -12,7 +12,7 @@
     - state: purple
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -23,7 +23,7 @@
       - 0 # Miasma
       - 0 # N2O
       - 0 # Frezon
-      - 2769.36 # BZ, edit by LOP
+      - 2769.36 # BZ, LOP edit
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -61,7 +61,7 @@
     - state: darkblue
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500, edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -73,7 +73,7 @@
       - 0 # N2O
       - 0 # Frezon
       - 0 # BZ
-      - 2769.36 # Pluoxium, edit by LOP
+      - 2769.36 # Pluoxium, LOP edit
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -111,7 +111,7 @@
     - state: h2
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500, edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -124,7 +124,7 @@
       - 0 # Frezon
       - 0 # BZ
       - 0 # Pluoxium
-      - 2769.36 # Hydrogen, edit by LOP
+      - 2769.36 # Hydrogen, LOP edit
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -162,7 +162,7 @@
     - state: brown
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -176,7 +176,7 @@
       - 0 # BZ
       - 0 # Pluoxium
       - 0 # Hydrogen
-      - 2769.36 # Nitrium, edit by LOP
+      - 2769.36 # Nitrium, LOP edit
       temperature: 293.15
   - type: Destructible
     thresholds:
@@ -214,7 +214,7 @@
     - state: healium
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -229,7 +229,7 @@
       - 0 # Pluoxium
       - 0 # Hydrogen
       - 0 # Nitrium
-      - 2769.36 # Healium, edit by LOP
+      - 2769.36 # Healium, LOP edit
       - 0 # Hyper-Noblium
       - 0 # Proto-Nitrate
       - 0 # Zauker
@@ -273,7 +273,7 @@
     - state: nob
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -289,7 +289,7 @@
       - 0 # Hydrogen
       - 0 # Nitrium
       - 0 # Healium
-      - 2769.36 # Hyper-Noblium, edit by LOP
+      - 2769.36 # Hyper-Noblium, LOP edit
       - 0 # Proto-Nitrate
       - 0 # Zauker
       - 0 # Halon
@@ -332,7 +332,7 @@
     - state: proto_nitrate
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -349,7 +349,7 @@
       - 0 # Nitrium
       - 0 # Healium
       - 0 # Hyper-Noblium
-      - 2769.36 # Proto-Nitrate, edit by LOP
+      - 2769.36 # Proto-Nitrate, LOP edit
       - 0 # Zauker
       - 0 # Halon
       - 0 # Helium
@@ -391,7 +391,7 @@
     - state: zauker
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -409,7 +409,7 @@
       - 0 # Healium
       - 0 # Hyper-Noblium
       - 0 # Proto-Nitrate
-      - 2769.36 # Zauker, edir by LOP
+      - 2769.36 # Zauker, LOP edit
       - 0 # Halon
       - 0 # Helium
       - 0 # Anti-Noblium
@@ -450,7 +450,7 @@
     - state: halon
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -469,7 +469,7 @@
       - 0 # Hyper-Noblium
       - 0 # Proto-Nitrate
       - 0 # Zauker
-      - 2769.36 # Halon, edit by LOP
+      - 2769.36 # Halon, LOP edit
       - 0 # Helium
       - 0 # Anti-Noblium
       temperature: 293.15
@@ -509,7 +509,7 @@
     - state: helium
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -529,7 +529,7 @@
       - 0 # Proto-Nitrate
       - 0 # Zauker
       - 0 # Halon
-      - 2769.36 # Helium, edit by LOP
+      - 2769.36 # Helium, LOP edit
       - 0 # Anti-Noblium
       temperature: 293.15
   - type: Destructible
@@ -568,7 +568,7 @@
     - state: antinob
   - type: GasCanister
     gasMixture:
-      volume: 1500 # 1000 > 1500 edit by LOP
+      volume: 1500 # 1000 > 1500, LOP edit
       moles:
       - 0 # oxygen
       - 0 # nitrogen
@@ -589,7 +589,7 @@
       - 0 # Zauker
       - 0 # Halon
       - 0 # Helium
-      - 2769.36 # Anti-Noblium, edit by LOP
+      - 2769.36 # Anti-Noblium, LOP edit
       temperature: 293.15
   - type: Destructible
     thresholds:
