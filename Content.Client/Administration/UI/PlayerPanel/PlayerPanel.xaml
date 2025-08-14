@@ -45,7 +45,8 @@
                             <Button Name="FreezeAndMuteToggleButton" Text="{Loc player-panel-freeze-and-mute}" Disabled="True"/>
                             <Button Name="BanButton" Text="{Loc player-panel-ban}" Disabled="True"/>
                             <controls:ConfirmButton Name="RejuvenateButton" Text="{Loc player-panel-rejuvenate}" Disabled="True"/>
-                        </GridContainer>
+                        <Button Name="CameraButton" Text="{Loc player-panel-camera}" Disabled="True"/>
+           </GridContainer>
                         <GridContainer Rows="2" Margin="0,15,0,0">
                             <Button Name="TimeButton" Text="{Loc player-panel-time}" Disabled="True"/>
                         </GridContainer>

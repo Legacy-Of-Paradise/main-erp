@@ -121,9 +121,6 @@
     key: walls
   - type: Airlock
     openUnlitVisible: true
-  - type: PaintableAirlock
-    group: Standard
-    department: Civilian
   - type: StaticPrice
     price: 150
   - type: LightningTarget

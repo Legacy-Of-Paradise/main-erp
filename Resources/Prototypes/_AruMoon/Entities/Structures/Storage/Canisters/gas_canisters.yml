@@ -1,0 +1,717 @@
+﻿# 
+# The initial number of moles in the canisters was 1871.71051
+#
+
+- type: entity
+  parent: GasCanister
+  id: BZCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: purple
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 2769.36 # BZ, LOP edit
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          BZCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: PluoxiumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: darkblue
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 2769.36 # Pluoxium, LOP edit
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          PluoxiumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: HydrogenCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: h2
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 2769.36 # Hydrogen, LOP edit
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          HydrogenCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: NitriumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: brown
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 2769.36 # Nitrium, LOP edit
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          NitriumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: HealiumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: healium
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 2769.36 # Healium, LOP edit
+      - 0 # Hyper-Noblium
+      - 0 # Proto-Nitrate
+      - 0 # Zauker
+      - 0 # Halon
+      - 0 # Helium
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          HealiumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: HyperNobliumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: nob
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 2769.36 # Hyper-Noblium, LOP edit
+      - 0 # Proto-Nitrate
+      - 0 # Zauker
+      - 0 # Halon
+      - 0 # Helium
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          HyperNobliumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: ProtoNitrateCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: proto_nitrate
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 0 # Hyper-Noblium
+      - 2769.36 # Proto-Nitrate, LOP edit
+      - 0 # Zauker
+      - 0 # Halon
+      - 0 # Helium
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ProtoNitrateCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: ZaukerCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: zauker
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 0 # Hyper-Noblium
+      - 0 # Proto-Nitrate
+      - 2769.36 # Zauker, LOP edit
+      - 0 # Halon
+      - 0 # Helium
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          ZaukerCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: HalonCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: halon
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 0 # Hyper-Noblium
+      - 0 # Proto-Nitrate
+      - 0 # Zauker
+      - 2769.36 # Halon, LOP edit
+      - 0 # Helium
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          HalonCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: HeliumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: helium
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 0 # Hyper-Noblium
+      - 0 # Proto-Nitrate
+      - 0 # Zauker
+      - 0 # Halon
+      - 2769.36 # Helium, LOP edit
+      - 0 # Anti-Noblium
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          HeliumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanister
+  id: AntiNobliumCanister
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    layers:
+    - state: antinob
+  - type: GasCanister
+    gasMixture:
+      volume: 1500 # 1000 > 1500, LOP edit
+      moles:
+      - 0 # oxygen
+      - 0 # nitrogen
+      - 0 # CO2
+      - 0 # Plasma
+      - 0 # Tritium
+      - 0 #  Water vapor
+      - 0 # Miasma
+      - 0 # N2O
+      - 0 # Frezon
+      - 0 # BZ
+      - 0 # Pluoxium
+      - 0 # Hydrogen
+      - 0 # Nitrium
+      - 0 # Healium
+      - 0 # Hyper-Noblium
+      - 0 # Proto-Nitrate
+      - 0 # Zauker
+      - 0 # Halon
+      - 0 # Helium
+      - 2769.36 # Anti-Noblium, LOP edit
+      temperature: 293.15
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 600
+      behaviors:
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+    - trigger:
+        !type:DamageTrigger
+        damage: 300
+      behaviors:
+      - !type:PlaySoundBehavior
+        sound:
+          collection: MetalBreak
+      - !type:SpawnEntitiesBehavior
+        spawn:
+          AntiNobliumCanisterBroken:
+            min: 1
+            max: 1
+      - !type:DoActsBehavior
+        acts: [ "Destruction" ]
+      - !type:DumpCanisterBehavior
+  - type: Lock
+    locked: true
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: BZCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: purple-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: PluoxiumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: darkblue-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: HydrogenCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: h2-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: NitriumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: brown-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: HealiumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: healium-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: HyperNobliumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: nob-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ProtoNitrateCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: proto_nitrate-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: ZaukerCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: zauker-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: HalonCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: halon-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: HeliumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: helium-1
+
+- type: entity
+  parent: GasCanisterBrokenBase
+  id: AntiNobliumCanisterBroken
+  categories: [ HideSpawnMenu ]
+  components:
+  - type: Sprite
+    sprite: _AruMoon/Structures/Storage/canister.rsi
+    state: antinob-1

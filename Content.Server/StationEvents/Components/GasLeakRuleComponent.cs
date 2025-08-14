@@ -14,6 +14,11 @@ public sealed partial class GasLeakRuleComponent : Component
         Gas.Tritium,
         Gas.Frezon,
         Gas.WaterVapor, // the fog
+        // AruMoon edit start
+        Gas.BZ,
+        Gas.Hydrogen,
+        Gas.Halon
+        // AruMoon edit end
     };
 
     /// <summary>

@@ -13,7 +13,3 @@ ent-MagazineLightRifleUranium = магазин (.30 винтовочные ур�
     .desc = { ent-BaseMagazineLightRifle.desc }
 ent-MagazineLightRifleIncendiary = магазин (.30 винтовочные зажигательные)
     .desc = { ent-MagazineLightRifle.desc }
-ent-MagazineLightRifleMaxim = дисковый магазин (.30 винтовочные)
-    .desc = { ent-BaseMagazineLightRifle.desc }
-ent-MagazineLightRiflePkBox = коробка патронов ПК (.30 винтовочные)
-    .desc = { ent-BaseMagazineLightRifle.desc }

@@ -210,7 +210,6 @@ marking-VoxLArmScales = Стандартная левая рука [НЕ ИСП�
 marking-VoxLHandScales = Стандартная левая кисть [НЕ ИСПОЛЬЗОВАТЬ]
 marking-VoxRArmScales = Стандартная правая рука [НЕ ИСПОЛЬЗОВАТЬ]
 marking-VoxRHandScales = Стандартная правая кисть [НЕ ИСПОЛЬЗОВАТЬ]
-marking-VoxTail = Стандартный хвост [НЕ ИСПОЛЬЗОВАТЬ]
 marking-VoxLFootScales = Стандартная левая ступня [НЕ ИСПОЛЬЗОВАТЬ]
 marking-VoxLLegScales = Стандартная левая нога [НЕ ИСПОЛЬЗОВАТЬ]
 marking-VoxRFootScales = Стандартная правая ступня [НЕ ИСПОЛЬЗОВАТЬ]

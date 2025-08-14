@@ -1,8 +1,5 @@
-// Corvax edit start
-using Content.Shared.Buckle;
-using Content.Shared.Buckle.Components;
-// Corvax edit end
 using Content.Shared.Hands.Components;
+using Content.Shared.Movement.Events;
 using Content.Shared.Movement.Systems;
 using Content.Shared.Physics;
 using Content.Shared.Rotation;
@@ -17,16 +14,18 @@ public sealed class StandingStateSystem : EntitySystem
     [Dependency] private readonly SharedAppearanceSystem _appearance = default!;
     [Dependency] private readonly SharedAudioSystem _audio = default!;
     [Dependency] private readonly SharedPhysicsSystem _physics = default!;
-    [Dependency] private readonly MovementSpeedModifierSystem _movement = default!; // Corvax edit
 
     // If StandingCollisionLayer value is ever changed to more than one layer, the logic needs to be edited.
-    private const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
+    public const int StandingCollisionLayer = (int) CollisionGroup.MidImpassable;
 
     public override void Initialize()
     {
         base.Initialize();
         SubscribeLocalEvent<StandingStateComponent, AttemptMobCollideEvent>(OnMobCollide);
         SubscribeLocalEvent<StandingStateComponent, AttemptMobTargetCollideEvent>(OnMobTargetCollide);
+        SubscribeLocalEvent<StandingStateComponent, RefreshMovementSpeedModifiersEvent>(OnRefreshMovementSpeedModifiers);
+        SubscribeLocalEvent<StandingStateComponent, RefreshFrictionModifiersEvent>(OnRefreshFrictionModifiers);
+        SubscribeLocalEvent<StandingStateComponent, TileFrictionEvent>(OnTileFriction);
     }
 
     private void OnMobTargetCollide(Entity<StandingStateComponent> ent, ref AttemptMobTargetCollideEvent args)
@@ -43,6 +42,27 @@ public sealed class StandingStateSystem : EntitySystem
         {
             args.Cancelled = true;
         }
+    }
+
+    private void OnRefreshMovementSpeedModifiers(Entity<StandingStateComponent> entity, ref RefreshMovementSpeedModifiersEvent args)
+    {
+        if (!entity.Comp.Standing)
+            args.ModifySpeed(entity.Comp.FrictionModifier);
+    }
+
+    private void OnRefreshFrictionModifiers(Entity<StandingStateComponent> entity, ref RefreshFrictionModifiersEvent args)
+    {
+        if (entity.Comp.Standing)
+            return;
+
+        args.ModifyFriction(entity.Comp.FrictionModifier);
+        args.ModifyAcceleration(entity.Comp.FrictionModifier);
+    }
+
+    private void OnTileFriction(Entity<StandingStateComponent> entity, ref TileFrictionEvent args)
+    {
+        if (!entity.Comp.Standing)
+            args.Modifier *= entity.Comp.FrictionModifier;
     }
 
     public bool IsDown(EntityUid uid, StandingStateComponent? standingState = null)
@@ -77,13 +97,10 @@ public sealed class StandingStateSystem : EntitySystem
         // and ultimately this is just to avoid boilerplate in Down callers + keep their behavior consistent.
         if (dropHeldItems && hands != null)
         {
-            RaiseLocalEvent(uid, new DropHandItemsEvent(), false); // Corvax edit
+            var ev = new DropHandItemsEvent();
+            RaiseLocalEvent(uid, ref ev, false);
         }
 
-        // Corvax edit start
-        //if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
-        //    return false;
-        // Corvax edit end
         if (!force)
         {
             var msg = new DownAttemptEvent();
@@ -93,7 +110,7 @@ public sealed class StandingStateSystem : EntitySystem
                 return false;
         }
 
-        standingState.CurrentState = StandingState.Lying; // Corvax edit
+        standingState.Standing = false;
         Dirty(uid, standingState);
         RaiseLocalEvent(uid, new DownedEvent(), false);
 
@@ -120,10 +137,9 @@ public sealed class StandingStateSystem : EntitySystem
 
         if (playSound)
         {
-            _audio.PlayPredicted(standingState.DownSound, uid, null); // Corvax edit
+            _audio.PlayPredicted(standingState.DownSound, uid, uid);
         }
 
-        _movement.RefreshMovementSpeedModifiers(uid); // Corvax edit
         return true;
     }
 
@@ -142,10 +158,6 @@ public sealed class StandingStateSystem : EntitySystem
         if (standingState.Standing)
             return true;
 
-        // Corvax edit start
-        //if (TryComp(uid, out BuckleComponent? buckle) && buckle.Buckled && !_buckle.TryUnbuckle(uid, uid, buckleComp: buckle)) // WD EDIT
-        //    return false;
-        // Corvax edit end
         if (!force)
         {
             var msg = new StandAttemptEvent();
@@ -155,7 +167,7 @@ public sealed class StandingStateSystem : EntitySystem
                 return false;
         }
 
-        standingState.CurrentState = StandingState.Standing; // Corvax edit
+        standingState.Standing = true;
         Dirty(uid, standingState);
         RaiseLocalEvent(uid, new StoodEvent(), false);
 
@@ -170,17 +182,13 @@ public sealed class StandingStateSystem : EntitySystem
             }
         }
         standingState.ChangedFixtures.Clear();
-        _movement.RefreshMovementSpeedModifiers(uid); // Corvax edit
 
         return true;
     }
 }
 
-// Corvax edit start
-public sealed class DropHandItemsEvent : EventArgs
-{
-}
-// Corvax edit end
+[ByRefEvent]
+public record struct DropHandItemsEvent();
 
 /// <summary>
 /// Subscribe if you can potentially block a down attempt.

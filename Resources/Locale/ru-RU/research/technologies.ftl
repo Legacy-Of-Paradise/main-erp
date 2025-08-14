@@ -37,6 +37,7 @@ research-technology-kinetic-modifications = Кинетические модиф�
 research-technology-advanced-riot-control = Продвинутое противодействие беспорядкам
 research-technology-portable-microfusion-weaponry = Оруженый портативный микросинтез
 research-technology-thermal-weaponry = Термическое Оружие
+research-technology-dual-wielding-technology = Технология Двуручного Оружия
 research-technology-experimental-battery-ammo = Экспериментальные батарейные боеприпасы
 research-technology-basic-shuttle-armament = Базовое корабельное вооружение
 research-technology-advanced-shuttle-weapon = Продвинутое корабельное оружие

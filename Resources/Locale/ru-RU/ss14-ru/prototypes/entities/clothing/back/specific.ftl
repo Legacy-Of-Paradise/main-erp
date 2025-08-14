@@ -5,3 +5,5 @@ ent-ClothingBackpackWaterTank = ранцевый водяной резервуа
     .desc = Вмещает большое количество жидкости. Для разбрызгивания возьмите в руки форсунок.
 ent-ClothingBagPet = сумка для питомца
     .desc = Небольшая сумка, предназначенная для использования питомцами и мелкими животными.
+ent-ClothingBackpackHarmpack = H.A.R.M.P.A.C.K.
+    .desc = Now you can reload, punch, and eat a snack - simultaneously.

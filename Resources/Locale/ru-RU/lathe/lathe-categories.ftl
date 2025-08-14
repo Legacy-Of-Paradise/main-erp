@@ -25,6 +25,7 @@ lathe-category-dark = Темный
 lathe-category-maints = Обслуживание
 lathe-category-steel = Сталь
 lathe-category-white = Белый
+lathe-category-marble = Мрамор
 lathe-category-wood = Дерево
 lathe-category-modules = Модули
 lathe-category-chemicals = Химикаты

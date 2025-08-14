@@ -249,3 +249,7 @@ stack-dark-squiggly = тёмная стальная волнистая плит�
 stack-large-wood-floor = большой деревянный пол
 stack-red-circuit-floor = красная плитка-схема
 stack-asteroid-astro-sand-floor = астероидный астро-песочный пол
+stack-white-marble-floor = плитка из белого мрамора
+stack-dark-marble-floor = плитка из тёмного мрамора
+stack-plasma-marble-floor = плитка из плазменного мрамора
+stack-uranium-marble-floor = плитка из уранового мрамора

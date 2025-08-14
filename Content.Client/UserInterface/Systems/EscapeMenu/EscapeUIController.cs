@@ -81,11 +81,13 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _changelog.ToggleWindow();
         };
 
-        _escapeWindow.RulesButton.OnPressed += _ =>
-        {
-            CloseEscapeWindow();
-            _info.OpenWindow();
-        };
+        // LOP edit start
+        // _escapeWindow.RulesButton.OnPressed += _ =>
+        // {
+        //     CloseEscapeWindow();
+        //     _info.OpenWindow();
+        // };
+        // LOP edit end
 
         _escapeWindow.DisconnectButton.OnPressed += _ =>
         {
@@ -110,10 +112,12 @@ public sealed class EscapeUIController : UIController, IOnStateEntered<GameplayS
             _uri.OpenUri(_cfg.GetCVar(CCVars.InfoLinksWiki));
         };
 
-        _escapeWindow.GuidebookButton.OnPressed += _ =>
-        {
-            _guidebook.ToggleGuidebook();
-        };
+        // LOP edit start
+        // _escapeWindow.GuidebookButton.OnPressed += _ =>
+        // {
+        //     _guidebook.ToggleGuidebook();
+        // };
+        // LOP edit end
 
         // LOP edit start
         _escapeWindow.OpenDiscordButton.OnPressed += _ =>
