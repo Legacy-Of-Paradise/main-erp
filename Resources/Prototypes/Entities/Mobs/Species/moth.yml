@@ -48,9 +48,9 @@
       Female: UnisexMoth
       Unsexed: UnisexMoth
   - type: MovementSpeedModifier
-    weightlessAcceleration: 1.75 # Move around more easily in space. # LoP Edit 1.5 < 1.75
-    weightlessFriction: 1
-    baseWeightlessModifier: 1.4 # LoP Edit 1 < 1.4
+    baseWeightlessAcceleration: 1.5 # Move around more easily in space.
+    baseWeightlessFriction: 1
+    baseWeightlessModifier: 1
   - type: Flammable
     damage:
       types:
@@ -68,9 +68,9 @@
         Heat : 3 #per second, scales with temperature & other constants
   - type: TemperatureSpeed
     thresholds:
-      289: 0.8
-      275: 0.6
-      250: 0.4
+      289: 0.9
+      275: 0.8
+      250: 0.7
   - type: Sprite # sprite again because we want different layer ordering
     noRot: true
     drawdepth: Mobs
@@ -106,12 +106,11 @@
       - map: [ "id" ]
       - map: [ "outerClothing" ]
       - map: [ "belt" ]
-      - map: [ "enum.HumanoidVisualLayers.Wings" ] # LoP Edit, add Wings Layer
     # LOP edit end
-      - map: [ "back" ]
-      - map: [ "neck" ]
-      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
-      - map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
+ # LoP Edit, add Wings Layer
+    # LOP edit end
+- map: [ "enum.HumanoidVisualLayers.Hair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
       - map: [ "mask" ]
