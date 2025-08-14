@@ -48,9 +48,9 @@
       Female: UnisexMoth
       Unsexed: UnisexMoth
   - type: MovementSpeedModifier
-    baseWeightlessAcceleration: 1.5 # Move around more easily in space.
+    baseWeightlessAcceleration: 1.7 # Move around more easily in space. LoP edit 1.5 < 1.7
     baseWeightlessFriction: 1
-    baseWeightlessModifier: 1
+    baseWeightlessModifier: 1.4 # LoP edit 1 < 1.4
   - type: Flammable
     damage:
       types:
@@ -106,11 +106,12 @@
       - map: [ "id" ]
       - map: [ "outerClothing" ]
       - map: [ "belt" ]
+      - map: [ "enum.HumanoidVisualLayers.Wings" ] # Tail < Wings
     # LOP edit end
-      - map: [ "enum.HumanoidVisualLayers.Tail" ] #in the utopian future we should probably have a wings enum inserted here so everyhting doesn't break
- # LoP Edit, add Wings Layer
-    # LOP edit end
-- map: [ "enum.HumanoidVisualLayers.Hair" ]
+      - map: [ "back" ]
+      - map: [ "neck" ]
+      - map: [ "enum.HumanoidVisualLayers.FacialHair" ]
+      - map: [ "enum.HumanoidVisualLayers.Hair" ]
       - map: [ "enum.HumanoidVisualLayers.HeadSide" ]
       - map: [ "enum.HumanoidVisualLayers.HeadTop" ]
       - map: [ "mask" ]
